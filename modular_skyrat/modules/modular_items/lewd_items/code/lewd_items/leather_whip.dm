@@ -173,11 +173,6 @@
 		return
 
 	var/message = ""
-	//and there is code for successful check, so we are whipping someone
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("[target] doesn't want you to do that."))
-		return
-
 	switch(user.zone_selected) //to let code know what part of body we gonna whip
 		if(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 			if(carbon_target && !carbon_target.has_feet())

@@ -238,7 +238,19 @@
 		EQUIP_OUTFIT_ITEM(w_bra, ITEM_SLOT_BRA)
 	if(wrists)
 		EQUIP_OUTFIT_ITEM(wrists, ITEM_SLOT_WRISTS)
-	//
+	//h-sector add
+	if(penis)
+		EQUIP_OUTFIT_ITEM(penis, ITEM_SLOT_PENIS)
+	if(vagina)
+		EQUIP_OUTFIT_ITEM(vagina, ITEM_SLOT_VAGINA)
+	if(anus)
+		EQUIP_OUTFIT_ITEM(anus, ITEM_SLOT_ANUS)
+	if(nipples)
+		EQUIP_OUTFIT_ITEM(nipples, ITEM_SLOT_NIPPLES)
+	if(mouth)
+		EQUIP_OUTFIT_ITEM(mouth, ITEM_SLOT_MOUTH)
+	if(crotch)
+		EQUIP_OUTFIT_ITEM(crotch, ITEM_SLOT_CROTCH)
 
 	/* SPLURT EDIT - Extra inventory
 	// SKYRAT EDIT ADDITION START - Underwear and bra split

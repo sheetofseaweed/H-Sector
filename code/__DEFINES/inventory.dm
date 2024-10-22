@@ -65,7 +65,7 @@
 #define ITEM_SLOT_LEGCUFFED (1<<19)
 
 /// Total amount of slots
-#define SLOTS_AMT 26 // Keep this up to date!
+#define SLOTS_AMT 32 // Keep this up to date! //h-sector edit - 32, was 26
 
 ///Inventory slots that can be blacklisted by a species from being equipped into
 DEFINE_BITFIELD(no_equip_flags, list(

@@ -691,27 +691,33 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Total number of layers for mob overlays
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK
 /// Also consider updating layers_to_offset
-#define TOTAL_LAYERS 47 // SKYRAT EDIT CHANGE - ORIGINAL: 35
+#define TOTAL_LAYERS 50 // SKYRAT EDIT CHANGE - ORIGINAL: 35
 /// Mutations layer - Tk headglows, cold resistance glow, etc
-#define MUTATIONS_LAYER 47 // SKYRAT EDIT CHANGE - ORIGINAL: 35
+#define MUTATIONS_LAYER 50 // SKYRAT EDIT CHANGE - ORIGINAL: 35
 /// Mutantrace features (tail when looking south) that must appear behind the body parts
-#define BODY_BEHIND_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 34
+#define BODY_BEHIND_LAYER 49 // SKYRAT EDIT CHANGE - ORIGINAL: 34
 /// Layer for bodyparts that should appear behind every other bodypart - Mostly, legs when facing WEST or EAST
-#define BODYPARTS_LOW_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 33
+#define BODYPARTS_LOW_LAYER 48 // SKYRAT EDIT CHANGE - ORIGINAL: 33
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
-#define BODYPARTS_LAYER 44 // SKYRAT EDIT CHANGE - ORIGINAL: 32
+#define BODYPARTS_LAYER 47 // SKYRAT EDIT CHANGE - ORIGINAL: 32
+/// H-sector - new boob layer
+#define BREAST_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 32
 /// Mutantrace features (snout, body markings) that must appear above the body parts
-#define BODY_ADJ_LAYER 43 // SKYRAT EDIT CHANGE - ORIGINAL: 31
+#define BODY_ADJ_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 31
 /// Underwear, undershirts, socks, eyes, lips(makeup)
-#define BODY_LAYER 42 // SKYRAT EDIT CHANGE - ORIGINAL: 30
+#define BODY_LAYER 44 // SKYRAT EDIT CHANGE - ORIGINAL: 30
 /// Mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define FRONT_MUTATIONS_LAYER 41 // SKYRAT EDIT CHANGE - ORIGINAL: 29
+#define FRONT_MUTATIONS_LAYER 43 // SKYRAT EDIT CHANGE - ORIGINAL: 29
 /// Damage indicators (cuts and burns)
-#define DAMAGE_LAYER 40 // SKYRAT EDIT CHANGE - ORIGINAL: 28
+#define DAMAGE_LAYER 42 // SKYRAT EDIT CHANGE - ORIGINAL: 28
 // SKYRAT EDIT ADDITION START
 /// This layer is used for things that shouldn't be over clothes, but should be over mutations
-#define BODY_FRONT_UNDER_CLOTHES 39
+#define BODY_FRONT_UNDER_CLOTHES 41
 // SKYRAT EDIT ADDITION END
+//H-Sector Edit mouth and crotch
+#define MOUTH_LAYER				40
+#define CROTCH_LAYER			39
+
 // SPLURT EDIT undies
 #define UNDERWEAR_LAYER			38
 #define SOCKS_LAYER				37
@@ -846,6 +852,10 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 /// Draws organ on the HEAD_LAYER, for things that need to be above hair but below hats.
 #define EXTERNAL_FRONT_ABOVE_HAIR (1 << 6)
 // SKYRAT EDIT END (not touching what comes next because we don't actually have to (nor want to))
+//h-sector -Draws organ on the ARM_LAYER
+#define EXTERNAL_BOOB_LAYER (1 << 7)
+//h-sector -Draws organ on the BODYPARTS_LAYER
+#define EXTERNAL_BODY_LAYER (1 << 8)
 /// Draws organ on all EXTERNAL layers
 #define ALL_EXTERNAL_OVERLAYS EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 

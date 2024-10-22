@@ -111,3 +111,34 @@ GLOBAL_LIST_INIT(color_list_ghoul, list( \
 	"Plutonium Blue" = "a5cfcc", \
 	"Marked Red" = "f05b68" \
 ))
+GLOBAL_LIST_INIT(butt_size_translation, list(
+	"0" = "flat",
+	"1" = "small",
+	"2" = "medium",
+	"3" = "big",
+	"4" = "gigantic",
+	))
+
+GLOBAL_LIST_INIT(butt_size_to_number, list(
+	"flat" = 0,
+	"small" = 1,
+	"medium" = 2,
+	"big" = 3,
+	"gigantic" = 4,
+	))
+
+GLOBAL_LIST_INIT(belly_size_translation, list(
+	"0" = "flat",
+	"1" = "small",
+	"2" = "medium",
+	"3" = "big",
+	"4" = "gigantic",
+	))
+
+GLOBAL_LIST_INIT(belly_size_to_number, list(
+	"flat" = 0,
+	"small" = 1,
+	"medium" = 2,
+	"big" = 3,
+	"gigantic" = 4,
+	))

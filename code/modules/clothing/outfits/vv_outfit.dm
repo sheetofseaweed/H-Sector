@@ -45,6 +45,19 @@
 			underwear = item_path
 		if(ITEM_SLOT_SOCKS)
 			socks = item_path
+		//h-sector add
+		if(ITEM_SLOT_PENIS)
+			penis = item_path
+		if(ITEM_SLOT_VAGINA)
+			vagina = item_path
+		if(ITEM_SLOT_ANUS)
+			anus = item_path
+		if(ITEM_SLOT_NIPPLES)
+			nipples = item_path
+		if(ITEM_SLOT_MOUTH)
+			mouth = item_path
+		if(ITEM_SLOT_CROTCH)
+			crotch = item_path
 		//
 		if(ITEM_SLOT_EYES)
 			glasses = item_path

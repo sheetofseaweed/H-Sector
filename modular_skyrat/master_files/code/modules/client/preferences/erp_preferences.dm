@@ -10,13 +10,13 @@
 	. = ..()
 	if (CONFIG_GET(flag/disable_erp_preferences) && (str_val in GLOB.keybindings_by_name))
 		GLOB.keybindings_by_name -= str_val
-
+/*
 /datum/preference/toggle/master_erp_preferences
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
 	savefile_key = "master_erp_pref"
 	savefile_identifier = PREFERENCE_PLAYER
 	default_value = TRUE
-
+*/
 /datum/preference/toggle/master_erp_preferences/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
@@ -32,12 +32,13 @@
 	. = ..()
 
 /datum/preference/toggle/erp
+	abstract_type = /datum/preference/toggle/erp
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
 	savefile_identifier = PREFERENCE_PLAYER
 	savefile_key = "erp_pref"
-	default_value = FALSE
+	default_value = TRUE
 
-/datum/preference/toggle/erp/is_accessible(datum/preferences/preferences)
+/*/datum/preference/toggle/erp/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -51,7 +52,7 @@
 		return FALSE
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return FALSE
-	. = ..()
+	. = ..()*/
 
 /datum/preference/toggle/erp/apply_to_client_updated(client/client, value)
 	. = ..()
@@ -64,7 +65,7 @@
 /// Sounds from interaction menu and stimuli
 /datum/preference/toggle/erp/sounds
 	savefile_key = "erp_sounds_pref"
-
+/*
 /datum/preference/toggle/erp/sex_toy
 	savefile_key = "sextoy_pref"
 
@@ -89,7 +90,7 @@
 /datum/preference/toggle/erp/sex_toy_sounds
 	savefile_key = "sextoy_sounds_pref"
 
-/* BUBBER REMOVAL START
+ BUBBER REMOVAL START
 /datum/preference/toggle/erp/vore_pred
 	savefile_key = "vore_pred_pref"
 
@@ -99,36 +100,70 @@ BUBBER REMOVAL END */
 
 /datum/preference/toggle/erp/bimbofication
 	savefile_key = "bimbofication_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/aphro
 	savefile_key = "aphro_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/breast_enlargement
 	savefile_key = "breast_enlargement_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/breast_shrinkage
 	savefile_key = "breast_shrinkage_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/penis_enlargement
 	savefile_key = "penis_enlargement_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/penis_shrinkage
 	savefile_key = "penis_shrinkage_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/genitalia_removal
 	savefile_key = "genitalia_removal_pref"
+	default_value = FALSE
 
 /datum/preference/toggle/erp/gender_change
 	savefile_key = "gender_change_pref"
-
+	default_value = FALSE
+/*
 /datum/preference/toggle/erp/autocum
 	savefile_key = "autocum_pref"
 
 /datum/preference/toggle/erp/autoemote
-	savefile_key = "autoemote_pref"
+	savefile_key = "autoemote_pref"*/
 
 /datum/preference/toggle/erp/new_genitalia_growth
 	savefile_key = "new_genitalia_growth_pref"
+	default_value = FALSE
+
+/datum/preference/toggle/erp/sex_jitter
+	savefile_key = "sex_jitter_pref"
+	default_value = FALSE
+
+/datum/preference/toggle/erp/horny_virus_imm
+	savefile_key = "horny_virus_imm_pref"
+	default_value = FALSE
+
+/datum/preference/toggle/erp/horny_hypnosis
+	savefile_key = "horny_hypnosis_pref"
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
+	savefile_identifier = PREFERENCE_CHARACTER
+	default_value = FALSE
+
+/datum/preference/toggle/erp/horny_hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
+	return FALSE
+
+/datum/preference/toggle/erp/defiance
+	savefile_key = "defiance_pref"
+	default_value = TRUE
+
+/datum/preference/toggle/erp/erp_event_participation
+	savefile_key = "erp_event_participation_pref"
+	default_value = FALSE
 
 /datum/preference/choiced/erp_status
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
@@ -137,7 +172,7 @@ BUBBER REMOVAL END */
 
 /datum/preference/choiced/erp_status/init_possible_values()
 	return list(
-		"Top - Dom",
+		/*"Top - Dom",
 		"Top - Switch",
 		"Top - Sub",
 		"Verse-Top - Dom",
@@ -154,13 +189,13 @@ BUBBER REMOVAL END */
 		"Bottom - Sub",
 		"Check OOC Notes",
 		"Ask (L)OOC",
-		"No",
+		"No",*/
 		"Yes",
 	)
 
 /datum/preference/choiced/erp_status/create_default_value()
-	return "Ask (L)OOC"
-
+	return "Yes"
+/*
 /datum/preference/choiced/erp_status/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
@@ -175,7 +210,7 @@ BUBBER REMOVAL END */
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_status/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
@@ -186,7 +221,7 @@ BUBBER REMOVAL END */
 	savefile_key = "erp_status_pref_nc"
 
 /datum/preference/choiced/erp_status_nc/init_possible_values()
-	return list("Yes - Switch", "Yes - Dom", "Yes - Sub", "Yes", "Ask (L)OOC", "Check OOC Notes", "No")
+	return list("Yes", "Ask (L)OOC / Check OOC Notes", "No")
 
 /datum/preference/choiced/erp_status_nc/create_default_value()
 	return "No"
@@ -216,12 +251,12 @@ BUBBER REMOVAL END */
 	savefile_key = "erp_status_pref_v"
 
 /datum/preference/choiced/erp_status_v/init_possible_values()
-	return list("Yes - Switch", "Yes - Prey", "Yes - Pred", "Check OOC Notes", "Ask (L)OOC", "No", "Yes")
+	return list("Yes - Switch", "Yes - Prey", "Yes - Pred", "Check OOC Notes / Ask (L)OOC", "No", "Yes")
 
 /datum/preference/choiced/erp_status_v/create_default_value()
 	return "No"
 
-/datum/preference/choiced/erp_status_v/is_accessible(datum/preferences/preferences)
+/*/datum/preference/choiced/erp_status_v/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -235,11 +270,11 @@ BUBBER REMOVAL END */
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_status_v/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
-
+/*
 /datum/preference/choiced/erp_status_mechanics
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -268,7 +303,7 @@ BUBBER REMOVAL END */
 	. = ..()
 
 /datum/preference/choiced/erp_status_mechanics/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	return FALSE
+	return FALSE*/
 
 /datum/preference/choiced/erp_sexuality
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
@@ -276,12 +311,12 @@ BUBBER REMOVAL END */
 	savefile_key = "erp_sexuality_pref"
 
 /datum/preference/choiced/erp_sexuality/init_possible_values()
-	return list("Gay", "Straight", "None") // For simplicity's sake we only have 3 options.
+	return list("Gay", "Straight", "Any", "None") // For simplicity's sake we only have 3 options.
 
 /datum/preference/choiced/erp_sexuality/create_default_value()
 	return "None"
 
-/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
+/*/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -295,11 +330,11 @@ BUBBER REMOVAL END */
 		return "None"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "None"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_sexuality/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
-
+/*
 /datum/preference/choiced/erp_status_hypno
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -329,7 +364,7 @@ BUBBER REMOVAL END */
 	return ..()
 
 /datum/preference/choiced/erp_status_hypno/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	return FALSE
+	return FALSE*/
 
 /datum/preference/toggle/erp/vore_overlays
 	savefile_key = "vore_overlays"

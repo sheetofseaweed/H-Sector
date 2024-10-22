@@ -20,17 +20,24 @@
 		// SPLURT EDIT - Extra inventory
 		usr.client.screen -= targetmob.hud_used.extra_inventory
 		//
+		usr.client.screen -= targetmob.hud_used.lewd_inventory
+		//
 	else
 		usr.hud_used.inventory_shown = TRUE
 		usr.client.screen += targetmob.hud_used.toggleable_inventory
 		// SPLURT EDIT - Extra inventory
 		if(usr.hud_used.extra_shown)
 			usr.client.screen += targetmob.hud_used.extra_inventory
-		//
+			//
+			if(usr.hud_used.lewd_shown)
+				usr.client.screen += targetmob.hud_used.lewd_inventory
+			//
 
 	targetmob.hud_used.hidden_inventory_update(usr)
 	// SPLURT EDIT - Extra inventory
 	targetmob.hud_used.extra_inventory_update(usr)
+	//
+	targetmob.hud_used.lewd_inventory_update(usr)
 	//
 
 /atom/movable/screen/human/equip
@@ -323,7 +330,7 @@
 		return
 	var/datum/species/S = H.dna.species
 	// SPLURT EDIT - Extra inventory
-	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory + extra_inventory))
+	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory + extra_inventory + lewd_inventory))
 		if(inv.slot_id)
 			if(S.no_equip_flags & inv.slot_id)
 				inv.alpha = 128

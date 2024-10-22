@@ -25,7 +25,7 @@
 	/// Mutable appearance for the human overlay of this itme
 	var/mutable_appearance/magicwand_overlay
 	w_class = WEIGHT_CLASS_TINY
-	lewd_slot_flags = LEWD_SLOT_VAGINA | LEWD_SLOT_PENIS
+	//lewd_slot_flags = LEWD_SLOT_VAGINA | LEWD_SLOT_PENIS
 	clothing_flags = INEDIBLE_CLOTHING
 
 //some stuff for making overlay of this item. Why? Because.
@@ -104,10 +104,6 @@
 		carbon_target = target
 	else if(!iscyborg(target))
 		return
-
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("Looks like [target] don't want you to do that."))
-		return FALSE
 
 	var/message = ""
 	if(vibration_mode == MAGIC_WAND_MODE_OFF)
@@ -193,7 +189,7 @@
 		target.try_lewd_autoemote(pick("twitch_s", "moan"))
 
 	user.visible_message(span_purple("[user] [message]!"))
-	conditional_pref_sound(loc, 'modular_skyrat/modules/modular_items/lewd_items/sounds/vibrate.ogg', (vibration_mode == MAGIC_WAND_MODE_LOW ? 10 : (vibration_mode == MAGIC_WAND_MODE_HIGH ? 30 : 20)), TRUE, pref_to_check = /datum/preference/toggle/erp/sex_toy_sounds)
+	conditional_pref_sound(loc, 'modular_skyrat/modules/modular_items/lewd_items/sounds/vibrate.ogg', (vibration_mode == MAGIC_WAND_MODE_LOW ? 10 : (vibration_mode == MAGIC_WAND_MODE_HIGH ? 30 : 20)), TRUE, pref_to_check = /datum/preference/toggle/erp/sounds)
 
 /obj/item/clothing/sextoy/magic_wand/attack_self(mob/user)
 	toggle_mode()

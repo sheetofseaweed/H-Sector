@@ -71,9 +71,6 @@
 	else if(!iscyborg(target))
 		return
 
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("[target] doesn't want you to do that."))
-		return
 
 	if(carbon_target && !carbon_target.is_bottomless())
 		to_chat(user, span_danger("[target]'s butt is covered!"))

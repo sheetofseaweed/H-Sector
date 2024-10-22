@@ -121,10 +121,6 @@
 		to_chat(user, span_danger("[src] must be enabled before use!"))
 		return
 
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("[target] doesn't want you to do that."))
-		return
-
 	var/message = ""
 	switch(user.zone_selected) //to let code know what part of body we gonna tickle
 		if(BODY_ZONE_PRECISE_GROIN)

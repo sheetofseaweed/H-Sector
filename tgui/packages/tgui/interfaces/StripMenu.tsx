@@ -250,6 +250,11 @@ const SLOTS: Record<
     image: 'inventory-pocket.png',
   },
   // SKYRAT EDIT ADDITION
+  crotch: {
+    displayName: 'crotch',
+    gridSpot: getGridSpotKey([5, 0]),
+    image: 'inventory-pocket.png',
+  },
   vagina: {
     displayName: 'vagina',
     gridSpot: getGridSpotKey([5, 1]),
@@ -271,6 +276,11 @@ const SLOTS: Record<
   penis: {
     displayName: 'penis',
     gridSpot: getGridSpotKey([5, 4]),
+    image: 'inventory-pocket.png',
+  },
+  mouth: {
+    displayName: 'mouth',
+    gridSpot: getGridSpotKey([5, 5]),
     image: 'inventory-pocket.png',
   },
 };

@@ -144,9 +144,6 @@
 		return
 
 	var/message = ""
-	if(!attacked.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("It looks like [attacked] don't want you to do that."))
-		return
 	if(!lit)
 		to_chat(user, span_danger("[src] needs to be lit to produce wax!"))
 		return

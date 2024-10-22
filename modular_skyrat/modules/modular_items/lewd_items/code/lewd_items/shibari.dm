@@ -103,9 +103,6 @@
 		return
 	if(!ishuman(attacked))
 		return
-	if(!attacked.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("Looks like [attacked] doesn't want you to do that."))
-		return
 	switch(user.zone_selected)
 		if(BODY_ZONE_L_LEG)
 			INVOKE_ASYNC(src, PROC_REF(handle_leg_tying), attacked, user)

@@ -29,6 +29,15 @@
 		user.wrists.add_fingerprint(user, ignoregloves = TRUE)
 	if(user.ears_extra)
 		user.ears_extra.add_fingerprint(user, ignoregloves = TRUE)
+	if(user.vagina)
+		user.vagina.add_fingerprint(user,ignoregloves = TRUE)
+	if(user.anus)
+		user.anus.add_fingerprint(user,ignoregloves = TRUE)
+	if(user.nipples)
+		user.nipples.add_fingerprint(user,ignoregloves = TRUE)
+	if(user.penis)
+		user.penis.add_fingerprint(user,ignoregloves = TRUE)
+
 
 /datum/outfit/copy_outfit_from_target(mob/living/carbon/human/H)
 	. = ..()

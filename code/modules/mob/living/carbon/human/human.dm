@@ -638,7 +638,25 @@
 	if(!wrists_hidden() && wrists?.wash(clean_types))
 		update_worn_wrists()
 		. = TRUE
-	//
+	//hsector edit
+	if(!penis_hidden() && penis?.wash(clean_types))
+		update_worn_penis()
+		. = TRUE
+	if(!vagina_hidden() && vagina?.wash(clean_types))
+		update_worn_vagina()
+		. = TRUE
+	if(!(anus_hidden()) && anus?.wash(clean_types))
+		update_worn_anus()
+		. = TRUE
+	if(!nipples_hidden() && nipples?.wash(clean_types))
+		update_worn_nipples()
+		. = TRUE
+	if(!mouth_hidden() && mouth?.wash(clean_types))
+		update_worn_mouth()
+		. = TRUE
+	if(!crotch_hidden() && crotch?.wash(clean_types))
+		update_worn_crotch()
+		. = TRUE
 
 	// Wash hands if exposed
 	if(!gloves && (clean_types & CLEAN_TYPE_BLOOD) && blood_in_hands > 0 && !(obscured & ITEM_SLOT_GLOVES))

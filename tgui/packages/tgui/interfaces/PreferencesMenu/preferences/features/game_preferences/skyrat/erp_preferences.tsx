@@ -1,18 +1,19 @@
 // THIS IS A SKYRAT UI FILE
 import { CheckboxInput, FeatureChoiced, FeatureToggle } from '../../base';
 import { FeatureDropdownInput } from '../../dropdowns';
-
+/*
 export const master_erp_pref: FeatureToggle = {
   name: 'Show/Hide Erotic Roleplay Preferences',
   category: 'ERP',
   description: 'This shows/hides ERP preferences.',
   component: CheckboxInput,
-};
+};*/
 
-export const erp_pref: FeatureToggle = {
-  name: 'Erotic Roleplay Interaction',
+export const defiance_pref: FeatureToggle = {
+  name: 'Defiance',
   category: 'ERP',
-  description: 'This informs players of if you wish to engage in ERP.',
+  description:
+    'With this toggled off, you will not be able to change your preferences in-game, and will lose the ablity to use your safe-word.',
   component: CheckboxInput,
 };
 
@@ -20,6 +21,13 @@ export const erp_sounds_pref: FeatureToggle = {
   name: 'ERP sounds',
   category: 'ERP',
   description: 'Toggles if you want to hear sounds from ERP mechanics.',
+  component: CheckboxInput,
+};
+
+export const horny_hypnosis_pref: FeatureToggle = {
+  name: 'ERP Hypnosis',
+  category: 'ERP',
+  description: 'Toggles if you want to be hypnotised in ERP mechanics.',
   component: CheckboxInput,
 };
 
@@ -36,20 +44,6 @@ export const aphro_pref: FeatureToggle = {
   category: 'ERP',
   description:
     'Toggles whether you wish to receive the effects of aphrodisiacs',
-  component: CheckboxInput,
-};
-
-export const sextoy_pref: FeatureToggle = {
-  name: 'Sex toy interaction',
-  category: 'ERP',
-  description: 'When enabled, you will be able to interact with sex toys.',
-  component: CheckboxInput,
-};
-
-export const sextoy_sounds_pref: FeatureToggle = {
-  name: 'Sex toy sounds',
-  category: 'ERP',
-  description: 'Toggles if you will hear sounds from sex toys.',
   component: CheckboxInput,
 };
 
@@ -109,19 +103,26 @@ export const gender_change_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
-export const autocum_pref: FeatureToggle = {
-  name: 'Autocum',
+export const sex_jitter_pref: FeatureToggle = {
+  name: 'Sex Jitter',
   category: 'ERP',
-  description:
-    'Toggles whether you automatically cum using the arousal system, or if you need to do it manually.',
+  description: 'Toggles whether you automatically shake and jitter during sex.',
   component: CheckboxInput,
 };
 
-export const autoemote_pref: FeatureToggle = {
-  name: 'Auto Emote',
+export const horny_virus_imm_pref: FeatureToggle = {
+  name: 'Horny Viruses',
   category: 'ERP',
   description:
-    'Toggles whether you automatically emote using the arousal system, or if you need to do it manually.',
+    'Toggles whether you are immune or not to lewd illnesses and viruses.',
+  component: CheckboxInput,
+};
+
+export const erp_event_participation_pref: FeatureToggle = {
+  name: 'ERP Event Participation',
+  category: 'ERP',
+  description:
+    'This shows admins that you are willing to participate in horny events.',
   component: CheckboxInput,
 };
 

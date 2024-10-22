@@ -28,8 +28,6 @@
 
 /// Handles throwing the arousal alerts to screen.
 /datum/species/proc/handle_arousal(mob/living/carbon/human/target_human, atom/movable/screen/alert/aroused)
-	if(!target_human.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
-		return
 
 	var/atom/movable/screen/alert/aroused/arousal_alert = target_human.alerts[AROUSED_ALERT]
 
