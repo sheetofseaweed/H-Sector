@@ -194,68 +194,64 @@
 
 	var/message = ""
 	var/obj/item/organ/external/genital/vagina = hit_mob.get_organ_slot(ORGAN_SLOT_VAGINA)
-	if(hit_mob.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		switch(user.zone_selected) //to let code know what part of body we gonna fuck
-			if(BODY_ZONE_PRECISE_GROIN)
-				if(vagina)
-					if(hit_mob.is_bottomless() || vagina.visibility_preference == GENITAL_ALWAYS_SHOW)
-						message = pick("delicately rubs [hit_mob]'s vagina with [src]", "uses [src] to fuck [hit_mob]'s vagina", "jams [hit_mob]'s pussy with [src]", "teases [hit_mob]'s pussy with [src]")
-						hit_mob.adjust_arousal(6)
-						hit_mob.adjust_pleasure(8)
-						if(prob(40))
-							hit_mob.try_lewd_autoemote(pick("twitch_s", "moan"))
-						user.visible_message(span_purple("[user] [message]!"))
-						conditional_pref_sound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
-											'modular_skyrat/modules/modular_items/lewd_items/sounds/bang2.ogg',
-											'modular_skyrat/modules/modular_items/lewd_items/sounds/bang3.ogg',
-											'modular_skyrat/modules/modular_items/lewd_items/sounds/bang4.ogg',
-											'modular_skyrat/modules/modular_items/lewd_items/sounds/bang5.ogg',
-											'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 60, TRUE)
-					else
-						to_chat(user, span_danger("[hit_mob]'s groin is covered!"))
-						return
-				else
-					to_chat(user, span_danger("[hit_mob] doesn't have suitable genitalia for that!"))
-					return
-
-			if(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_PRECISE_EYES) //Mouth only. Sorry, perverts. No eye/ear penetration for you today.
-				if(!hit_mob.is_mouth_covered())
-					message = pick("fucks [hit_mob]'s mouth with [src]", "chokes [hit_mob] by inserting [src] into [hit_mob.p_their()] throat", "forces [hit_mob] to suck [src]", "inserts [src] into [hit_mob]'s throat")
-					hit_mob.adjust_arousal(4)
-					hit_mob.adjust_pleasure(1)
-					hit_mob.adjustOxyLoss(1.5)
-					if(prob(70))
-						hit_mob.try_lewd_autoemote(pick("gasp", "moan"))
+	switch(user.zone_selected) //to let code know what part of body we gonna fuck
+		if(BODY_ZONE_PRECISE_GROIN)
+			if(vagina)
+				if(hit_mob.is_bottomless() || vagina.visibility_preference == GENITAL_ALWAYS_SHOW)
+					message = pick("delicately rubs [hit_mob]'s vagina with [src]", "uses [src] to fuck [hit_mob]'s vagina", "jams [hit_mob]'s pussy with [src]", "teases [hit_mob]'s pussy with [src]")
+					hit_mob.adjust_arousal(6)
+					hit_mob.adjust_pleasure(8)
+					if(prob(40))
+						hit_mob.try_lewd_autoemote(pick("twitch_s", "moan"))
 					user.visible_message(span_purple("[user] [message]!"))
 					conditional_pref_sound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang2.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang3.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang4.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang5.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 40, TRUE)
-
+										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 60, TRUE)
 				else
-					to_chat(user, span_danger("[hit_mob]'s mouth is covered!"))
+					to_chat(user, span_danger("[hit_mob]'s groin is covered!"))
 					return
+			else
+				to_chat(user, span_danger("[hit_mob] doesn't have suitable genitalia for that!"))
+				return
+
+		if(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_PRECISE_EYES) //Mouth only. Sorry, perverts. No eye/ear penetration for you today.
+			if(!hit_mob.is_mouth_covered())
+				message = pick("fucks [hit_mob]'s mouth with [src]", "chokes [hit_mob] by inserting [src] into [hit_mob.p_their()] throat", "forces [hit_mob] to suck [src]", "inserts [src] into [hit_mob]'s throat")
+				hit_mob.adjust_arousal(4)
+				hit_mob.adjust_pleasure(1)
+				hit_mob.adjustOxyLoss(1.5)
+				if(prob(70))
+					hit_mob.try_lewd_autoemote(pick("gasp", "moan"))
+				user.visible_message(span_purple("[user] [message]!"))
+				conditional_pref_sound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang2.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang3.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang4.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang5.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 40, TRUE)
 
 			else
-				if(hit_mob.is_bottomless())
-					message = pick("fucks [hit_mob]'s ass with [src]", "uses [src] to fuck [hit_mob]'s anus", "jams [hit_mob]'s ass with [src]", "roughly fucks [hit_mob]'s ass with [src], causing their eyes to roll back")
-					hit_mob.adjust_arousal(5)
-					hit_mob.adjust_pleasure(5)
-					if(prob(60))
-						hit_mob.try_lewd_autoemote(pick("twitch_s", "moan", "shiver"))
-					user.visible_message(span_purple("[user] [message]!"))
-					conditional_pref_sound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang2.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang3.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang4.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang5.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 100, TRUE)
+				to_chat(user, span_danger("[hit_mob]'s mouth is covered!"))
+				return
 
-				else
-					to_chat(user, span_danger("[hit_mob]'s anus is covered!"))
-					return
-	else
-		to_chat(user, span_danger("[hit_mob] doesn't want you to do that."))
-		return
+		else
+			if(hit_mob.is_bottomless())
+				message = pick("fucks [hit_mob]'s ass with [src]", "uses [src] to fuck [hit_mob]'s anus", "jams [hit_mob]'s ass with [src]", "roughly fucks [hit_mob]'s ass with [src], causing their eyes to roll back")
+				hit_mob.adjust_arousal(5)
+				hit_mob.adjust_pleasure(5)
+				if(prob(60))
+					hit_mob.try_lewd_autoemote(pick("twitch_s", "moan", "shiver"))
+				user.visible_message(span_purple("[user] [message]!"))
+				conditional_pref_sound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang2.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang3.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang4.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang5.ogg',
+									'modular_skyrat/modules/modular_items/lewd_items/sounds/bang6.ogg'), 100, TRUE)
+
+			else
+				to_chat(user, span_danger("[hit_mob]'s anus is covered!"))
+				return

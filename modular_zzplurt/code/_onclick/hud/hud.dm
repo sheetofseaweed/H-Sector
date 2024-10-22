@@ -17,6 +17,12 @@ GLOBAL_LIST_INIT(extra_inventory_ui_styles, list(
 	// Extra inventory
 	var/extra_shown = FALSE
 	var/list/extra_inventory = list()
+	// Lewd inventory
+	var/lewd_shown = FALSE
+	var/list/lewd_inventory = list()
 
 /datum/hud/proc/extra_inventory_update()
+	return
+
+/datum/hud/proc/lewd_inventory_update()
 	return

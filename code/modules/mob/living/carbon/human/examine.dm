@@ -161,11 +161,29 @@
 	if((istype(ears, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_LEFT) && !(ears.item_flags & EXAMINE_SKIP)) && (istype(ears_extra, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_RIGHT) && !(ears_extra.item_flags & EXAMINE_SKIP)))
 		. += span_warning("[t_He] looks quite tacky wearing both \an [ears.name] and \an [ears_extra.name] on [t_his] head.")
 
-	//
-
+	//"New" ERP slots h-sector
+	//c
+	if(crotch && !crotch_hidden() && !(crotch.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [crotch.get_examine_string(user)] on [t_his] crotch."
+	//p
+	if(penis && !penis_hidden() && !(penis.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [penis.get_examine_string(user)] on [t_his] penis."
+	//v
+	if(vagina && !vagina_hidden() && !(vagina.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_has] a [vagina.get_examine_string(user)] in [t_his] vagina."
+	//a
+	if(anus && !anus_hidden() && !(anus.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_has] a [anus.get_examine_string(user)] in [t_his] anus."
+	//n
+	if(nipples && !nipples_hidden() && !(nipples.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [nipples.get_examine_string(user)] on [t_his] nipples."
+	//m
+	if(mouth && !mouth_hidden() && !(mouth.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_has] a [mouth.get_examine_string(user)] in [t_his] mouth."
 	//ID
 	if(wear_id && !(wear_id.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [wear_id.get_examine_string(user)]."
+
 
 		. += wear_id.get_id_examine_strings(user)
 

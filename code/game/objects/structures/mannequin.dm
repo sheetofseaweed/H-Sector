@@ -48,6 +48,13 @@
 		ITEM_SLOT_SHIRT,
 		ITEM_SLOT_BRA,
 		ITEM_SLOT_WRISTS,
+		//new h-sector
+		ITEM_SLOT_PENIS,
+		ITEM_SLOT_VAGINA,
+		ITEM_SLOT_ANUS,
+		ITEM_SLOT_NIPPLES,
+		ITEM_SLOT_MOUTH,
+		ITEM_SLOT_CROTCH,
 		// SPLURT EDIT END
 	)
 	/// Assoc list of all item slots (turned to strings) to the items they hold.
@@ -189,6 +196,25 @@
 			if(ITEM_SLOT_WRISTS)
 				default_layer = WRISTS_LAYER
 				//default_icon = 'modular_zzplurt/icons/mob/clothing/wrists.dmi' //No wrists icon yet
+			//h-sector add
+			if(ITEM_SLOT_PENIS)
+				default_layer = PENIS_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
+			if(ITEM_SLOT_VAGINA)
+				default_layer = VAGINA_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
+			if(ITEM_SLOT_ANUS)
+				default_layer = ANUS_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
+			if(ITEM_SLOT_NIPPLES)
+				default_layer = NIPPLES_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
+			if(ITEM_SLOT_MOUTH)
+				default_layer = MOUTH_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
+			if(ITEM_SLOT_CROTCH)
+				default_layer = CROTCH_LAYER
+				//default_icon = 'icons/mob/clothing/underwear.dmi'
 			// SPLURT EDIT END
 		. += worn_item.build_worn_icon(default_layer, default_icon, female_uniform = female_icon)
 

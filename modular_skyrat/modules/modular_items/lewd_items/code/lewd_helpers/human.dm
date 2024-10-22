@@ -11,6 +11,8 @@
 	var/obj/item/anus = null
 	var/obj/item/nipples = null
 	var/obj/item/penis = null
+	var/obj/item/mouth = null
+	var/obj/item/crotch = null
 
 
 /*
@@ -249,7 +251,7 @@
 /*
 *	ICON UPDATING EXTENTION
 */
-
+/*
 /// Updating vagina slot
 /mob/living/carbon/human/proc/update_inv_vagina()
 	// on_mob stuff
@@ -343,15 +345,16 @@
 	overlays_standing[PENIS_LAYER] = penis_overlay
 
 	apply_overlay(PENIS_LAYER)
-	update_mutant_bodyparts()
+	update_mutant_bodyparts()*/
 
 /// Helper proc for calling all the lewd slot update_inv_ procs.
 /mob/living/carbon/human/proc/update_inv_lewd()
-	update_inv_vagina()
-	update_inv_anus()
-	update_inv_nipples()
-	update_inv_penis()
-
+	update_worn_vagina()
+	update_worn_anus()
+	update_worn_nipples()
+	update_worn_penis()
+	update_worn_mouth()
+	update_worn_crotch()
 /*
 *	MISC LOGIC
 */

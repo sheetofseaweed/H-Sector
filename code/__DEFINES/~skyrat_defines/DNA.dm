@@ -82,6 +82,9 @@
 #define SHEATH_NORMAL "Sheath"
 #define SHEATH_SLIT	"Slit"
 #define SHEATH_MODES list(SHEATH_NONE, SHEATH_NORMAL, SHEATH_SLIT)
+//h-sector edit
+#define SPERM_NORMAL "Normal Sperm"
+#define NORMAL_PREGNANCY "Common"
 
 #define MANDATORY_FEATURE_LIST list(\
 	"mcolor" = "#FFFFBB",\
@@ -92,6 +95,15 @@
 	"flavor_text" = "",\
 	"breasts_size" = 1,\
 	"breasts_lactation" = FALSE,\
+	"penis_fertility" = FALSE,\
+	"semen_type" = SPERM_NORMAL,\
+	"womb_fertility" = FALSE,\
+	"breast_growth_on_preg" = FALSE,\
+	"belly_growth_on_preg" = FALSE,\
+	"lactation_on_preg" = FALSE,\
+	"preg_type" = NORMAL_PREGNANCY,\
+	"belly_size" = 0,\
+	"butt_size" = 0,\
 	"penis_size" = 13,\
 	"penis_girth" = 9,\
 	"penis_taur_mode" = TRUE,\
@@ -107,6 +119,10 @@
 	"vagina_uses_skincolor" = TRUE,\
 	"breasts_uses_skintones" = TRUE,\
 	"breasts_uses_skincolor" = TRUE,\
+	"belly_uses_skintones" = TRUE,\
+	"belly_uses_skincolor" = TRUE,\
+	"butt_uses_skintones" = TRUE,\
+	"butt_uses_skincolor" = TRUE,\
 )
 
 #define AROUSAL_CANT 0

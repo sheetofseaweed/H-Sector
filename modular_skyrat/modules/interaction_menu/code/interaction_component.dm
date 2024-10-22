@@ -104,14 +104,13 @@
 	var/list/parts = list()
 
 	if(ishuman(user) && can_lewd_strip(user, self))
-		if(self.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
-			if(self.has_vagina())
-				parts += list(generate_strip_entry(ORGAN_SLOT_VAGINA, self, user, self.vagina))
-			if(self.has_penis())
-				parts += list(generate_strip_entry(ORGAN_SLOT_PENIS, self, user, self.penis))
-			if(self.has_anus())
-				parts += list(generate_strip_entry(ORGAN_SLOT_ANUS, self, user, self.anus))
-			parts += list(generate_strip_entry(ORGAN_SLOT_NIPPLES, self, user, self.nipples))
+		if(self.has_vagina())
+			parts += list(generate_strip_entry(ORGAN_SLOT_VAGINA, self, user, self.vagina))
+		if(self.has_penis())
+			parts += list(generate_strip_entry(ORGAN_SLOT_PENIS, self, user, self.penis))
+		if(self.has_anus())
+			parts += list(generate_strip_entry(ORGAN_SLOT_ANUS, self, user, self.anus))
+		parts += list(generate_strip_entry(ORGAN_SLOT_NIPPLES, self, user, self.nipples))
 
 	data["lewd_slots"] = parts
 
@@ -208,8 +207,6 @@
 
 /// Checks if the target has ERP toys enabled, and can be logially reached by the user.
 /datum/component/interactable/proc/can_lewd_strip(mob/living/carbon/human/source, mob/living/carbon/human/target, slot_index)
-	if(!target.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
-		return FALSE
 	if(!(source.loc == target.loc || source.Adjacent(target)))
 		return FALSE
 	if(!source.has_arms())
@@ -231,7 +228,7 @@
 			return target.has_vagina(required_state = REQUIRE_GENITAL_EXPOSED)
 		if(ORGAN_SLOT_ANUS)
 			return target.has_anus(required_state = REQUIRE_GENITAL_EXPOSED)
-
+/*
 /// Decides if a player should be able to insert or remove an item from a provided lewd slot_index.
 /datum/component/interactable/proc/is_toy_compatible(obj/item/clothing/sextoy/item, slot_index)
 	if(!item) // Used for UI code, should never be actually null during actual logic code.
@@ -247,4 +244,4 @@
 		if(ORGAN_SLOT_NIPPLES)
 			return item.lewd_slot_flags & LEWD_SLOT_NIPPLES
 		else
-			return FALSE
+			return FALSE*/

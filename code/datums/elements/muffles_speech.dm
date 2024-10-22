@@ -14,7 +14,7 @@
 
 /datum/element/muffles_speech/proc/equipped(obj/item/source, mob/user, slot)
 	SIGNAL_HANDLER
-	if(source.slot_flags & slot)
+	if((source.slot_flags & slot) || (source.extra_slot_flags & slot))
 		RegisterSignal(user, COMSIG_MOB_SAY, PROC_REF(muzzle_talk))
 		RegisterSignal(user, COMSIG_MOB_PRE_EMOTED, PROC_REF(emote_override))
 

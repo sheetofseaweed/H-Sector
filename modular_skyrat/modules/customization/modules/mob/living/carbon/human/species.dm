@@ -138,6 +138,7 @@ GLOBAL_LIST_EMPTY(customizable_races)
 				eye_organ.refresh(call_update = FALSE)
 				standing += eye_organ.generate_body_overlay(species_human)
 
+	//todo - add new slots
 	//Underwear, Undershirts & Socks
 	//SPLURT EDIT - Extra Inventory
 	if(!HAS_TRAIT(species_human, TRAIT_NO_UNDERWEAR))

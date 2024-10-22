@@ -16,7 +16,7 @@
 	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_items/lewd_items.dmi'
 	lefthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_left.dmi'
 	righthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_right.dmi'
-	lewd_slot_flags = LEWD_SLOT_VAGINA | LEWD_SLOT_ANUS
+	//lewd_slot_flags = LEWD_SLOT_VAGINA | LEWD_SLOT_ANUS
 	/// If the toy is on or not
 	var/toy_on = FALSE
 	/// Current color of the toy, can be changed and affects sprite
@@ -126,10 +126,6 @@
 	if(!toy_on)
 		to_chat(user, span_notice("[src] must be on to use it!"))
 		return
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("Looks like [target] don't want you to do that."))
-		return
-
 	var/vibration_adj = ""
 	switch(vibration_mode)
 		if(VIB_LOW)

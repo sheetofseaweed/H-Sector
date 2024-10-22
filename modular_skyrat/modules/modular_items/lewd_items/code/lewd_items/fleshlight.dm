@@ -62,10 +62,6 @@
 	if(target.stat == DEAD)
 		return
 
-	if(!target.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("[target] doesn't want you to do that!"))
-		return
-
 	var/obj/item/organ/external/genital/penis = target.get_organ_slot(ORGAN_SLOT_PENIS)
 	if(!penis?.is_exposed())
 		to_chat(user, span_danger("Looks like [target]'s groin is covered!"))

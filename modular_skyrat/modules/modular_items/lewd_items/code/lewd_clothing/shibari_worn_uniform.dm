@@ -80,10 +80,10 @@
 		return PROCESS_KILL
 	var/mob/living/carbon/human/hooman = loc
 	//If our client decides to disable their pref mid "roleplaying" for some reason
-	if(!hooman?.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
+	/*if(!hooman?.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
 		src.forceMove(get_turf(src))
 		src.dropped(hooman)
-		return PROCESS_KILL
+		return PROCESS_KILL*/
 	if(tightness == SHIBARI_TIGHTNESS_LOW && hooman.arousal < 15)
 		hooman.adjust_arousal(0.6 * seconds_per_tick)
 	if(tightness == SHIBARI_TIGHTNESS_MED && hooman.arousal < 25)

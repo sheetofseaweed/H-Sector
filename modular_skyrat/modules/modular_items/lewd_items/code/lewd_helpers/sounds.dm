@@ -26,7 +26,7 @@
 	pressure_affected = TRUE,
 	falloff_distance = SOUND_DEFAULT_FALLOFF_DISTANCE,
 	use_reverb = TRUE,
-	pref_to_check = /datum/preference/toggle/erp/sex_toy_sounds,
+	pref_to_check = /datum/preference/toggle/erp/sounds,
 )
 	if(isarea(source))
 		CRASH("playsound(): source is an area")
@@ -66,7 +66,7 @@
 /// The looping sound datum but we check for prefs and use `conditional_pref_sound` instead of `playsound`
 /datum/looping_sound/lewd
 	/// What preference are we going to check with our looping sound when we play it for people?
-	var/pref_to_check = /datum/preference/toggle/erp/sex_toy_sounds
+	var/pref_to_check = /datum/preference/toggle/erp/sounds
 
 /datum/looping_sound/lewd/play(soundfile, volume_override)
 	var/sound/sound_to_play = sound(soundfile)

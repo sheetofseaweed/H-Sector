@@ -80,6 +80,20 @@ export const penis_taur_mode_toggle: FeatureToggle = {
   component: CheckboxInput,
 };
 
+export const penis_fertility_toggle: FeatureToggle = {
+  name: 'Penis - Fertility',
+  component: CheckboxInput,
+};
+
+export const semen_type_selection: Feature<string> = {
+  name: 'Semen Type',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
 export const feature_testicles: Feature<string> = {
   name: 'Testicles Choice',
   component: (
@@ -154,6 +168,35 @@ export const feature_womb: Feature<string> = {
   },
 };
 
+export const womb_fertility_toggle: FeatureToggle = {
+  name: 'Womb Fertility',
+  component: CheckboxInput,
+};
+
+export const breast_growth_on_preg_toggle: FeatureToggle = {
+  name: 'Breast Growth on Pregnancy',
+  component: CheckboxInput,
+};
+
+export const belly_growth_on_preg_toggle: FeatureToggle = {
+  name: 'Belly Growth on Pregnancy',
+  component: CheckboxInput,
+};
+
+export const lactation_on_preg_toggle: FeatureToggle = {
+  name: 'Breast Lactation on Pregnancy',
+  component: CheckboxInput,
+};
+
+export const preg_type_selection: Feature<string> = {
+  name: 'Womb - Pregnancy Type',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
 export const feature_breasts: Feature<string> = {
   name: 'Breast Choice',
   component: (
@@ -184,6 +227,48 @@ export const breasts_emissive: Feature<boolean[]> = {
   component: FeatureTriBoolInput,
 };
 
+export const butt_skin_tone: FeatureToggle = {
+  name: 'Butt uses Skin Tone',
+  component: CheckboxInput,
+};
+
+export const butt_skin_color: FeatureToggle = {
+  name: 'Butt uses Skin Color',
+  component: CheckboxInput,
+};
+
+export const butt_color: Feature<string[]> = {
+  name: 'Butt Color',
+  component: FeatureTriColorInput,
+};
+
+export const butt_emissive: Feature<boolean[]> = {
+  name: 'Butt Emissives',
+  description: 'Emissive parts glow in the dark.',
+  component: FeatureTriBoolInput,
+};
+
+export const belly_skin_tone: FeatureToggle = {
+  name: 'Belly uses Skin Tone',
+  component: CheckboxInput,
+};
+
+export const belly_skin_color: FeatureToggle = {
+  name: 'Belly uses Skin Color',
+  component: CheckboxInput,
+};
+
+export const belly_color: Feature<string[]> = {
+  name: 'Belly Color',
+  component: FeatureTriColorInput,
+};
+
+export const belly_emissive: Feature<boolean[]> = {
+  name: 'Belly Emissives',
+  description: 'Emissive parts glow in the dark.',
+  component: FeatureTriBoolInput,
+};
+
 export const breasts_lactation_toggle: FeatureToggle = {
   name: 'Breast Lactation',
   component: CheckboxInput,
@@ -203,6 +288,41 @@ export const feature_anus: Feature<string> = {
   component: FeatureDropdownInput,
 };
 
+export const feature_belly: Feature<string> = {
+  name: 'Belly Choice',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+export const belly_size: Feature<string> = {
+  name: 'Belly Size',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const feature_butt: Feature<string> = {
+  name: 'Butt Choice',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const butt_size: Feature<string> = {
+  name: 'Butt Size',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
 export const body_size: FeatureNumeric = {
   name: 'Body Size',
   component: FeatureNumberInput,
@@ -218,7 +338,7 @@ export const erp_status_pref: FeatureChoiced = {
 };
 
 export const erp_status_pref_nc: FeatureChoiced = {
-  name: 'ERP Non-Con Status',
+  name: 'Non-con Victim Status',
   component: FeatureDropdownInput,
 };
 
@@ -226,7 +346,7 @@ export const erp_status_pref_v: FeatureChoiced = {
   name: 'ERP Vore Status',
   component: FeatureDropdownInput,
 };
-
+/*
 export const erp_status_pref_hypnosis: FeatureChoiced = {
   name: 'ERP Hypnosis Status',
   component: FeatureDropdownInput,
@@ -235,4 +355,4 @@ export const erp_status_pref_hypnosis: FeatureChoiced = {
 export const erp_status_pref_mechanics: FeatureChoiced = {
   name: 'ERP Mechanical Status',
   component: FeatureDropdownInput,
-};
+};*/

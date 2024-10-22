@@ -425,7 +425,7 @@
 
 /datum/bodypart_overlay/mutant/genital/breasts
 	feature_key = ORGAN_SLOT_BREASTS
-	layers = EXTERNAL_FRONT | EXTERNAL_BEHIND
+	layers = EXTERNAL_BOOB_LAYER | EXTERNAL_FRONT
 
 /obj/item/organ/external/genital/breasts/get_description_string(datum/sprite_accessory/genital/gas)
 	var/returned_string = "You see a [lowertext(genital_name)] of breasts."
@@ -500,6 +500,169 @@
 			return text2num(key)
 	return 0
 
+//belly
+/obj/item/organ/external/genital/belly
+	name = "belly"
+	desc = "You put food in there."
+	icon_state = "belly"
+	icon = 'modular_skyrat/master_files/icons/obj/genitals/breasts.dmi'//hack
+	genital_type = "pair"
+	mutantpart_key = ORGAN_SLOT_BELLY
+	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
+	zone = BODY_ZONE_CHEST
+	slot = ORGAN_SLOT_BELLY
+	genital_location = CHEST
+	aroused = AROUSAL_CANT
+	drop_when_organ_spilling = FALSE
+	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/belly
+
+/datum/bodypart_overlay/mutant/genital/belly
+	feature_key = ORGAN_SLOT_BELLY
+	layers = EXTERNAL_BODY_LAYER
+
+/obj/item/organ/external/genital/belly/get_description_string(datum/sprite_accessory/genital/gas)
+	var/returned_string = "You see a belly."
+	var/size_description
+	var/translation = belly_size_to_text(genital_size)
+	switch(translation)
+		if("flat")
+			size_description = " It's completely flat, however."
+		else
+			size_description = " It looks [translation] in size."
+	returned_string += size_description
+	return returned_string
+
+/obj/item/organ/external/genital/belly/update_genital_icon_state()
+	var/max_size = 4
+	var/current_size = FLOOR(genital_size, 1)
+	if(current_size < 0)
+		current_size = 0
+	else if (current_size > max_size)
+		current_size = max_size
+	var/passed_string = "belly_pair_[current_size]"
+	if(uses_skintones)
+		passed_string += "_s"
+	icon_state = passed_string
+
+/obj/item/organ/external/genital/belly/get_sprite_size_string()
+	var/max_size = 4
+	var/current_size = FLOOR(genital_size, 1)
+	if(current_size < 0)
+		current_size = 0
+	else if (current_size > max_size)
+		current_size = max_size
+	var/passed_string = "[genital_type]_[current_size]"
+	if(uses_skintones)
+		passed_string += "_s"
+	return passed_string
+
+/obj/item/organ/external/genital/belly/build_from_dna(datum/dna/DNA, associated_key)
+	set_size(DNA.features["belly_size"])
+	uses_skin_color = DNA.features["belly_uses_skincolor"]
+	return ..()
+
+/obj/item/organ/external/genital/belly/build_from_accessory(datum/sprite_accessory/genital/accessory, datum/dna/DNA)
+	if(DNA.features["belly_uses_skintones"])
+		uses_skintones = accessory.has_skintone_shading
+
+/datum/bodypart_overlay/mutant/genital/belly/get_global_feature_list()
+	return SSaccessories.sprite_accessories[ORGAN_SLOT_BELLY]
+
+/obj/item/organ/external/genital/belly/proc/belly_size_to_text(number)
+	if(number < 0)
+		number = 0
+	var/returned = GLOB.belly_size_translation["[number]"]
+	if(!returned)
+		returned = "flat"
+	return returned
+
+/obj/item/organ/external/genital/belly/proc/belly_text_to_size(size)
+	for(var/key in GLOB.belly_size_translation)
+		if(GLOB.belly_size_translation[key] == size)
+			return text2num(key)
+	return 0
+
+//butt
+/obj/item/organ/external/genital/butt
+	name = "butt"
+	desc = "The thing you sit on."
+	icon_state = "butt"
+	icon = 'modular_skyrat/master_files/icons/obj/genitals/butt.dmi'
+	genital_type = "pair"
+	mutantpart_key = ORGAN_SLOT_BUTT
+	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
+	zone = BODY_ZONE_PRECISE_GROIN
+	slot = ORGAN_SLOT_BUTT
+	genital_location = GROIN
+	drop_when_organ_spilling = FALSE
+	aroused = AROUSAL_CANT
+	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/butt
+
+/datum/bodypart_overlay/mutant/genital/butt
+	feature_key = ORGAN_SLOT_BUTT
+	layers = EXTERNAL_BODY_LAYER
+
+/obj/item/organ/external/genital/butt/get_description_string(datum/sprite_accessory/genital/gas)
+	var/returned_string = "You see a butt."
+	var/size_description
+	var/translation = butt_size_to_text(genital_size)
+	switch(translation)
+		if("flat")
+			size_description = " It's completely flat, however."
+		else
+			size_description = " It looks [translation] in size."
+	returned_string += size_description
+	return returned_string
+
+/obj/item/organ/external/genital/butt/update_genital_icon_state()
+	var/max_size = 4
+	var/current_size = FLOOR(genital_size, 1)
+	if(current_size < 0)
+		current_size = 0
+	else if (current_size > max_size)
+		current_size = max_size
+	var/passed_string = "butt_pair_[current_size]"
+	if(uses_skintones)
+		passed_string += "_s"
+	icon_state = passed_string
+
+/obj/item/organ/external/genital/butt/get_sprite_size_string()
+	var/max_size = 4
+	var/current_size = FLOOR(genital_size, 1)
+	if(current_size < 0)
+		current_size = 0
+	else if (current_size > max_size)
+		current_size = max_size
+	var/passed_string = "[genital_type]_[current_size]"
+	if(uses_skintones)
+		passed_string += "_s"
+	return passed_string
+
+/obj/item/organ/external/genital/butt/build_from_dna(datum/dna/DNA, associated_key)
+	set_size(DNA.features["butt_size"])
+	uses_skin_color = DNA.features["butt_uses_skincolor"]
+	return ..()
+
+/obj/item/organ/external/genital/butt/build_from_accessory(datum/sprite_accessory/genital/accessory, datum/dna/DNA)
+	if(DNA.features["butt_uses_skintones"])
+		uses_skintones = accessory.has_skintone_shading
+
+/datum/bodypart_overlay/mutant/genital/butt/get_global_feature_list()
+	return SSaccessories.sprite_accessories[ORGAN_SLOT_BUTT]
+
+/obj/item/organ/external/genital/butt/proc/butt_size_to_text(number)
+	if(number < 0)
+		number = 0
+	var/returned = GLOB.butt_size_translation["[number]"]
+	if(!returned)
+		returned = "flat"
+	return returned
+
+/obj/item/organ/external/genital/butt/proc/butt_text_to_size(size)
+	for(var/key in GLOB.butt_size_translation)
+		if(GLOB.butt_size_translation[key] == size)
+			return text2num(key)
+	return 0
 
 /mob/living/carbon/human/verb/toggle_genitals()
 	set category = "IC"

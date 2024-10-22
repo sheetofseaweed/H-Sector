@@ -17,7 +17,11 @@
 			return FALSE
 		if(GENITAL_HIDDEN_BY_CLOTHES) //Hidden if the relevant body parts are covered by clothes or underwear
 			//Do they have a Uniform or Suit that covers them?
-			if((target_mob.w_uniform && target_mob.w_uniform.body_parts_covered & genital_location) || (target_mob.wear_suit && target_mob.wear_suit.body_parts_covered & genital_location))
+			if((target_mob.w_uniform && target_mob.w_uniform.body_parts_covered & genital_location) ||  \
+			(target_mob.wear_suit && target_mob.wear_suit.body_parts_covered & genital_location) || \
+			(target_mob.w_bra && target_mob.w_bra.body_parts_covered & genital_location) || \
+			(target_mob.w_shirt && target_mob.w_shirt.body_parts_covered & genital_location) || \
+			(target_mob.w_underwear && target_mob.w_underwear.body_parts_covered & genital_location))
 				return TRUE
 			//Do they have a Hospital Gown covering them? (The gown has no body_parts_covered so needs its own check)
 			if(istype(target_mob.wear_suit, /obj/item/clothing/suit/toggle/labcoat/hospitalgown))
@@ -292,5 +296,47 @@
 /datum/sprite_accessory/genital/breasts/sextuple
 	icon_state = "sextuple"
 	name = "Sextuple"
+
+/datum/sprite_accessory/genital/belly
+	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/belly_onmob.dmi'
+	organ_type = /obj/item/organ/external/genital/belly
+	associated_organ_slot = ORGAN_SLOT_BELLY
+	key = ORGAN_SLOT_BELLY
+	has_skintone_shading = TRUE
+	always_color_customizable = TRUE
+	default_color = DEFAULT_SKIN_OR_PRIMARY
+	genetic = TRUE
+	relevent_layers = list(BODYPARTS_LAYER)
+
+/datum/sprite_accessory/genital/belly/none
+	icon_state = "none"
+	name = SPRITE_ACCESSORY_NONE
+	factual = FALSE
+	color_src = null
+
+/datum/sprite_accessory/genital/belly/normal
+	icon_state = "pair"
+	name = "Belly"
+
+/datum/sprite_accessory/genital/butt
+	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi'
+	organ_type = /obj/item/organ/external/genital/butt
+	associated_organ_slot = ORGAN_SLOT_BUTT
+	key = ORGAN_SLOT_BUTT
+	has_skintone_shading = TRUE
+	always_color_customizable = TRUE
+	default_color = DEFAULT_SKIN_OR_PRIMARY
+	genetic = TRUE
+	relevent_layers = list(BODYPARTS_LAYER)
+
+/datum/sprite_accessory/genital/butt/none
+	icon_state = "none"
+	name = SPRITE_ACCESSORY_NONE
+	factual = FALSE
+	color_src = null
+
+/datum/sprite_accessory/genital/butt/normal
+	icon_state = "pair"
+	name = "Butt"
 
 #undef TAUR_DIMENSION_X

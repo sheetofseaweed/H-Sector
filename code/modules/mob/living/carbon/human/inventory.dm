@@ -231,6 +231,38 @@
 				return
 			w_socks = equipping
 			update_worn_socks()
+		//hsector edit
+		if(ITEM_SLOT_PENIS)
+			if(penis)
+				return
+			penis = equipping
+			update_worn_penis()
+		if(ITEM_SLOT_VAGINA)
+			if(vagina)
+				return
+			vagina = equipping
+			update_worn_vagina()
+		if(ITEM_SLOT_ANUS)
+			if(anus)
+				return
+			anus = equipping
+			update_worn_anus()
+		if(ITEM_SLOT_NIPPLES)
+			if(nipples)
+				return
+			nipples = equipping
+			update_worn_nipples()
+		if(ITEM_SLOT_MOUTH)
+			if(mouth)
+				return
+			mouth = equipping
+			mouth.AddElement(/datum/element/muffles_speech)
+			update_worn_mouth()
+		if(ITEM_SLOT_CROTCH)
+			if(crotch)
+				return
+			crotch = equipping
+			update_worn_crotch()
 		//
 		if(ITEM_SLOT_LPOCKET)
 			l_store = equipping
@@ -287,8 +319,8 @@
 				dropItemToGround(l_store, TRUE)
 			if(wear_id && !can_equip(wear_id, ITEM_SLOT_ID, TRUE, ignore_equipped = TRUE))
 				dropItemToGround(wear_id)
-			if(belt && !can_equip(belt, ITEM_SLOT_BELT, TRUE, ignore_equipped = TRUE))
-				dropItemToGround(belt)
+			//if(belt && !can_equip(belt, ITEM_SLOT_BELT, TRUE, ignore_equipped = TRUE)) - hsector
+				//dropItemToGround(belt)
 	// SPLURT EDIT - Extra inventory
 	else if(I == w_underwear)
 		w_underwear = null
@@ -310,6 +342,32 @@
 		wrists = null
 		if(!QDELETED(src))
 			update_worn_wrists()
+	//hsector edit
+	else if(I == penis)
+		penis = null
+		if(!QDELETED(src))
+			update_worn_penis()
+	else if(I == vagina)
+		vagina = null
+		if(!QDELETED(src))
+			update_worn_vagina()
+	else if(I == anus)
+		anus = null
+		if(!QDELETED(src))
+			update_worn_anus()
+	else if(I == nipples)
+		nipples = null
+		if(!QDELETED(src))
+			update_worn_nipples()
+	else if(I == mouth)
+		mouth.RemoveElement(/datum/element/muffles_speech)
+		mouth = null
+		if(!QDELETED(src))
+			update_worn_mouth()
+	else if(I == crotch)
+		crotch = null
+		if(!QDELETED(src))
+			update_worn_crotch()
 	//
 	else if(I == gloves)
 		//SKYRAT EDIT ADDITION - ERP UPDATE

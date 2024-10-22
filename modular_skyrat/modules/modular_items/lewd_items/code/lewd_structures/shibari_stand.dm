@@ -73,10 +73,6 @@
 
 /obj/structure/chair/shibari_stand/user_buckle_mob(mob/living/buckled, mob/user, check_loc = TRUE)
 
-	if(!buckled.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
-		to_chat(user, span_danger("Looks like [buckled] doesn't want you to do that."))
-		return FALSE
-
 	if(!is_user_buckle_possible(buckled, user, check_loc))
 		return FALSE
 	add_fingerprint(user)

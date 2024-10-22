@@ -21,3 +21,27 @@
 /datum/strippable_item/mob_item_slot/bra
 	key = STRIPPABLE_ITEM_BRA
 	item_slot = ITEM_SLOT_BRA
+//hsector
+/datum/strippable_item/mob_item_slot/penis
+	key = STRIPPABLE_ITEM_PENIS
+	item_slot = ITEM_SLOT_PENIS
+
+/datum/strippable_item/mob_item_slot/vagina
+	key = STRIPPABLE_ITEM_VAGINA
+	item_slot = ITEM_SLOT_VAGINA
+
+/datum/strippable_item/mob_item_slot/anus
+	key = STRIPPABLE_ITEM_ANUS
+	item_slot = ITEM_SLOT_ANUS
+
+/datum/strippable_item/mob_item_slot/nipples
+	key = STRIPPABLE_ITEM_NIPPLES
+	item_slot = ITEM_SLOT_NIPPLES
+
+/datum/strippable_item/mob_item_slot/mouth
+	key = STRIPPABLE_ITEM_MOUTH
+	item_slot = ITEM_SLOT_MOUTH
+
+/datum/strippable_item/mob_item_slot/crotch
+	key = STRIPPABLE_ITEM_CROTCH
+	item_slot = ITEM_SLOT_CROTCH

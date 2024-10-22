@@ -1,5 +1,5 @@
 /// Global list containing all the clothing we'd want to check prefs for before we put on someone.
-GLOBAL_LIST_INIT(pref_checked_clothes, list(
+/*GLOBAL_LIST_INIT(pref_checked_clothes, list(
 	/obj/item/clothing/mask/ballgag,
 	/obj/item/clothing/mask/ballgag/choking,
 	/obj/item/clothing/mask/gas/bdsm_mask,
@@ -26,4 +26,4 @@ GLOBAL_LIST_INIT(pref_checked_clothes, list(
 		if(!(user.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy)))
 			return FALSE
 	return ..()
-
+*/

@@ -70,7 +70,7 @@
 
 /mob/living/carbon/human/species/skrell
 	race = /datum/species/skrell
-
+/*hsector edit
 /mob/living/carbon/human/verb/toggle_undies()
 	set category = "IC"
 	set name = "Toggle underwear visibility"
@@ -104,7 +104,7 @@
 		update_body()
 		regenerate_icons() // SPLURT EDIT - Extra Inventory
 	return
-
+*/
 /mob/living/carbon/human/revive(full_heal_flags = NONE, excess_healing = 0, force_grab_ghost = FALSE)
 	. = ..()
 	if(.)

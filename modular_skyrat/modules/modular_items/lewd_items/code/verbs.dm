@@ -55,17 +55,17 @@
 	set desc = "Removes any and all lewd items from you."
 
 	log_message("[key_name(src)] used the OOC Safe Word verb.", LOG_ATTACK)
-	for(var/obj/item/equipped_item in get_equipped_items())
+	/*for(var/obj/item/equipped_item in get_equipped_items())
 		if(!(equipped_item.type in GLOB.pref_checked_clothes))
 			continue
 
 		log_message("[equipped_item] was removed from [key_name(src)].", LOG_ATTACK)
-		dropItemToGround(equipped_item, TRUE)
+		dropItemToGround(equipped_item, TRUE)*/
 
 	// Leashes are treated a smidge different than the rest of the clothing; and need their own handling here.
-	var/leash_check = src?.GetComponent(/datum/component/leash/erp)
+	/*var/leash_check = src?.GetComponent(/datum/component/leash/erp)
 	if(leash_check)
-		qdel(leash_check)
+		qdel(leash_check)*/
 
 	// Vore Edit
 	if(istype(loc, /obj/vore_belly))

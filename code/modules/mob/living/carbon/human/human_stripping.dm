@@ -30,6 +30,14 @@ GLOBAL_LIST_INIT(strippable_human_items, create_strippable_list(list(
 	/datum/strippable_item/mob_item_slot/undershirt,
 	/datum/strippable_item/mob_item_slot/bra,
 	// SPLURT EDIT END
+	//hsector edit
+	/datum/strippable_item/mob_item_slot/penis,
+	/datum/strippable_item/mob_item_slot/vagina,
+	/datum/strippable_item/mob_item_slot/anus,
+	/datum/strippable_item/mob_item_slot/nipples,
+	/datum/strippable_item/mob_item_slot/mouth,
+	/datum/strippable_item/mob_item_slot/crotch,
+	//
 )))
 
 /mob/living/carbon/human/proc/should_strip(mob/user)

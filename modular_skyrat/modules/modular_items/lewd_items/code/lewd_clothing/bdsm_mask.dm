@@ -266,7 +266,7 @@
 	update_mob_action_buttonss()
 	update_icon()
 	if(mask_on)
-		if(src == user.wear_mask && user.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
+		if(src == user.wear_mask)
 			START_PROCESSING(SSobj, src)
 			time_to_choke_left = time_to_choke
 	else

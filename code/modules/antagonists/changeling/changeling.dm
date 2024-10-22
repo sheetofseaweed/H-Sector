@@ -798,6 +798,7 @@
 /*
  * Transform the currentc hangeing [user] into the [chosen_profile].
  */
+//todo - add new slots
 /datum/antagonist/changeling/proc/transform(mob/living/carbon/human/user, datum/changeling_profile/chosen_profile)
 	var/static/list/slot2slot = list(
 		"head" = ITEM_SLOT_HEAD,
