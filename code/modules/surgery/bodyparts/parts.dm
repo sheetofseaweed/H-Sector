@@ -128,7 +128,6 @@
 	attack_verb_continuous = list("slaps", "punches")
 	attack_verb_simple = list("slap", "punch")
 	max_damage = LIMB_MAX_HP_DEFAULT
-	aux_layer = BODYPARTS_HIGH_LAYER
 	body_damage_coeff = LIMB_BODY_DAMAGE_COEFFICIENT_DEFAULT
 	can_be_disabled = TRUE
 	unarmed_attack_verbs = list("punch") /// The classic punch, wonderfully classic and completely random
@@ -194,8 +193,7 @@
 	body_zone = BODY_ZONE_L_ARM
 	body_part = ARM_LEFT
 	plaintext_zone = "left arm"
-	aux_zone = BODY_ZONE_PRECISE_L_HAND
-	aux_icons = list(BODY_ZONE_PRECISE_L_HAND = BODYPARTS_HIGH_LAYER, "l_hand_behind" = BODY_BEHIND_LAYER)
+	aux_icons = list(BODY_ZONE_PRECISE_L_HAND = BODYPARTS_HIGH_LAYER, "l_hand_behind" = BODY_BEHIND_LAYER)//hsector edit - different hand layers
 	held_index = 1
 	px_x = -6
 	px_y = 0
@@ -292,9 +290,7 @@
 	body_part = ARM_RIGHT
 	icon_state = "default_human_r_arm"
 	plaintext_zone = "right arm"
-	aux_zone = BODY_ZONE_PRECISE_R_HAND
-	aux_layer = BODYPARTS_HIGH_LAYER
-	aux_icons = list(BODY_ZONE_PRECISE_R_HAND = BODYPARTS_HIGH_LAYER, "r_hand_behind" = BODY_BEHIND_LAYER)
+	aux_icons = list(BODY_ZONE_PRECISE_R_HAND = BODYPARTS_HIGH_LAYER, "r_hand_behind" = BODY_BEHIND_LAYER)//hsector edit - different hand layers
 	held_index = 2
 	px_x = 6
 	px_y = 0

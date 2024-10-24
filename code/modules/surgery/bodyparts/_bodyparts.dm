@@ -60,9 +60,9 @@
 	var/body_zone
 	/// The body zone of this part in english ("chest", "left arm", etc) without the species attached to it
 	var/plaintext_zone
-	var/aux_zone // used for hands
-	var/aux_layer
-	var/list/aux_icons
+	//var/aux_zone // used for hands
+	//var/aux_layer
+	var/list/aux_icons //hsector edit - different hand layers
 	/// bitflag used to check which clothes cover this bodypart
 	var/body_part
 	/// List of obj/item's embedded inside us. Managed by embedded components, do not modify directly
@@ -988,8 +988,9 @@
 		alpha = owner_species.specific_alpha
 
 	markings = LAZYCOPY(owner_species.body_markings[body_zone])
-	if(aux_zone)
-		aux_zone_markings = LAZYCOPY(owner_species.body_markings[aux_zone])
+	if(aux_icons) //hsector edit - different hand layers
+		for(var/image/I in aux_icons)
+			aux_zone_markings += LAZYCOPY(owner_species.body_markings[I])
 	markings_alpha = owner_species.markings_alpha
 	// SKYRAT EDIT END
 
@@ -1054,9 +1055,9 @@
 	. += limb
 
 	if(aux_icons) //Hand shit
-		for(var/I in aux_icons)
-			var/aux_layer1 = aux_icons[I]
-			aux += image(limb.icon, "[limb_id]_[I]", -aux_layer1, image_dir)
+		for(var/I in aux_icons)//hsector edit - different hand layers
+			var/aux_layer = aux_icons[I]
+			aux += image(limb.icon, "[limb_id]_[I]", -aux_layer, image_dir)
 			. += aux
 	draw_color = variable_color
 	if(should_draw_greyscale) //Should the limb be colored outside of a forced color?
@@ -1064,15 +1065,15 @@
 
 	if(is_husked)
 		huskify_image(thing_to_husk = limb)
-		//if(aux)
-			//huskify_image(thing_to_husk = aux)
+		if(aux_icons)
+			for(var/image/I in aux)
+				huskify_image(thing_to_husk = I)
 		draw_color = husk_color
 	if(draw_color)
 		var/limb_color = alpha != 255 ? "[draw_color][num2hex(alpha, 2)]" : "[draw_color]" // SKYRAT EDIT ADDITION - Alpha values on limbs. We check if the limb is attached and if the owner has an alpha value to append
 		limb.color = limb_color // SKYRAT EDIT CHANGE - ORIGINAL: limb.color = "[draw_color]"
 		if(aux_icons)
-			for(var/a in aux_icons)
-				var/image/I = a
+			for(var/image/I in aux)
 				I.color = limb_color // SKYRAT EDIT CHANGE - ORIGINAL: aux.color = "[draw_color]"
 
 		//EMISSIVE CODE START
@@ -1086,10 +1087,11 @@
 			limb_em_block.dir = image_dir
 			. += limb_em_block
 
-			/*if(aux_zone)
-				var/mutable_appearance/aux_em_block = emissive_blocker(aux.icon, aux.icon_state, location, layer = aux.layer, alpha = aux.alpha)
-				aux_em_block.dir = image_dir
-				. += aux_em_block*/
+			if(aux_icons)
+				for(var/image/I in aux_icons)
+					var/mutable_appearance/aux_em_block = emissive_blocker(I.icon, I.icon_state, location, layer = I.layer, alpha = I.alpha)
+					aux_em_block.dir = image_dir
+					. += aux_em_block
 		//EMISSIVE CODE END
 
 	//No need to handle leg layering if dropped, we only face south anyways
@@ -1148,27 +1150,29 @@
 			if (emissive)
 				. += emissive
 
-		/*if(aux_zone)
-			for(var/key in aux_zone_markings)
-				var/datum/body_marking/body_marking = GLOB.body_markings[key]
-				if (!body_marking) // Edge case prevention.
-					continue
+		if(aux_icons)
+			for(var/image/I in aux_icons)//hsector edit - different hand layers
+				for(var/key in aux_zone_markings)
+					var/datum/body_marking/body_marking = GLOB.body_markings[key]
+					if (!body_marking) // Edge case prevention.
+						continue
 
-				var/render_limb_string = aux_zone
+					var/render_limb_string = I
+					var/aux_layer_mark = aux_icons[I]
 
-				var/mutable_appearance/emissive
-				var/mutable_appearance/accessory_overlay
-				accessory_overlay = mutable_appearance(body_marking.icon, "[body_marking.icon_state]_[render_limb_string]", -aux_layer)
-				accessory_overlay.alpha = markings_alpha
-				if (aux_zone_markings[key][2])
-					emissive = emissive_appearance_copy(accessory_overlay, offset_spokesman)
-				if(override_color)
-					accessory_overlay.color = override_color
-				else
-					accessory_overlay.color = aux_zone_markings[key][1]
-				. += accessory_overlay
-				if (emissive)
-					. += emissive*/
+					var/mutable_appearance/emissive
+					var/mutable_appearance/accessory_overlay
+					accessory_overlay = mutable_appearance(body_marking.icon, "[body_marking.icon_state]_[render_limb_string]", -aux_layer_mark)
+					accessory_overlay.alpha = markings_alpha
+					if (aux_zone_markings[key][2])
+						emissive = emissive_appearance_copy(accessory_overlay, offset_spokesman)
+					if(override_color)
+						accessory_overlay.color = override_color
+					else
+						accessory_overlay.color = aux_zone_markings[key][1]
+					. += accessory_overlay
+					if (emissive)
+						. += emissive
 	// SKYRAT EDIT END - MARKINGS CODE END
 	return .
 
