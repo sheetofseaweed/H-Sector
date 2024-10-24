@@ -979,8 +979,9 @@
 			var/static/list/style_list_icons = list("standard" = 'icons/mob/augmentation/augments.dmi', "engineer" = 'icons/mob/augmentation/augments_engineer.dmi', "security" = 'icons/mob/augmentation/augments_security.dmi', "mining" = 'icons/mob/augmentation/augments_mining.dmi')
 			for(var/skin_option in style_list_icons)
 				var/image/part_image = image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[limb.body_zone]")
-				if(limb.aux_zone) //Hands
-					part_image.overlays += image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[limb.aux_zone]")
+				if(limb.aux_icons) //Hands//hsector edit - different hand layers
+					for(var/image/I in limb.aux_icons)
+						part_image.overlays += image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[I]")
 				skins += list("[skin_option]" = part_image)
 			var/choice = show_radial_menu(user, src, skins, require_near = TRUE)
 			if(choice && (use_charges(user, 5, requires_full = FALSE)))
