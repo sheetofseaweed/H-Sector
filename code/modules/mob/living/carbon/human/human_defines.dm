@@ -65,6 +65,7 @@
 
 	var/datum/scream_type/selected_scream //SKRYAT EDIT ADDITION
 	var/datum/laugh_type/selected_laugh //SKYRAT EDIT ADDITION
+	var/datum/moan_type/selected_moan //Hscector addon
 
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null

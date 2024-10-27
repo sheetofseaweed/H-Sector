@@ -37,11 +37,21 @@
 /datum/emote/living/carbon/human/scream/get_sound(mob/living/carbon/human/user)
 	if(!istype(user))
 		return
-	if(isnull(user.selected_scream) || (LAZYLEN(user.selected_scream.male_screamsounds) && LAZYLEN(user.selected_scream.female_screamsounds))) //For things that don't have a selected scream(npcs)
+	if(isnull(user.selected_scream) || !(LAZYLEN(user.selected_scream.male_screamsounds) && LAZYLEN(user.selected_scream.female_screamsounds))) //For things that don't have a selected scream(npcs)
 		if(prob(1))
 			return 'sound/voice/human/wilhelm_scream.ogg'
 		return user.dna.species.get_scream_sound(user)
-	if(user.gender == FEMALE && LAZYLEN(user.selected_scream.female_screamsounds))
+	/*if(user.gender == FEMALE && LAZYLEN(user.selected_scream.female_screamsounds))
 		return pick(user.selected_scream.female_screamsounds)
 	else
+		return pick(user.selected_scream.male_screamsounds)*/
+	var/voice_type = user.client.prefs.read_preference(/datum/preference/choiced/voice_type)
+	if(voice_type == "Based on Gender")
+		if((user.client.prefs.read_preference(/datum/preference/choiced/gender) == MALE) || isnull(user.selected_scream.female_screamsounds))
+			return pick(user.selected_scream.male_screamsounds)
+		else
+			return pick(user.selected_scream.female_screamsounds)
+	else if((voice_type == "Male") || isnull(user.selected_scream.female_screamsounds))
 		return pick(user.selected_scream.male_screamsounds)
+	else
+		return pick(user.selected_scream.female_screamsounds)
