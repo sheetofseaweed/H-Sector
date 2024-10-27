@@ -80,15 +80,6 @@
 	audio_cooldown = 0.35 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/living/waa
-	key = "waa"
-	key_third_person = "waas"
-	message = "let out a waa!"
-	message_mime = "acts out a waa!"
-	sound = 'modular_zzplurt/sound/voice/waa.ogg'
-	audio_cooldown = 3.5 SECONDS
-	emote_type = EMOTE_AUDIBLE
-
 /datum/emote/living/mlem
 	key = "mlem"
 	key_third_person = "mlems"
@@ -135,7 +126,6 @@
 	key_third_person = "mewos"
 	message = "mewos!"
 	message_mime = "mewos silently!"
-	sound = 'modular_zzplurt/sound/voice/mewo.ogg'
 	cooldown = 0.7 SECONDS
 
 /datum/emote/living/ara_ara
