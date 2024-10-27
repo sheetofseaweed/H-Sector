@@ -1675,6 +1675,10 @@ GLOBAL_LIST_EMPTY(features_by_species)
 /datum/species/proc/get_scream_sound(mob/living/carbon/human/human)
 	return
 
+/// Returns the species' moan sound. - hsector edit
+/datum/species/proc/get_moan_sound(mob/living/carbon/human/human)
+	return
+
 /// Returns the species' cry sound.
 /datum/species/proc/get_cry_sound(mob/living/carbon/human/human)
 	return

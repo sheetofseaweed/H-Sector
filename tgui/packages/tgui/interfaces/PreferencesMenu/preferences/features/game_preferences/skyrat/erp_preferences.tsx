@@ -27,10 +27,17 @@ export const erp_sounds_pref: FeatureToggle = {
 export const horny_hypnosis_pref: FeatureToggle = {
   name: 'ERP Hypnosis',
   category: 'ERP',
-  description: 'Toggles if you want to be hypnotised in ERP mechanics.',
+  description: 'Toggles if you want to be hypnotised using ERP mechanics.',
   component: CheckboxInput,
 };
 
+export const afk_erp_pref: FeatureToggle = {
+  name: 'AFK character interaction',
+  category: 'ERP',
+  description:
+    'Toggles if you want your character to be interacted with when you are AFK or SSD.',
+  component: CheckboxInput,
+};
 export const bimbofication_pref: FeatureToggle = {
   name: 'Bimbofication',
   category: 'ERP',

@@ -90,7 +90,7 @@
 /datum/preference/toggle/erp/sex_toy_sounds
 	savefile_key = "sextoy_sounds_pref"
 
- BUBBER REMOVAL START
+//BUBBER REMOVAL START
 /datum/preference/toggle/erp/vore_pred
 	savefile_key = "vore_pred_pref"
 
@@ -142,6 +142,10 @@ BUBBER REMOVAL END */
 
 /datum/preference/toggle/erp/sex_jitter
 	savefile_key = "sex_jitter_pref"
+	default_value = FALSE
+
+/datum/preference/toggle/erp/afk_erp
+	savefile_key = "afk_erp_pref"
 	default_value = FALSE
 
 /datum/preference/toggle/erp/horny_virus_imm
@@ -226,7 +230,7 @@ BUBBER REMOVAL END */
 /datum/preference/choiced/erp_status_nc/create_default_value()
 	return "No"
 
-/datum/preference/choiced/erp_status_nc/is_accessible(datum/preferences/preferences)
+/*/datum/preference/choiced/erp_status_nc/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -240,7 +244,7 @@ BUBBER REMOVAL END */
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_status_nc/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE

@@ -22,6 +22,12 @@
 		GLOB.laugh_types[L.name] = spath
 	sort_list(GLOB.laugh_types, GLOBAL_PROC_REF(cmp_typepaths_asc))
 
+	//Moan types - hsector edit
+	for(var/spath in subtypesof(/datum/moan_type))
+		var/datum/moan_type/S = new spath()
+		GLOB.moan_types[S.name] = spath
+	sort_list(GLOB.moan_types, GLOBAL_PROC_REF(cmp_typepaths_asc))
+
 /proc/make_laugh_datum_references()
 	//Laugh types
 	GLOB.laugh_types = list()
