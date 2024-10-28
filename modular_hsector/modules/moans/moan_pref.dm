@@ -9,6 +9,9 @@
 /datum/preference/choiced/voice_type/create_default_value()
 	return "Based on Gender"
 
+/datum/preference/choiced/voice_type/apply_to_human(mob/living/carbon/human/target, value)
+	return FALSE
+
 /datum/preference/choiced/moan
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
