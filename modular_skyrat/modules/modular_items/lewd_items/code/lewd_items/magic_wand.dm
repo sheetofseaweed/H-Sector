@@ -59,7 +59,7 @@
 	. = ..()
 	icon_state = "[base_icon_state]_[vibration_mode]"
 
-/obj/item/clothing/sextoy/magic_wand/lewd_equipped(mob/living/carbon/human/user, slot)
+/obj/item/clothing/sextoy/magic_wand/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(vibration_mode == MAGIC_WAND_MODE_OFF || !istype(user))
 		return

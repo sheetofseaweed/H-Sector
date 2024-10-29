@@ -119,7 +119,7 @@
 			conditional_pref_sound(loc, 'sound/items/weapons/magout.ogg', 20, TRUE)
 			soundloop3.stop()
 
-/obj/item/clothing/sextoy/eggvib/lewd_equipped(mob/living/carbon/human/user, slot, initial)
+/obj/item/clothing/sextoy/eggvib/equipped(mob/living/carbon/human/user, slot, initial)
 	. = ..()
 	if(!istype(user))
 		return

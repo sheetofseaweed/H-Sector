@@ -67,6 +67,12 @@
 	. += ears_extra
 	. += wrists
 	. += w_socks
+	. += penis
+	. += anus
+	. += vagina
+	. += crotch
+	. += mouth
+	. += nipples
 
 /datum/outfit/get_json_data()
 	. = ..()
@@ -76,6 +82,12 @@
 	.["ears_extra"] = ears_extra
 	.["wrists"] = wrists
 	.["w_socks"] = w_socks
+	.["penis"] = penis
+	.["anus"] = anus
+	.["vagina"] = vagina
+	.["crotch"] = crotch
+	.["mouth"] = mouth
+	.["nipples"] = nipples
 
 /datum/outfit/copy_from(datum/outfit/target)
 	. = ..()
@@ -85,6 +97,12 @@
 	wrists = target.wrists
 	ears_extra = target.ears_extra
 	w_socks = target.w_socks
+	penis = target.penis
+	anus = target.anus
+	vagina = target.vagina
+	crotch = target.crotch
+	mouth = target.mouth
+	nipples = target.nipples
 
 /datum/outfit/load_from(list/outfit_data)
 	. = ..()
@@ -94,3 +112,9 @@
 	wrists = text2path(outfit_data["wrists"])
 	w_socks = text2path(outfit_data["w_socks"])
 	ears_extra = text2path(outfit_data["ears_extra"])
+	penis = text2path(outfit_data["penis"])
+	anus = text2path(outfit_data["anus"])
+	vagina = text2path(outfit_data["vagina"])
+	crotch = text2path(outfit_data["crotch"])
+	mouth = text2path(outfit_data["mouth"])
+	nipples = text2path(outfit_data["nipples"])

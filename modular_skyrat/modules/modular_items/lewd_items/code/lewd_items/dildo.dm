@@ -70,7 +70,7 @@
 	icon_state = "[base_icon_state][change_sprite ? "_[current_type]" : ""]"
 	inhand_icon_state = "[base_icon_state][change_sprite ? "_[current_type]" : ""]"
 
-/obj/item/clothing/sextoy/dildo/lewd_equipped(mob/living/carbon/human/user, slot)
+/obj/item/clothing/sextoy/dildo/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(!istype(user))
 		return
@@ -308,7 +308,7 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 /obj/item/clothing/sextoy/dildo/double_dildo/click_alt(mob/user)
 	return NONE
 
-/obj/item/clothing/sextoy/dildo/double_dildo/lewd_equipped(mob/living/carbon/human/user, slot, initial)
+/obj/item/clothing/sextoy/dildo/double_dildo/equipped(mob/living/carbon/human/user, slot, initial)
 	. = ..()
 	in_back = (src == user.anus)
 	update_icon_state()
@@ -339,7 +339,7 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 		to_chat(user, span_warning("You need to equip [src] before you can use it!"))
 
 //dumb way to fix organs overlapping with toys, but WHY NOT. Find a better way if you're not lazy as me.
-/obj/item/clothing/sextoy/dildo/double_dildo/lewd_equipped(mob/living/carbon/human/user, slot)
+/obj/item/clothing/sextoy/dildo/double_dildo/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(!istype(user))
 		return

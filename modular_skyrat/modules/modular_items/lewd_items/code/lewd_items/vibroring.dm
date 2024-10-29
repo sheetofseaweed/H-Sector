@@ -70,7 +70,7 @@
 	icon_state = "[base_icon_state]_[current_color]_[toy_on? "on" : "off"]"
 	inhand_icon_state = "[base_icon_state]_[current_color]"
 
-/obj/item/clothing/sextoy/vibroring/lewd_equipped(mob/living/carbon/human/user, slot, initial)
+/obj/item/clothing/sextoy/vibroring/equipped(mob/living/carbon/human/user, slot, initial)
 	. = ..()
 	if(!istype(user))
 		return

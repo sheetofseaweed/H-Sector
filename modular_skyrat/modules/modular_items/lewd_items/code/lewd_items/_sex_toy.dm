@@ -23,14 +23,17 @@
  * * slot(s) that item is equipped to
  * * initial is used to indicate whether or not this is the initial equipment (job datums etc) or just a player doing it
  */
-/obj/item/clothing/sextoy/proc/lewd_equipped(mob/living/carbon/human/user, slot, initial)
+/*/obj/item/clothing/sextoy/proc/lewd_equipped(mob/living/carbon/human/user, slot, initial)
 	SHOULD_CALL_PARENT(TRUE)
 
 	current_equipped_slot = slot
 
 	// Give out actions our item has to people who equip it.
 	for(var/datum/action/action as anything in actions)
-		give_item_action(action, user)
+		give_item_action(action, user)*/
+
+/obj/item/clothing/sextoy/equipped(mob/living/carbon/human/user, slot, initial)
+	. = ..()
 
 /obj/item/clothing/sextoy/dropped(mob/user)
 	..()

@@ -45,7 +45,30 @@
 			return r_store
 		if(ITEM_SLOT_SUITSTORE)
 			return s_store
-
+		if(ITEM_SLOT_EARS_RIGHT) //hsector - fixes broken splurtcode
+			return ears_extra
+		if(ITEM_SLOT_WRISTS)
+			return wrists
+		if(ITEM_SLOT_UNDERWEAR)
+			return w_underwear
+		if(ITEM_SLOT_SOCKS)
+			return w_socks
+		if(ITEM_SLOT_SHIRT)
+			return w_shirt
+		if(ITEM_SLOT_BRA)
+			return w_bra
+		if(ITEM_SLOT_PENIS)
+			return penis
+		if(ITEM_SLOT_VAGINA)
+			return vagina
+		if(ITEM_SLOT_ANUS)
+			return anus
+		if(ITEM_SLOT_NIPPLES)
+			return nipples
+		if(ITEM_SLOT_MOUTH)
+			return mouth
+		if(ITEM_SLOT_CROTCH)
+			return crotch
 	return ..()
 
 /mob/living/carbon/human/get_slot_by_item(obj/item/looking_for)
@@ -91,6 +114,36 @@
 	if(looking_for == s_store)
 		return ITEM_SLOT_SUITSTORE
 
+	if(looking_for == ears_extra)//hsector - fixes broken splurtcode
+		return ITEM_SLOT_EARS_RIGHT
+
+	if(looking_for == wrists)
+		return ITEM_SLOT_WRISTS
+
+	if(looking_for == w_underwear)
+		return ITEM_SLOT_UNDERWEAR
+
+	if(looking_for == w_socks)
+		return ITEM_SLOT_SOCKS
+
+	if(looking_for == w_shirt)
+		return ITEM_SLOT_SHIRT
+
+	if(looking_for == w_bra)
+		return ITEM_SLOT_BRA
+	///
+	if(looking_for == penis)
+		return ITEM_SLOT_PENIS
+	if(looking_for == vagina)
+		return ITEM_SLOT_VAGINA
+	if(looking_for == anus)
+		return ITEM_SLOT_ANUS
+	if(looking_for == nipples)
+		return ITEM_SLOT_NIPPLES
+	if(looking_for == mouth)
+		return ITEM_SLOT_MOUTH
+	if(looking_for == crotch)
+		return ITEM_SLOT_CROTCH
 	return ..()
 
 /mob/living/carbon/human/proc/get_body_slots()
@@ -107,7 +160,17 @@
 		wear_id,
 		l_store,
 		r_store,
-		w_uniform
+		w_uniform,
+		w_underwear,//hsector add
+		w_socks,
+		w_shirt,
+		w_bra,
+		penis,
+		vagina,
+		anus,
+		nipples,
+		mouth,
+		crotch,
 		)
 
 /mob/living/carbon/human/proc/get_head_slots()
@@ -116,7 +179,8 @@
 		wear_mask,
 		wear_neck,
 		glasses,
-		ears
+		ears,
+		ears_extra//hsector add
 		)
 
 /mob/living/carbon/human/proc/get_storage_slots()
