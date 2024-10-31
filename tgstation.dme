@@ -6556,6 +6556,7 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
+#include "modular_hsector\modules\legcuff.dm"
 #include "modular_hsector\modules\emotes\emotes.dm"
 #include "modular_hsector\modules\moans\dna_moan.dm"
 #include "modular_hsector\modules\moans\moan_datums.dm"

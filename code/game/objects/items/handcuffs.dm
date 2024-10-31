@@ -406,6 +406,7 @@
 	var/armed = FALSE
 	///How much damage the trap deals when triggered.
 	var/trap_damage = 20
+	can_put_on_manually = FALSE //hsector add
 
 /obj/item/restraints/legcuffs/beartrap/prearmed
 	armed = TRUE
@@ -595,6 +596,7 @@
 	inhand_icon_state = "bola_r"
 	breakouttime = 7 SECONDS
 	knockdown = 3.5 SECONDS
+	can_put_on_manually = FALSE //hsector add
 
 /**
  * A security variant of the bola.
