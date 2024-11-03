@@ -505,7 +505,7 @@
 	name = "belly"
 	desc = "You put food in there."
 	icon_state = "belly"
-	icon = 'modular_skyrat/master_files/icons/obj/genitals/breasts.dmi'//hack
+	icon = 'modular_hsector/icons/bodyparts/belly.dmi'//hack
 	genital_type = "pair"
 	mutantpart_key = ORGAN_SLOT_BELLY
 	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
@@ -587,7 +587,7 @@
 	name = "butt"
 	desc = "The thing you sit on."
 	icon_state = "butt"
-	icon = 'modular_skyrat/master_files/icons/obj/genitals/butt.dmi'
+	icon = 'modular_hsector/icons/bodyparts/butt.dmi'//hack
 	genital_type = "pair"
 	mutantpart_key = ORGAN_SLOT_BUTT
 	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))

@@ -59,7 +59,7 @@
 	var/headshot = ""
 
 	//  Handle OOC notes first
-	//if(preferences && preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
+	//if(preferences && preferences.read_preference(/datum/preference/toggle/master_erp_preferences)) //hsector removal
 	var/e_prefs = preferences.read_preference(/datum/preference/choiced/erp_status)
 	var/e_prefs_hypno = preferences.read_preference(/datum/preference/toggle/erp/horny_hypnosis) ? "Yes" : "No"
 	var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
