@@ -16,7 +16,7 @@
 	savefile_key = "master_erp_pref"
 	savefile_identifier = PREFERENCE_PLAYER
 	default_value = TRUE
-*/
+
 /datum/preference/toggle/master_erp_preferences/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
@@ -29,7 +29,7 @@
 /datum/preference/toggle/master_erp_preferences/deserialize(input, datum/preferences/preferences)
 	if(CONFIG_GET(flag/disable_erp_preferences))
 		return FALSE
-	. = ..()
+	. = ..()*/
 
 /datum/preference/toggle/erp
 	abstract_type = /datum/preference/toggle/erp
