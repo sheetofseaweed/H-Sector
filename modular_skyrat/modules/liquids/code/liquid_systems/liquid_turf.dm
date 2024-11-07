@@ -340,6 +340,24 @@
 		return
 	if(!dropped_mob.has_gravity())
 		return
+	//hsector add
+	if(HAS_TRAIT(dropped_mob, TRAIT_SWIMMING) && isliving(user) && ((user == dropped_mob) || user.CanReach(dropped_mob)) && (user.mobility_flags & MOBILITY_USE) && !istype(src, /turf/open/pool))
+		var/mob/living/L = dropped_mob
+		//The element only exists if you're on water and a living mob, so let's skip those checks.
+		var/pre_msg
+		var/post_msg
+		if(user == dropped_mob)
+			pre_msg = "<span class='notice'>[L] is getting out of the pool.</span>"
+			post_msg = "<span class='notice'>[L] gets out of the pool.</span>"
+		else
+			pre_msg = "<span class='notice'>[L] is being pulled out of the pool by [user].</span>"
+			post_msg = "<span class='notice'>[user] pulls [L] out of the pool.</span>"
+		L.visible_message(pre_msg)
+		if(do_after(user, 20, L))
+			L.visible_message(post_msg)
+			L.forceMove(src)
+		return
+	//hsector add end
 	var/turf/mob_turf = get_turf(dropped_mob)
 	if(!mob_turf)
 		return
