@@ -88,15 +88,10 @@
 	client.mob.hud_used.persistent_inventory_update(client.mob)
 
 /datum/preference/toggle/erp/sex_toy_sounds
-	savefile_key = "sextoy_sounds_pref"
+	savefile_key = "sextoy_sounds_pref"*/
 
-//BUBBER REMOVAL START
-/datum/preference/toggle/erp/vore_pred
-	savefile_key = "vore_pred_pref"
-
-/datum/preference/toggle/erp/vore_prey
-	savefile_key = "vore_prey_pref
-BUBBER REMOVAL END */
+/datum/preference/toggle/erp/hypnosis
+	savefile_key = "hypnosis_pref"
 
 /datum/preference/toggle/erp/bimbofication
 	savefile_key = "bimbofication_pref"
@@ -152,13 +147,13 @@ BUBBER REMOVAL END */
 	savefile_key = "horny_virus_imm_pref"
 	default_value = FALSE
 
-/datum/preference/toggle/erp/horny_hypnosis
-	savefile_key = "horny_hypnosis_pref"
+/datum/preference/toggle/erp/hypnosis
+	savefile_key = "hypnosis_pref"
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	default_value = FALSE
 
-/datum/preference/toggle/erp/horny_hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
+/datum/preference/toggle/erp/hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
 
 /datum/preference/toggle/erp/defiance

@@ -24,13 +24,6 @@ export const erp_sounds_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
-export const horny_hypnosis_pref: FeatureToggle = {
-  name: 'ERP Hypnosis',
-  category: 'ERP',
-  description: 'Toggles if you want to be hypnotised using ERP mechanics.',
-  component: CheckboxInput,
-};
-
 export const afk_erp_pref: FeatureToggle = {
   name: 'AFK character interaction',
   category: 'ERP',
@@ -54,11 +47,33 @@ export const aphro_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
-// BUBBER EDIT START: Mechanical vore prefs replace pred/prey
+/* export const sextoy_pref: FeatureToggle = {
+  name: 'Sex toy interaction',
+  category: 'ERP',
+  description: 'When enabled, you will be able to interact with sex toys.',
+  component: CheckboxInput,
+};
+
+export const sextoy_sounds_pref: FeatureToggle = {
+  name: 'Sex toy sounds',
+  category: 'ERP',
+  description: 'Toggles if you will hear sounds from sex toys.',
+  component: CheckboxInput,
+}; */
+
 export const vore_enable_pref: FeatureToggle = {
   name: 'Enable Mechanical Vore',
   category: 'ERP',
   description: 'Toggles if you are able to use vore mechanics.',
+  component: CheckboxInput,
+};
+
+// BUBBER EDIT START: MECHANICAL HYPNOSIS PREF
+export const hypnosis_pref: FeatureToggle = {
+  name: 'Hypnosis',
+  category: 'ERP',
+  description:
+    'Determines if you wish to allow hypnosis/hypnosis chemicals in a lewd manner.',
   component: CheckboxInput,
 };
 // BUBBER EDIT END
