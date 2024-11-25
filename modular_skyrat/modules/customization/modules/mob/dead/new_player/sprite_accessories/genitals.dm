@@ -27,7 +27,8 @@
 			if(istype(target_mob.wear_suit, /obj/item/clothing/suit/toggle/labcoat/hospitalgown))
 				return TRUE
 
-			/* SPLURT EDIT REMOVAL - Extra Inventory
+			// SPLURT EDIT - Extra Inventory
+			/*
 			//Are they wearing an Undershirt?
 			if(target_mob.undershirt != "Nude" && !(target_mob.underwear_visibility & UNDERWEAR_HIDE_SHIRT))
 				var/datum/sprite_accessory/undershirt/worn_undershirt = SSaccessories.undershirt_list[target_mob.undershirt]
@@ -56,6 +57,30 @@
 			else
 				return FALSE
 			*/
+			//Are they wearing a shirt?
+			if(target_mob.w_shirt && !target_mob.undershirt_hidden())
+				if(genital_location == CHEST && (target_mob.w_shirt.body_parts_covered & CHEST))
+					return TRUE
+				else if(genital_location == GROIN && (target_mob.w_shirt.body_parts_covered & GROIN))
+					return TRUE
+
+			//Are they wearing a bra?
+			if(target_mob.w_bra && !target_mob.bra_hidden())
+				if(genital_location == CHEST && (target_mob.w_bra.body_parts_covered & CHEST))
+					return TRUE
+				else if(genital_location == GROIN && (target_mob.w_bra.body_parts_covered & GROIN))
+					return TRUE
+
+			//Are they wearing underwear?
+			if(target_mob.w_underwear && !target_mob.underwear_hidden())
+				if(genital_location == CHEST && (target_mob.w_underwear.body_parts_covered & CHEST))
+					return TRUE
+				else if(genital_location == GROIN && (target_mob.w_underwear.body_parts_covered & GROIN))
+					return TRUE
+
+			//Nothing they're wearing will cover them
+			return FALSE
+			//SPLURT EDIT END
 		//If not always shown or hidden by clothes, then it defaults to always hidden
 		else
 			return TRUE
@@ -297,7 +322,7 @@
 	icon_state = "sextuple"
 	name = "Sextuple"
 
-/datum/sprite_accessory/genital/belly
+/datum/sprite_accessory/genital/belly //hsector add
 	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/belly_onmob.dmi'
 	organ_type = /obj/item/organ/external/genital/belly
 	associated_organ_slot = ORGAN_SLOT_BELLY
@@ -338,5 +363,6 @@
 /datum/sprite_accessory/genital/butt/normal
 	icon_state = "pair"
 	name = "Butt"
+//hsector add end
 
 #undef TAUR_DIMENSION_X
