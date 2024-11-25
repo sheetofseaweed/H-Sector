@@ -7,13 +7,6 @@
 #define EARS_EXTRA_INDEX 5
 #define WRISTS_INDEX 6
 
-#define CROTCH_INDEX 1
-#define PENIS_INDEX 2
-#define VAGINA_INDEX 3
-#define ANUS_INDEX 4
-#define NIPPLES_INDEX 5
-#define MOUTH_INDEX 6
-
 /mob/living/carbon/human/regenerate_icons()
 	. = ..()
 	if(.)
@@ -497,9 +490,3 @@
 #undef BRA_INDEX
 #undef EARS_EXTRA_INDEX
 #undef WRISTS_INDEX
-#undef PENIS_INDEX
-#undef VAGINA_INDEX
-#undef ANUS_INDEX
-#undef NIPPLES_INDEX
-#undef MOUTH_INDEX
-#undef CROTCH_INDEX

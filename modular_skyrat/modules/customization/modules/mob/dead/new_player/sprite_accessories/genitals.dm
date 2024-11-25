@@ -322,7 +322,7 @@
 	icon_state = "sextuple"
 	name = "Sextuple"
 
-/datum/sprite_accessory/genital/belly
+/datum/sprite_accessory/genital/belly //hsector add
 	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/belly_onmob.dmi'
 	organ_type = /obj/item/organ/external/genital/belly
 	associated_organ_slot = ORGAN_SLOT_BELLY
@@ -363,5 +363,6 @@
 /datum/sprite_accessory/genital/butt/normal
 	icon_state = "pair"
 	name = "Butt"
+//hsector add end
 
 #undef TAUR_DIMENSION_X

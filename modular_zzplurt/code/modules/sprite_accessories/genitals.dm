@@ -1,3 +1,4 @@
+/*
 /datum/sprite_accessory/genital/butt
 	icon = 'modular_zzplurt/icons/mob/human/genitals/butt.dmi'
 	organ_type = /obj/item/organ/external/genital/butt
@@ -17,7 +18,7 @@
 /datum/sprite_accessory/genital/butt/pair
 	icon_state = "pair"
 	name = "Pair"
-
+*/
 
 /datum/sprite_accessory/genital/anus
 	icon = 'modular_zzplurt/icons/mob/human/genitals/anus.dmi'
@@ -39,7 +40,7 @@
 	name = "Squished"
 	color_src = USE_MATRIXED_COLORS
 
-
+/*
 /datum/sprite_accessory/genital/belly
 	icon = 'modular_zzplurt/icons/mob/human/genitals/belly.dmi'
 	organ_type = /obj/item/organ/external/genital/belly
@@ -59,3 +60,4 @@
 /datum/sprite_accessory/genital/belly/normal
 	icon_state = "pair" //????
 	name = "Belly"
+*/

@@ -15,4 +15,4 @@
 	return ..()
 
 /datum/bodypart_overlay/mutant/genital/anus
-	layers = EXTERNAL_FRONT
+	layers = EXTERNAL_BODY_LAYER

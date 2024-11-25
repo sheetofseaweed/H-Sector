@@ -1,3 +1,4 @@
+/*
 /obj/item/organ/external/genital/belly
 	name = "belly"
 	desc = "You see a belly on their midsection."
@@ -61,3 +62,4 @@
 
 /datum/bodypart_overlay/mutant/genital/belly/get_global_feature_list()
 	return SSaccessories.sprite_accessories[ORGAN_SLOT_BELLY]
+*/

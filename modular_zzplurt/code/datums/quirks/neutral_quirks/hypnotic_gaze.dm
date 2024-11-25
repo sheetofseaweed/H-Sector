@@ -292,7 +292,7 @@
 		return
 
 	// Check if client has denied hypnosis preference
-	if(READ_PREFS(action_target, choiced/erp_status_hypno) == "No")
+	if(!(READ_PREFS(action_target, toggle/erp/hypnosis)))
 		// Warn the users, then return
 		to_chat(action_owner, span_warning("You sense that [action_target] is not comfortable with this type of interaction, and decide to respect [action_target.p_their()] preferences."))
 		to_chat(action_target, span_notice("[action_owner] stares into your eyes with a strange conviction, but turns away after a moment."))

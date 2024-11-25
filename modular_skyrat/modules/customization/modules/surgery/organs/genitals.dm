@@ -519,12 +519,12 @@
 			return text2num(key)
 	return 0
 
-//belly
+//belly hsector add
 /obj/item/organ/external/genital/belly
 	name = "belly"
 	desc = "You put food in there."
 	icon_state = "belly"
-	icon = 'modular_hsector/icons/bodyparts/belly.dmi'//hack
+	icon = 'modular_hsector/icons/bodyparts/belly.dmi'
 	genital_type = "pair"
 	mutantpart_key = ORGAN_SLOT_BELLY
 	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
@@ -601,7 +601,7 @@
 			return text2num(key)
 	return 0
 
-//butt
+//butt - hsector add
 /obj/item/organ/external/genital/butt
 	name = "butt"
 	desc = "The thing you sit on."
@@ -682,6 +682,8 @@
 		if(GLOB.butt_size_translation[key] == size)
 			return text2num(key)
 	return 0
+
+//hsector add end
 
 /mob/living/carbon/human/verb/toggle_genitals()
 	set category = "IC"

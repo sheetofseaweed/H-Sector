@@ -1,22 +1,22 @@
 import {
   CheckboxInput,
   Feature,
-  FeatureChoicedServerData,
-  FeatureNumberInput,
-  FeatureNumeric,
+  // FeatureChoicedServerData,
+  // FeatureNumberInput,
+  // FeatureNumeric,
   FeatureToggle,
   FeatureTriBoolInput,
   FeatureTriColorInput,
-  FeatureValueProps,
+  // FeatureValueProps,
 } from '../../base';
-import { FeatureDropdownInput } from '../../dropdowns';
+// import { FeatureDropdownInput } from '../../dropdowns';
 
 export const scaled_appearance: FeatureToggle = {
   name: 'Scaled Appearance',
   description: 'Make your character use a sharp or fuzzy appearance.',
   component: CheckboxInput,
 };
-
+/*
 export const feature_butt: Feature<string> = {
   name: 'Butt Choice',
   component: (
@@ -50,7 +50,7 @@ export const butt_emissive: Feature<boolean[]> = {
 export const butt_size: FeatureNumeric = {
   name: 'Butt Size',
   component: FeatureNumberInput,
-};
+};*/
 
 export const anus_skin_tone: FeatureToggle = {
   name: 'Anus uses Skin Tone',
@@ -72,7 +72,7 @@ export const anus_emissive: Feature<boolean[]> = {
   description: 'Emissive parts glow in the dark.',
   component: FeatureTriBoolInput,
 };
-
+/*
 export const feature_belly: Feature<string> = {
   name: 'Belly Choice',
   component: (
@@ -106,4 +106,4 @@ export const belly_emissive: Feature<boolean[]> = {
   name: 'Belly Emissives',
   description: 'Emissive parts glow in the dark.',
   component: FeatureTriBoolInput,
-};
+};*/

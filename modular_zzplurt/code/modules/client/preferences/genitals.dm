@@ -1,3 +1,4 @@
+/* Cuts out all but anus code - Hsector
 //butt
 /datum/preference/choiced/genital/butt
 	savefile_key = "feature_butt"
@@ -55,7 +56,7 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_BUTT
 	type_to_check = /datum/preference/choiced/genital/butt
 	skin_color_type = /datum/preference/toggle/genital_skin_color/butt
-
+*/
 
 
 //butthole
@@ -98,7 +99,7 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_ANUS
 	type_to_check = /datum/preference/choiced/genital/anus
 	skin_color_type = /datum/preference/toggle/genital_skin_color/anus
-
+/*
 //SPLURT EDIT START
 // BELLY (yes it HAS to be here)
 /datum/preference/choiced/genital/belly
@@ -160,3 +161,4 @@
 	type_to_check = /datum/preference/choiced/genital/belly
 	skin_color_type = /datum/preference/toggle/genital_skin_color/belly
 //SPLURT EDIT END
+*/

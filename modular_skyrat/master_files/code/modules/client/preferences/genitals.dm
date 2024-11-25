@@ -584,7 +584,7 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_ANUS
 	default_accessory_type = /datum/sprite_accessory/genital/anus/none
 
-// BELLY
+// BELLY - hsector add
 
 /datum/preference/choiced/genital/belly
 	savefile_key = "feature_belly"

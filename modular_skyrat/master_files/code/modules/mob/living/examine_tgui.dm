@@ -61,7 +61,7 @@
 	//  Handle OOC notes first
 	if(preferences)
 		var/e_prefs = preferences.read_preference(/datum/preference/choiced/erp_status)
-		var/e_prefs_hypno = preferences.read_preference(/datum/preference/choiced/erp_status_hypno)
+		var/e_prefs_hypno = preferences.read_preference(/datum/preference/toggle/erp/hypnosis) ? "Yes" : "No"
 		var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
 		var/e_prefs_nc = preferences.read_preference(/datum/preference/choiced/erp_status_nc)
 		var/e_prefs_event = preferences.read_preference(/datum/preference/toggle/erp/erp_event_participation) ? "Yes" : "No" //var/e_prefs_mechanical = preferences.read_preference(/datum/preference/choiced/erp_status_mechanics)

@@ -1,3 +1,4 @@
+/*
 /obj/item/organ/external/genital/butt
 	name = "butt"
 	desc = "You see a pair of asscheeks."
@@ -60,3 +61,4 @@
 
 /datum/bodypart_overlay/mutant/genital/butt/get_global_feature_list()
 	return SSaccessories.sprite_accessories[ORGAN_SLOT_BUTT]
+*/

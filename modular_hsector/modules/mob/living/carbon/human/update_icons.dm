@@ -1,3 +1,11 @@
+#define RESOLVE_ICON_STATE(worn_item) (worn_item.worn_icon_state || worn_item.icon_state)
+#define CROTCH_INDEX 1
+#define PENIS_INDEX 2
+#define VAGINA_INDEX 3
+#define ANUS_INDEX 4
+#define NIPPLES_INDEX 5
+#define MOUTH_INDEX 6
+
 /mob/living/carbon/human/update_worn_penis(update_obscured = TRUE)
 	remove_overlay(PENIS_LAYER)
 
@@ -436,3 +444,11 @@
 		apply_overlay(CROTCH_LAYER)
 
 	update_mutant_bodyparts()
+
+#undef PENIS_INDEX
+#undef VAGINA_INDEX
+#undef ANUS_INDEX
+#undef NIPPLES_INDEX
+#undef MOUTH_INDEX
+#undef CROTCH_INDEX
+#undef RESOLVE_ICON_STATE
