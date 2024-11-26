@@ -6585,6 +6585,7 @@
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "modular_hsector\_defines\pool.dm"
 #include "modular_hsector\modules\legcuff.dm"
+#include "modular_hsector\modules\economy\resort_account.dm"
 #include "modular_hsector\modules\emotes\emotes.dm"
 #include "modular_hsector\modules\moans\dna_moan.dm"
 #include "modular_hsector\modules\moans\moan_datums.dm"
