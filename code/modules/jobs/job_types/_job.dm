@@ -211,11 +211,20 @@
 
 /mob/living/carbon/human/on_job_equipping(datum/job/equipping, client/player_client)
 	if(equipping.paycheck_department)
-		var/datum/bank_account/bank_account = new(real_name, equipping, dna.species.payday_modifier)
+		//var/datum/bank_account/bank_account = new(real_name, equipping, dna.species.payday_modifier)
+		var/datum/bank_account/resort/bank_account = new(real_name, equipping, dna.species.payday_modifier) //hsector EDIT.
 		//BUBBERSTATION CHANGE START: EXTRA DOSH FOR ROUND STARTERS
 		// bank_account.payday(STARTING_PAYCHECKS, TRUE)
-		bank_account.payday(STARTING_PAYCHECKS * (!player_client?.mob?.mind?.late_joiner ? 3 : 1 ), TRUE) //Triple the dosh for shift starters.
+		// bank_account.payday(STARTING_PAYCHECKS * (!player_client?.mob?.mind?.late_joiner ? 3 : 1 ), TRUE) //Triple the dosh for shift starters.
 		//BUBBERSTATION CHANGE END
+		//hsector CHANGE start
+		var/preference_s_money = GLOB.startingmoneylist[player_client.prefs.read_preference(/datum/preference/choiced/starting_cash_amount)]
+		var/money_to_start = 0
+
+		if(preference_s_money)
+			money_to_start = preference_s_money + (rand(0, preference_s_money / 2) * (rand(0, 1) * 2 - 1))
+		bank_account.payday(STARTING_PAYCHECKS, TRUE, money_to_start)
+		//hsector CHANGE end
 		account_id = bank_account.account_id
 		bank_account.replaceable = FALSE
 		add_mob_memory(/datum/memory/key/account, remembered_id = account_id)
