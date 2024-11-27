@@ -303,8 +303,9 @@
 				adjustOxyLoss(-5)
 	// Exhale equivalent amount of CO2.
 	if(o2_pp)
-		breath_gases[/datum/gas/oxygen][MOLES] -= oxygen_used
-		breath_gases[/datum/gas/carbon_dioxide][MOLES] += oxygen_used
+		if(!isnull(internal))
+			breath_gases[/datum/gas/oxygen][MOLES] -= oxygen_used
+			breath_gases[/datum/gas/carbon_dioxide][MOLES] += oxygen_used
 
 	//-- CARBON DIOXIDE --//
 	// Maximum CO2 effects. "Too much CO2!"

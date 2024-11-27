@@ -242,7 +242,8 @@
 
 		var/gas_breathed = handle_suffocation(breather, o2_pp, safe_oxygen_min, breath.gases[/datum/gas/oxygen][MOLES])
 		if(o2_pp)
-			breathe_gas_volume(breath, /datum/gas/oxygen, /datum/gas/carbon_dioxide, volume = gas_breathed)
+			if(!isnull(breather.internal))//So you won't suffocate in toilet - Gardelin0/seaweed
+				breathe_gas_volume(breath, /datum/gas/oxygen, /datum/gas/carbon_dioxide, volume = gas_breathed)
 		return
 
 	// If we used to not have enough, clear the alert
@@ -251,7 +252,8 @@
 		breather.failed_last_breath = FALSE
 		breather.clear_alert(ALERT_NOT_ENOUGH_OXYGEN)
 
-	breathe_gas_volume(breath, /datum/gas/oxygen, /datum/gas/carbon_dioxide)
+	if(!isnull(breather.internal))//So you won't suffocate in toilet - Gardelin0/seaweed
+		breathe_gas_volume(breath, /datum/gas/oxygen, /datum/gas/carbon_dioxide)
 	// Heal mob if not in crit.
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjustOxyLoss(-5)
