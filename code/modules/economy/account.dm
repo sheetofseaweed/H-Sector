@@ -192,7 +192,7 @@
 /datum/bank_account/proc/payday(amount_of_paychecks, free = FALSE)
 	if(!account_job)
 		return
-	var/money_to_transfer = round(account_job.paycheck * payday_modifier * amount_of_paychecks)
+	var/money_to_transfer = round(account_job.paycheck * payday_modifier * amount_of_paychecks * 0.5) //h-sector edit - halving the paychecks
 	if(amount_of_paychecks == 1)
 		money_to_transfer = clamp(money_to_transfer, 0, PAYCHECK_CREW) //We want to limit single, passive paychecks to regular crew income.
 	if(free)
