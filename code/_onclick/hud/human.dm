@@ -334,7 +334,7 @@
 		if(isnull(human_mob.w_uniform) && !HAS_TRAIT(human_mob, TRAIT_NO_JUMPSUIT))
 			var/obj/item/bodypart/chest = human_mob.get_bodypart(BODY_ZONE_CHEST)
 			if(isnull(chest) || IS_ORGANIC_LIMB(chest))
-				blocked_slots |= ITEM_SLOT_ID|ITEM_SLOT_BELT
+				blocked_slots |= ITEM_SLOT_ID //|ITEM_SLOT_BELT //hsector edit - belt actually works here
 			var/obj/item/bodypart/left_leg = human_mob.get_bodypart(BODY_ZONE_L_LEG)
 			if(isnull(left_leg) || IS_ORGANIC_LIMB(left_leg))
 				blocked_slots |= ITEM_SLOT_LPOCKET
@@ -349,12 +349,23 @@
 			blocked_slots |= ITEM_SLOT_FEET
 		var/obj/item/bodypart/head/head = human_mob.get_bodypart(BODY_ZONE_HEAD)
 		if(isnull(head))
-			blocked_slots |= ITEM_SLOT_HEAD|ITEM_SLOT_EARS|ITEM_SLOT_EYES|ITEM_SLOT_MASK
+			blocked_slots |= ITEM_SLOT_HEAD|ITEM_SLOT_EARS|ITEM_SLOT_EYES|ITEM_SLOT_MASK|ITEM_SLOT_MOUTH//hsector edit
 		var/obj/item/organ/internal/eyes/eyes = human_mob.get_organ_slot(ORGAN_SLOT_EYES)
 		if(eyes?.no_glasses)
 			blocked_slots |= ITEM_SLOT_EYES
 		/*if(human_mob.bodyshape & BODYSHAPE_DIGITIGRADE)
 			blocked_slots |= ITEM_SLOT_FEET*/ //BUBBER EDIT: Removal (Digi's can wear shoes here)
+		//hsector add
+		var/obj/item/organ/external/genital/anus/anus = human_mob.get_organ_slot(ORGAN_SLOT_ANUS)
+		if(isnull(anus))
+			blocked_slots |= ITEM_SLOT_ANUS
+		var/obj/item/organ/external/genital/penis/penis = human_mob.get_organ_slot(ORGAN_SLOT_PENIS)
+		if(isnull(penis))
+			blocked_slots |= ITEM_SLOT_PENIS
+		var/obj/item/organ/external/genital/vagina/vagina = human_mob.get_organ_slot(ORGAN_SLOT_VAGINA)
+		if(isnull(vagina))
+			blocked_slots |= ITEM_SLOT_VAGINA
+
 
 	// SPLURT EDIT - Extra inventory
 	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory + extra_inventory))
