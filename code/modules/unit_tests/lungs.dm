@@ -144,9 +144,9 @@
 		expected_plasma = 0
 
 	// Validate conversion of inhaled gas to exhaled gas.
-	if(min_oxygen)
-		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/oxygen), expected_oxygen), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Oxygen initially present in the breath."))
-		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Oxygen into an equivalent volume of CO2."))
+	//if(min_oxygen) //hsector edit - yes, we disable the unit tests for our no breathing system
+	//	TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/oxygen), expected_oxygen), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Oxygen initially present in the breath."))
+	//	TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Oxygen into an equivalent volume of CO2."))
 	if(min_nitro)
 		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/nitrogen), expected_nitro), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Nitrogen initially present in the breath."))
 		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Nitrogen into an equivalent volume of CO2."))
