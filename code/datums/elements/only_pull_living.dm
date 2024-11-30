@@ -7,7 +7,7 @@
 	if(!isliving(target))
 		return ELEMENT_INCOMPATIBLE
 
-	RegisterSignal(target, COMSIG_LIVING_TRY_PULL, PROC_REF(try_pull))
+	RegisterSignal(target, COMSIG_LIVING_TRY_PULL, PROC_REF(try_pull), TRUE)
 
 /datum/element/only_pull_living/proc/try_pull(mob/living/owner, atom/movable/pulled)
 	SIGNAL_HANDLER

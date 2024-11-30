@@ -7,7 +7,7 @@
 	if(!isliving(target))
 		return ELEMENT_INCOMPATIBLE
 
-	RegisterSignal(target, COMSIG_LIVING_ATTACK_ATOM, PROC_REF(check_if_glass))
+	RegisterSignal(target, COMSIG_LIVING_ATTACK_ATOM, PROC_REF(check_if_glass), TRUE)
 
 /datum/element/glass_pacifist/proc/check_if_glass(mob/living/owner, atom/hit)
 	SIGNAL_HANDLER

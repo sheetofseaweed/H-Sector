@@ -7,7 +7,7 @@
 	if(!isliving(target))
 		return ELEMENT_INCOMPATIBLE
 
-	RegisterSignals(target, list(COMSIG_MOB_ITEM_ATTACK), PROC_REF(check_attack))
+	RegisterSignals(target, list(COMSIG_MOB_ITEM_ATTACK), PROC_REF(check_attack), TRUE)
 
 /datum/element/no_crit_hitting/proc/check_attack(mob/living/attacker, atom/attacked)
 	SIGNAL_HANDLER
