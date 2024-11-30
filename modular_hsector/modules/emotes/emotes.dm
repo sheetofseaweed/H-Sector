@@ -1,4 +1,4 @@
-
+//copied, so that we don't have to comment out new splurt emotes everytime
 /datum/emote/living/ruffle
 	key = "ruffle"
 	key_third_person = "ruffles"

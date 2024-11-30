@@ -19,7 +19,7 @@
 		var/obj/item/item = dummy_items[slot]
 		if(item.slot_flags & ITEM_SLOT_ICLOTHING)
 			continue
-		else if(item.slot_flags & (ITEM_SLOT_BACK|ITEM_SLOT_FEET))
+		else if(item.slot_flags & (ITEM_SLOT_BACK|ITEM_SLOT_FEET|ITEM_SLOT_BELT))//hsector edit - belts don't drop
 			TEST_ASSERT_EQUAL(item.loc, dummy, "[item] should not have been dropped when unequipping the jumpsuit from \a [/datum/species/human::name].")
 		else
 			TEST_ASSERT_EQUAL(item.loc, dummy.loc, "[item] should have been dropped when unequipping the jumpsuit from \a [/datum/species/human::name].")
