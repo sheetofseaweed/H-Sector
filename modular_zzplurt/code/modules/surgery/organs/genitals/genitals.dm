@@ -27,10 +27,10 @@
 /datum/bodypart_overlay/mutant/genital/breasts
 	layer_offset = BREASTS_LAYER_OFFSET
 
-/datum/bodypart_overlay/mutant/genital/belly
+/*/datum/bodypart_overlay/mutant/genital/belly
 	layer_offset = BELLY_LAYER_OFFSET
 
 /datum/bodypart_overlay/mutant/genital/butt
-	layer_offset = BUTT_LAYER_OFFSET
+	layer_offset = BUTT_LAYER_OFFSET*/
 
 
