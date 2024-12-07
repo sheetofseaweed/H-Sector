@@ -18,9 +18,6 @@
 	/// Our song lines
 	var/list/lines
 
-	/// delay between notes in deciseconds
-	var/tempo = 5
-
 	/// Are we currently playing?
 	var/playing = FALSE
 
@@ -28,6 +25,8 @@
 	var/repeat = 0
 	/// Maximum times we can repeat
 	var/max_repeats = 10
+
+	var/cur_line = 1
 
 	var/formatted = FALSE
 
@@ -48,7 +47,6 @@
 	var/list/data = ..()
 	data["playing"] = playing
 	data["repeat"] = repeat
-	data["bpm"] = round(60 SECONDS / tempo)
 	data["lines"] = list()
 	var/linecount
 	for(var/line in lines)
@@ -77,11 +75,15 @@
 		//SETTINGS
 		if("sing")
 			if(!playing)
-				INVOKE_ASYNC(src, PROC_REF(start_singing), user)
+				playing = TRUE
+				INVOKE_ASYNC(src, PROC_REF(start_singing), user, 1)
 			else
 				playing = FALSE
 			return TRUE
-
+		if("sing_a_line")
+			if(!playing)
+				sing_line(user)
+			return TRUE
 		//SONG MAKING
 		if("import_song")
 			var/song_text = ""
@@ -100,7 +102,6 @@
 		if("start_new_song")
 			name = ""
 			lines = new()
-			tempo = 5 // default 120 BPM
 			return TRUE
 		if("add_new_line")
 			var/newline = tgui_input_text(user, "Enter your line", parent.name, max_length = MUSIC_MAXLINECHARS)
@@ -126,33 +127,24 @@
 				return FALSE
 			lines[line_to_edit] = new_line_text
 			return TRUE
+		if("set_repeat_amount")
+			if(playing)
+				return
+			var/repeat_amount = params["amount"]
+			if(!isnum(repeat_amount))
+				return FALSE
+			set_repeats(repeat_amount)
+			return TRUE
 
-/**
- * Parses a song the user has input into lines and stores them.
-[00:00.80]
-[00:19.60]There's a kid in the story below
-[00:22.90]Trying to stay
-[00:26.20]Up and awake
-[00:27.90]
-[00:30.20]His running love of crimson and clover
-[00:34.70]The needle should've worn it away
-[00:37.60]A long time ago
-[00:40.90]Everything around here happens so slow
-[00:47.10]'Cause no one needs to know
-[00:51.90]
-[00:55.50]I'm looking out my window now
-[01:01.70]And the snow is falling deep around a man asleep
-[01:10.20]He doesn't know he's dying now
-[01:16.60]From the cruelty and the cold
-[01:21.40]Anywhere that the damage doesn't show
-[01:27.70]So no one needs to know
-[01:34.40]
-[01:58.60]Everything around here happens so slow
-[02:04.90]No one needs to know
-[02:12.20]No, no one needs to know
-[02:31.50]
- *
- */
+/datum/sing_song/proc/set_repeats(new_repeats_value)
+	if(playing)
+		return //So that people cant keep adding to repeat. If the do it intentionally, it could result in the server crashing.
+	repeat = round(new_repeats_value)
+	if(repeat < 0)
+		repeat = 0
+	if(repeat > max_repeats)
+		repeat = max_repeats
+
 /datum/sing_song/proc/ParseSong(mob/user, new_song)
 	set waitfor = FALSE
 	//split into lines
@@ -160,6 +152,7 @@
 	var/time = 0
 	var/list/nline
 	var/list/input_lines = islist(new_song) ? new_song : splittext(new_song, "\n")
+	formatted = FALSE
 	for(var/line in input_lines)
 		var/i = findtext(line, "]", 1)
 		if(i)
@@ -182,17 +175,38 @@
 	playing = FALSE
 	qdel(src)
 
-/datum/sing_song/proc/start_singing(mob/living/user)
-	if(playing)
+/datum/sing_song/proc/start_singing(mob/living/user, line_num)
+	if(!playing)
 		return
-	playing = TRUE
-	for(var/line in lines)
-		if(!playing  || isnull(src))
-			break
-		if(findtext(line, "WAIT:", 1, length(line) + 1))
-			sleep(text2num(copytext(line, 6)))
+	var/next_num = line_num + 1
+	if(line_num <= lines.len)
+		if(findtext(lines[line_num], "WAIT:", 1, length(lines[line_num]) + 1))
+			addtimer(CALLBACK(src, PROC_REF(start_singing), user, next_num), text2num(copytext(lines[line_num], 6)))
+			return
 		else
-			user.say(line)
-			if(!formatted)
-				sleep(20)
-	playing = FALSE
+			user.say(lines[line_num])
+			if(formatted)
+				start_singing(user, next_num)
+			else
+				addtimer(CALLBACK(src, PROC_REF(start_singing), user, next_num), 2 SECONDS)
+				return
+	else
+		if(repeat > 0)
+			repeat--
+			start_singing(user, 1)
+			return
+		playing = FALSE
+
+/datum/sing_song/proc/sing_line(mob/living/user)
+	if(cur_line > (lines.len + 1))
+		cur_line = 1
+	if(findtext(lines[cur_line], "WAIT:", 1, length(lines[cur_line]) + 1))
+		cur_line++
+		sing_line(user)
+		return
+	else
+		user.say(lines[cur_line])
+	cur_line++
+
+	if(cur_line == (lines.len + 1))
+		cur_line = 1

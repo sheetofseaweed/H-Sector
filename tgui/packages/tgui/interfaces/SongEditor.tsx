@@ -1,20 +1,13 @@
 import { BooleanLike } from 'common/react';
 
 import { useBackend } from '../backend';
-import {
-  Box,
-  Button,
-  Collapsible,
-  NumberInput,
-  Section,
-} from '../components';
+import { Box, Button, Collapsible, NumberInput, Section } from '../components';
 import { Window } from '../layouts';
 
 type Data = {
   playing: BooleanLike;
   max_repeats: number;
   repeat: number;
-  bpm: number;
   lines: LineData[];
   max_line_chars: number;
   max_lines: number;
@@ -62,8 +55,13 @@ const SongSettings = (props) => {
       {lines.length > 0 && (
         <Box fontSize="16px">
           <Button onClick={() => act('sing')}>
-            {playing ? 'Stop Music' : 'Start Playing'}
+            {playing ? 'Stop' : 'Start Singing'}
           </Button>
+        </Box>
+      )}
+      {lines.length > 0 && (
+        <Box fontSize="16px">
+          <Button onClick={() => act('sing_a_line')}>Sing One Line</Button>
         </Box>
       )}
       <Box>
@@ -87,27 +85,13 @@ const SongSettings = (props) => {
 
 const EditingSettings = (props) => {
   const { act, data } = useBackend<Data>();
-  const { bpm, lines } = data;
+  const { lines } = data;
 
   return (
     <Section>
       <Box>
         <Button onClick={() => act('start_new_song')}>Start a New Song</Button>
         <Button onClick={() => act('import_song')}>Import a Song</Button>
-      </Box>
-      <Box>
-        Tempo:{' '}
-        <Button
-          onClick={() => act('tempo', { tempo_change: 'increase_speed' })}
-        >
-          -
-        </Button>{' '}
-        {bpm} BPM{' '}
-        <Button
-          onClick={() => act('tempo', { tempo_change: 'decrease_speed' })}
-        >
-          +
-        </Button>
       </Box>
       <Box>
         {lines.map((line, index) => (
