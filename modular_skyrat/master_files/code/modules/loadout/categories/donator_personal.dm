@@ -46,7 +46,7 @@
 /datum/loadout_item/gloves/hypnoring_bippy
 	name = "Hypnodemon's Ring"
 	item_path = /obj/item/clothing/gloves/ring/hypno/bippys
-	ckeywhitelist = list("bippys")
+	//ckeywhitelist = list("bippys")
 
 /datum/loadout_item/shoes/rax_armadyne_boots
 	name = "Tactical Boots"
@@ -170,7 +170,7 @@
 /datum/loadout_item/suit/wetsuit_norm
 	name = "Fitted Wetsuit"
 	item_path = /obj/item/clothing/under/wetsuit_norm
-	ckeywhitelist = list("ChillyLobster")
+	//ckeywhitelist = list("ChillyLobster")
 
 /datum/loadout_item/mask/wolf_mask
 	name = "Wolf mask"
@@ -262,7 +262,7 @@
 /datum/loadout_item/pocket_items/brightcosmos
 	name = "Bright Cosmos cigar"
 	item_path = /obj/item/holocigarette/cigar
-	ckeywhitelist = list("lyricalpaws")
+	//ckeywhitelist = list("lyricalpaws")
 
 /datum/loadout_item/uniform/lannese
 	name = "Lannese Dress"
@@ -485,7 +485,7 @@
 /datum/loadout_item/pocket_items/hypno_watch
 	name = "Pocket Watch"
 	item_path = /obj/item/clothing/accessory/hypno_watch
-	ckeywhitelist = list("slippyjoe")
+	//ckeywhitelist = list("slippyjoe")
 
 /datum/loadout_item/uniform/nt_idol
 	name = "NT Idol's Skirt"
@@ -591,7 +591,7 @@
 /datum/loadout_item/head/elofy
 	name = "Solar Admiral Hat"
 	item_path = /obj/item/clothing/head/hats/hos/elofy
-	ckeywhitelist = list("october23")
+	//ckeywhitelist = list("october23")
 	restricted_roles = list(JOB_HEAD_OF_SECURITY)
 
 /datum/loadout_item/gloves/elofy
@@ -647,12 +647,12 @@
 /datum/loadout_item/gloves/hypnoring_sharkenning
 	name = "Suspiciously Glossy Ring"
 	item_path = /obj/item/clothing/gloves/ring/hypno/sharkenning
-	ckeywhitelist = list("thesharkenning", "tecktonic")
+	//ckeywhitelist = list("thesharkenning", "tecktonic")
 
 /datum/loadout_item/ears/kinkphone_sharkenning
 	name = "Suspiciously Glossy Headphones"
 	item_path = /obj/item/clothing/ears/kinky_headphones/sharkenning
-	ckeywhitelist = list("thesharkenning")
+	//ckeywhitelist = list("thesharkenning")
 
 /datum/loadout_item/head/somerandomowl
 	name = "Starry Witch Hat"
@@ -713,7 +713,7 @@
 /datum/loadout_item/inhand/officialcat
 	name = "Official Cat Stamp"
 	item_path = /obj/item/stamp/cat
-	ckeywhitelist = list("kathrinbailey")
+	//ckeywhitelist = list("kathrinbailey")
 
 /datum/loadout_item/inhand/hardlight_wheelchair
 	name = "Hardlight Wheelchair Projector"
@@ -753,7 +753,7 @@
 /datum/loadout_item/neck/trenchcoat
 	name = "Graceful Trenchcoat"
 	item_path = /obj/item/clothing/neck/trenchcoat
-	ckeywhitelist = list("Smol42", "Awers855")
+	//ckeywhitelist = list("Smol42", "Awers855")
 
 /datum/loadout_item/uniform/old_qm_jumpskirt
 	name = "Old Quartermaster's Jumpskirt"
