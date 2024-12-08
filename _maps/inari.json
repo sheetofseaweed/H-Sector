@@ -4,7 +4,7 @@
 	"map_path": "map_files/Inari",
 	"map_file": "inari.dmm",
 	"shuttles": {
-		"cargo": "cargo_inari",
+		"cargo": "cargo_delta_skyrat",
 		"ferry": "ferry_skyrat",
 		"emergency": "emergency_tram"
 	},
