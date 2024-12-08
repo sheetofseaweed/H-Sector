@@ -89,3 +89,9 @@ map kilostation
 	maxplayers 75
 	votable
 endmap
+##HSECTOR MAPS##
+
+map inari
+	default
+	votable
+endmap

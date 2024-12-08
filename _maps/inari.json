@@ -1,0 +1,31 @@
+{
+	"version": 1,
+	"map_name": "Inari",
+	"map_path": "map_files/Inari",
+	"map_file": "inari.dmm",
+	"shuttles": {
+		"cargo": "cargo_inari",
+		"ferry": "ferry_skyrat",
+		"emergency": "emergency_tram"
+	},
+	"traits": [
+		{
+			"Up": true,
+			"Baseturf": "/turf/open/space/basic",
+			"Linkage": "Cross"
+		},
+		{
+			"Down": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": "Cross"
+		}
+	],
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/commons/lounge"]
+		},
+		"Captain": {
+			"special_charter": "ship"
+		}
+	}
+}
