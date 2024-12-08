@@ -16,6 +16,7 @@
 	var/datum/looping_sound/lewd/vibrator/medium/soundloop
 	w_class = WEIGHT_CLASS_TINY
 	//lewd_slot_flags = LEWD_SLOT_PENIS
+	extra_slot_flags = ITEM_SLOT_PENIS
 	clothing_flags = INEDIBLE_CLOTHING
 
 /obj/item/clothing/sextoy/vibroring/attack_self(mob/user)

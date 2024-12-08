@@ -7,6 +7,7 @@
 	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_items/lewd_items.dmi'
 	w_class = WEIGHT_CLASS_TINY
 	//lewd_slot_flags = LEWD_SLOT_NIPPLES
+	extra_slot_flags = ITEM_SLOT_NIPPLES
 	/// What kind are the wearer's breasts?
 	var/breast_type = null
 	/// What size are the wearer's breasts?

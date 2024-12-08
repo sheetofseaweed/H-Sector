@@ -9,6 +9,7 @@
 	lefthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_left.dmi'
 	righthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_right.dmi'
 	//lewd_slot_flags = LEWD_SLOT_ANUS | LEWD_SLOT_VAGINA
+	extra_slot_flags = ITEM_SLOT_VAGINA | ITEM_SLOT_ANUS
 	/// Current color of the toy, can be changed, affects sprite
 	var/current_color = "pink"
 	/// Current size of the toy, can be changed, affects sprite and arousal
