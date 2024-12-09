@@ -9430,7 +9430,6 @@
 #include "modular_zubbers\master_files\skyrat\modules\verbs\code\subtle.dm"
 #include "modular_zzplurt\code\_globalvars\mobs.dm"
 #include "modular_zzplurt\code\_globalvars\lists\global_lewd.dm"
-#include "modular_zzplurt\code\_onclick\observer.dm"
 #include "modular_zzplurt\code\_onclick\hud\hud.dm"
 #include "modular_zzplurt\code\_onclick\hud\human.dm"
 #include "modular_zzplurt\code\controllers\configuration\entries\discord.dm"

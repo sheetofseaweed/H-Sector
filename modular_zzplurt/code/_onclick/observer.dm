@@ -1,4 +1,4 @@
-/mob/living/carbon/human/attack_ghost(mob/dead/observer/user)
+/*/mob/living/carbon/human/attack_ghost(mob/dead/observer/user)
 	. = ..()
 	if(. || !user.client)
 		return
@@ -50,4 +50,4 @@
 			return
 
 		// Add arousal
-		adjust_arousal(10)
+		adjust_arousal(10)*/
