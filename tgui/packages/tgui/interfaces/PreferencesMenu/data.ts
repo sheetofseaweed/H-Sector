@@ -84,6 +84,9 @@ export type Job = {
   veteran?: boolean;
   alt_titles?: string[];
   // SKYRAT EDIT END
+  // HSECTOR EDIT START
+  job_whitelist: boolean;
+  // HSECTOR EDIT END
 };
 
 export type Quirk = {
@@ -221,6 +224,9 @@ export type PreferencesMenuData = {
     }
   >;
   job_preferences: Record<string, JobPriority>;
+  // HSECTOR EDIT
+  whitelisted_jobs?: string[];
+  // HSECTOR EDIT END
 
   // SKYRAT EDIT
   job_alt_titles: Record<string, string>;

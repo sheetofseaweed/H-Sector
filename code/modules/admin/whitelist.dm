@@ -20,6 +20,7 @@ GLOBAL_LIST(whitelist)
 	. = (ckey in GLOB.whitelist)
 */
 
+// HSECTOR EDIT START
 /proc/check_whitelist(key)
 	if(!SSdbcore.Connect())
 		log_world("Failed to connect to database in check_whitelist(). Disabling whitelist for current round.")

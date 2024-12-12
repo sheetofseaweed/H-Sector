@@ -143,7 +143,10 @@
 			return "[jobtitle] is not compatible with some antagonist role assigned to you."
 		if(JOB_UNAVAILABLE_AGE)
 			return "Your character is not old enough for [jobtitle]."
-
+		//HSECTOR EDIT START
+		if(JOB_UNAVAILABLE_WHITELISTED)
+			return "You need to be whitelisted to join as [jobtitle]."
+		//HSECTOR EDIT END
 	return GENERIC_JOB_UNAVAILABLE_ERROR
 
 /mob/dead/new_player/proc/IsJobUnavailable(rank, latejoin = FALSE)

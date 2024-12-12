@@ -71,12 +71,17 @@
 			departments[department_name] = list(
 				"head" = department_head_type && initial(department_head_type.title),
 			)
-
+		// HSECTOR EDIT
+		var/is_whitelisted = FALSE
+		if(GLOB.whitelist_only_jobs.Find(job.title))
+			is_whitelisted = TRUE
+		// HSECTOR EDIT END
 		jobs[job.title] = list(
 			"description" = job.description,
 			"department" = department_name,
 			"veteran" = job.veteran_only, // SKYRAT EDIT
 			"alt_titles" = job.alt_titles, // SKYRAT EDIT
+			"job_whitelist" = is_whitelisted, // HSECTOR EDIT
 		)
 
 	data["departments"] = departments
@@ -116,6 +121,12 @@
 	var/list/job_bans = get_job_bans(user)
 	if (job_bans.len)
 		data["job_bans"] = job_bans
+
+	//HSECTOR EDIT
+	var/list/whitelisted_jobs = get_job_whitelist(user)
+	if (whitelisted_jobs.len)
+		data["whitelisted_jobs"] = whitelisted_jobs
+	//HSECTOR EDIT END
 
 	return data.len > 0 ? data : null
 
@@ -169,3 +180,13 @@
 
 //SKYRAT EDIT ADDITION END
 
+// HSECTOR EDIT START
+/datum/preference_middleware/jobs/proc/get_job_whitelist(mob/user)
+	var/list/data = list()
+
+	for (var/job_title as anything in GLOB.whitelist_only_jobs)
+		if (is_job_whitelisted_on(user.client?.ckey, job_title))
+			data += job_title
+
+	return data
+// HSECTOR EDIT END
