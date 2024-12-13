@@ -71,17 +71,13 @@
 			departments[department_name] = list(
 				"head" = department_head_type && initial(department_head_type.title),
 			)
-		// HSECTOR EDIT
-		var/is_whitelisted = FALSE
-		if(GLOB.whitelist_only_jobs.Find(job.title))
-			is_whitelisted = TRUE
-		// HSECTOR EDIT END
+
 		jobs[job.title] = list(
 			"description" = job.description,
 			"department" = department_name,
 			"veteran" = job.veteran_only, // SKYRAT EDIT
 			"alt_titles" = job.alt_titles, // SKYRAT EDIT
-			"job_whitelist" = is_whitelisted, // HSECTOR EDIT
+			"job_whitelist" = job.is_whitelist_only(), // HSECTOR EDIT
 		)
 
 	data["departments"] = departments

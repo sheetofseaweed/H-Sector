@@ -999,7 +999,7 @@ SUBSYSTEM_DEF(job)
 
 	//SKYRAT EDIT END
 	//HSECTOR EDIT START
-	if(!is_job_whitelisted_on(player.ckey, possible_job.title))
+	if(!is_job_whitelisted_on(player.ckey, possible_job.title) && possible_job.is_whitelist_only() && SSdbcore.IsConnected())
 		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_WHITELISTED, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_WHITELISTED
 	//HSECTOR EDIT END

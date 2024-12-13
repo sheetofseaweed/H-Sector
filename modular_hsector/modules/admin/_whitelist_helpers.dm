@@ -16,3 +16,8 @@ GLOBAL_LIST_INIT(whitelist_only_jobs, list(
 	var/job_whitelist_cache = null
 	///If we are currently building this client's job whitelist cache, this var stores the timeofday we started at
 	var/job_whitelist_cache_start = 0
+
+/datum/job/proc/is_whitelist_only()
+	if(GLOB.whitelist_only_jobs.Find(title))
+		return TRUE
+	return FALSE

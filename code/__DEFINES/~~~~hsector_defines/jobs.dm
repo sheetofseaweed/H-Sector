@@ -1,5 +1,5 @@
-// see "code\__DEFINES\~skyrat_defines\jobs.dm"
-#define JOB_UNAVAILABLE_WHITELISTED (JOB_UNAVAILABLE_AUGMENT + 1)
+// see "code\__DEFINES\~~bubber_defines\jobs.dm"
+#define JOB_UNAVAILABLE_WHITELISTED (JOB_UNAVAILABLE_FLAVOUR_SILICON + 1)
 /*#define WHITELIST_ONLY_JOBS list( \
 			JOB_CAPTAIN, \
 			JOB_HEAD_OF_PERSONNEL, \

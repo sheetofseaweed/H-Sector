@@ -4,6 +4,8 @@
  *
  */
 /proc/is_job_whitelisted_on(player_key, list/roles)
+	if(!SSdbcore.Connect())
+		return TRUE
 	if(!player_key)
 		stack_trace("Called is_job_whitelisted_on without specifying a ckey.")
 		return FALSE
