@@ -292,8 +292,8 @@
 		var/atom/movable/screen/inventory/inv = hud_used.extra_inventory[EARS_EXTRA_INDEX]
 		inv.update_icon()
 
-	if(ears)
-		var/obj/item/worn_item = ears
+	if(ears_extra) // stupid splurt
+		var/obj/item/worn_item = ears_extra
 		update_hud_ears_extra(worn_item)
 
 		if(update_obscured)
@@ -308,13 +308,13 @@
 		// SKYRAT EDIT ADDITION
 		var/mutant_override = FALSE
 		if(bodyshape & BODYSHAPE_CUSTOM)
-			var/species_icon_file = dna.species.generate_custom_worn_icon(OFFSET_EARS, ears, src)
+			var/species_icon_file = dna.species.generate_custom_worn_icon(OFFSET_EARS, ears_extra, src)
 			if(species_icon_file)
 				icon_file = species_icon_file
 				mutant_override = TRUE
 		// SKYRAT EDIT END
 
-		var/mutable_appearance/ears_overlay = ears.build_worn_icon(default_layer = EARS_EXTRA_LAYER, default_icon_file = icon_file, override_file = mutant_override ? icon_file : null) // SKYRAT EDIT CHANGE
+		var/mutable_appearance/ears_overlay = ears_extra.build_worn_icon(default_layer = EARS_EXTRA_LAYER, default_icon_file = icon_file, override_file = mutant_override ? icon_file : null) // SKYRAT EDIT CHANGE
 
 		// SKYRAT EDIT ADDITION
 		if(!mutant_override)
