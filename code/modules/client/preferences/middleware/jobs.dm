@@ -119,6 +119,7 @@
 		data["job_bans"] = job_bans
 
 	//HSECTOR EDIT
+	data["whitelisted_jobs"] = list()
 	var/list/whitelisted_jobs = get_job_whitelist(user)
 	if (whitelisted_jobs.len)
 		data["whitelisted_jobs"] = whitelisted_jobs
