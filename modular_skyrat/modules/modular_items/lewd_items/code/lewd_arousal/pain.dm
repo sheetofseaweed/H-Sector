@@ -6,7 +6,9 @@
 	return
 
 /mob/living/carbon/human/adjust_pain(change_amount = 0)
-	if(stat >= DEAD || !client?.prefs?.read_preference(/datum/preference/toggle/erp))
+	//hsector edit - remove erp check
+	//was: if(stat >= DEAD || !client?.prefs?.read_preference(/datum/preference/toggle/erp))
+	if(stat >= DEAD)
 		return
 
 	if(pain > pain_limit || change_amount > pain_limit / 10) // pain system // YOUR SYSTEM IS PAIN, WHY WE'RE GETTING AROUSED BY STEPPING ON ANTS?!

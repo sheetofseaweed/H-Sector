@@ -93,7 +93,9 @@
 			return
 
 		// Check if alive and ERP is enabled
-		if(stat >= DEAD || !client?.prefs?.read_preference(/datum/preference/toggle/erp))
+		//hsector edit - remove erp check
+		//was: if(stat >= DEAD || !client?.prefs?.read_preference(/datum/preference/toggle/erp))
+		if(stat >= DEAD)
 			return
 
 		// Check for no breathing

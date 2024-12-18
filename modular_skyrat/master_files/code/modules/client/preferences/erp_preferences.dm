@@ -35,8 +35,8 @@
 	abstract_type = /datum/preference/toggle/erp
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
 	savefile_identifier = PREFERENCE_PLAYER
-	savefile_key = "erp_pref"
-	default_value = TRUE
+	//savefile_key = "erp_pref"
+	default_value = FALSE
 
 /*/datum/preference/toggle/erp/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
@@ -65,6 +65,7 @@
 /// Sounds from interaction menu and stimuli
 /datum/preference/toggle/erp/sounds
 	savefile_key = "erp_sounds_pref"
+	default_value = TRUE
 /*
 /datum/preference/toggle/erp/sex_toy
 	savefile_key = "sextoy_pref"
@@ -95,35 +96,27 @@
 
 /datum/preference/toggle/erp/bimbofication
 	savefile_key = "bimbofication_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/aphro
 	savefile_key = "aphro_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/breast_enlargement
 	savefile_key = "breast_enlargement_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/breast_shrinkage
 	savefile_key = "breast_shrinkage_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/penis_enlargement
 	savefile_key = "penis_enlargement_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/penis_shrinkage
 	savefile_key = "penis_shrinkage_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/genitalia_removal
 	savefile_key = "genitalia_removal_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/gender_change
 	savefile_key = "gender_change_pref"
-	default_value = FALSE
 /*
 /datum/preference/toggle/erp/autocum
 	savefile_key = "autocum_pref"
@@ -133,36 +126,29 @@
 
 /datum/preference/toggle/erp/new_genitalia_growth
 	savefile_key = "new_genitalia_growth_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/sex_jitter
 	savefile_key = "sex_jitter_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/afk_erp
 	savefile_key = "afk_erp_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/horny_virus_imm
 	savefile_key = "horny_virus_imm_pref"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/hypnosis
 	savefile_key = "hypnosis_pref"
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
-	default_value = FALSE
 
 /datum/preference/toggle/erp/hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
 
 /datum/preference/toggle/erp/defiance
 	savefile_key = "defiance_pref"
-	default_value = TRUE
 
 /datum/preference/toggle/erp/erp_event_participation
 	savefile_key = "erp_event_participation_pref"
-	default_value = FALSE
 
 /datum/preference/choiced/erp_status
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
@@ -367,7 +353,6 @@
 
 /datum/preference/toggle/erp/vore_overlays
 	savefile_key = "vore_overlays"
-	default_value = FALSE
 
 /datum/preference/toggle/erp/vore_overlays/apply_to_client_updated(client/client, value)
 	apply_to_client(client, value)

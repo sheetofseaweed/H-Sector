@@ -16,8 +16,9 @@
 		return
 
 	for (var/mob/living/carbon/human/buckled_human in buckled_mobs)
-		if (!buckled_human.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-			continue
+
+		//if (!buckled_human.client?.prefs?.read_preference(/datum/preference/toggle/erp)) //hsector edit - remove erp check
+		//	continue
 
 		var/covered = FALSE
 		for (var/obj/item/clothing/iter_clothing in buckled_human.get_equipped_items())

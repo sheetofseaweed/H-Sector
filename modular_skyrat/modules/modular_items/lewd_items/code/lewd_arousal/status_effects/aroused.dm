@@ -17,7 +17,9 @@
 	alert_type = null
 
 /datum/status_effect/aroused/tick(seconds_between_ticks)
-	if(owner.stat >= DEAD || !owner.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+	//hsector edit - remove erp check
+	//was: if(owner.stat >= DEAD || !owner.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+	if(owner.stat >= DEAD)
 		return
 
 	var/mob/living/carbon/human/affected_mob = owner

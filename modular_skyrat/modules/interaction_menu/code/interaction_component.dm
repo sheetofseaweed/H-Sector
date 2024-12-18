@@ -24,8 +24,8 @@
 	for(var/iterating_interaction_id in GLOB.interaction_instances)
 		var/datum/interaction/interaction = GLOB.interaction_instances[iterating_interaction_id]
 		if(interaction.lewd)
-			if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-				continue
+			/*if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+				continue*/ //hsector edit - remove erp check
 			if(interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
 				continue
 		interactions.Add(interaction)
@@ -50,8 +50,8 @@
 /datum/component/interactable/proc/can_interact(datum/interaction/interaction, mob/living/carbon/human/target)
 	if(!interaction.allow_act(target, self))
 		return FALSE
-	if(interaction.lewd && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-		return FALSE
+	/*if(interaction.lewd && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+		return FALSE*/ //hsector edit - remove erp check
 	if(!interaction.distance_allowed && !target.Adjacent(self))
 		return FALSE
 	if(interaction.category == INTERACTION_CAT_HIDE)
