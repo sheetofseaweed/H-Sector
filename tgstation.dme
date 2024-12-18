@@ -6594,6 +6594,7 @@
 #include "modular_hsector\code\game\objects\structures\tentacle_lair\tentacle_moving.dm"
 #include "modular_hsector\code\game\objects\structures\tentacle_lair\tentacle_nest.dm"
 #include "modular_hsector\code\game\objects\structures\tentacle_lair\tentacle_structure.dm"
+#include "modular_hsector\code\modules\client\preferences\erp_preferences.dm"
 #include "modular_hsector\modules\admin\_whitelist_helpers.dm"
 #include "modular_hsector\modules\admin\sql_job_whitelist_system.dm"
 #include "modular_hsector\modules\clothing\mask.dm"

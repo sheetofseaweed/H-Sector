@@ -28,7 +28,7 @@
 	var/mob/living/carbon/C = AM
 	if(isturf(src.loc))
 		if(isliving(AM))
-			if(TRUE) //C.client && C.client?.prefs.mobsexpref == "Yes")
+			if(C.client && C.client?.prefs?.read_preference(/datum/preference/toggle/erp/mobsexpref))
 				if(prob(33))
 					if(tearSlot(C, ITEM_SLOT_FEET))
 						visible_message("<span class='danger'>\The [src]</b> хватают \the [C] за ноги, стягивая обувь!</span>", \
