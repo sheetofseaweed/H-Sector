@@ -24,6 +24,13 @@ export const erp_sounds_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
+export const erp_mob_sex_pref: FeatureToggle = {
+  name: 'Mob ERP interactions',
+  category: 'ERP',
+  description: 'Toggles if you want to ERP-interact with mobs.',
+  component: CheckboxInput,
+};
+
 export const afk_erp_pref: FeatureToggle = {
   name: 'AFK character interaction',
   category: 'ERP',
