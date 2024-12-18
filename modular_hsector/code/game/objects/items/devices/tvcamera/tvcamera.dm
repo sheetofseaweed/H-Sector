@@ -23,4 +23,4 @@
 		icon_state = "camcorder"
 		//item_state = "camcorder"
 	update_icon()
-	playsound(src.loc, 'modular_hsector/sound/effects/weapons/magin.ogg', 50, 1)
+	playsound(src.loc, 'sound/items/weapons/magin.ogg', 50, 1)
