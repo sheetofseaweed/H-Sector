@@ -67,6 +67,11 @@
 	inv_box.screen_loc = ui_wrists
 	inv_box.slot_id = ITEM_SLOT_WRISTS
 	extra_inventory += inv_box
+//
+
+	thirst = new /atom/movable/screen/thirst(null, src) // SPLURT ADDITION - THIRST
+	infodisplay += thirst // SPLURT ADDITION - THIRST
+
 
 	using = new /atom/movable/screen/human/toggle/lewd(null, src)
 	using.icon = extra_inventory_ui_style(ui_style)

@@ -51,6 +51,12 @@
 	if (length(status_examines))
 		. += status_examines
 
+	// SPLURT EDIT START: - Sizecode
+	var/list/size_examines = get_size_examine_info(user)
+	if (length(size_examines))
+		. += size_examines
+	// SPLURT EDIT END
+
 	if(get_bodypart(BODY_ZONE_HEAD) && !get_organ_by_type(/obj/item/organ/internal/brain))
 		. += span_deadsay("It appears that [t_his] brain is missing...")
 
@@ -132,6 +138,10 @@
 			. += span_hypnophrase("[t_He] [t_is] plump and delicious looking - Like a fat little piggy. A tasty piggy.")
 		else
 			. += "<b>[t_He] [t_is] quite chubby.</b>"
+
+	if(water_level < THIRST_LEVEL_PARCHED - 50) // SPLURT ADDITION - THIRST
+		. += "[t_He] [t_is] parched.\n" // SPLURT ADDITION - THIRST
+
 	switch(disgust)
 		if(DISGUST_LEVEL_GROSS to DISGUST_LEVEL_VERYGROSS)
 			. += "[t_He] look[p_s()] a bit grossed out."
@@ -313,6 +323,15 @@
 	if (flavor_text_link)
 		. += flavor_text_link
 
+	//BUBBER EDIT ADDITION BEGIN - EXAMINE RECORDS
+	if (isobserver(usr) || mind.can_see_exploitables || mind.has_exploitables_override)
+		var/perpname = get_face_name(get_id_name(""))
+		var/datum/record/locked/target_records = find_record(perpname, TRUE) //apparantly golden is okay with offstation roles having no records, FYI
+		var/exploitable_text = target_records?.exploitable_information
+		if (target_records && ((length(exploitable_text) > RECORDS_INVISIBLE_THRESHOLD) && ((exploitable_text) != EXPLOITABLE_DEFAULT_TEXT)))
+			. += "<a href='?src=[REF(src)];exprecords=1'>\[View exploitable info\]</a>"
+	//BUBBER EDIT END
+
 	//Temporary flavor text addition:
 	if(temporary_flavor_text)
 		if(length_char(temporary_flavor_text) < TEMPORARY_FLAVOR_PREVIEW_LIMIT)
@@ -458,9 +477,21 @@
 				accessory_message = " with [english_list(accessories)] attached"
 
 		. += "[t_He] [t_is] wearing [w_uniform.examine_title_worn(user)][accessory_message]."
+	// SPLURT EDIT - shirt
+	if(w_shirt && !undershirt_hidden() && !(w_shirt.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [w_shirt.examine_title_worn(user)]."
+	// SPLURT EDIT - bra
+	if(w_bra && !bra_hidden() && !(w_bra.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [w_bra.examine_title_worn(user)]."
+	// SPLURT EDIT - underwear
+	if(w_underwear && !underwear_hidden() && !(w_underwear.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [w_underwear.examine_title_worn(user)]."
 	//head
 	if(head && !(obscured & ITEM_SLOT_HEAD) && !(head.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [head.examine_title_worn(user)] on [t_his] head."
+	// SPLURT EDIT - socks
+	if(w_socks && !socks_hidden() && !(w_socks.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [w_socks.examine_title_worn(user)] on [t_his] feet."
 	//mask
 	if(wear_mask && !(obscured & ITEM_SLOT_MASK)  && !(wear_mask.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_has] [wear_mask.examine_title_worn(user)] on [t_his] face."
@@ -476,8 +507,19 @@
 		else if(HAS_TRAIT(src, TRAIT_BLOODSHOT_EYES))
 			. += span_warning("<B>[t_His] eyes are bloodshot!</B>")
 	//ears
-	if(ears && !(obscured & ITEM_SLOT_EARS) && !(ears.item_flags & EXAMINE_SKIP))
-		. += "[t_He] [t_has] [ears.examine_title_worn(user)] on [t_his] ears."
+	if(ears && !(obscured & ITEM_SLOT_EARS_LEFT) && !(ears.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_has] [ears.examine_title_worn(user)] on [t_his] left ear." // extra inventory
+
+	// SPLURT EDIT - ears extra
+	if(ears_extra && !(obscured & ITEM_SLOT_EARS_RIGHT) && !(ears_extra.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_has] [ears_extra.examine_title_worn(user)] on [t_his] right ear."
+
+	// SPLURT EDIT - ears extra
+	//wearing two ear items makes you look like an idiot
+	if((istype(ears, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_LEFT) && !(ears.item_flags & EXAMINE_SKIP)) && (istype(ears_extra, /obj/item/radio/headset) && !(obscured & ITEM_SLOT_EARS_RIGHT) && !(ears_extra.item_flags & EXAMINE_SKIP)))
+		. += span_warning("[t_He] looks quite tacky wearing both \an [ears.name] and \an [ears_extra.name] on [t_his] head.")
+
+	//
 	//suit/armor
 	if(wear_suit && !(wear_suit.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [wear_suit.examine_title_worn(user)]."
@@ -507,6 +549,9 @@
 	else if(GET_ATOM_BLOOD_DNA_LENGTH(src) || blood_in_hands)
 		if(num_hands)
 			. += span_warning("[t_He] [t_has] [num_hands > 1 ? "" : "a "]blood-stained hand[num_hands > 1 ? "s" : ""]!")
+	// SPLURT EDIT - wrists
+	if(wrists && !wrists_hidden() && !(wrists.item_flags & EXAMINE_SKIP))
+		. += "[t_He] [t_is] wearing [wrists.examine_title_worn(user)]."
 	//handcuffed?
 	if(handcuffed)
 		var/cables_or_cuffs = istype(handcuffed, /obj/item/restraints/handcuffs/cable) ? "restrained with cable" : "handcuffed"
