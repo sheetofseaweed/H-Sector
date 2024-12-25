@@ -22,7 +22,7 @@
 	message = "chitters."
 	message_mime = "chitters silently!"
 	sound = 'modular_zzplurt/sound/voice/moth/mothchitter2.ogg'
-	audio_cooldown = 0.3 SECONDS
+	specific_emote_audio_cooldown = 0.3 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/yap
@@ -31,7 +31,7 @@
 	message = "yaps!"
 	message_mime = "acts out a yap!"
 	sound = 'modular_zzplurt/sound/voice/yap.ogg'
-	audio_cooldown = 0.28 SECONDS
+	specific_emote_audio_cooldown = 0.28 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/yip
@@ -40,7 +40,7 @@
 	message = "yips!"
 	message_mime = "acts out a yip!"
 	sound = 'modular_zzplurt/sound/voice/yip.ogg'
-	audio_cooldown = 0.2 SECONDS
+	specific_emote_audio_cooldown = 0.2 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/bark2
@@ -49,7 +49,7 @@
 	message = "barks!"
 	message_mime = "acts out a bark!"
 	sound = 'modular_zzplurt/sound/voice/bark_alt.ogg'
-	audio_cooldown = 0.35 SECONDS
+	specific_emote_audio_cooldown = 0.35 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/weh2
@@ -58,7 +58,7 @@
 	message = "let out a weh!"
 	message_mime = "acts out a weh!"
 	sound = 'modular_zzplurt/sound/voice/weh2.ogg'
-	audio_cooldown = 0.25 SECONDS
+	specific_emote_audio_cooldown = 0.25 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/weh3
@@ -67,7 +67,7 @@
 	message = "let out a weh!"
 	message_mime = "acts out a weh!"
 	sound = 'modular_zzplurt/sound/voice/weh3.ogg'
-	audio_cooldown = 0.25 SECONDS
+	specific_emote_audio_cooldown = 0.25 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 
@@ -77,7 +77,7 @@
 	message = "let out a surprised weh!"
 	message_mime = "acts out a surprised weh!"
 	sound = 'modular_zzplurt/sound/voice/weh_s.ogg'
-	audio_cooldown = 0.35 SECONDS
+	specific_emote_audio_cooldown = 0.35 SECONDS
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/mlem
@@ -92,7 +92,7 @@
 	message = "howls like coyote!"
 	message_mime = "acts out a coyote's howl!"
 	sound = 'modular_zzplurt/sound/voice/coyotehowl.ogg'
-	audio_cooldown = 2.94 SECONDS // Uses longest sound's time
+	specific_emote_audio_cooldown = 2.94 SECONDS // Uses longest sound's time
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/coyhowl/get_sound(mob/living/user)
