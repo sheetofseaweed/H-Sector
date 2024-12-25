@@ -221,7 +221,7 @@ export type PreferencesMenuData = {
   >;
   job_preferences: Record<string, JobPriority>;
   // HSECTOR EDIT
-  whitelisted_jobs?: string[];
+  whitelisted_jobs: string[];
   // HSECTOR EDIT END
 
   // SKYRAT EDIT
