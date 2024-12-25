@@ -238,7 +238,7 @@ const JobRow = (props: { className?: string; job: Job; name: string }) => {
     );
     // SKYRAT EDIT END
     // HSECTOR EDIT START
-  } else if (job.job_whitelist && (data.whitelisted_jobs.indexOf(name) === -1)) {
+  } else if (job.job_whitelist && data.whitelisted_jobs.indexOf(name) === -1) {
     rightSide = (
       <Stack align="center" height="100%" pr={1}>
         <Stack.Item grow textAlign="right">
