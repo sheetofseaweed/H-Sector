@@ -225,6 +225,10 @@ DEFINE_BITFIELD(smoothing_junction, list(
 #define SMOOTH_GROUP_WATER S_OBJ(76) ///obj/effect/abstract/liquid_turf
 //SKYRAT EDIT END
 
+//HSECTOR EDIT ADDITION
+#define SMOOTH_GROUP_LEWD_TENTACLES S_OBJ(77) ///obj/structure/tentacle_lair/weeds
+//HSECTOR EDIT END
+
 #define SMOOTH_GROUP_GRAV_FIELD S_OBJ(69)
 
 /// Performs the work to set smoothing_groups and canSmoothWith.

@@ -8,12 +8,12 @@
 	density = FALSE
 	layer = MID_TURF_LAYER
 	plane = FLOOR_PLANE
-	icon_state = "weeds"
+	icon_state = "tentacle_floor-0"
+	base_icon_state = "tentacle_floor"
 	max_integrity = 15
-	canSmoothWith = list(/obj/structure/tentacle_lair/weeds, /turf/closed/wall)
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = SMOOTH_GROUP_ALIEN_WEEDS + SMOOTH_GROUP_ALIEN_RESIN
-	canSmoothWith = SMOOTH_GROUP_ALIEN_WEEDS + SMOOTH_GROUP_WALLS
+	smoothing_groups = SMOOTH_GROUP_LEWD_TENTACLES
+	canSmoothWith = SMOOTH_GROUP_LEWD_TENTACLES + SMOOTH_GROUP_WALLS
 	var/last_expand = 0 //last world.time this weed expanded
 	var/growth_cooldown_low = 150
 	var/growth_cooldown_high = 200
@@ -35,11 +35,14 @@
 	if(icon == initial(icon))
 		switch(rand(1,3))
 			if(1)
-				icon = 'modular_hsector/icons/obj/tentacle_lair/tentacle_floor.dmi'
+				icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_floor.dmi'
+				base_icon_state = "tentacle_floor"
 			if(2)
-				icon = 'modular_hsector/icons/obj/tentacle_lair/tentacle_floor2.dmi'
+				icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_floor2.dmi'
+				base_icon_state = "tentacle_floor2"
 			if(3)
-				icon = 'modular_hsector/icons/obj/tentacle_lair/tentacle_fl_2.dmi'
+				icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_fl_2.dmi'
+				base_icon_state = "tentacle_fl_2"
 
 	if(prob(33))
 		new /obj/structure/tentacle_lair/moving_tentacle(src.loc)
@@ -77,10 +80,10 @@
 	name = "growing tentacles"
 	desc = "A growing tentacle surface covers the floor."
 	icon_state = "weednode"
+	icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_fl_2.dmi'
 	var/node_range = TENTACLE_NODERANGE
 
 /obj/structure/tentacle_lair/weeds/node/Initialize(mapload)
-	icon = 'modular_hsector/icons/obj/tentacle_lair/tentacle_fl_2.dmi'
 	. = ..()
 	var/obj/structure/tentacle_lair/weeds/W = locate(/obj/structure/tentacle_lair/weeds) in loc
 	if(W && W != src)
