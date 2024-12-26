@@ -161,6 +161,10 @@ export const IconCutterTarget = new Juke.Target({
       `modular_zubbers/icons/**/*.png.toml`,
       `modular_zubbers/icons/**/*.dmi.toml`,
       // BUBBER EDIT END
+      // HSECTOR EDIT ADDITION START: Modular iconcutter too
+      `modular_hsector/icons/**/*.png.toml`,
+      `modular_hsector/icons/**/*.dmi.toml`,
+      // HSECTOR EDIT END
       cutter_path,
     ]
     // Alright we're gonna search out any existing toml files and convert
@@ -172,6 +176,10 @@ export const IconCutterTarget = new Juke.Target({
       ...Juke.glob(`modular_zubbers/icons/**/*.png.toml`),
       ...Juke.glob(`modular_zubbers/icons/**/*.dmi.toml`),
       // BUBBER EDIT END
+      // HSECTOR EDIT ADDITION START: Modular iconcutter too
+      ...Juke.glob(`modular_hsector/icons/**/*.png.toml`),
+      ...Juke.glob(`modular_hsector/icons/**/*.dmi.toml`),
+      // HSECTOR EDIT END
     ];
     return [
       ...standard_inputs,
@@ -188,6 +196,10 @@ export const IconCutterTarget = new Juke.Target({
       ...Juke.glob(`modular_zubbers/icons/**/*.png.toml`),
       ...Juke.glob(`modular_zubbers/icons/**/*.dmi.toml`),
       // BUBBER EDIT END
+      // HSECTOR EDIT ADDITION START: Modular iconcutter too
+      ...Juke.glob(`modular_hsector/icons/**/*.png.toml`),
+      ...Juke.glob(`modular_hsector/icons/**/*.dmi.toml`),
+      // HSECTOR EDIT END
     ];
     return folders
       .map((file) => file.replace(`.png.toml`, '.dmi'))
@@ -208,6 +220,14 @@ export const IconCutterTarget = new Juke.Target({
       'modular_zubbers/icons',
     ]);
     // BUBBER EDIT END
+    // HSECTOR EDIT ADDITION START: Modular iconcutter too
+    await Juke.exec(cutter_path, [
+      '--dont-wait',
+      '--templates',
+      'cutter_templates',
+      'modular_hsector/icons',
+    ]);
+    // HSECTOR EDIT END
   },
 });
 
@@ -244,6 +264,7 @@ export const DmTarget = new Juke.Target({
     'modular_skyrat/**', ///SKYRAT EDIT ADDITION - Making the CBT work
     'modular_zubbers/**', ///BUBBER EDIT ADDITION - Making the CBT work
     'modular_splurt/**', ///SPLURT EDIT ADDITION - Making the CBT work
+    'modular_hsector/**', ///HSECTOR EDIT ADDITION - Making the CBT work
     'sound/**',
     `${DME_NAME}.dme`,
     NamedVersionFile,

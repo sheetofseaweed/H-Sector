@@ -77,9 +77,11 @@ files = []
 if platform.system() == "Windows":
     files = glob.glob(f"{path_to_us}\..\\..\\icons\\**\*.toml", recursive = True)
     files += glob.glob(f"{path_to_us}\..\\..\\modular_zubbers\\icons\\**\*.toml", recursive = True) # BUBBER EDIT ADDITION: Modular icon cutter
+    files += glob.glob(f"{path_to_us}\..\\..\\modular_hsector\\icons\\**\*.toml", recursive = True)  # HSECTOR EDIT ADDITION: same as above
 else:
     files = glob.glob(f"{path_to_us}/../../icons/**/*.toml", recursive = True)
     files += glob.glob(f"{path_to_us}\../../modular_zubbers/icons/**\*.toml", recursive = True) # BUBBER EDIT ADDITION: Modular icon cutter
+    files += glob.glob(f"{path_to_us}\../../modular_hsector/icons/**\*.toml", recursive = True) # HSECTOR EDIT ADDITION: same as above
 for cutter_template in files:
     resource_name = re.sub(chop_extension, r"\1", cutter_template, count = 1)
     if not os.path.isfile(resource_name):
