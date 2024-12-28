@@ -8,6 +8,7 @@
 	density = FALSE
 	layer = MID_TURF_LAYER
 	plane = FLOOR_PLANE
+	icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_floor.dmi'
 	icon_state = "tentacle_floor-0"
 	base_icon_state = "tentacle_floor"
 	max_integrity = 15
@@ -80,11 +81,13 @@
 	name = "growing tentacles"
 	desc = "A growing tentacle surface covers the floor."
 	icon_state = "weednode"
-	icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_fl_2.dmi'
+	icon = 'modular_hsector/icons/obj/tentacle_lair/tentacle_unified.dmi'
 	var/node_range = TENTACLE_NODERANGE
 
 /obj/structure/tentacle_lair/weeds/node/Initialize(mapload)
 	. = ..()
+	icon = 'modular_hsector/icons/obj/structures/smooth_structures/tentacle_fl_2.dmi'
+	base_icon_state = "tentacle_fl_2"
 	var/obj/structure/tentacle_lair/weeds/W = locate(/obj/structure/tentacle_lair/weeds) in loc
 	if(W && W != src)
 		qdel(W)

@@ -1,7 +1,10 @@
 /obj/item/organ/external/genital/anus/get_description_string(datum/sprite_accessory/genital/gas)
-	var/u_His = owner?.p_their() || "their"
-
-	desc = "You see [u_His] squishy [lowertext(gas.icon_state)] pucker parting [u_His] asscheeks"
+	var/returned_string = "You see an [lowertext(genital_name)]."
+	if(aroused == AROUSAL_PARTIAL)
+		returned_string += " It looks tight."
+	if(aroused == AROUSAL_FULL)
+		returned_string += " It looks very tight."
+	return returned_string
 
 /obj/item/organ/external/genital/anus/get_sprite_size_string()
 	. = "[genital_type]_[floor(genital_size)]"
@@ -16,3 +19,4 @@
 
 /datum/bodypart_overlay/mutant/genital/anus
 	layers = EXTERNAL_BODY_LAYER
+	feature_key = ORGAN_SLOT_ANUS

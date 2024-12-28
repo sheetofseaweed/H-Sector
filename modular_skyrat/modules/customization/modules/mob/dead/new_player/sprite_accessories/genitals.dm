@@ -322,47 +322,4 @@
 	icon_state = "sextuple"
 	name = "Sextuple"
 
-/datum/sprite_accessory/genital/belly //hsector add
-	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/belly_onmob.dmi'
-	organ_type = /obj/item/organ/external/genital/belly
-	associated_organ_slot = ORGAN_SLOT_BELLY
-	key = ORGAN_SLOT_BELLY
-	has_skintone_shading = TRUE
-	always_color_customizable = TRUE
-	default_color = DEFAULT_SKIN_OR_PRIMARY
-	genetic = TRUE
-	relevent_layers = list(BODYPARTS_LAYER)
-
-/datum/sprite_accessory/genital/belly/none
-	icon_state = "none"
-	name = SPRITE_ACCESSORY_NONE
-	factual = FALSE
-	color_src = null
-
-/datum/sprite_accessory/genital/belly/normal
-	icon_state = "pair"
-	name = "Belly"
-
-/datum/sprite_accessory/genital/butt
-	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi'
-	organ_type = /obj/item/organ/external/genital/butt
-	associated_organ_slot = ORGAN_SLOT_BUTT
-	key = ORGAN_SLOT_BUTT
-	has_skintone_shading = TRUE
-	always_color_customizable = TRUE
-	default_color = DEFAULT_SKIN_OR_PRIMARY
-	genetic = TRUE
-	relevent_layers = list(BODYPARTS_LAYER)
-
-/datum/sprite_accessory/genital/butt/none
-	icon_state = "none"
-	name = SPRITE_ACCESSORY_NONE
-	factual = FALSE
-	color_src = null
-
-/datum/sprite_accessory/genital/butt/normal
-	icon_state = "pair"
-	name = "Butt"
-//hsector add end
-
 #undef TAUR_DIMENSION_X
