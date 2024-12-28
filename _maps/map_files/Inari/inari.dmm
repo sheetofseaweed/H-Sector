@@ -20739,7 +20739,6 @@
 	dir = 4
 	},
 /obj/structure/toilet{
-	contents = newlist(/obj/item/toy/snappop/phoenix);
 	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor,
@@ -20896,7 +20895,6 @@
 	specialfunctions = 4
 	},
 /obj/structure/toilet{
-	contents = newlist(/obj/item/toy/snappop/phoenix);
 	dir = 4
 	},
 /turf/open/floor/iron/freezer,
@@ -34503,7 +34501,6 @@
 	specialfunctions = 4
 	},
 /obj/structure/toilet{
-	contents = newlist(/obj/item/toy/snappop/phoenix);
 	dir = 4
 	},
 /turf/open/floor/iron/freezer,
@@ -45370,7 +45367,6 @@
 	pixel_y = 29
 	},
 /obj/structure/toilet{
-	contents = newlist(/obj/item/toy/snappop/phoenix);
 	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor,
