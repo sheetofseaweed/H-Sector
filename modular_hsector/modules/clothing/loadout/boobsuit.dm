@@ -37,6 +37,9 @@
 	desc = "A stylish scarf."
 	icon = 'modular_hsector/icons/mob/overlays/hollyneck.dmi'
 	icon_state = "m_hollyN"
+	greyscale_colors = null
+	greyscale_config = null
+	greyscale_config_worn = null
 
 /datum/loadout_item/neck/cow
 	name = "Holly's Scarf"
