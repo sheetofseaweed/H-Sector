@@ -36,6 +36,8 @@
 	name = "Holly's scarf"
 	desc = "A stylish scarf."
 	worn_icon = 'modular_hsector/icons/mob/overlays/hollyneck.dmi'
+	icon = "tie_greyscale_tied"
+	worn_icon_state = "tie_greyscale_tied"
 	greyscale_colors = null
 	greyscale_config = null
 	greyscale_config_worn = null
