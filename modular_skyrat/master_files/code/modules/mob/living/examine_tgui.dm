@@ -60,16 +60,29 @@
 
 	//  Handle OOC notes first
 	if(preferences)
+		//if(preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		var/e_prefs = preferences.read_preference(/datum/preference/choiced/erp_status)
-		var/e_prefs_hypno = preferences.read_preference(/datum/preference/toggle/erp/hypnosis) ? "Yes" : "No"
+		var/e_prefs_hypno = preferences.read_preference(/datum/preference/choiced/erp_status_hypno)
 		var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
 		var/e_prefs_nc = preferences.read_preference(/datum/preference/choiced/erp_status_nc)
-		var/e_prefs_event = preferences.read_preference(/datum/preference/toggle/erp/erp_event_participation) ? "Yes" : "No" //var/e_prefs_mechanical = preferences.read_preference(/datum/preference/choiced/erp_status_mechanics)
+		//var/e_prefs_mechanical = preferences.read_preference(/datum/preference/choiced/erp_status_mechanics)
+		var/e_prefs_event = preferences.read_preference(/datum/preference/toggle/erp/erp_event_participation) ? "Yes" : "No"
+		// SPLURT EDIT ADDITION - Interaction preferences
+		var/e_prefs_extm = preferences.read_preference(/datum/preference/choiced/erp_status_extm)
+		var/e_prefs_extmharm = preferences.read_preference(/datum/preference/choiced/erp_status_extmharm)
+		var/e_prefs_unholy = preferences.read_preference(/datum/preference/choiced/erp_status_unholy)
+		// SPLURT EDIT END
 		ooc_notes += "ERP: [e_prefs]\n"
 		ooc_notes += "Hypnosis: [e_prefs_hypno]\n"
 		ooc_notes += "Vore: [e_prefs_v]\n"
 		ooc_notes += "Non-Con: [e_prefs_nc]\n"
-		ooc_notes += "ERP Event Participation: [e_prefs_event]\n" //ooc_notes += "ERP Mechanics: [e_prefs_mechanical]\n"
+		// SPLURT EDIT ADDITION - Interaction preferences
+		ooc_notes += "Extreme ERP verbs: [e_prefs_extm]\n"
+		ooc_notes += "Harmful ERP verbs: [e_prefs_extmharm]\n"
+		ooc_notes += "Unholy ERP verbs: [e_prefs_unholy]\n"
+		// SPLURT EDIT END
+		//ooc_notes += "ERP Mechanics: [e_prefs_mechanical]\n"
+		ooc_notes += "ERP Event Participation: [e_prefs_event]\n"
 		ooc_notes += "\n"
 
 		// Now we handle silicon and/or human, order doesn't really matter

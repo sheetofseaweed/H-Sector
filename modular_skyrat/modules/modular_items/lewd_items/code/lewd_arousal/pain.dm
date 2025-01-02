@@ -5,7 +5,7 @@
 /mob/living/proc/adjust_pain(change_amount = 0)
 	return
 
-/mob/living/carbon/human/adjust_pain(change_amount = 0)
+/mob/living/carbon/human/adjust_pain(change_amount = 0, mob/living/carbon/human/partner, datum/interaction/interaction, position)
 	//hsector edit - remove erp check
 	//was: if(stat >= DEAD || !client?.prefs?.read_preference(/datum/preference/toggle/erp))
 	if(stat >= DEAD)
@@ -25,6 +25,6 @@
 	else if(HAS_TRAIT(src, TRAIT_MASOCHISM))
 		if(change_amount > 0)
 			adjust_arousal(change_amount)
-		adjust_pleasure(change_amount / 2)
+		adjust_pleasure(change_amount / 2, partner, interaction, position)
 
 	pain = clamp(pain + change_amount, AROUSAL_MINIMUM, AROUSAL_LIMIT)
