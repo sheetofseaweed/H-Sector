@@ -9,7 +9,7 @@
 /datum/preference/choiced/erp_status_extm/create_default_value()
 	return "No"
 
-/datum/preference/choiced/erp_status_extm/is_accessible(datum/preferences/preferences)
+/*/datum/preference/choiced/erp_status_extm/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -23,7 +23,7 @@
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_status_extm/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
@@ -46,12 +46,13 @@
 	if(CONFIG_GET(flag/disable_erp_preferences))
 		return FALSE
 
-	return preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No"
+	return preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No" //return preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No"
+
 
 /datum/preference/choiced/erp_status_extmharm/deserialize(input, datum/preferences/preferences)
-	if(CONFIG_GET(flag/disable_erp_preferences))
-		return "No"
-	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences) || !(preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No"))
+	//if(CONFIG_GET(flag/disable_erp_preferences))
+	//	return "No"
+	if(!(preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No")) //if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences) || !(preferences.read_preference(/datum/preference/choiced/erp_status_extm) != "No"))
 		return "No"
 	. = ..()
 
@@ -69,7 +70,7 @@
 /datum/preference/choiced/erp_status_unholy/create_default_value()
 	return "No"
 
-/datum/preference/choiced/erp_status_unholy/is_accessible(datum/preferences/preferences)
+/*/datum/preference/choiced/erp_status_unholy/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -83,7 +84,7 @@
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()
+	. = ..()*/
 
 /datum/preference/choiced/erp_status_unholy/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
@@ -103,14 +104,14 @@
 /datum/preference/numeric/erp_lust_tolerance/create_informed_default_value(datum/preferences/preferences)
 	return 1.0
 
-/datum/preference/numeric/erp_lust_tolerance/is_accessible(datum/preferences/preferences)
+/*/datum/preference/numeric/erp_lust_tolerance/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
 	if(CONFIG_GET(flag/disable_erp_preferences))
 		return FALSE
 
-	return preferences.read_preference(/datum/preference/toggle/master_erp_preferences)
+	return preferences.read_preference(/datum/preference/toggle/master_erp_preferences)*/
 
 /datum/preference/numeric/erp_sexual_potency
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
@@ -127,14 +128,14 @@
 /datum/preference/numeric/erp_sexual_potency/create_informed_default_value(datum/preferences/preferences)
 	return 1.0
 
-/datum/preference/numeric/erp_sexual_potency/is_accessible(datum/preferences/preferences)
+/*/datum/preference/numeric/erp_sexual_potency/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
 	if(CONFIG_GET(flag/disable_erp_preferences))
 		return FALSE
 
-	return preferences.read_preference(/datum/preference/toggle/master_erp_preferences)
+	return preferences.read_preference(/datum/preference/toggle/master_erp_preferences)*/
 
 /datum/preference/toggle/erp/butt_enlargement
 	savefile_key = "butt_enlargement_pref"

@@ -1,4 +1,4 @@
-/datum/interaction/lewd/unholy/piss_over
+/*/datum/interaction/lewd/unholy/piss_over
 	name = "Piss Over"
 	description = "Piss all over them."
 	interaction_requires = list(INTERACTION_REQUIRE_SELF_BOTTOMLESS)
@@ -53,4 +53,4 @@
 	user_pleasure = 0
 	target_pleasure = 0
 	user_arousal = 3
-	target_arousal = 3
+	target_arousal = 3*/

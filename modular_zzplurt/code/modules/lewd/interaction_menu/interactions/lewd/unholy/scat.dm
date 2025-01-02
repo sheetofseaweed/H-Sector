@@ -1,4 +1,4 @@
-/datum/interaction/lewd/unholy/faceshit
+/*/datum/interaction/lewd/unholy/faceshit
 	name = "Face Shit"
 	description = "Shit on their face."
 	interaction_requires = list(INTERACTION_REQUIRE_TARGET_MOUTH)
@@ -147,4 +147,4 @@
 
 /datum/interaction/lewd/unholy/suck_shit/New()
 	sound_possible = GLOB.brap_noises // GLOB.brap_noises: expected a constant expression
-	. = ..()
+	. = ..()*/

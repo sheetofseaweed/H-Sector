@@ -213,7 +213,7 @@
 					source.visible_message(span_purple("[source.name] [internal ? "inserts" : "attaches"] the [new_item.name] [into_or_onto] [target.name]'s [item_index]."), span_purple("You [insert_or_attach] the [new_item.name] [into_or_onto] [target.name]'s [item_index]."), span_purple("You hear someone [insert_or_attach] something [into_or_onto] someone nearby."), vision_distance = 1)
 					target.vars[item_index] = new_item
 					new_item.forceMove(target)
-					new_item.lewd_equipped(target, item_index)
+					new_item.on_equipped(target, item_index)
 				target.update_inv_lewd()
 
 		else
@@ -246,7 +246,7 @@
 			return target.has_vagina(required_state = REQUIRE_GENITAL_EXPOSED)
 		if(ORGAN_SLOT_ANUS)
 			return target.has_anus(required_state = REQUIRE_GENITAL_EXPOSED)
-/*
+
 /// Decides if a player should be able to insert or remove an item from a provided lewd slot_index.
 /datum/component/interactable/proc/is_toy_compatible(obj/item/clothing/sextoy/item, slot_index)
 	if(!item) // Used for UI code, should never be actually null during actual logic code.
@@ -254,12 +254,12 @@
 
 	switch(slot_index)
 		if(ORGAN_SLOT_VAGINA)
-			return item.lewd_slot_flags & LEWD_SLOT_VAGINA
+			return item.extra_slot_flags & ORGAN_SLOT_VAGINA
 		if(ORGAN_SLOT_PENIS)
-			return item.lewd_slot_flags & LEWD_SLOT_PENIS
+			return item.extra_slot_flags & ORGAN_SLOT_PENIS
 		if(ORGAN_SLOT_ANUS)
-			return item.lewd_slot_flags & LEWD_SLOT_ANUS
+			return item.extra_slot_flags & ORGAN_SLOT_ANUS
 		if(ORGAN_SLOT_NIPPLES)
-			return item.lewd_slot_flags & LEWD_SLOT_NIPPLES
+			return item.extra_slot_flags & ORGAN_SLOT_NIPPLES
 		else
-			return FALSE*/
+			return FALSE
