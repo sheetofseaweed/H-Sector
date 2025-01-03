@@ -84,10 +84,10 @@
 		return "No"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
-	. = ..()*/
+	. = ..()
 
 /datum/preference/choiced/erp_status_unholy/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	return FALSE
+	return FALSE*/
 
 /datum/preference/numeric/erp_lust_tolerance
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
