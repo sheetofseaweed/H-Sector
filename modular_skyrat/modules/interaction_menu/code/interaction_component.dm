@@ -21,13 +21,31 @@
 
 /datum/component/interactable/proc/build_interactions_list()
 	interactions = list()
-	for(var/iterating_interaction_id in GLOB.interaction_instances)
-		var/datum/interaction/interaction = GLOB.interaction_instances[iterating_interaction_id]
+	//SPLURT EDIT - Interactions subsystem
+	if(!SSinteractions)
+		return // Can't continue, no subsystem
+	for(var/iterating_interaction_id in SSinteractions.interactions)
+		var/datum/interaction/interaction = SSinteractions.interactions[iterating_interaction_id]
+	//SPLURT EDIT END
 		if(interaction.lewd)
 			/*if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 				continue*/ //hsector edit - remove erp check
+			// SPLURT EDIT ADDITION - Interaction preferences
+			if(interaction.unsafe_types & INTERACTION_EXTREME)
+				if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extm) == "No")
+					continue
+			if(interaction.unsafe_types & INTERACTION_HARMFUL)
+				//if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) == "No") //HSECTOR EDIT no harm
+				continue
+			/*if(interaction.unsafe_types & INTERACTION_UNHOLY)
+				if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) == "No")
+					continue*/
+			// SPLURT EDIT END
+			/*
+			SPLURT EDIT REMOVAL - Interactions
 			if(interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
 				continue
+			*/
 		interactions.Add(interaction)
 
 /datum/component/interactable/RegisterWithParent()
@@ -142,11 +160,11 @@
 
 	if(params["interaction"])
 		var/interaction_id = params["interaction"]
-		if(GLOB.interaction_instances[interaction_id])
+		if(SSinteractions.interactions[interaction_id])
 			var/mob/living/carbon/human/user = locate(params["userref"])
-			if(!can_interact(GLOB.interaction_instances[interaction_id], user))
+			if(!can_interact(SSinteractions.interactions[interaction_id], user))
 				return FALSE
-			GLOB.interaction_instances[interaction_id].act(user, locate(params["selfref"]))
+			SSinteractions.interactions[interaction_id].act(user, locate(params["selfref"]))
 			var/datum/component/interactable/interaction_component = user.GetComponent(/datum/component/interactable)
 			interaction_component.interact_last = world.time
 			interact_next = interaction_component.interact_last + INTERACTION_COOLDOWN
@@ -195,7 +213,7 @@
 					source.visible_message(span_purple("[source.name] [internal ? "inserts" : "attaches"] the [new_item.name] [into_or_onto] [target.name]'s [item_index]."), span_purple("You [insert_or_attach] the [new_item.name] [into_or_onto] [target.name]'s [item_index]."), span_purple("You hear someone [insert_or_attach] something [into_or_onto] someone nearby."), vision_distance = 1)
 					target.vars[item_index] = new_item
 					new_item.forceMove(target)
-					new_item.lewd_equipped(target, item_index)
+					new_item.on_equipped(target, item_index)
 				target.update_inv_lewd()
 
 		else
@@ -228,7 +246,7 @@
 			return target.has_vagina(required_state = REQUIRE_GENITAL_EXPOSED)
 		if(ORGAN_SLOT_ANUS)
 			return target.has_anus(required_state = REQUIRE_GENITAL_EXPOSED)
-/*
+
 /// Decides if a player should be able to insert or remove an item from a provided lewd slot_index.
 /datum/component/interactable/proc/is_toy_compatible(obj/item/clothing/sextoy/item, slot_index)
 	if(!item) // Used for UI code, should never be actually null during actual logic code.
@@ -236,12 +254,12 @@
 
 	switch(slot_index)
 		if(ORGAN_SLOT_VAGINA)
-			return item.lewd_slot_flags & LEWD_SLOT_VAGINA
+			return item.extra_slot_flags & ORGAN_SLOT_VAGINA
 		if(ORGAN_SLOT_PENIS)
-			return item.lewd_slot_flags & LEWD_SLOT_PENIS
+			return item.extra_slot_flags & ORGAN_SLOT_PENIS
 		if(ORGAN_SLOT_ANUS)
-			return item.lewd_slot_flags & LEWD_SLOT_ANUS
+			return item.extra_slot_flags & ORGAN_SLOT_ANUS
 		if(ORGAN_SLOT_NIPPLES)
-			return item.lewd_slot_flags & LEWD_SLOT_NIPPLES
+			return item.extra_slot_flags & ORGAN_SLOT_NIPPLES
 		else
-			return FALSE*/
+			return FALSE

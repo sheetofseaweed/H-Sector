@@ -93,6 +93,11 @@
 
 /datum/preference/toggle/erp/hypnosis
 	savefile_key = "hypnosis_pref"
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
+	savefile_identifier = PREFERENCE_CHARACTER
+
+/datum/preference/toggle/erp/hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
+	return FALSE
 
 /datum/preference/toggle/erp/bimbofication
 	savefile_key = "bimbofication_pref"
@@ -135,14 +140,6 @@
 
 /datum/preference/toggle/erp/horny_virus_imm
 	savefile_key = "horny_virus_imm_pref"
-
-/datum/preference/toggle/erp/hypnosis
-	savefile_key = "hypnosis_pref"
-	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
-	savefile_identifier = PREFERENCE_CHARACTER
-
-/datum/preference/toggle/erp/hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	return FALSE
 
 /datum/preference/toggle/erp/defiance
 	savefile_key = "defiance_pref"

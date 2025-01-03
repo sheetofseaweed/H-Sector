@@ -1,4 +1,3 @@
-/* Cuts out all but anus code - Hsector
 //butt
 /datum/preference/choiced/genital/butt
 	savefile_key = "feature_butt"
@@ -24,7 +23,7 @@
 
 	target.dna.features["butt_uses_skincolor"] = value
 
-/datum/preference/numeric/butt_size
+/datum/preference/numeric/butt_size // /datum/preference/choiced/butt_size
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "butt_size"
@@ -35,7 +34,7 @@
 /datum/preference/numeric/butt_size/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)
 	var/allowed = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
-	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/toggle/allow_genitals)
+	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/allow_genitals)
 	var/part_enabled = is_factual_sprite_accessory(relevant_mutant_bodypart, preferences.read_preference(/datum/preference/choiced/genital/butt))
 	return erp_allowed && part_enabled && (passed_initial_check || allowed)
 
@@ -56,7 +55,7 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_BUTT
 	type_to_check = /datum/preference/choiced/genital/butt
 	skin_color_type = /datum/preference/toggle/genital_skin_color/butt
-*/
+
 
 
 //butthole
@@ -66,7 +65,7 @@
 	default_accessory_type = /datum/sprite_accessory/genital/anus/none
 
 /datum/preference/choiced/genital/anus/is_accessible(datum/preferences/preferences)
-	return ..() && preferences.read_preference(/datum/preference/choiced/genital/butt) != "None"
+	return ..()// && preferences.read_preference(/datum/preference/choiced/genital/butt) != "None"
 
 /datum/preference/toggle/genital_skin_tone/anus
 	savefile_key = "anus_skin_tone"
@@ -99,7 +98,7 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_ANUS
 	type_to_check = /datum/preference/choiced/genital/anus
 	skin_color_type = /datum/preference/toggle/genital_skin_color/anus
-/*
+
 //SPLURT EDIT START
 // BELLY (yes it HAS to be here)
 /datum/preference/choiced/genital/belly
@@ -107,26 +106,26 @@
 	relevant_mutant_bodypart = ORGAN_SLOT_BELLY
 	default_accessory_type = /datum/sprite_accessory/genital/belly/none
 
-/datum/preference/numeric/belly_size
+/datum/preference/numeric/belly_size // /datum/preference/choiced/belly_size
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "belly_size"
 	relevant_mutant_bodypart = ORGAN_SLOT_BELLY
-	minimum = 1
+	minimum = 0
 	maximum = 10
 
 /datum/preference/numeric/belly_size/create_default_value()
-	return 1
+	return 0 //return "flat"
 
 /datum/preference/numeric/belly_size/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)
 	var/allowed = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
-	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/toggle/allow_genitals)
+	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/allow_genitals)
 	var/part_enabled = is_factual_sprite_accessory(relevant_mutant_bodypart, preferences.read_preference(/datum/preference/choiced/genital/belly))
 	return erp_allowed && part_enabled && (passed_initial_check || allowed)
 
 /datum/preference/numeric/belly_size/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	target.dna.features["belly_size"] = value
+	target.dna.features["belly_size"] = value //target.dna.features["belly_size"] = GLOB.belly_size_to_number[value]
 
 
 /datum/preference/toggle/genital_skin_tone/belly
@@ -161,4 +160,4 @@
 	type_to_check = /datum/preference/choiced/genital/belly
 	skin_color_type = /datum/preference/toggle/genital_skin_color/belly
 //SPLURT EDIT END
-*/
+

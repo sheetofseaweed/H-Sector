@@ -296,13 +296,9 @@ export const feature_belly: Feature<string> = {
     return <FeatureDropdownInput buttons {...props} />;
   },
 };
-export const belly_size: Feature<string> = {
+export const belly_size: FeatureNumeric = {
   name: 'Belly Size',
-  component: (
-    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
-  ) => {
-    return <FeatureDropdownInput buttons {...props} />;
-  },
+  component: FeatureNumberInput,
 };
 
 export const feature_butt: Feature<string> = {
@@ -314,13 +310,9 @@ export const feature_butt: Feature<string> = {
   },
 };
 
-export const butt_size: Feature<string> = {
+export const butt_size: FeatureNumeric = {
   name: 'Butt Size',
-  component: (
-    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
-  ) => {
-    return <FeatureDropdownInput buttons {...props} />;
-  },
+  component: FeatureNumberInput,
 };
 
 export const body_size: FeatureNumeric = {
