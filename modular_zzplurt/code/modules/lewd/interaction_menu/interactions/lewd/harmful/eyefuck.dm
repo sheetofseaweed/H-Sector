@@ -1,4 +1,4 @@
-/datum/interaction/lewd/extreme/harmful/eyefuck
+/*/datum/interaction/lewd/extreme/harmful/eyefuck
 	name = "Eyefuck"
 	description = "Fuck their eye."
 	user_required_parts = list(ORGAN_SLOT_PENIS = REQUIRE_GENITAL_EXPOSED)
@@ -87,4 +87,4 @@
 	if(prob(15))
 		target.bleed(2)
 	if(prob(25))
-		target.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
+		target.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))*/

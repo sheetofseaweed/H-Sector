@@ -244,6 +244,7 @@ const CharacterDirectoryList = (props) => {
           >
             Extreme
           </SortButton>
+          {/*
           <SortButton
             id="extremeharm"
             sortId={sortId}
@@ -259,7 +260,7 @@ const CharacterDirectoryList = (props) => {
             onClick={handleSort}
           >
             Unholy
-          </SortButton>
+          </SortButton> */}
           <Table.Cell collapsing textAlign="right">
             Advert
           </Table.Cell>

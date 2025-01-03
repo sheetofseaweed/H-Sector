@@ -39,8 +39,8 @@
 // Interaction categories
 #define INTERACTION_CAT_LEWD "lewd"
 #define INTERACTION_CAT_EXTREME "extreme"
-#define INTERACTION_CAT_HARMFUL "harmful"
-#define INTERACTION_CAT_UNHOLY "unholy"
+//#define INTERACTION_CAT_HARMFUL "harmful"
+//#define INTERACTION_CAT_UNHOLY "unholy"
 
 // Additional details sent to the interaction menu
 #define INTERACTION_FILLS_CONTAINERS list( \

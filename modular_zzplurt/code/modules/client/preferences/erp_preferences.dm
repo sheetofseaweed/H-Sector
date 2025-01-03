@@ -28,7 +28,7 @@
 /datum/preference/choiced/erp_status_extm/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
 
-/datum/preference/choiced/erp_status_extmharm
+/*/datum/preference/choiced/erp_status_extmharm
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "erp_status_pref_extmharm"
@@ -70,7 +70,7 @@
 /datum/preference/choiced/erp_status_unholy/create_default_value()
 	return "No"
 
-/*/datum/preference/choiced/erp_status_unholy/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/erp_status_unholy/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 

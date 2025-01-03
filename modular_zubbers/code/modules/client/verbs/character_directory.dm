@@ -194,8 +194,8 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 		var/noncon = "Ask"
 		// SPLURT EDIT START: INTERACTION PANEL
 		var/extreme = "Ask"
-		var/extremeharm = "Ask"
-		var/unholy = "Ask"
+		//var/extremeharm = "Ask"
+		//var/unholy = "Ask"
 		// SPLURT EDIT END: INTERACTION PANEL
 		var/character_ad = ""
 		var/exploitable = ""
@@ -242,8 +242,8 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 		ooc_notes = READ_PREFS(mob, text/ooc_notes)
 		// SPLURT EDIT START: INTERACTION PANEL
 		extreme = READ_PREFS(mob, choiced/erp_status_extm)
-		extremeharm = READ_PREFS(mob, choiced/erp_status_extmharm)
-		unholy = READ_PREFS(mob, choiced/erp_status_unholy)
+		//extremeharm = READ_PREFS(mob, choiced/erp_status_extmharm)
+		//unholy = READ_PREFS(mob, choiced/erp_status_unholy)
 		// SPLURT EDIT END: INTERACTION PANEL
 		//If the user is an antagonist or Observer, we want them to be able to see exploitables in the Directory.
 		if(user.mind?.has_antag_datum(/datum/antagonist) || isobserver(user))
@@ -266,8 +266,8 @@ GLOBAL_DATUM(character_directory, /datum/character_directory)
 			"noncon" = noncon,
 			// SPLURT EDIT START: INTERACTION PANEL
 			"extreme" = extreme,
-			"extremeharm" = extremeharm,
-			"unholy" = unholy,
+			//"extremeharm" = extremeharm,
+			//"unholy" = unholy,
 			// SPLURT EDIT END: INTERACTION PANEL
 			"exploitable" = exploitable,
 			"character_ad" = character_ad,

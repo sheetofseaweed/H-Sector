@@ -35,11 +35,11 @@
 				if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extm) == "No")
 					continue
 			if(interaction.unsafe_types & INTERACTION_HARMFUL)
-				if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) == "No")
-					continue
-			if(interaction.unsafe_types & INTERACTION_UNHOLY)
+				//if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) == "No") //HSECTOR EDIT no harm
+				continue
+			/*if(interaction.unsafe_types & INTERACTION_UNHOLY)
 				if(self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) == "No")
-					continue
+					continue*/
 			// SPLURT EDIT END
 			/*
 			SPLURT EDIT REMOVAL - Interactions

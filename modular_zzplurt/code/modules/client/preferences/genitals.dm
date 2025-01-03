@@ -65,7 +65,7 @@
 	default_accessory_type = /datum/sprite_accessory/genital/anus/none
 
 /datum/preference/choiced/genital/anus/is_accessible(datum/preferences/preferences)
-	return ..() && preferences.read_preference(/datum/preference/choiced/genital/butt) != "None"
+	return ..()// && preferences.read_preference(/datum/preference/choiced/genital/butt) != "None"
 
 /datum/preference/toggle/genital_skin_tone/anus
 	savefile_key = "anus_skin_tone"
@@ -111,11 +111,11 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "belly_size"
 	relevant_mutant_bodypart = ORGAN_SLOT_BELLY
-	minimum = 1
+	minimum = 0
 	maximum = 10
 
 /datum/preference/numeric/belly_size/create_default_value()
-	return 1 //return "flat"
+	return 0 //return "flat"
 
 /datum/preference/numeric/belly_size/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)

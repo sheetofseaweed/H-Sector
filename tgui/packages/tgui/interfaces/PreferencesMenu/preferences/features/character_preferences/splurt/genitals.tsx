@@ -2,7 +2,7 @@ import {
   CheckboxInput,
   Feature,
   FeatureChoiced,
-  FeatureChoicedServerData,
+  // FeatureChoicedServerData,
   FeatureNumberInput,
   FeatureNumeric,
   FeatureToggle,
@@ -10,7 +10,7 @@ import {
   FeatureTriColorInput,
   // FeatureValueProps,
 } from '../../base';
-// import { FeatureDropdownInput } from '../../dropdowns';
+import { FeatureDropdownInput } from '../../dropdowns';
 
 export const scaled_appearance: FeatureToggle = {
   name: 'Scaled Appearance',
@@ -114,7 +114,7 @@ export const erp_status_pref_extm: FeatureChoiced = {
   component: FeatureDropdownInput,
 };
 
-export const erp_status_pref_extmharm: FeatureChoiced = {
+/* export const erp_status_pref_extmharm: FeatureChoiced = {
   name: 'Harmful ERP verbs',
   component: FeatureDropdownInput,
 };
@@ -122,7 +122,7 @@ export const erp_status_pref_extmharm: FeatureChoiced = {
 export const erp_status_pref_unholy: FeatureChoiced = {
   name: 'Unholy ERP verbs',
   component: FeatureDropdownInput,
-};
+};*/
 
 export const erp_lust_tolerance_pref: FeatureNumeric = {
   name: 'Lust tolerance multiplier',

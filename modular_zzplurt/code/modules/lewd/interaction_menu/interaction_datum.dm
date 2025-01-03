@@ -118,11 +118,11 @@
 		if(!(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extm) != "No") || !(target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extm) != "No"))
 			return FALSE
 	if(unsafe_types & INTERACTION_HARMFUL)
-		if(!(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No") || !(target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No"))
-			return FALSE
+		//if(!(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No") || !(target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No"))//HSECTOR EDIT no harm
+		return FALSE
 	if(unsafe_types & INTERACTION_UNHOLY)
-		if(!(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) != "No") || !(target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) != "No"))
-			return FALSE
+		//if(!(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) != "No") || !(target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_unholy) != "No"))
+		return FALSE
 
 	if(user_required_parts.len)
 		for(var/slot in user_required_parts)
