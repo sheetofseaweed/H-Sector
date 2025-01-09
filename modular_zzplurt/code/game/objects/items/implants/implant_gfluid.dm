@@ -1,4 +1,3 @@
-/* Commented until we have the genital fluid options
 /obj/item/implant/genital_fluid
 	name = "genital fluid implant"
 	icon = 'modular_zzplurt/icons/obj/implants.dmi'
@@ -29,41 +28,39 @@
 // Runs on toggling the implant
 /obj/item/implant/genital_fluid/activate()
 	. = ..()
+	update_genital_fluid(imp_in, use_blacklist)
 
+/obj/item/implant/genital_fluid/proc/update_genital_fluid(mob/living/carbon/human/genital_owner, should_use_blacklist = TRUE)
 	// Set list of possible genitals
-	var/list/obj/item/organ/genital/genitals_list
+	var/list/obj/item/organ/external/genital/genitals_list
 
 	// Set list of possible fluids
 	var/list/datum/reagent/fluid_list = list()
 
-	// Set owner
-	var/mob/living/carbon/human/genital_owner = imp_in
-
 	// List their genitals if they have any at all
-	for(var/obj/item/organ/genital/genital_checked in genital_owner.internal_organs)
-		if(istype(genital_checked) && (genital_checked.genital_flags & GENITAL_FUID_PRODUCTION))
+	for(var/obj/item/organ/external/genital/genital_checked in list(genital_owner.get_organ_slot(ORGAN_SLOT_TESTICLES), genital_owner.get_organ_slot(ORGAN_SLOT_VAGINA), genital_owner.get_organ_slot(ORGAN_SLOT_BREASTS)))
+		if(istype(genital_checked))
 			// Add genitals to the list
 			LAZYADD(genitals_list, genital_checked)
 
 	// List their current reagents if they're valid
 	for(var/datum/reagent/genital_reagent in genital_owner.reagents.reagent_list)
-		if((find_reagent_object_from_type(genital_reagent.type)) && ((genital_reagent.type in allowed_gfluid_paths()) || !use_blacklist))
+		if((find_reagent_object_from_type(genital_reagent.type)) && ((SSinteractions.genital_fluids_paths.Find(genital_reagent.name)) || !should_use_blacklist))
 			// Add valid reagents to the list
 			LAZYADD(fluid_list, find_reagent_object_from_type(genital_reagent.type))
 
 	// List any reagents they may be holding in their hands
-	if(genital_owner.available_rosie_palms(TRUE, /obj/item/reagent_containers))
-		for(var/obj/item/reagent_containers/container in genital_owner.held_items)
-			if(container.is_open_container() || istype(container, /obj/item/reagent_containers/food/snacks))
-				for(var/datum/reagent/genital_reagent in container.reagents.reagent_list)
-					if((find_reagent_object_from_type(genital_reagent.type)) && ((genital_reagent.type in allowed_gfluid_paths()) || !use_blacklist))
-						// Add valid reagents to the list
-						LAZYADD(fluid_list, find_reagent_object_from_type(genital_reagent.type))
+	for(var/obj/item/container in genital_owner.held_items)
+		if(container.is_open_container() || istype(container, /obj/item/food))
+			for(var/datum/reagent/genital_reagent in container.reagents.reagent_list)
+				if((find_reagent_object_from_type(genital_reagent.type)) && ((SSinteractions.genital_fluids_paths.Find(genital_reagent.name)) || !should_use_blacklist))
+					// Add valid reagents to the list
+					LAZYADD(fluid_list, find_reagent_object_from_type(genital_reagent.type))
 
 	// Return if genitals list is void/null
 	if(!genitals_list)
 		// Play an error sound
-		SEND_SOUND(genital_owner, 'sound/machines/terminal_error.ogg')
+		SEND_SOUND(genital_owner, 'sound/machines/terminal/terminal_error.ogg')
 
 		// Alert the user in chat
 		to_chat(genital_owner, span_notice("ERROR: No compatible genitals detected."))
@@ -72,13 +69,13 @@
 		return
 
 	// Prompt user for which genital to use
-	var/obj/item/organ/genital/genital_input = tgui_input_list(genital_owner, "Pick a genital", "Genital Fluid Infuser", genitals_list)
+	var/obj/item/organ/external/genital/genital_input = tgui_input_list(genital_owner, "Pick a genital", "Genital Fluid Infuser", genitals_list)
 	if(!genital_input)
 		// No selection was made
 		return
 
 	// Update list of possible fluids
-	fluid_list = list(find_reagent_object_from_type(genital_input.get_default_fluid())) + fluid_list
+	fluid_list = list(find_reagent_object_from_type(initial(genital_input.internal_fluid_datum))) + fluid_list
 
 	// Prompt user to select a new fluid
 	var/datum/reagent/reagent_selection = tgui_input_list(genital_owner, "Choose your new reagent", "Genital Fluid Infuser", fluid_list)
@@ -87,10 +84,10 @@
 		return
 
 	// Set new fluid
-	genital_input.fluid_id = reagent_selection.type
+	genital_input.internal_fluid_datum = reagent_selection.type
 
 	// Play the reagent processing sound effect
-	SEND_SOUND(genital_owner, 'sound/effects/bubbles.ogg')
+	SEND_SOUND(genital_owner, 'sound/effects/bubbles/bubbles.ogg')
 
 	// Display flavor text
 	to_chat(genital_owner, span_notice("You feel the fluids inside your [genital_input.name] bubble and swirl..."))
@@ -113,7 +110,7 @@
 /datum/action/item_action/genital_fluid_infuse
 	name = "Infuse Genital Fluids"
 	desc = "Activate an integrated reagent receptor device to modify your genital contents."
-	icon_icon = 'modular_zzplurt/icons/obj/implants.dmi'
+	button_icon = 'modular_zzplurt/icons/obj/implants.dmi'
 	button_icon_state = "genital_fluid"
 	background_icon_state = "bg_tech"
 
@@ -154,4 +151,3 @@
 	if(istype(imp, /obj/item/implant/genital_fluid))
 		var/obj/item/implant/genital_fluid/I = imp
 		I.emag_act()
-*/

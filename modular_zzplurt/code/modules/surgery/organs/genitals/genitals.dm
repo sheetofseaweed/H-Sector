@@ -1,3 +1,15 @@
+/obj/item/organ/external/genital
+	var/always_accessible = FALSE
+
+/obj/item/organ/external/genital/is_exposed()
+	if(always_accessible)
+		return TRUE
+	return ..()
+
+/obj/item/organ/external/genital/build_from_dna(datum/dna/DNA, associated_key)
+	. = ..()
+	internal_fluid_maximum = internal_fluid_maximum * (DNA.features["body_size"] || 1)
+
 /datum/bodypart_overlay/mutant/genital
 	var/layer_offset = 0
 

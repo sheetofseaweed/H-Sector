@@ -79,6 +79,7 @@
 
 		else
 			var/list/interactable_inrange_humans = list()
+			var/target_choice //SPLURT EDIT CHANGE - Interactions
 
 			// Unfortunately prefs can't be checked here, because byond/tgstation moment.
 			for(var/mob/living/carbon/human/iterating_human in (view(1, src) - src))
@@ -98,7 +99,7 @@
 					span_userlove("You shoot string after string of hot cum, hitting the floor!"))
 
 			else
-				var/target_choice = climax_interaction && !manual ? partner?.name : tgui_input_list(src, "Choose a person to cum in or on.", "Choose target!", interactable_inrange_humans) //SPLURT EDIT CHANGE - Interactions
+				target_choice = climax_interaction && !manual ? partner?.name : tgui_input_list(src, "Choose a person to cum in or on.", "Choose target!", interactable_inrange_humans) //SPLURT EDIT CHANGE - Interactions
 				if(!target_choice)
 					create_cum_decal = TRUE
 					visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
@@ -168,11 +169,20 @@
 					else
 						testicles.transfer_internal_fluid(null, testicles.internal_fluid_count * 0.6)
 						add_cum_splatter_floor(get_turf(src))
-				else if(partner)
+				else if(partner || interactable_inrange_humans[target_choice])
 					// Transfer reagents directly to partner
+					var/mob/living/carbon/human/target_human = partner || interactable_inrange_humans[target_choice]
+
+					//Check if the target has custom genital fluids enabled
+					var/datum/reagent/original_fluid_datum = testicles.internal_fluid_datum
+					if(!target_human.client?.prefs?.read_preference(/datum/preference/toggle/erp/custom_genital_fluids))
+						testicles.internal_fluid_datum = initial(testicles.internal_fluid_datum)
+
 					var/datum/reagents/R = new(testicles.internal_fluid_maximum)
 					testicles.transfer_internal_fluid(R, testicles.internal_fluid_count * 0.6)
-					R.trans_to(partner, R.total_volume)
+					R.trans_to(target_human, R.total_volume)
+
+					testicles.internal_fluid_datum = original_fluid_datum
 					qdel(R)
 				else
 					testicles.transfer_internal_fluid(null, testicles.internal_fluid_count * 0.6)
@@ -195,6 +205,7 @@
 			self_orgasm = TRUE
 		else
 			var/list/interactable_inrange_humans = list()
+			var/target_choice //SPLURT EDIT CHANGE - Interactions
 
 			for(var/mob/living/carbon/human/iterating_human in (view(1, src) - src))
 				interactable_inrange_humans[iterating_human.name] = iterating_human
@@ -213,7 +224,7 @@
 					span_userlove("You twitch and moan as you squirt on the floor!"))
 
 			else
-				var/target_choice = climax_interaction && !manual ? partner.name : tgui_input_list(src, "Choose who to squirt on.", "Choose target!", interactable_inrange_humans)
+				target_choice = climax_interaction && !manual ? partner.name : tgui_input_list(src, "Choose who to squirt on.", "Choose target!", interactable_inrange_humans)
 				if(!target_choice)
 					create_cum_decal = TRUE
 					visible_message(span_userlove("[src] twitches and moans as [p_they()] squirt on the floor!"), \
@@ -277,10 +288,19 @@
 					else
 						vagina.transfer_internal_fluid(null, vagina.internal_fluid_count)
 						add_cum_splatter_floor(get_turf(src), female = TRUE)
-				else if(partner)
+				else if(partner || interactable_inrange_humans[target_choice])
+					var/mob/living/carbon/human/target_human = partner || interactable_inrange_humans[target_choice]
+
+					//Check if the target has custom genital fluids enabled
+					var/datum/reagent/original_fluid_datum = vagina.internal_fluid_datum
+					if(!target_human.client?.prefs?.read_preference(/datum/preference/toggle/erp/custom_genital_fluids))
+						vagina.internal_fluid_datum = initial(vagina.internal_fluid_datum)
+
 					var/datum/reagents/R = new(vagina.internal_fluid_maximum)
 					vagina.transfer_internal_fluid(R, vagina.internal_fluid_count)
-					R.trans_to(partner, R.total_volume)
+					R.trans_to(target_human, R.total_volume)
+
+					vagina.internal_fluid_datum = original_fluid_datum
 					qdel(R)
 				else
 					vagina.transfer_internal_fluid(null, vagina.internal_fluid_count)

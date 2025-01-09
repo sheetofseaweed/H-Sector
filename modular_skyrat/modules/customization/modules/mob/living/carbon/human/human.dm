@@ -19,7 +19,13 @@
 					var/obj/item/organ/external/genital/ORG = get_organ_slot(G.associated_organ_slot)
 					if(!ORG)
 						continue
-					line += ORG.get_description_string(G)
+					//SPLURT EDIT - Adds genital sniffing to examine text
+					var/genital_sniff = ""
+					if(HAS_TRAIT(usr, TRAIT_GFLUID_DETECT))
+						var/datum/reagent/cummies = find_reagent_object_from_type(ORG.internal_fluid_datum)
+						genital_sniff = ". You smell <span style='color:[cummies.color]';>[cummies.name]</span> brewing inside..."
+					line += ORG.get_description_string(G) + genital_sniff
+					//SPLURT EDIT END
 				if(length(line))
 					to_chat(usr, span_notice("[jointext(line, "\n")]"))
 			if("open_examine_panel")

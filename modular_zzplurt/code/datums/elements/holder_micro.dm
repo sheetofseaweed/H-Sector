@@ -242,3 +242,20 @@
 // And right here i throw all of those error sprites in the trash
 /obj/item/clothing/head/mob_holder/micro/build_worn_icon(default_layer, default_icon_file, isinhands, female_uniform, override_state, override_file, mutant_styles)
 	return null
+
+/obj/item/clothing/head/mob_holder/micro/verb/interact_with_held()
+	set name = "Interact With Held"
+	set desc = "Perform an interaction with the held mob."
+	set category = "IC"
+	set src in view(usr.client)
+
+	if(!held_mob)
+		to_chat(usr, span_warning("You're not holding anyone!"))
+		return
+
+	var/datum/component/interactable/menu = held_mob.GetComponent(/datum/component/interactable)
+	if(!menu)
+		to_chat(usr, span_warning("[held_mob] cannot be interacted with!"))
+		return
+
+	menu.open_interaction_menu(held_mob, usr)

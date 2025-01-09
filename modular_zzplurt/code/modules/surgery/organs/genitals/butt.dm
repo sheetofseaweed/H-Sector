@@ -1,17 +1,17 @@
 /obj/item/organ/external/genital/butt
 	name = "butt"
 	desc = "The thing you sit on."
+	icon = 'modular_hsector/icons/bodyparts/butt.dmi'
 	icon_state = "butt"
-	icon = 'modular_hsector/icons/bodyparts/butt.dmi'//hack
-	genital_type = "pair"
+	slot = ORGAN_SLOT_BUTT
+	zone = BODY_ZONE_PRECISE_GROIN
+	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/butt
+	aroused = AROUSAL_CANT
 	mutantpart_key = ORGAN_SLOT_BUTT
 	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
-	zone = BODY_ZONE_PRECISE_GROIN
-	slot = ORGAN_SLOT_BUTT
 	genital_location = GROIN
 	drop_when_organ_spilling = FALSE
-	aroused = AROUSAL_CANT
-	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/butt
+	genital_type = "pair"
 
 /obj/item/organ/external/genital/butt/get_description_string(datum/sprite_accessory/genital/gas)
 	var/returned_string = "You see a butt."

@@ -39,3 +39,10 @@ export const forced_neverboner_pref: FeatureToggle = {
     'Determines if you wish to receive the effects of forced neverboner chemicals.',
   component: CheckboxInput,
 };
+
+export const custom_genital_fluids_pref: FeatureToggle = {
+  name: 'Custom genital fluids',
+  category: 'ERP',
+  description: 'Allow custom genital fluids.',
+  component: CheckboxInput,
+};
