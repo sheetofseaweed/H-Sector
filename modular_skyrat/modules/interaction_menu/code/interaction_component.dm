@@ -23,7 +23,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	/// List of preference paths mapped to their toggle types
 	var/static/list/preference_paths = list(
 		//"master_erp_pref" = /datum/preference/toggle/master_erp_preferences,
-		"base_erp_pref" = /datum/preference/toggle/erp,
+		//"base_erp_pref" = /datum/preference/toggle/erp,
 		// Core ERP prefs
 		"erp_sounds_pref" = /datum/preference/toggle/erp/sounds,
 		//"sextoy_pref" = /datum/preference/toggle/erp/sex_toy,
@@ -298,7 +298,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		// Master ERP pref
 		//data["master_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/master_erp_preferences)
 		// Base ERP toggle
-		data["base_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp)
+		//data["base_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp)
 
 		// Character ERP prefs (status prefs)
 		var/datum/preference/choiced/erp_status/erp_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status]
