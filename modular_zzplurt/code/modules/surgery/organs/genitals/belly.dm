@@ -6,7 +6,7 @@
 	drop_when_organ_spilling = FALSE
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_BELLY
-	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/bellygenital_location = CHEST
+	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/belly
 
 	genital_location = CHEST
 	aroused = AROUSAL_CANT

@@ -10,10 +10,10 @@ type CharacterPrefsInfo = {
   vore_pref_values: string[];
   extreme_pref: string;
   extreme_pref_values: string[];
-  unholy_pref: string;
-  unholy_pref_values: string[];
-  extreme_harm: string;
-  extreme_harm_values: string[];
+  // unholy_pref: string;
+  // unholy_pref_values: string[];
+  // extreme_harm: string;
+  // extreme_harm_values: string[];
 };
 
 const getPrefIcon = (value: string) => {
@@ -45,12 +45,12 @@ export const CharacterPrefsTab = () => {
     noncon_pref_values,
     vore_pref,
     vore_pref_values,
-    unholy_pref,
-    unholy_pref_values,
+    // unholy_pref,
+    // unholy_pref_values,
     extreme_pref,
     extreme_pref_values,
-    extreme_harm,
-    extreme_harm_values,
+    // extreme_harm,
+    // extreme_harm_values,
   } = data;
 
   const renderPrefDropdown = (
@@ -106,25 +106,25 @@ export const CharacterPrefsTab = () => {
           vore_pref,
           vore_pref_values,
         )}
-        {renderPrefDropdown(
+        {/* renderPrefDropdown(
           'Unholy Preference',
           'unholy_pref',
           unholy_pref,
           unholy_pref_values,
-        )}
+        )*/}
         {renderPrefDropdown(
           'Extreme Preference',
           'extreme_pref',
           extreme_pref,
           extreme_pref_values,
         )}
-        {extreme_pref !== 'No' &&
+        {/* extreme_pref !== 'No' &&
           renderPrefDropdown(
             'Extreme Harm',
             'extreme_harm',
             extreme_harm,
             extreme_harm_values,
-          )}
+          )*/}
       </LabeledList>
     </Flex>
   );

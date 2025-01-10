@@ -34,7 +34,7 @@
 /datum/preference/numeric/butt_size/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)
 	var/allowed = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
-	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/allow_genitals)
+	var/erp_allowed = TRUE // preferences.read_preference(/datum/preference/toggle/allow_genitals)
 	var/part_enabled = is_factual_sprite_accessory(relevant_mutant_bodypart, preferences.read_preference(/datum/preference/choiced/genital/butt))
 	return erp_allowed && part_enabled && (passed_initial_check || allowed)
 
@@ -120,7 +120,7 @@
 /datum/preference/numeric/belly_size/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)
 	var/allowed = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
-	var/erp_allowed = preferences.read_preference(/datum/preference/toggle/allow_genitals)
+	var/erp_allowed = TRUE //preferences.read_preference(/datum/preference/toggle/allow_genitals)
 	var/part_enabled = is_factual_sprite_accessory(relevant_mutant_bodypart, preferences.read_preference(/datum/preference/choiced/genital/belly))
 	return erp_allowed && part_enabled && (passed_initial_check || allowed)
 
@@ -177,7 +177,7 @@
 /datum/preference/choiced/genital_fluid/is_accessible(datum/preferences/preferences)
 	var/passed_initial_check = ..(preferences)
 	var/allowed = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
-	var/erp_allowed = !CONFIG_GET(flag/disable_erp_preferences) && preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/toggle/allow_genitals)
+	var/erp_allowed = TRUE //!CONFIG_GET(flag/disable_erp_preferences) && preferences.read_preference(/datum/preference/toggle/master_erp_preferences) && preferences.read_preference(/datum/preference/toggle/allow_genitals)
 	var/part_enabled = is_factual_sprite_accessory(relevant_mutant_bodypart, preferences.read_preference(genital_pref))
 	return erp_allowed && part_enabled && (passed_initial_check || allowed) && preferences.read_preference(/datum/preference/toggle/erp/custom_genital_fluids)
 

@@ -157,7 +157,7 @@
 		/datum/reagent/lube = 1
 	)
 	mix_message = "Oooo you like kissing booooys"
-	mix_sound = 'modular_zzplurt/sound/voice/waa.ogg'
+	//mix_sound = 'modular_zzplurt/sound/voice/waa.ogg'
 
 /datum/chemical_reaction/drink/midnight_tears
 	results = list(/datum/reagent/consumable/ethanol/midnight_tears = 20)

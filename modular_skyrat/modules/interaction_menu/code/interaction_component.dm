@@ -1,13 +1,13 @@
 //SPLURT EDIT ADDITION BEGIN - INTERACTION MENU PREFERENCES - Adding global list of interaction menu preferences
 GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
-	/datum/preference/toggle/master_erp_preferences,
+	///datum/preference/toggle/master_erp_preferences,
 	/datum/preference/toggle/erp,
 	/datum/preference/choiced/erp_status,
 	/datum/preference/choiced/erp_status_nc,
 	/datum/preference/choiced/erp_status_v,
 	/datum/preference/choiced/erp_status_extm,
-	/datum/preference/choiced/erp_status_unholy,
-	/datum/preference/choiced/erp_status_extmharm,
+	///datum/preference/choiced/erp_status_unholy,
+	///datum/preference/choiced/erp_status_extmharm,
 )))
 //SPLURT EDIT ADDITION END
 
@@ -22,12 +22,12 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	var/list/modified_preferences = list()
 	/// List of preference paths mapped to their toggle types
 	var/static/list/preference_paths = list(
-		"master_erp_pref" = /datum/preference/toggle/master_erp_preferences,
+		//"master_erp_pref" = /datum/preference/toggle/master_erp_preferences,
 		"base_erp_pref" = /datum/preference/toggle/erp,
 		// Core ERP prefs
 		"erp_sounds_pref" = /datum/preference/toggle/erp/sounds,
-		"sextoy_pref" = /datum/preference/toggle/erp/sex_toy,
-		"sextoy_sounds_pref" = /datum/preference/toggle/erp/sex_toy_sounds,
+		//"sextoy_pref" = /datum/preference/toggle/erp/sex_toy,
+		//"sextoy_sounds_pref" = /datum/preference/toggle/erp/sex_toy_sounds,
 		"bimbofication_pref" = /datum/preference/toggle/erp/bimbofication,
 		"aphro_pref" = /datum/preference/toggle/erp/aphro,
 		"breast_enlargement_pref" = /datum/preference/toggle/erp/breast_enlargement,
@@ -57,8 +57,8 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		"noncon_pref" = /datum/preference/choiced/erp_status_nc,
 		"vore_pref" = /datum/preference/choiced/erp_status_v,
 		"extreme_pref" = /datum/preference/choiced/erp_status_extm,
-		"extreme_harm" = /datum/preference/choiced/erp_status_extmharm,
-		"unholy_pref" = /datum/preference/choiced/erp_status_unholy
+		//"extreme_harm" = /datum/preference/choiced/erp_status_extmharm,
+		//"unholy_pref" = /datum/preference/choiced/erp_status_unholy
 	)
 
 /datum/component/interactable/Initialize(...)
@@ -296,7 +296,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	// Content preferences - Always use user's preferences
 	if(user.client?.prefs)
 		// Master ERP pref
-		data["master_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/master_erp_preferences)
+		//data["master_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/master_erp_preferences)
 		// Base ERP toggle
 		data["base_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp)
 
@@ -305,8 +305,8 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		var/datum/preference/choiced/erp_status_nc/noncon_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_nc]
 		var/datum/preference/choiced/erp_status_v/vore_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_v]
 		var/datum/preference/choiced/erp_status_extm/extreme_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_extm]
-		var/datum/preference/choiced/erp_status_unholy/unholy_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_unholy]
-		var/datum/preference/choiced/erp_status_extmharm/extreme_harm_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_extmharm]
+		//var/datum/preference/choiced/erp_status_unholy/unholy_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_unholy]
+		//var/datum/preference/choiced/erp_status_extmharm/extreme_harm_pref = GLOB.preference_entries[/datum/preference/choiced/erp_status_extmharm]
 
 		data["erp_pref"] = user.client.prefs.read_preference(erp_pref.type)
 		data["erp_pref_values"] = erp_pref.init_possible_values()
@@ -316,15 +316,15 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		data["vore_pref_values"] = vore_pref.init_possible_values()
 		data["extreme_pref"] = user.client.prefs.read_preference(extreme_pref.type)
 		data["extreme_pref_values"] = extreme_pref.init_possible_values()
-		data["unholy_pref"] = user.client.prefs.read_preference(unholy_pref.type)
-		data["unholy_pref_values"] = unholy_pref.init_possible_values()
-		data["extreme_harm"] = user.client.prefs.read_preference(extreme_harm_pref.type)
-		data["extreme_harm_values"] = extreme_harm_pref.init_possible_values()
+		//data["unholy_pref"] = user.client.prefs.read_preference(unholy_pref.type)
+		//data["unholy_pref_values"] = unholy_pref.init_possible_values()
+		//data["extreme_harm"] = user.client.prefs.read_preference(extreme_harm_pref.type)
+		//data["extreme_harm_values"] = extreme_harm_pref.init_possible_values()
 
 		// Content toggle prefs
 		data["erp_sounds_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sounds)
-		data["sextoy_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sex_toy)
-		data["sextoy_sounds_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sex_toy_sounds)
+		//data["sextoy_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sex_toy)
+		//data["sextoy_sounds_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sex_toy_sounds)
 		data["bimbofication_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/bimbofication)
 		data["aphro_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/aphro)
 		data["breast_enlargement_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/breast_enlargement)
