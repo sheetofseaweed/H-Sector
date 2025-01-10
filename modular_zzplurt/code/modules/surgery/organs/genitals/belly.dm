@@ -3,15 +3,17 @@
 	desc = "You put food in there."
 	icon = null //apparently theres no organ sprite?
 	icon_state = null
-	genital_type = "pair"
-	mutantpart_key = ORGAN_SLOT_BELLY
-	mutantpart_info = list(MUTANT_INDEX_NAME = "Pair", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
+	drop_when_organ_spilling = FALSE
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_BELLY
+	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/belly
+
 	genital_location = CHEST
 	aroused = AROUSAL_CANT
-	drop_when_organ_spilling = FALSE
-	bodypart_overlay = /datum/bodypart_overlay/mutant/genital/belly
+
+	mutantpart_key = ORGAN_SLOT_BELLY
+	mutantpart_info = list(MUTANT_INDEX_NAME = "Belly", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
+	genital_type = "pair"
 
 /obj/item/organ/external/genital/belly/update_genital_icon_state()
 	var/max_size = 4

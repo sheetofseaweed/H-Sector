@@ -122,12 +122,12 @@
 
 /datum/preference/toggle/erp/gender_change
 	savefile_key = "gender_change_pref"
-/*
+
 /datum/preference/toggle/erp/autocum
 	savefile_key = "autocum_pref"
 
 /datum/preference/toggle/erp/autoemote
-	savefile_key = "autoemote_pref"*/
+	savefile_key = "autoemote_pref"
 
 /datum/preference/toggle/erp/new_genitalia_growth
 	savefile_key = "new_genitalia_growth_pref"

@@ -4282,18 +4282,6 @@
 /obj/machinery/light/moonstation/directional/south,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
-"bfQ" = (
-/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
-/obj/effect/mapping_helpers/airlock/unres,
-/obj/effect/mapping_helpers/airlock/autoname,
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable,
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/service/library,
-/turf/open/floor/plating,
-/area/station/common/pool/sauna)
 "bfV" = (
 /obj/structure/sign/warning/secure_area/directional/south,
 /obj/structure/marker_beacon/fuchsia,
@@ -12854,6 +12842,19 @@
 	},
 /turf/open/floor/iron,
 /area/station/commons/storage/tools)
+"dDh" = (
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
+/obj/effect/mapping_helpers/airlock/unres,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/access/any/service/library,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/station/common/pool/sauna)
 "dDq" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -55856,14 +55857,6 @@
 "pqI" = (
 /turf/open/floor/plating,
 /area/station/commons/public_mining)
-"pqJ" = (
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/obj/structure/table/wood,
-/turf/open/floor/wood/tile,
-/area/station/common/pool/sauna)
 "pqK" = (
 /obj/effect/spawner/random/trash/caution_sign,
 /obj/machinery/light/small/dim/directional/east,
@@ -61985,6 +61978,13 @@
 /obj/machinery/camera/autoname/aicore/directional/east,
 /turf/open/floor/circuit/telecomms,
 /area/station/ai_monitored/turret_protected/ai)
+"qZW" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/tile/holiday/rainbow/half/contrasted,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/dark/corner,
+/area/station/common/pool)
 "raa" = (
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
@@ -81672,6 +81672,22 @@
 	dir = 1
 	},
 /area/station/hallway/primary/port)
+"wCn" = (
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_x = -7;
+	pixel_y = 1
+	},
+/obj/item/stack/sheet/mineral/wood{
+	amount = 5;
+	pixel_x = 5
+	},
+/turf/open/floor/wood/tile,
+/area/station/common/pool/sauna)
 "wCp" = (
 /obj/machinery/shower/directional/south,
 /obj/structure/drain,
@@ -238168,7 +238184,7 @@ tis
 xTd
 wTv
 xLH
-pqJ
+wCn
 nET
 nET
 evI
@@ -238938,12 +238954,12 @@ tis
 tis
 xTd
 wTv
-xLH
+qZW
 lRS
 qWH
 xrF
 xrF
-bfQ
+dDh
 xSx
 eEn
 xSx

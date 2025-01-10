@@ -137,3 +137,22 @@ export const erp_sexual_potency_pref: FeatureNumeric = {
     'Set your sexual potency multiplier. \n(0.5 = half potency, 2 = double potency)',
   component: FeatureNumberInput,
 };
+
+// Genital fluid preferences
+export const testicles_fluid: FeatureChoiced = {
+  name: 'Testicles Fluid',
+  description: 'The type of fluid produced by the testicles.',
+  component: FeatureDropdownInput,
+};
+
+export const breasts_fluid: FeatureChoiced = {
+  name: 'Breasts Fluid',
+  description: 'The type of fluid produced by the breasts.',
+  component: FeatureDropdownInput,
+};
+
+export const vagina_fluid: FeatureChoiced = {
+  name: 'Vagina Fluid',
+  description: 'The type of fluid produced by the vagina.',
+  component: FeatureDropdownInput,
+};

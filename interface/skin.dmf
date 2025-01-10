@@ -53,10 +53,12 @@ menu "menu"
 		command = "Hotkeys-Help"
 		category = "&Help"
 		saved-params = "is-checked"
-	elem  "Use Internet Routing Relay"
-		name = "Internet Routing Relays"
-		command = "go2relay"
-		saved-params = "is-checked"
+	# SPLURT STATION EDIT: START
+	#elem  "Use Internet Routing Relay"
+	#	name = "Internet Routing Relays"
+	#	command = "go2relay"
+	#	saved-params = "is-checked"
+	# SPLURT STATION EDIT: END
 
 window "mainwindow"
 	elem "mainwindow"
@@ -68,7 +70,7 @@ window "mainwindow"
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
-		icon = 'modular_zubbers\\icons\\UI_Icons\\common\\bubber_32.png'
+		icon = 'modular_zzplurt\\icons\\UI_Icons\\common\\splurt_64.png'
 		macro = "default"
 		menu = "menu"
 	elem "split"

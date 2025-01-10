@@ -455,7 +455,7 @@
 	returned_string += size_description
 	if(aroused == AROUSAL_FULL)
 		if(lactates)
-			returned_string += " The nipples seem hard, perky and are leaking milk."
+			returned_string += " The nipples seem hard, perky and are leaking [find_reagent_object_from_type(internal_fluid_datum)]." //SPLURT EDIT - Adds fluid name to examine text
 		else
 			returned_string += " Their nipples look hard and perky."
 	return returned_string

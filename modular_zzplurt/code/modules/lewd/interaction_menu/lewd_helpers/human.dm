@@ -5,6 +5,9 @@
 	if(!genital)
 		return FALSE
 
+	if(genital.always_accessible)
+		return TRUE
+
 	switch(required_state)
 		if(REQUIRE_GENITAL_ANY)
 			return TRUE
