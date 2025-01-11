@@ -49,7 +49,13 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		// Vore prefs
 		"vore_enable_pref" = /datum/preference/toggle/erp/vore_enable,
 		"vore_overlays" = /datum/preference/toggle/erp/vore_overlays,
-		"vore_overlay_options" = /datum/preference/toggle/erp/vore_overlay_options
+		"vore_overlay_options" = /datum/preference/toggle/erp/vore_overlay_options,
+		// Hsector additions
+		"erp_mob_sex_pref" = /datum/preference/toggle/erp/mobsexpref,
+		"sex_jitter_pref" = /datum/preference/toggle/erp/sex_jitter,
+		"afk_erp_pref" = /datum/preference/toggle/erp/afk_erp,
+		"horny_virus_imm_pref" = /datum/preference/toggle/erp/horny_virus_imm,
+		"erp_event_participation_pref" = /datum/preference/toggle/erp/erp_event_participation
 	)
 	/// List of character preference paths mapped to their types
 	var/static/list/character_preference_paths = list(
@@ -349,6 +355,12 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 		data["vore_enable_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/vore_enable)
 		data["vore_overlays"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/vore_overlays)
 		data["vore_overlay_options"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/vore_overlay_options)
+		// Hsector additions
+		data["erp_mob_sex_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/mobsexpref)
+		data["sex_jitter_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/sex_jitter)
+		data["afk_erp_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/afk_erp)
+		data["horny_virus_imm_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/horny_virus_imm)
+		data["erp_event_participation_pref"] = user.client.prefs.read_preference(/datum/preference/toggle/erp/erp_event_participation)
 
 	// Genital data - Only if user is human
 	var/list/genital_list = list()

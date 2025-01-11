@@ -93,11 +93,6 @@
 
 /datum/preference/toggle/erp/hypnosis
 	savefile_key = "hypnosis_pref"
-	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
-	savefile_identifier = PREFERENCE_CHARACTER
-
-/datum/preference/toggle/erp/hypnosis/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
-	return FALSE
 
 /datum/preference/toggle/erp/bimbofication
 	savefile_key = "bimbofication_pref"
@@ -131,21 +126,6 @@
 
 /datum/preference/toggle/erp/new_genitalia_growth
 	savefile_key = "new_genitalia_growth_pref"
-
-/datum/preference/toggle/erp/sex_jitter
-	savefile_key = "sex_jitter_pref"
-
-/datum/preference/toggle/erp/afk_erp
-	savefile_key = "afk_erp_pref"
-
-/datum/preference/toggle/erp/horny_virus_imm
-	savefile_key = "horny_virus_imm_pref"
-
-/datum/preference/toggle/erp/defiance
-	savefile_key = "defiance_pref"
-
-/datum/preference/toggle/erp/erp_event_participation
-	savefile_key = "erp_event_participation_pref"
 
 /datum/preference/choiced/erp_status
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
@@ -293,7 +273,7 @@
 	savefile_key = "erp_sexuality_pref"
 
 /datum/preference/choiced/erp_sexuality/init_possible_values()
-	return list("Gay", "Straight", "Any", "None") // For simplicity's sake we only have 3 options.
+	return list("Gay", "Straight", "Any", "None") // For "simplicity's" sake we only have 4 options.
 
 /datum/preference/choiced/erp_sexuality/create_default_value()
 	return "None"

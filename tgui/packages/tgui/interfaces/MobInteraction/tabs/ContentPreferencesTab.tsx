@@ -32,6 +32,12 @@ type ContentPrefsInfo = {
   vore_enable_pref: boolean;
   vore_overlays: boolean;
   vore_overlay_options: boolean;
+  // Hsector additions
+  erp_mob_sex_pref: boolean;
+  sex_jitter_pref: boolean;
+  afk_erp_pref: boolean;
+  horny_virus_imm_pref: boolean;
+  erp_event_participation_pref: boolean;
 };
 
 type ContentPreferencesTabProps = {
@@ -73,6 +79,12 @@ export const ContentPreferencesTab = ({
     vore_enable_pref,
     vore_overlays,
     vore_overlay_options,
+    // Hsector additions
+    erp_mob_sex_pref,
+    sex_jitter_pref,
+    afk_erp_pref,
+    horny_virus_imm_pref,
+    erp_event_participation_pref,
   } = data;
 
   const renderToggle = (
@@ -227,6 +239,24 @@ export const ContentPreferencesTab = ({
               'Vore Overlay Options',
             )}
           </>
+        )}
+        {/* Hsector Preferences */}
+        {renderToggle('erp_mob_sex_pref', erp_mob_sex_pref, 'Mob ERP Toggle')}
+        {renderToggle('sex_jitter_pref', sex_jitter_pref, 'Sex Jitter')}
+        {renderToggle(
+          'afk_erp_pref',
+          afk_erp_pref,
+          'AFK Character Interaction',
+        )}
+        {renderToggle(
+          'horny_virus_imm_pref',
+          horny_virus_imm_pref,
+          'Horny Virus Immunity',
+        )}
+        {renderToggle(
+          'erp_event_participation_pref',
+          erp_event_participation_pref,
+          'ERP Event Participation',
         )}
       </>
     </Stack>
