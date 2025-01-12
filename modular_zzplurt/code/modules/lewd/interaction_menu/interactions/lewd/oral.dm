@@ -43,6 +43,24 @@
 	user_arousal = 3
 	target_arousal = 7
 
+/datum/interaction/lewd/oral_vagina/act(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	var/default_sounds = sound_possible.Copy()
+	if(user.gender == FEMALE)
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/girlmouth (1).ogg',
+			'modular_zzplurt/sound/interactions/girlmouth (2).ogg'
+		)
+	else
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/guymouth (1).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (2).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (3).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (4).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (5).ogg'
+		)
+	. = ..()
+	sound_possible = default_sounds
+
 /datum/interaction/lewd/oral_penis
 	name = "Suck Cock"
 	description = "Suck them off."
@@ -87,6 +105,24 @@
 	target_pleasure = 5
 	user_arousal = 3
 	target_arousal = 7
+
+/datum/interaction/lewd/oral_penis/act(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	var/default_sounds = sound_possible.Copy()
+	if(user.gender == FEMALE)
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/girlmouth (1).ogg',
+			'modular_zzplurt/sound/interactions/girlmouth (2).ogg'
+		)
+	else
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/guymouth (1).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (2).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (3).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (4).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (5).ogg'
+		)
+	. = ..()
+	sound_possible = default_sounds
 
 /datum/interaction/lewd/oral_penis/post_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()

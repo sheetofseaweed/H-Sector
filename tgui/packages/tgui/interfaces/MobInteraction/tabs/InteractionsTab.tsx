@@ -3,9 +3,11 @@ import {
   Box,
   Button,
   Collapsible,
+  Icon,
   NoticeBox,
   Section,
   Stack,
+  Tooltip,
 } from '../../../components';
 
 type InteractionsInfo = {
@@ -18,6 +20,10 @@ type InteractionsInfo = {
   ref_user: string;
   ref_self: string;
   self: string;
+  additional_details: Record<
+    string,
+    { info: string; icon: string; color: string }[]
+  >;
 };
 
 type InteractionsTabProps = {
@@ -42,6 +48,7 @@ export const InteractionsTab = ({
     ref_user,
     ref_self,
     self,
+    additional_details,
   } = data;
 
   // Filter interactions based on search text and favorites
@@ -96,6 +103,15 @@ export const InteractionsTab = ({
           }
         >
           {interaction}
+          <Box textAlign="right" fillPositionedParent>
+            {additional_details[interaction]?.map(
+              (detail: { info: string; icon: string; color: string }) => (
+                <Tooltip content={detail.info} key={detail.info}>
+                  <Icon name={detail.icon} />
+                </Tooltip>
+              ),
+            )}
+          </Box>
         </Button>
       </Stack.Item>
       <Stack.Item>

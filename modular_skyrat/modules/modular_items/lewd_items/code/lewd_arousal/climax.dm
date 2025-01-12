@@ -22,7 +22,7 @@
 	if(refractory_period > REALTIMEOFDAY)
 		return
 	refractory_period = REALTIMEOFDAY + 30 SECONDS
-	if(has_status_effect(/datum/status_effect/climax_cooldown))
+	if(has_status_effect(/datum/status_effect/climax_cooldown)) // || !client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
 		return
 
 	if(HAS_TRAIT(src, TRAIT_NEVERBONER) || has_status_effect(/datum/status_effect/climax_cooldown) || (!has_vagina() && !has_penis()))
@@ -46,8 +46,21 @@
 	//SPLURT EDIT ADDITION BEGIN - Interactions
 	else if(climax_interaction?.cum_genital[interaction_position])
 		climax_choice = climax_interaction.cum_genital[interaction_position]
+	conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/end.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds)
 	//SPLURT EDIT ADDITION END
-	switch(gender)
+	//HSECTOR EDIT ADDITION BEGIN - moan selection
+	var/moan_type
+	if(isnull(selected_moan) || !(LAZYLEN(selected_moan.male_moansounds) && LAZYLEN(selected_moan.female_moansounds))) //For things that don't have a selected scream(npcs)
+		moan_type = gender
+	var/voice_type = client.prefs.read_preference(/datum/preference/choiced/voice_type)
+	if(voice_type == "Based on Gender")
+		moan_type = gender
+	else if((voice_type == "Male") || isnull(selected_moan.female_moansounds))
+		moan_type = MALE
+	else
+		moan_type = FEMALE
+	//HSECTOR EDIT ADDITION END
+	switch(moan_type) //switch(gender)
 		if(MALE)
 			conditional_pref_sound(get_turf(src), pick('modular_skyrat/modules/modular_items/lewd_items/sounds/final_m1.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_m2.ogg',
@@ -141,14 +154,17 @@
 						create_cum_decal = TRUE
 						visible_message(span_userlove("[src] shoots their sticky load onto the floor!"), \
 							span_userlove("You shoot string after string of hot cum, hitting the floor!"))
+						conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 					else if(climax_into_choice == "On [target_human_them]")
 						create_cum_decal = TRUE
 						visible_message(span_userlove("[src] shoots their sticky load onto [target_human]!"), \
 							span_userlove("You shoot string after string of hot cum onto [target_human]!"))
+						conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 					else
 						visible_message(span_userlove("[src] hilts [self_their] cock into [target_human]'s [climax_into_choice], shooting cum into [target_human_them]!"), \
 							span_userlove("You hilt your cock into [target_human]'s [climax_into_choice], shooting cum into [target_human_them]!"))
 						to_chat(target_human, span_userlove("Your [climax_into_choice] fills with warm cum as [src] shoots [self_their] load into it."))
+						conditional_pref_sound(get_turf(target_human), climax_into_choice == "mouth" ? pick('modular_zzplurt/sound/interactions/mouthend (1).ogg', 'modular_zzplurt/sound/interactions/mouthend (2).ogg') : 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 
 			var/obj/item/organ/external/genital/testicles/testicles = get_organ_slot(ORGAN_SLOT_TESTICLES)
 			//SPLURT EDIT CHANGE BEGIN - Interactions
@@ -264,14 +280,17 @@
 						create_cum_decal = TRUE
 						visible_message(span_userlove("[src] squirts on the floor!"), \
 							span_userlove("You squirt on the floor!"))
+						conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 					else if(climax_into_choice == "On [target_human_them]")
 						create_cum_decal = TRUE
 						visible_message(span_userlove("[src] squirts all over [target_human]!"), \
 							span_userlove("You squirt all over [target_human]!"))
+						conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 					else
 						visible_message(span_userlove("[src] squirts into [target_human]'s [climax_into_choice]!"), \
 							span_userlove("You squirt into [target_human]'s [climax_into_choice]!"))
 						to_chat(target_human, span_userlove("Your [climax_into_choice] fills with [src]'s fluids."))
+						conditional_pref_sound(get_turf(target_human), climax_into_choice == "mouth" ? pick('modular_zzplurt/sound/interactions/mouthend (1).ogg', 'modular_zzplurt/sound/interactions/mouthend (2).ogg') : 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
 
 			if(!(climax_interaction?.interaction_modifier_flags & INTERACTION_OVERRIDE_FLUID_TRANSFER))
 				if(create_cum_decal)

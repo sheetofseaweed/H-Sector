@@ -1,3 +1,8 @@
+// Edits to nonmodular code
+
+#undef INTERACTION_COOLDOWN
+#define INTERACTION_COOLDOWN 0.25 SECONDS
+
 /// Extra interaction checks.
 
 // A person needs to have mouth available to do this interaction

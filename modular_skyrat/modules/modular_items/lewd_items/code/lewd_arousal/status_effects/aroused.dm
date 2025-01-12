@@ -49,7 +49,7 @@
 		//moan x2
 
 	affected_mob.adjust_arousal(temp_arousal)
-	affected_mob.adjust_pleasure(temp_pleasure)
+	affected_mob.adjust_pleasure(temp_pleasure * (affected_mob.dna.features["lust_tolerance"] || 1)) // SPLURT EDIT - Lust tolerance
 	affected_mob.adjust_pain(temp_pain)
 
 #undef AUTO_EMOTE_CHANCE

@@ -143,10 +143,10 @@
 				if(!target.get_active_hand())
 					return FALSE
 			if(INTERACTION_REQUIRE_SELF_MOUTH)
-				if(!user.get_bodypart(BODY_ZONE_PRECISE_MOUTH) || user.is_mouth_covered())
+				if(!user.get_bodypart(BODY_ZONE_HEAD) || user.is_mouth_covered())
 					return FALSE
 			if(INTERACTION_REQUIRE_TARGET_MOUTH)
-				if(!target.get_bodypart(BODY_ZONE_PRECISE_MOUTH) || target.is_mouth_covered())
+				if(!target.get_bodypart(BODY_ZONE_HEAD) || target.is_mouth_covered())
 					return FALSE
 			if(INTERACTION_REQUIRE_SELF_TOPLESS)
 				if(!user.is_topless())

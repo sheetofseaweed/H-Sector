@@ -1,5 +1,5 @@
 /datum/preference/blob/favorite_interactions
-	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
+	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "favorite_interactions"
 

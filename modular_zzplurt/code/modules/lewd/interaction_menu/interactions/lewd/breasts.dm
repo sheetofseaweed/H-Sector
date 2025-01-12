@@ -211,7 +211,7 @@
 
 /datum/interaction/lewd/breastsmother/post_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	if(prob((user.dna.features["sexual_potency"] * 5) + 10))
+	if(prob((user.dna.features["sexual_potency"] * 5) + 15))
 		target.adjustOxyLoss(2)
 		target.adjust_arousal(5)
 		user.adjust_arousal(8)

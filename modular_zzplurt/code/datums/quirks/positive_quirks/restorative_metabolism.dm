@@ -28,15 +28,15 @@
 
 	// Check brute threshold
 	if(quirk_holder.getBruteLoss() <= RESTMETA_BRUTE_THRESHOLD)
-		need_mob_update += quirk_holder.adjustBruteLoss(RESTMETA_BRUTE_AMOUNT, updating_health = FALSE)
+		need_mob_update += quirk_holder.adjustBruteLoss(RESTMETA_BRUTE_AMOUNT * seconds_per_tick, updating_health = FALSE)
 
 	// Check burn threshold
 	if(quirk_holder.getFireLoss() <= RESTMETA_BURN_THRESHOLD)
-		need_mob_update += quirk_holder.adjustFireLoss(RESTMETA_BURN_AMOUNT, updating_health = FALSE)
+		need_mob_update += quirk_holder.adjustFireLoss(RESTMETA_BURN_AMOUNT * seconds_per_tick, updating_health = FALSE)
 
 	// Check tox threshold
 	if(quirk_holder.getToxLoss() <= RESTMETA_TOX_THRESHOLD)
-		need_mob_update += quirk_holder.adjustToxLoss(RESTMETA_TOX_AMOUNT, updating_health = FALSE, forced = TRUE)
+		need_mob_update += quirk_holder.adjustToxLoss(RESTMETA_TOX_AMOUNT * seconds_per_tick, updating_health = FALSE, forced = TRUE)
 
 	// Check if healing will be applied
 	if(need_mob_update)

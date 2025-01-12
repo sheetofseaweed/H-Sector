@@ -1,0 +1,9 @@
+author: "MosleyTheMalO"
+delete-after: True
+changes:
+  - bugfix: "Fixes a lot of the lewd content using the sound pref instead of default erp pref"
+  - bugfix: "Fixes condoms"
+  - bugfix: "Fixes ghost ass slapping to check for the config well"
+  - bugfix: "toggle subtypes no longer reset arousal related variables"
+  - sound: "adds more interaction sounds"
+  - rscadd: "adds the interaction details"
