@@ -32,11 +32,11 @@
 /datum/emote/living/carbon/moan/get_sound(mob/living/carbon/human/user)
 	if(!istype(user))
 		return
-	if(isnull(user.selected_moan) || !(LAZYLEN(user.selected_moan.male_moansounds) && LAZYLEN(user.selected_moan.female_moansounds))) //For things that don't have a selected scream(npcs)
+	if(isnull(user.selected_moan) || !(LAZYLEN(user.selected_moan.male_moansounds) && LAZYLEN(user.selected_moan.female_moansounds))) //For things that don't have a selected moan(npcs)
 		return user.dna.species.get_moan_sound(user)
 	var/voice_type = user.client.prefs.read_preference(/datum/preference/choiced/voice_type)
 	if(voice_type == "Based on Gender")
-		if((user.client.prefs.read_preference(/datum/preference/choiced/gender) == MALE) || isnull(user.selected_moan.female_moansounds))
+		if((user.gender == MALE) || isnull(user.selected_moan.female_moansounds))
 			return pick(user.selected_moan.male_moansounds)
 		else
 			return pick(user.selected_moan.female_moansounds)

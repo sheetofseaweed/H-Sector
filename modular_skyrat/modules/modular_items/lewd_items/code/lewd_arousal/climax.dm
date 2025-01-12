@@ -48,7 +48,19 @@
 		climax_choice = climax_interaction.cum_genital[interaction_position]
 	conditional_pref_sound(get_turf(src), 'modular_zzplurt/sound/interactions/end.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds)
 	//SPLURT EDIT ADDITION END
-	switch(gender)
+	//HSECTOR EDIT ADDITION BEGIN - moan selection
+	var/moan_type
+	if(isnull(selected_moan) || !(LAZYLEN(selected_moan.male_moansounds) && LAZYLEN(selected_moan.female_moansounds))) //For things that don't have a selected scream(npcs)
+		moan_type = gender
+	var/voice_type = client.prefs.read_preference(/datum/preference/choiced/voice_type)
+	if(voice_type == "Based on Gender")
+		moan_type = gender
+	else if((voice_type == "Male") || isnull(selected_moan.female_moansounds))
+		moan_type = MALE
+	else
+		moan_type = FEMALE
+	//HSECTOR EDIT ADDITION END
+	switch(moan_type) //switch(gender)
 		if(MALE)
 			conditional_pref_sound(get_turf(src), pick('modular_skyrat/modules/modular_items/lewd_items/sounds/final_m1.ogg',
 										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_m2.ogg',

@@ -89,7 +89,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	for(var/iterating_interaction_id in SSinteractions.interactions)
 		var/datum/interaction/interaction = SSinteractions.interactions[iterating_interaction_id]
 	//SPLURT EDIT CHANGE END
-		if(interaction.lewd)
+		//if(interaction.lewd)
 			//if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 			//	continue
 			/*
