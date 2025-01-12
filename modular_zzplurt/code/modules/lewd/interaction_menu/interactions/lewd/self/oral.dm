@@ -30,6 +30,24 @@
 	user_pleasure = 5
 	user_arousal = 7
 
+/datum/interaction/lewd/oral_vagina_self/act(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	var/default_sounds = sound_possible.Copy()
+	if(user.gender == FEMALE)
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/girlmouth (1).ogg',
+			'modular_zzplurt/sound/interactions/girlmouth (2).ogg'
+		)
+	else
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/guymouth (1).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (2).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (3).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (4).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (5).ogg'
+		)
+	. = ..()
+	sound_possible = default_sounds
+
 /datum/interaction/lewd/oral_self
 	name = "Selfsuck"
 	description = "Suck yourself off."
@@ -61,3 +79,21 @@
 	sound_use = TRUE
 	user_pleasure = 5
 	user_arousal = 7
+
+/datum/interaction/lewd/oral_self/act(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	var/default_sounds = sound_possible.Copy()
+	if(user.gender == FEMALE)
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/girlmouth (1).ogg',
+			'modular_zzplurt/sound/interactions/girlmouth (2).ogg'
+		)
+	else
+		sound_possible += list(
+			'modular_zzplurt/sound/interactions/guymouth (1).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (2).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (3).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (4).ogg',
+			'modular_zzplurt/sound/interactions/guymouth (5).ogg'
+		)
+	. = ..()
+	sound_possible = default_sounds

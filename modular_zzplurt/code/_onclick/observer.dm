@@ -2,7 +2,7 @@
 	. = ..()
 	if(. || !user.client)
 		return
-	if(!(isAdminGhostAI(user) || user.client.prefs.read_preference(/datum/preference/toggle/inquisitive_ghost)) && CONFIG_GET(flag/ghost_interaction))
+	if(!((isAdminGhostAI(user) || user.client.prefs.read_preference(/datum/preference/toggle/inquisitive_ghost)) && CONFIG_GET(flag/ghost_interaction)))
 		return
 	ghost_ass_slap(user)
 
@@ -27,10 +27,8 @@
 
 		return
 
-	/*
-	if(!HAS_TRAIT(src, TRAIT_PERMABONER))
-		H.dna.species.stop_wagging_tail(src)
-	*/
+	if(!HAS_TRAIT(src, TRAIT_BIMBO))
+		unwag_tail()
 
 	// Play slap sound
 	conditional_pref_sound(src.loc, 'sound/items/weapons/slap.ogg', 50, 1, -1)

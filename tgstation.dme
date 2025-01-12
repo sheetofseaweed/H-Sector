@@ -9660,6 +9660,7 @@
 #include "modular_zzplurt\code\modules\hud\screen_objects.dm"
 #include "modular_zzplurt\code\modules\language\_language_holder.dm"
 #include "modular_zzplurt\code\modules\language\buzzwords.dm"
+#include "modular_zzplurt\code\modules\lewd\pain.dm"
 #include "modular_zzplurt\code\modules\lewd\interaction_menu\interaction_datum.dm"
 #include "modular_zzplurt\code\modules\lewd\interaction_menu\interactions\lewd\_lewd.dm"
 #include "modular_zzplurt\code\modules\lewd\interaction_menu\interactions\lewd\armpit.dm"

@@ -17,11 +17,11 @@
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Add quirk traits
-	ADD_TRAIT(quirk_mob,TRAIT_RESISTLOWPRESSURE,TRAIT_VACUUM_RESIST)
+	quirk_mob.add_traits(list(TRAIT_RESISTLOWPRESSURE, TRAIT_RESISTCOLD), TRAIT_VACUUM_RESIST)
 
 /datum/quirk/vacuum_resistance/remove()
 	// Define quirk mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Remove quirk traits
-	REMOVE_TRAIT(quirk_mob,TRAIT_RESISTLOWPRESSURE,TRAIT_VACUUM_RESIST)
+	quirk_mob.remove_traits(list(TRAIT_RESISTLOWPRESSURE, TRAIT_RESISTCOLD), TRAIT_VACUUM_RESIST)
