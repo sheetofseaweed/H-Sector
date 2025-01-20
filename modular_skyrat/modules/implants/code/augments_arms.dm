@@ -11,6 +11,7 @@
 #define CUTTER_FORCE 6
 #define CUTTER_WOUND_BONUS 0
 #define ENHANCED_KNIFE_FORCE 15
+#define ENHANCED_CLAW_FORCE 20 //Splurt New Definer for Enhanced Razor Claws.
 #define ENHANCED_KNIFE_WOUND_BONUS 15
 #define ENHANCED_KNIFE_ARMOR_PENETRATION 10
 
@@ -60,7 +61,7 @@
 	lefthand_file = 'modular_skyrat/modules/implants/icons/razorclaws_lefthand.dmi'
 	icon_state = "wolverine"
 	inhand_icon_state = "wolverine"
-	var/knife_force = 10
+	var/knife_force = 15 //Splurt Edit
 	w_class = WEIGHT_CLASS_BULKY
 	var/knife_wound_bonus = 5
 	var/cutter_force = CUTTER_FORCE
@@ -68,6 +69,8 @@
 	var/cutter_bare_wound_bonus = CUTTER_WOUND_BONUS
 	tool_behaviour = TOOL_KNIFE
 	toolspeed = 1
+	attack_speed = 6
+	force = 15 //Splurt Edit/Addition
 	item_flags = NEEDS_PERMIT //Beepers gets angry if you get caught with this.
 
 /obj/item/knife/razor_claws/attack_self(mob/user)
@@ -90,7 +93,7 @@
 		to_chat(user, span_notice("You shift [src] into Killing mode, for slicing."))
 		icon_state = "wolverine"
 		inhand_icon_state = "wolverine"
-		force = knife_force
+		force = 15 //Splurt Edit
 		sharpness = KNIFE_SHARPNESS
 		wound_bonus = knife_wound_bonus
 		bare_wound_bonus = KNIFE_BARE_WOUND_BONUS
@@ -102,13 +105,16 @@
 /obj/item/knife/razor_claws/attackby(obj/item/stone, mob/user, param)
 	if(!istype(stone, /obj/item/scratching_stone))
 		return ..()
-
+	//SPLURT EDIT REMOVAL BEGIN - Knife Force - (Moved Under if(tool_behaviour == Tool_KNIFE) Works just fine still.)
+	/*
 	knife_force = ENHANCED_KNIFE_FORCE
+	*/
+  	//SPLURT EDIT REMOVAL END
 	knife_wound_bonus = ENHANCED_KNIFE_WOUND_BONUS
 	armour_penetration = ENHANCED_KNIFE_ARMOR_PENETRATION //Let's give them some AP for the trouble.
 
 	if(tool_behaviour == TOOL_KNIFE)
-		force = knife_force
+		force = ENHANCED_CLAW_FORCE //Splurt New Definer
 		wound_bonus = knife_wound_bonus
 
 	name = "enhanced razor claws"
@@ -232,5 +238,6 @@
 #undef CUTTER_FORCE
 #undef CUTTER_WOUND_BONUS
 #undef ENHANCED_KNIFE_FORCE
+#undef ENHANCED_CLAW_FORCE //Splurt Addition
 #undef ENHANCED_KNIFE_WOUND_BONUS
 #undef ENHANCED_KNIFE_ARMOR_PENETRATION

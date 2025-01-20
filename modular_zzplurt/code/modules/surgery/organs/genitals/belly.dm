@@ -57,7 +57,7 @@
 /obj/item/organ/external/genital/belly/build_from_accessory(datum/sprite_accessory/genital/accessory, datum/dna/DNA)
 	if(DNA.features["belly_uses_skintones"])
 		uses_skintones = accessory.has_skintone_shading
-
+	return ..()
 
 /obj/item/organ/external/genital/belly/get_description_string(datum/sprite_accessory/genital/gas)
 	var/returned_string = "You see a belly."

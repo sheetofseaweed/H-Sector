@@ -1,8 +1,7 @@
 // THIS IS A SKYRAT UI FILE
-import { CheckboxInput, FeatureChoiced, FeatureToggle } from '../../base';
-import { FeatureDropdownInput } from '../../dropdowns';
-/*
-export const master_erp_pref: FeatureToggle = {
+import { CheckboxInput, FeatureToggle } from '../../base';
+
+/* export const master_erp_pref: FeatureToggle = {
   name: 'Show/Hide Erotic Roleplay Preferences',
   category: 'ERP',
   description: 'This shows/hides ERP preferences.',
@@ -155,6 +154,7 @@ export const erp_event_participation_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
+/* SPLURT EDIT REMOVAL - No
 export const erp_sexuality_pref: FeatureChoiced = {
   name: 'Sexuality Preference',
   category: 'ERP',
@@ -162,6 +162,7 @@ export const erp_sexuality_pref: FeatureChoiced = {
     'Determines what sexual content you see, limited use. None will show all content.',
   component: FeatureDropdownInput,
 };
+*/ // SPLURT EDIT REMOVAL END
 
 export const genitalia_removal_pref: FeatureToggle = {
   name: 'ERP Genitalia Removal',
