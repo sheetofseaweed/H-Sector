@@ -283,7 +283,7 @@
 /datum/preference/choiced/erp_sexuality/create_default_value()
 	return "None"
 
-/*/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -297,7 +297,7 @@
 		return "None"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "None"
-	. = ..()*/
+	. = ..()
 
 /datum/preference/choiced/erp_sexuality/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
