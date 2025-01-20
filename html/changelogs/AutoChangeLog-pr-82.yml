@@ -1,5 +1,0 @@
-author: "MosleyTheMalO"
-delete-after: True
-changes:
-  - bugfix: "Fixes restorative metabolism so it processes correctly"
-  - bugfix: "Fixes Vacuum resistance by adding the missing trait to it"

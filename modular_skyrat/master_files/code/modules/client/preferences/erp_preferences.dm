@@ -57,7 +57,7 @@
 /datum/preference/toggle/erp/apply_to_client_updated(client/client, value)
 	. = ..()
 	var/mob/living/carbon/human/target = client?.mob
-	if(!value && istype(target) && (src.type == /datum/preference/toggle/erp)) // SPLURT EDIT - make only the erp preference reset arousal, pain, and pleasure
+	if(!value && istype(target) && (src.type == /datum/preference/toggle/erp))
 		target.arousal = 0
 		target.pain = 0
 		target.pleasure = 0
@@ -76,13 +76,17 @@
 		if(ishuman(client.mob))
 			var/mob/living/carbon/human/target = client.mob
 			if(target.vagina != null)
-				target.dropItemToGround(target.vagina, TRUE, target.loc, TRUE, FALSE, TRUE)
+				target.dropItemToGround(target.vagina, TRUE, TRUE, FALSE)
+				target.vagina = null
 			if(target.anus != null)
-				target.dropItemToGround(target.anus, TRUE, target.loc, TRUE, FALSE, TRUE)
+				target.dropItemToGround(target.anus, TRUE, TRUE, FALSE)
+				target.anus = null
 			if(target.nipples != null)
-				target.dropItemToGround(target.nipples, TRUE, target.loc, TRUE, FALSE, TRUE)
+				target.dropItemToGround(target.nipples, TRUE, TRUE, FALSE)
+				target.nipples = null
 			if(target.penis != null)
-				target.dropItemToGround(target.penis, TRUE, target.loc, TRUE, FALSE, TRUE)
+				target.dropItemToGround(target.penis, TRUE, TRUE, FALSE)
+				target.penis = null
 
 
 	client.mob.hud_used.hidden_inventory_update(client.mob)
@@ -267,6 +271,7 @@
 /datum/preference/choiced/erp_status_mechanics/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE*/
 
+/* SPLURT EDIT REMOVAL - Not needed
 /datum/preference/choiced/erp_sexuality
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
 	savefile_identifier = PREFERENCE_PLAYER
@@ -278,7 +283,7 @@
 /datum/preference/choiced/erp_sexuality/create_default_value()
 	return "None"
 
-/*/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/erp_sexuality/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
@@ -292,12 +297,13 @@
 		return "None"
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "None"
-	. = ..()*/
+	. = ..()
 
 /datum/preference/choiced/erp_sexuality/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
-/*
-/datum/preference/choiced/erp_status_hypno
+*/ // SPLURT EDIT REMOVAL END
+
+/*/datum/preference/choiced/erp_status_hypno
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "erp_status_pref_hypnosis"

@@ -51,7 +51,7 @@
 				dressing_human.equip_to_slot_or_del(new sprite.briefs_obj(dressing_human), ITEM_SLOT_UNDERWEAR)
 				// SPLURT EDIT END
 		if("Underwear Color")
-			var/new_underwear_color = input(dressing_human, "Choose your underwear color", "Underwear Color", dressing_human.underwear_color) as color|null
+			var/new_underwear_color = tgui_color_picker(dressing_human, "Choose your underwear color", "Underwear Color", dressing_human.underwear_color) // BUBBERSTATION EDIT: TGUI COLOR PICKER
 			if(new_underwear_color)
 				dressing_human.underwear_color = sanitize_hexcolor(new_underwear_color)
 				// SPLURT EDIT ADDITION - Extra Inventory
@@ -69,7 +69,7 @@
 				dressing_human.equip_to_slot_or_del(new sprite.shirt_obj(dressing_human), ITEM_SLOT_SHIRT)
 				// SPLURT EDIT END
 		if("Undershirt Color")
-			var/new_undershirt_color = input(dressing_human, "Choose your undershirt color", "Undershirt Color", dressing_human.undershirt_color) as color|null
+			var/new_undershirt_color = tgui_color_picker(dressing_human, "Choose your undershirt color", "Undershirt Color", dressing_human.undershirt_color) // BUBBERSTATION EDIT: TGUI COLOR PICKER
 			if(new_undershirt_color)
 				dressing_human.undershirt_color = sanitize_hexcolor(new_undershirt_color)
 				// SPLURT EDIT ADDITION - Extra Inventory
@@ -87,7 +87,7 @@
 				dressing_human.equip_to_slot_or_del(new sprite.socks_obj(dressing_human), ITEM_SLOT_SOCKS)
 				// SPLURT EDIT END
 		if("Socks Color")
-			var/new_socks_color = input(dressing_human, "Choose your socks color", "Socks Color", dressing_human.socks_color) as color|null
+			var/new_socks_color = tgui_color_picker(dressing_human, "Choose your socks color", "Socks Color", dressing_human.socks_color) // BUBBERSTATION EDIT: TGUI COLOR PICKER
 			if(new_socks_color)
 				dressing_human.socks_color = sanitize_hexcolor(new_socks_color)
 				// SPLURT EDIT ADDITION - Extra Inventory
@@ -105,7 +105,7 @@
 				dressing_human.equip_to_slot_or_del(new sprite.bra_obj(dressing_human), ITEM_SLOT_BRA)
 				// SPLURT EDIT END
 		if("Bra Color")
-			var/new_bra_color = input(dressing_human, "Choose your Bra color", "Bra Color", dressing_human.bra_color) as color|null
+			var/new_bra_color = tgui_color_picker(dressing_human, "Choose your Bra color", "Bra Color", dressing_human.bra_color) // BUBBERSTATION EDIT: TGUI COLOR PICKER
 			if(new_bra_color)
 				dressing_human.bra_color = sanitize_hexcolor(new_bra_color)
 				// SPLURT EDIT ADDITION - Extra Inventory

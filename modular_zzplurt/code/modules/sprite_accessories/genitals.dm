@@ -3,11 +3,11 @@
 	organ_type = /obj/item/organ/external/genital/butt
 	associated_organ_slot = ORGAN_SLOT_BUTT
 	key = ORGAN_SLOT_BUTT
-	has_skintone_shading = TRUE
 	always_color_customizable = TRUE
 	default_color = DEFAULT_SKIN_OR_PRIMARY
-	genetic = TRUE
+	has_skintone_shading = TRUE
 	relevent_layers = list(BODYPARTS_LAYER)
+	genetic = TRUE
 
 /datum/sprite_accessory/genital/butt/none
 	icon_state = "none"
@@ -25,6 +25,7 @@
 	//associated_organ_slot = ORGAN_SLOT_BUTT // :3
 	key = ORGAN_SLOT_ANUS
 	color_src = USE_MATRIXED_COLORS
+	has_skintone_shading = TRUE
 	always_color_customizable = TRUE
 	relevent_layers = list(BODY_FRONT_LAYER)
 	genetic = TRUE
@@ -44,8 +45,8 @@
 	organ_type = /obj/item/organ/external/genital/belly
 	associated_organ_slot = ORGAN_SLOT_BELLY
 	key = ORGAN_SLOT_BELLY
-	has_skintone_shading = TRUE
 	always_color_customizable = TRUE
+	has_skintone_shading = TRUE
 	default_color = DEFAULT_SKIN_OR_PRIMARY
 	genetic = TRUE
 	relevent_layers = list(BODYPARTS_LAYER)
