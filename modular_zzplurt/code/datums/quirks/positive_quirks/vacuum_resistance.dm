@@ -1,4 +1,4 @@
-/datum/quirk/vacuum_resistance
+/*/datum/quirk/vacuum_resistance
     name = "Vacuum Resistance"
     desc = "Your body is specially adapted to withstand and operate in zero-pressure environments. You may still need a source of breathable air, however."
     value = 8
@@ -24,4 +24,4 @@
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
 
 	// Remove quirk traits
-	quirk_mob.remove_traits(list(TRAIT_RESISTLOWPRESSURE, TRAIT_RESISTCOLD), TRAIT_VACUUM_RESIST)
+	quirk_mob.remove_traits(list(TRAIT_RESISTLOWPRESSURE, TRAIT_RESISTCOLD), TRAIT_VACUUM_RESIST)*/

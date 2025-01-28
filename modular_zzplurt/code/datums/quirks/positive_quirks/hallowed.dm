@@ -1,4 +1,4 @@
-/datum/quirk/hallowed
+/*/datum/quirk/hallowed
 	name = "Hallowed"
 	desc = "You have been blessed by a higher power, or otherwise become a deacon imbued with holy energy. Your divine presence gives you the power of a chaplain, and drives away unholy magics!"
 	value = 6 // Maybe up the cost if more is added later.
@@ -72,5 +72,5 @@
 
 // Set effect examine text
 /datum/status_effect/quirk_examine/hallowed/get_examine_text()
-	return span_notice("[owner.p_They()] radiate[owner.p_s()] divine power.")
+	return span_notice("[owner.p_They()] radiate[owner.p_s()] divine power.")*/
 

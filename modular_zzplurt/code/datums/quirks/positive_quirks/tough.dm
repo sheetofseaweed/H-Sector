@@ -1,4 +1,4 @@
-/datum/quirk/tough
+/*/datum/quirk/tough
 	name = "Tough"
 	desc = "Your body is abnormally enduring, granting you 10% more health."
 	value = 4
@@ -16,6 +16,7 @@
 	if(!quirk_holder)
 		return
 	quirk_holder.maxHealth *= 0.909 //close enough
+	*/
 
 
 

@@ -1,4 +1,4 @@
-/datum/quirk/rad_fiend
+/*/datum/quirk/rad_fiend
 	name = "Rad Fiend"
 	desc = "You've been blessed by Cherenkov's warming light! Radiation is incapable of penetrating your protective barrier."
 	value = 6
@@ -53,4 +53,4 @@
 	SIGNAL_HANDLER
 
 	// Add mood bonus
-	quirk_holder.add_mood_event("fav_food", /datum/mood_event/favorite_food)
+	quirk_holder.add_mood_event("fav_food", /datum/mood_event/favorite_food)*/
