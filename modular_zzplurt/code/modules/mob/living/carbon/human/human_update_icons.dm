@@ -292,7 +292,7 @@
 		var/atom/movable/screen/inventory/inv = hud_used.extra_inventory[EARS_EXTRA_INDEX]
 		inv.update_icon()
 
-	if(ears_extra) // stupid splurt
+	if(ears_extra)
 		var/obj/item/worn_item = ears_extra
 		update_hud_ears_extra(worn_item)
 

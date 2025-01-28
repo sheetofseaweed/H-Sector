@@ -7,8 +7,6 @@
 #define ORGAN_SLOT_TESTICLES "testicles"
 #define ORGAN_SLOT_BREASTS "breasts"
 #define ORGAN_SLOT_ANUS "anus"
-#define ORGAN_SLOT_BUTT "butt"// hsector add
-#define ORGAN_SLOT_BELLY "belly"// hsector add
 #define ORGAN_SLOT_NIPPLES "nipples"
 #define ORGAN_SLOT_TAIL "tail"
 #define ORGAN_SLOT_SLIT "slit"

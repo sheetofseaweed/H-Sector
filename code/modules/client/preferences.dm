@@ -88,6 +88,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	/// If set to TRUE, will update character_profiles on the next ui_data tick.
 	var/tainted_character_profiles = FALSE
 
+	var/list/custom_emote_panel = list() // SPLURT EDIT:  CUSTOM EMOTE PANEL
+
 /datum/preferences/Destroy(force)
 	QDEL_NULL(character_preview_view)
 	QDEL_LIST(middleware)
@@ -295,12 +297,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/default_value = read_preference(requested_preference.type)
 
 			// Yielding
-			var/new_color = input(
+			// BUBBERSTATION EDIT START: TGUI COLOR PICKER
+			var/new_color = tgui_color_picker(
 				usr,
 				"Select new color",
 				null,
 				default_value || COLOR_WHITE,
-			) as color | null
+			) // BUBBERSTATION EDIT END: TGUI COLOR PICKER
 
 			if (!new_color)
 				return FALSE
@@ -336,12 +339,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/default_value = default_value_list[index_key]
 
 			// Yielding
-			var/new_color = input(
+			// BUBBERSTATION EDIT START: TGUI COLOR PICKER
+			var/new_color = tgui_color_picker(
 				usr,
 				"Select new color",
 				null,
 				default_value || COLOR_WHITE,
-			) as color | null
+			) // BUBBERSTATION EDIT END: TGUI COLOR PICKER
 
 			if (!new_color)
 				return FALSE

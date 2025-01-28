@@ -70,7 +70,7 @@
 	button_icon = 'modular_skyrat/master_files/icons/mob/actions/actions_slime.dmi'
 	background_icon_state = "bg_alien"
 	/// Do you need to be a slime-person to use this ability?
-	var/slime_restricted = TRUE
+	var/slime_restricted = FALSE // splurt edit: original = TRUE
 	///Is the person using this ability oversized?
 	var/oversized_user = FALSE
 	///What text is shown to others when the person uses the ability?
@@ -159,12 +159,13 @@
 		if("Tertiary")
 			color_target = "mcolor3"
 
-	var/new_mutant_colour = input(
+	// BUBBERSTATION EDIT START: TGUI COLOR PICKER
+	var/new_mutant_colour = tgui_color_picker(
 		alterer,
-		"Choose your character's new [color_choice = "All" ? "" : lowertext(color_choice)] color:",
+		"Choose your character's new [color_choice = "All" ? "" : LOWER_TEXT(color_choice)] color:",
 		"Form Alteration",
 		alterer.dna.features[color_target]
-	) as color|null
+	) // BUBBERSTATION EDIT END: TGUI COLOR PICKER
 	if(!new_mutant_colour)
 		return
 
@@ -264,7 +265,7 @@
 			var/hair_area = tgui_alert(alterer, "Select which color you would like to change", "Hair Color Alterations", list("Hairstyle", "Facial Hair", "Both"))
 			if(!hair_area)
 				return
-			var/new_hair_color = input(alterer, "Select your new hair color", "Hair Color Alterations", alterer.dna.features["mcolor"]) as color|null
+			var/new_hair_color = tgui_color_picker(alterer, "Select your new hair color", "Hair Color Alterations", alterer.dna.features["mcolor"]) // BUBBERSTATION EDIT: TGUI COLOR PICKER
 			if(!new_hair_color)
 				return
 

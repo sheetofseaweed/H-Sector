@@ -3,14 +3,14 @@
 #undef BODY_SIZE_MAX
 #undef BODY_SIZE_MIN
 
-#define BODY_SIZE_MAX CONFIG_GET(number/body_size_max)
-#define BODY_SIZE_MIN CONFIG_GET(number/body_size_min)
-/*
+#define BODY_SIZE_MAX 2.0
+#define BODY_SIZE_MIN 0.1
+
 //sex
 #define ORGAN_SLOT_BUTT "butt"
 #define ORGAN_SLOT_BELLY "belly"
 //arachnid organ slots
-*/
+
 ///arachnid organ slots
 #define ORGAN_SLOT_EXTERNAL_MANDIBLES "mandibles"
 #define ORGAN_SLOT_EXTERNAL_SPINNERET "spinneret"
