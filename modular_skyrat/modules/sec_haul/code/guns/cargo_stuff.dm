@@ -1,5 +1,5 @@
 //TERRAGOV AMMO
-
+/*
 /datum/supply_pack/security/lethalsolpistols
 	name = ".35 Ammunition Crates"
 	desc = "Contains 6 boxes of lethal ammunition for Sol .35 Pistol."
@@ -194,5 +194,5 @@
 				)
 	special = FALSE
 //This makes the Security ammo crate use the cool advanced ammo boxes instead of the old ones
-
+*/
 

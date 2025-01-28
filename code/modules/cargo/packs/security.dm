@@ -3,7 +3,7 @@
 	access = ACCESS_SECURITY
 	crate_type = /obj/structure/closet/crate/secure/gear
 
-/datum/supply_pack/security/ammo
+/*/datum/supply_pack/security/ammo
 	name = "Ammo Crate"
 	desc = "Contains three boxes of beanbag shotgun shells, three boxes \
 		of rubbershot shotgun shells and one of each special .38 speedloaders."
@@ -23,7 +23,7 @@
 	cost = CARGO_CRATE_VALUE * 2
 	access_view = ACCESS_SECURITY
 	contains = list(/obj/item/clothing/suit/armor/vest = 3)
-	crate_name = "armor crate"
+	crate_name = "armor crate"*/
 
 /datum/supply_pack/security/disabler
 	name = "Disabler Crate"
@@ -57,13 +57,13 @@
 	contains = list(/obj/item/clothing/head/helmet/sec = 3)
 	crate_name = "helmet crate"
 
-/datum/supply_pack/security/laser
+/*/datum/supply_pack/security/laser
 	name = "Lasers Crate"
 	desc = "Contains three lethal, high-energy laser guns."
 	cost = CARGO_CRATE_VALUE * 4
 	access_view = ACCESS_ARMORY
 	contains = list(/obj/item/gun/energy/laser = 3)
-	crate_name = "laser crate"
+	crate_name = "laser crate"*/
 
 /datum/supply_pack/security/securitybarriers
 	name = "Security Barrier Grenades"
@@ -174,7 +174,7 @@
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
 
 /// Armory packs
-
+/*
 /datum/supply_pack/security/armory
 	group = "Armory"
 	access = ACCESS_ARMORY
@@ -194,9 +194,9 @@
 	desc = "Contains three bulletproof helmets."
 	cost = CARGO_CRATE_VALUE * 3
 	contains = list(/obj/item/clothing/head/helmet/alt = 3)
-	crate_name = "bulletproof helmets crate"
+	crate_name = "bulletproof helmets crate"*/
 
-/datum/supply_pack/security/armory/chemimp
+/*/datum/supply_pack/security/armory/chemimp
 	name = "Chemical Implants Crate"
 	desc = "Contains five Remote Chemical implants."
 	cost = CARGO_CRATE_VALUE * 3.5
@@ -210,7 +210,7 @@
 	cost = CARGO_CRATE_VALUE * 17.5
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat = 3,
 					/obj/item/storage/belt/bandolier = 3)
-	crate_name = "combat shotguns crate"
+	crate_name = "combat shotguns crate"*/
 
 /datum/supply_pack/security/armory/dragnet
 	name = "DRAGnet Crate"
@@ -223,7 +223,7 @@
 	)
 	crate_name = "\improper DRAGnet crate"
 
-/datum/supply_pack/security/armory/energy
+/*/datum/supply_pack/security/armory/energy
 	name = "Energy Guns Crate"
 	desc = "Contains two Energy Guns, capable of firing both nonlethal and lethal \
 		blasts of light."
@@ -246,7 +246,7 @@
 	cost = CARGO_CRATE_VALUE * 7
 	contains = list(/obj/item/gun/energy/disabler/smg = 3)
 	crate_name = "disabler smg crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/plasma*/
 
 /datum/supply_pack/security/armory/exileimp
 	name = "Exile Implants Crate"
@@ -255,7 +255,7 @@
 	contains = list(/obj/item/storage/box/exileimp)
 	crate_name = "exile implant crate"
 
-/datum/supply_pack/security/armory/fire
+/*/datum/supply_pack/security/armory/fire
 	name = "Incendiary Weapons Crate"
 	desc = "Burn, baby burn. Contains three incendiary grenades, three plasma canisters, \
 		and a flamethrower."
@@ -267,7 +267,7 @@
 				)
 	crate_name = "incendiary weapons crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
-	dangerous = TRUE
+	dangerous = TRUE*/
 
 /datum/supply_pack/security/armory/mindshield
 	name = "Mindshield Implants Crate"
@@ -276,7 +276,7 @@
 	contains = list(/obj/item/storage/lockbox/loyalty)
 	crate_name = "mindshield implant crate"
 
-/datum/supply_pack/security/armory/trackingimp
+/*/datum/supply_pack/security/armory/trackingimp
 	name = "Tracking Implants Crate"
 	desc = "Contains four tracking implants and three tracking speedloaders of tracing .38 ammo."
 	cost = CARGO_CRATE_VALUE * 4.5
@@ -346,4 +346,4 @@
 	cost = CARGO_CRATE_VALUE * 2
 	access_view = ACCESS_SECURITY
 	contains = list(/obj/item/clothing/glasses/sunglasses = 1)
-	crate_name = "sunglasses crate"
+	crate_name = "sunglasses crate"*/

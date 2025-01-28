@@ -11,7 +11,7 @@
 	cost = 100000
 	contains = list(/obj/item/modular_computer/pda/clear)
 
-/datum/supply_pack/goody/dumdum38
+/*/datum/supply_pack/goody/dumdum38
 	name = ".38 DumDum Speedloader Single-Pack"
 	desc = "Contains one speedloader of .38 DumDum ammunition, good for embedding in soft targets."
 	cost = PAYCHECK_CREW * 2
@@ -37,7 +37,7 @@
 	desc = "The HoS took your gun and your badge? No problem! Just pay the absurd taxation fee and you too can be reunited with the lethal power of a .38!"
 	cost = PAYCHECK_CREW * 40 //they really mean a premium here
 	access_view = ACCESS_WEAPONS
-	contains = list(/obj/item/gun/ballistic/revolver/c38/detective)
+	contains = list(/obj/item/gun/ballistic/revolver/c38/detective)*/
 
 /datum/supply_pack/goody/stingbang
 	name = "Stingbang Single-Pack"
@@ -46,7 +46,7 @@
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/grenade/stingbang)
 
-/datum/supply_pack/goody/Survivalknives_single
+/*/datum/supply_pack/goody/Survivalknives_single
 	name = "Survival Knife Single-Pack"
 	desc = "Contains one sharpened survival knife. Guaranteed to fit snugly inside any Nanotrasen-standard boot."
 	cost = PAYCHECK_COMMAND * 1.75
@@ -57,7 +57,7 @@
 	desc = "For when the enemy absolutely needs to be replaced with lead. Contains one Aussec-designed Combat Shotgun, and one Shotgun Bandolier."
 	cost = PAYCHECK_COMMAND * 15
 	access_view = ACCESS_ARMORY
-	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat, /obj/item/storage/belt/bandolier)
+	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat, /obj/item/storage/belt/bandolier)*/
 
 /datum/supply_pack/goody/disabler_single
 	name = "Disabler Single-Pack"
@@ -66,7 +66,7 @@
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/storage/belt/holster/energy/disabler)
 
-/datum/supply_pack/goody/energy_single
+/*/datum/supply_pack/goody/energy_single
 	name = "Energy Gun Single-Pack"
 	desc = "Contains one energy gun, capable of firing both non-lethal and lethal blasts of light."
 	cost = PAYCHECK_COMMAND * 12
@@ -85,7 +85,7 @@
 	desc = "Contains one hellgun degradation kit, an old pattern of laser gun infamous for its ability to horribly disfigure targets with burns. Technically violates the Space Geneva Convention when used on humanoids."
 	cost = PAYCHECK_CREW * 2
 	access_view = ACCESS_WEAPONS
-	contains = list(/obj/item/weaponcrafting/gunkit/hellgun)
+	contains = list(/obj/item/weaponcrafting/gunkit/hellgun)*/
 
 /datum/supply_pack/goody/thermal_single
 	name = "Thermal Pistol Holster Single-Pack"
