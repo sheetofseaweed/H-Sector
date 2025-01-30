@@ -50,8 +50,8 @@ GLOBAL_LIST_INIT_TYPED(quirk_blacklist, /list/datum/quirk, list(
 	// Hallowed is a direct foil to both quirks.
 	// Causes a conflict with Holy Water effects.
 	// Bloodsuckers cannot interact with Hallowed users.
-	list(/datum/quirk/hallowed, /datum/quirk/cursed_blood),
-	list(/datum/quirk/hallowed, /datum/quirk/item_quirk/bloodfledge),
+	//list(/datum/quirk/hallowed, /datum/quirk/cursed_blood),
+	//list(/datum/quirk/hallowed, /datum/quirk/item_quirk/bloodfledge),
 
 	// Bloodfledges do not use standard thirst
 	list(/datum/quirk/item_quirk/bloodfledge, /datum/quirk/thirsty),
