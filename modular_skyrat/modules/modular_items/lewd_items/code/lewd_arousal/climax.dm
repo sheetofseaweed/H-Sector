@@ -48,15 +48,19 @@
 	//SPLURT EDIT ADDITION END
 	//HSECTOR EDIT ADDITION BEGIN - moan selection
 	var/moan_type
-	if(isnull(selected_moan) || !(LAZYLEN(selected_moan.male_moansounds) && LAZYLEN(selected_moan.female_moansounds))) //For things that don't have a selected scream(npcs)
-		moan_type = gender
-	var/voice_type = client.prefs.read_preference(/datum/preference/choiced/voice_type)
-	if(voice_type == "Based on Gender")
-		moan_type = gender
-	else if((voice_type == "Male") || isnull(selected_moan.female_moansounds))
-		moan_type = MALE
+	if(ishuman(src))
+		var/mob/living/carbon/human/human_moaner = src
+		if(isnull(human_moaner.selected_moan) || !(LAZYLEN(human_moaner.selected_moan.male_moansounds) && LAZYLEN(human_moaner.selected_moan.female_moansounds))) //For things that don't have a selected scream(npcs)
+			moan_type = gender
+		var/voice_type = client.prefs.read_preference(/datum/preference/choiced/voice_type)
+		if(voice_type == "Based on Gender")
+			moan_type = gender
+		else if((voice_type == "Male") || isnull(human_moaner.selected_moan.female_moansounds))
+			moan_type = MALE
+		else
+			moan_type = FEMALE
 	else
-		moan_type = FEMALE
+		moan_type = gender
 	//HSECTOR EDIT ADDITION END
 	switch(moan_type) //switch(gender)
 		if(MALE)
