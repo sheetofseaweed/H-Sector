@@ -18,8 +18,8 @@
 
 /datum/status_effect/aroused/tick(seconds_between_ticks)
 	//hsector edit - remove erp check
-	//was: if(owner.stat >= DEAD || !owner.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-	if(owner.stat >= DEAD)
+	//was: if(owner.stat >= DEAD || !(owner.client?.prefs?.read_preference(/datum/preference/toggle/erp) || (!ishuman(owner) && !owner.client && !SSinteractions.is_blacklisted(owner)))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
+	if(owner.stat >= DEAD || !((!ishuman(owner) && !owner.client && !SSinteractions.is_blacklisted(owner))))
 		return
 
 	var/mob/living/carbon/human/affected_mob = owner
@@ -49,7 +49,7 @@
 		//moan x2
 
 	affected_mob.adjust_arousal(temp_arousal)
-	affected_mob.adjust_pleasure(temp_pleasure * (affected_mob.dna.features["lust_tolerance"] || 1)) // SPLURT EDIT - Lust tolerance
+	affected_mob.adjust_pleasure(temp_pleasure * (ishuman(affected_mob) ? (affected_mob.dna.features["lust_tolerance"] || 1) : 1)) // SPLURT EDIT - Lust tolerance
 	affected_mob.adjust_pain(temp_pain)
 
 #undef AUTO_EMOTE_CHANCE
