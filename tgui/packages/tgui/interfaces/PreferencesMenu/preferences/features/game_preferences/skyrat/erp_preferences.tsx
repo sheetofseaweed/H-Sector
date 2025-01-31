@@ -116,6 +116,22 @@ export const penis_enlargement_pref: FeatureToggle = {
   component: CheckboxInput,
 };
 
+export const autocum_pref: FeatureToggle = {
+  name: 'Autocum',
+  category: 'ERP',
+  description:
+    'Toggles whether you automatically cum using the arousal system, or if you need to do it manually.',
+  component: CheckboxInput,
+};
+
+export const autoemote_pref: FeatureToggle = {
+  name: 'Auto Emote',
+  category: 'ERP',
+  description:
+    'Toggles whether you automatically emote using the arousal system, or if you need to do it manually.',
+  component: CheckboxInput,
+};
+
 export const penis_shrinkage_pref: FeatureToggle = {
   name: 'Penis shrinkage',
   category: 'ERP',
