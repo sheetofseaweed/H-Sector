@@ -114,7 +114,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	//SPLURT EDIT CHANGE END
 		if(interaction.lewd)
 			//HSECTOR EDIT - was: if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp) && !(!ishuman(self) && !self.client && !SSinteractions.is_blacklisted(self))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
-			if(!(!ishuman(self) && !self.client && !SSinteractions.is_blacklisted(self))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
+			if(!ishuman(self) && SSinteractions.is_blacklisted(self)) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
 				continue
 			/*
 			SPLURT EDIT REMOVAL - Interactions
@@ -144,7 +144,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	if(!interaction.allow_act(target, self))
 		return FALSE
 	//HSECTOR EDIT - was: if(interaction.lewd && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp) && !(!ishuman(target) && !target.client && !SSinteractions.is_blacklisted(target)))// SPLURT EDIT - INTERACTIONS - All mobs should be interactable
-	if(interaction.lewd && !(!ishuman(target) && !target.client && !SSinteractions.is_blacklisted(target))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
+	if(interaction.lewd && (!ishuman(target) && !target.client && SSinteractions.is_blacklisted(target))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
 		return FALSE
 	if(!interaction.distance_allowed && !target.Adjacent(self))
 		return FALSE
