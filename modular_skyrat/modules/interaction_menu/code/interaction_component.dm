@@ -675,13 +675,13 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 
 	switch(slot_index)
 		if(ORGAN_SLOT_VAGINA)
-			return item.extra_slot_flags & ORGAN_SLOT_VAGINA
+			return item.lewd_slot_flags & ORGAN_SLOT_VAGINA
 		if(ORGAN_SLOT_PENIS)
-			return item.extra_slot_flags & ORGAN_SLOT_PENIS
+			return item.lewd_slot_flags & ORGAN_SLOT_PENIS
 		if(ORGAN_SLOT_ANUS)
-			return item.extra_slot_flags & ORGAN_SLOT_ANUS
+			return item.lewd_slot_flags & ORGAN_SLOT_ANUS
 		if(ORGAN_SLOT_NIPPLES)
-			return item.extra_slot_flags & ORGAN_SLOT_NIPPLES
+			return item.lewd_slot_flags & ORGAN_SLOT_NIPPLES
 		else
 			return FALSE
 

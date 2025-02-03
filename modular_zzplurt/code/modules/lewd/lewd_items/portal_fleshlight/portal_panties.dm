@@ -7,7 +7,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_MASK
 	extra_slot_flags = ITEM_SLOT_UNDERWEAR
-	lewd_slot_flags = LEWD_SLOT_PENIS | LEWD_SLOT_VAGINA | LEWD_SLOT_ANUS
+	lewd_slot_flags = ITEM_SLOT_PENIS | ITEM_SLOT_VAGINA | ITEM_SLOT_ANUS
 	var/obj/item/clothing/sextoy/portal_fleshlight/linked_fleshlight = null
 	var/current_target = null
 	var/equipped_slot = null
@@ -52,9 +52,9 @@
 		return
 	portal_toy.link_panties(src, user)
 
-/obj/item/clothing/sextoy/portal_panties/lewd_equipped(mob/living/carbon/human/user, slot, initial)
-	. = ..()
-	update_target(user, slot)
+///obj/item/clothing/sextoy/portal_panties/lewd_equipped(mob/living/carbon/human/user, slot, initial)
+//	. = ..()
+//	update_target(user, slot)
 
 /obj/item/clothing/sextoy/portal_panties/equipped(mob/living/carbon/human/user, slot)
 	. = ..()

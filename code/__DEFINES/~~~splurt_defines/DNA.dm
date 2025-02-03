@@ -29,5 +29,5 @@
 #define BREASTS_MIN_SIZE 0
 #define BREASTS_MAX_SIZE 19
 
-#define BELLY_MIN_SIZE 1
+#define BELLY_MIN_SIZE 0//hsector edit
 #define BELLY_MAX_SIZE 10

@@ -6600,6 +6600,7 @@
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "modular_hsector\_defines\pool.dm"
+#include "modular_hsector\code\game\objects\items.dm"
 #include "modular_hsector\code\game\objects\effects\lights.dm"
 #include "modular_hsector\code\game\objects\items\vampire_bottle.dm"
 #include "modular_hsector\code\game\objects\items\devices\tvcamera\tvcamera.dm"

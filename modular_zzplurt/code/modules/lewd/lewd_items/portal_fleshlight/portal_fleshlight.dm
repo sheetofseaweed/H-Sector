@@ -7,7 +7,7 @@
 	icon = 'modular_zzplurt/icons/obj/lewd/fleshlight.dmi'
 	icon_state = "unpaired"
 	w_class = WEIGHT_CLASS_SMALL
-	lewd_slot_flags = LEWD_SLOT_PENIS
+	lewd_slot_flags = ITEM_SLOT_PENIS
 
 	/// The linked portal panties
 	var/obj/item/clothing/sextoy/portal_panties/linked_panties = null
