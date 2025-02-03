@@ -1,19 +1,20 @@
 /mob/living/carbon/human
-	var/arousal = 0
-	var/pleasure = 0
-	var/pain = 0
+	// SPLURT EDIT REMOVAL - Moving lewd variables to /mob/living, see modular_zzplurt/code/modules/mob/living/living_lewd.dm
+	// var/arousal = 0
+	// var/pleasure = 0
+	// var/pain = 0
 
-	var/pain_limit = 0
-	var/arousal_status = AROUSAL_NONE
+	// var/pain_limit = 0
+	// var/arousal_status = AROUSAL_NONE
+	// SPLURT EDIT END
 
 	// Add variables for slots to the human class
 	var/obj/item/vagina = null
 	var/obj/item/anus = null
 	var/obj/item/nipples = null
 	var/obj/item/penis = null
-	var/obj/item/mouth = null
-	var/obj/item/crotch = null
-
+	var/obj/item/mouth = null //HSECTOR ADD
+	var/obj/item/crotch = null //HSECTOR ADD
 
 /*
 *	This code needed to determine if the human is naked in that part of body or not
@@ -21,15 +22,15 @@
 */
 
 /// Are we wearing something that covers our chest?
-/mob/living/carbon/human/proc/is_topless()
+/mob/living/carbon/human/is_topless()	// SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	return (!(wear_suit) || !(wear_suit.body_parts_covered & CHEST)) && (!(w_uniform) || !(w_uniform.body_parts_covered & CHEST))
 
 /// Are we wearing something that covers our groin?
-/mob/living/carbon/human/proc/is_bottomless()
+/mob/living/carbon/human/is_bottomless()	// SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	return (!(wear_suit) || !(wear_suit.body_parts_covered & GROIN)) && (!(w_uniform) || !(w_uniform.body_parts_covered & GROIN))
 
 /// Are we wearing something that covers our shoes?
-/mob/living/carbon/human/proc/is_barefoot()
+/mob/living/carbon/human/is_barefoot()	// SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	return (!(wear_suit) || !(wear_suit.body_parts_covered & GROIN)) && (!(shoes) || !(shoes.body_parts_covered & FEET))
 
 /mob/living/carbon/human/proc/is_hands_uncovered()
@@ -153,7 +154,7 @@
 			return hand_count
 
 /// Returns true if the human has a accessible feet for the parameter, returning the number of feet the human has if they do. Accepts any of the `REQUIRE_GENITAL_` defines.
-/mob/living/carbon/human/proc/has_feet(required_state = REQUIRE_GENITAL_ANY)
+/mob/living/carbon/human/has_feet(required_state = REQUIRE_GENITAL_ANY) // SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	var/feet_count = 0
 
 	for(var/obj/item/bodypart/leg/left/left_leg in bodyparts)
@@ -178,7 +179,7 @@
 			return feet_count
 
 /// Gets the number of feet the human has.
-/mob/living/carbon/human/proc/get_num_feet()
+/mob/living/carbon/human/get_num_feet() // SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	return has_feet(REQUIRE_GENITAL_ANY)
 
 /// Returns true if the human has a accessible ears for the parameter. Accepts any of the `REQUIRE_GENITAL_` defines.
@@ -275,7 +276,7 @@
 	overlays_standing[VAGINA_LAYER] = vagina_overlay
 
 	apply_overlay(VAGINA_LAYER)
-	update_mutant_bodyparts()
+	update_body_parts()
 
 /// Updating anus slot
 /mob/living/carbon/human/proc/update_inv_anus()
@@ -299,7 +300,7 @@
 	overlays_standing[ANUS_LAYER] = anus_overlay
 
 	apply_overlay(ANUS_LAYER)
-	update_mutant_bodyparts()
+	update_body_parts()
 
 /// Updating nipples slot
 /mob/living/carbon/human/proc/update_inv_nipples()
@@ -323,7 +324,7 @@
 	overlays_standing[NIPPLES_LAYER] = nipples_overlay
 
 	apply_overlay(NIPPLES_LAYER)
-	update_mutant_bodyparts()
+	update_body_parts()
 
 /// Updating penis slot
 /mob/living/carbon/human/proc/update_inv_penis()
@@ -347,7 +348,7 @@
 	overlays_standing[PENIS_LAYER] = penis_overlay
 
 	apply_overlay(PENIS_LAYER)
-	update_mutant_bodyparts()*/
+	update_body_parts()*/
 
 /// Helper proc for calling all the lewd slot update_inv_ procs.
 /mob/living/carbon/human/proc/update_inv_lewd()
@@ -371,7 +372,7 @@
 		..()
 
 /// Checks if the human is wearing a condom, and also hasn't broken it.
-/mob/living/carbon/human/proc/is_wearing_condom()
+/mob/living/carbon/human/is_wearing_condom() // SPLURT EDIT - INTERACTIONS - Now is a continuation of the same proc in modular_zzplurt\code\modules\mob\living\living_lewd.dm
 	if(!penis || !istype(penis, /obj/item/clothing/sextoy/condom))
 		return FALSE
 
