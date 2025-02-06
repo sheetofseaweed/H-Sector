@@ -26,7 +26,7 @@
 	var/mutable_appearance/magicwand_overlay
 	w_class = WEIGHT_CLASS_TINY
 	//lewd_slot_flags = LEWD_SLOT_VAGINA | LEWD_SLOT_PENIS
-	extra_slot_flags = ITEM_SLOT_PENIS | ITEM_SLOT_VAGINA
+	lewd_slot_flags = ITEM_SLOT_PENIS | ITEM_SLOT_VAGINA
 	clothing_flags = INEDIBLE_CLOTHING
 
 //some stuff for making overlay of this item. Why? Because.

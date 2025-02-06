@@ -14,7 +14,7 @@
 
 	// this check prevents us from equipping something to a slot it doesn't support, WITH the exceptions of storage slots (pockets, suit storage, and backpacks)
 	// we don't require having those slots defined in the item's slot_flags, so we'll rely on their own checks further down
-	if(!(I.extra_slot_flags & (slot & ~ITEM_SLOT_EXTRA)))
+	if(!((I.extra_slot_flags & (slot & ~ITEM_SLOT_EXTRA)) || (I.lewd_slot_flags & (slot & ~ITEM_SLOT_EXTRA))))
 		return FALSE
 
 	switch(slot)
