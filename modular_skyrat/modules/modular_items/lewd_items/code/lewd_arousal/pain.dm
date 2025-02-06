@@ -5,7 +5,7 @@
 /mob/living/proc/adjust_pain(change_amount = 0, mob/living/partner, datum/interaction/interaction, position) // SPLURT EDIT - INTERACTIONS - Simple mobs should also be able to handle pain
 	//hsector edit - remove erp check
 	//was: if(stat >= DEAD || !(client?.prefs?.read_preference(/datum/preference/toggle/erp) || (!ishuman(src) && !src.client && !SSinteractions.is_blacklisted(src)))) // SPLURT EDIT - INTERACTIONS - Simple mobs should also be able to handle pain
-	if(stat >= DEAD)
+	if((stat >= DEAD) || (!ishuman(src) && !src.client && SSinteractions.is_blacklisted(src)))
 		return
 
 	if(pain > pain_limit || change_amount > pain_limit / 10) // pain system // YOUR SYSTEM IS PAIN, WHY WE'RE GETTING AROUSED BY STEPPING ON ANTS?!

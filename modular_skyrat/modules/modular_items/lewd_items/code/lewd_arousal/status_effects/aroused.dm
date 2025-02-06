@@ -19,7 +19,7 @@
 /datum/status_effect/aroused/tick(seconds_between_ticks)
 	//hsector edit - remove erp check
 	//was: if(owner.stat >= DEAD || !(owner.client?.prefs?.read_preference(/datum/preference/toggle/erp) || (!ishuman(owner) && !owner.client && !SSinteractions.is_blacklisted(owner)))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
-	if(owner.stat >= DEAD || !((!ishuman(owner) && !owner.client && !SSinteractions.is_blacklisted(owner))))
+	if((owner.stat >= DEAD) || (!ishuman(owner) && !owner.client && SSinteractions.is_blacklisted(owner)))
 		return
 
 	var/mob/living/carbon/human/affected_mob = owner
