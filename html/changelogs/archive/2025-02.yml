@@ -1,13 +1,4 @@
 2025-02-01:
-  MosleyTheMalO:
-  - rscadd: Adds portal panties and fleshlights + their functionalities, find them
-      in the lustwish
-  - bugfix: Fixes anuses so they're a separate organ from the butt, but still reliant
-      on it for rendering
-  - bugfix: fixes monkey socks runtimes
-  - bugfix: adds our mobs clothing folder to the worn items test
-  - rscadd: adds our genital growth reagents to the lustwish
-  - code_imp: fixes scattered lewd folders and puts them in our modular lewd folder
   ArrisFairburne:
   - map: added maintenance tunnel and bridge areas to the ghost cafe
   Erol509:
@@ -17,6 +8,15 @@
   - bugfix: Aheal/S.A.D interaction doesnt remove nitrogen lungs on quirk holders.
       Both Aheal/Sad will return them, replacing the one inside you. This means, cybernetic
       lungs will be removed.
+  MosleyTheMalO:
+  - rscadd: Adds portal panties and fleshlights + their functionalities, find them
+      in the lustwish
+  - bugfix: Fixes anuses so they're a separate organ from the butt, but still reliant
+      on it for rendering
+  - bugfix: fixes monkey socks runtimes
+  - bugfix: adds our mobs clothing folder to the worn items test
+  - rscadd: adds our genital growth reagents to the lustwish
+  - code_imp: fixes scattered lewd folders and puts them in our modular lewd folder
   StrangeWeirdKitten:
   - rscadd: TTS compatability with vocal barks
   UvvU:
@@ -54,3 +54,46 @@
   - bugfix: Persistence recycler can now be escaped.
   - bugfix: stopped on of the persistence turrets from getting dunked in lava every
       shift.
+2025-02-03:
+  Arturlang:
+  - balance: Eye blur from lasers is capped at maximum of 20 seconds.
+  MosleyTheMalO:
+  - config: Makes vore defines into configs
+  - bugfix: makes the down button available again
+  Rathen Ivanonv:
+  - rscadd: Added more supplies/gear to Gas Station Attendant Ghost Role
+  - rscadd: Added I.D/Bank Account to Gas Station Attendant Ghost Role
+  - rscadd: Added an additional spawn to Gas Station Attendant Ghost Role
+  - rscadd: Added a Regal Rat spawn to Lavaland/an additional one to Ice Moon
+  - rscadd: Many more beneficial changes to the Gas Station Attendant Ghost Role
+  - map: Overhauled Lavaland/Ice Moon Gas Station with three new areas
+  - balance: Removed Laser Musket from Gas Station Ghost Role, replaced with PKA Pistols
+  xXPawnStarrXx:
+  - qol: made orefruits produce sheets as cores, instead of lame objects, letting
+      them be inserted into a silo.
+  - rscadd: Added two new pods; Xenoarch and triage
+  - bugfix: fixed the robotic repair kit in the large medical pod from being empty.
+2025-02-04:
+  shellspeed1:
+  - rscdel: Removed unused map file.
+2025-02-06:
+  xXPawnStarrXx:
+  - bugfix: fixed seed pathing so silver's weren't skipped with the rockfruit mutations.
+  - rscadd: Added digilegs for shadekin.
+2025-02-07:
+  nevimer:
+  - bugfix: fixed shadekin digi legs
+2025-02-08:
+  ABoxFaux:
+  - balance: Slimepeople with the nitrogen breather quirk now no longer take toxin
+      damage from breathing oxygen, instead taking an equal amount of brute damage.
+2025-02-09:
+  Phoenix4O4:
+  - rscadd: Added gear painters
+2025-02-10:
+  Phoenix4O4:
+  - rscadd: Added new Ash Plates Armor
+  - rscadd: Added Cauldron
+  - rscadd: Introduced Gunther chickens - special lava-resistant variant
+  - rscadd: Added primitive Ash Chisel tool
+  - map: Ported Ash Fortress from Nova Sector codebase
