@@ -3,7 +3,7 @@
 /datum/supply_pack/security/ammo
 	special = TRUE
 
-/datum/supply_pack/security/armory/ballistic
+/*/datum/supply_pack/security/armory/ballistic
 	name = "Peacekeeper Combat Shotguns Crates"
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat = 3,
 					/obj/item/storage/pouch/ammo = 3,
@@ -25,7 +25,7 @@
 	desc = "Contains one laser gun, the lethal workhorse of Nanotrasen security everywehere."
 	cost = PAYCHECK_COMMAND * 3
 	access_view = ACCESS_WEAPONS
-	contains = list(/obj/item/gun/energy/laser)
+	contains = list(/obj/item/gun/energy/laser)*/
 
 /datum/supply_pack/security/armory/ionrifle
 	name = "Ion Carbine Crate"

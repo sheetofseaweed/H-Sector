@@ -18,7 +18,7 @@
 	contains = list(/obj/item/ammo_box/magazine/m9mm/rubber = 4)
 	crate_name = "C-CK 9x25mm ammo crate (rubber-tipped)"
 
-/datum/supply_pack/security/armory/sec_glock_ammo_flat
+/*/datum/supply_pack/security/armory/sec_glock_ammo_flat
 	name = "C-CK 9x25mm Ammo Crate (Flat-Tipped)"
 	desc = "Contains 4 magazines with lethal flat-tipped rounds for the C-CK 9x25mm."
 	cost = CARGO_CRATE_VALUE * 4
@@ -30,7 +30,7 @@
 	desc = "Contains 4 magazines with lethal rounds for the C-CK 9x25mm."
 	cost = CARGO_CRATE_VALUE * 6
 	contains = list(/obj/item/ammo_box/magazine/m9mm = 4)
-	crate_name = "C-CK 9x25mm ammo crate (regular)"
+	crate_name = "C-CK 9x25mm ammo crate (regular)"*/
 
 /datum/supply_pack/security/armory/alert_level_firing_pin
 	name = "Alert Level Firing Pin Crate"
