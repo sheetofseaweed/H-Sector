@@ -1,10 +1,8 @@
-/datum/sprite_accessory/ears/mam_ears/mouse_cool
-	name = "Mouse Alt"
-	icon_state = "mouse3"
-	icon = 'modular_hsector/icons/mob/overlays/m_ears_mouse3_ADJ.dmi'
-
-/datum/sprite_accessory/snouts/mam_snouts/mouse_cool
-	name = "Mouse Alt"
+/datum/sprite_accessory/snouts/hsector
 	icon = 'modular_hsector/icons/mob/overlays/m_snout_mouse_JAW.dmi'
+	color_src = USE_MATRIXED_COLORS
+
+/datum/sprite_accessory/snouts/hsector/mouse_cool
+	name = "Mouse Alt"
 	icon_state = "fhusky"
 
