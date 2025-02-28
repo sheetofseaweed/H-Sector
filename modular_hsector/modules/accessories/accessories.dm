@@ -4,5 +4,5 @@
 
 /datum/sprite_accessory/snouts/hsector/mouse_cool
 	name = "Mouse Alt"
-	icon_state = "fhusky"
+	icon_state = "husky"
 
