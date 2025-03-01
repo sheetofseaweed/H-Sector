@@ -990,9 +990,10 @@
 
 	if(body_zone in owner_species.body_markings)
 		markings = LAZYCOPY(owner_species.body_markings[body_zone])
-		for(var/image/I in aux_icons)//HSECTOR EDIT START - hand layers
-			if(I && (I in owner_species.body_markings))
-				aux_zone_markings = LAZYCOPY(owner_species.body_markings[I])//HSECTOR EDIT END - hand layers
+		if(aux_icons)//HSECTOR EDIT START - hand layers
+			for(var/I in aux_icons)
+				if(I in owner_species.body_markings)
+					aux_zone_markings = LAZYCOPY(owner_species.body_markings[I])//HSECTOR EDIT END - hand layers
 		markings_alpha = owner_species.markings_alpha
 	else
 		markings = list()
@@ -1028,9 +1029,11 @@
 		image_dir = SOUTH
 		if(dmg_overlay_type)
 			if(brutestate)
-				. += image('icons/mob/effects/dam_mob.dmi', "[dmg_overlay_type]_[body_zone]_[brutestate]0", -DAMAGE_LAYER, image_dir)
+				. += image(colored_blood_icon('icons/mob/effects/dam_mob.dmi'), "[dmg_overlay_type]_[body_zone]_[brutestate]0", -DAMAGE_LAYER, image_dir) // SPLURT EDIT - Colored Blood
+				color = blood_DNA_to_color(color) // SPLURT ADDITION - Colored Blood
 			if(burnstate)
-				. += image('icons/mob/effects/dam_mob.dmi', "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir)
+				. += image(colored_blood_icon('icons/mob/effects/dam_mob.dmi'), "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir) // SPLURT EDIT - Colored Blood
+				color = blood_DNA_to_color(color) // SPLURT ADDITION - Colored Blood
 
 	var/image/limb = image(layer = -BODYPARTS_LAYER, dir = image_dir)
 	var/list/aux = list()
@@ -1091,7 +1094,7 @@
 			. += limb_em_block
 
 			if(aux_icons)
-				for(var/image/I in aux_icons)
+				for(var/image/I in aux)
 					var/mutable_appearance/aux_em_block = emissive_blocker(I.icon, I.icon_state, location, layer = I.layer, alpha = I.alpha)
 					aux_em_block.dir = image_dir
 					. += aux_em_block
@@ -1154,7 +1157,7 @@
 				. += emissive
 
 		if(aux_icons)
-			for(var/image/I in aux_icons)//hsector edit - different hand layers
+			for(var/I in aux_icons)//hsector edit - different hand layers
 				for(var/key in aux_zone_markings)
 					var/datum/body_marking/body_marking = GLOB.body_markings[key]
 					if (!body_marking) // Edge case prevention.

@@ -1,4 +1,4 @@
-/datum/supply_pack/security/armory/wt551
+/*/datum/supply_pack/security/armory/wt551
 	name = "WT-551 Autorifle Crate"
 	desc = "Contains a pair of WT-551 Autorifles pre-loaded with less-lethal rubber-tipped rounds. Additional ammo sold seperately. Backwards-compatible with WT-550 magazines. NanoTrasen reminds you that the other weapon is for a friend, and not for going guns akimbo."
 	cost = CARGO_CRATE_VALUE * 8
@@ -35,7 +35,7 @@
 				)
 	special = FALSE
 //This makes the Security ammo crate use the cool advanced ammo boxes instead of the old ones
-
+*/
 
 /datum/supply_pack/security/secmed_technician
 	name = "Security Medic Kit Crate - Technician"
@@ -66,7 +66,7 @@
 	contains = list(
 		/obj/item/storage/backpack/duffelbag/deforest_medkit/stocked,
 	)
-
+/*
 /datum/supply_pack/security/plasma_marksman
 	name = "Gwiazda Plasma Sharpshooter Single-Pack"
 	crate_name = "Gwiadza Plasma Sharpshooter Crate"
@@ -83,4 +83,4 @@
 	contains = list(/obj/item/gun/ballistic/automatic/miecz = 1,
 	/obj/item/ammo_box/magazine/miecz = 1)
 	cost = CARGO_CRATE_VALUE * 10
-	access = ACCESS_SECURITY
+	access = ACCESS_SECURITY*/

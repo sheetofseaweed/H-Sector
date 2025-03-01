@@ -1676,17 +1676,6 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/commons/lounge)
-"aIT" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 4;
-	height = 7;
-	name = "Cargo Bay";
-	shuttle_id = "cargo_home";
-	width = 12
-	},
-/turf/open/space/openspace,
-/area/space/nearstation)
 "aJD" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/engineering/glass{
@@ -6029,6 +6018,17 @@
 /mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
+"czk" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 4;
+	height = 7;
+	name = "Cargo Bay";
+	shuttle_id = "cargo_home";
+	width = 12
+	},
+/turf/open/space/openspace,
+/area/space)
 "czw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -42371,6 +42371,14 @@
 	},
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
+"rfG" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing/corner,
+/turf/open/space/openspace,
+/area/space/nearstation)
 "rfI" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -46614,6 +46622,17 @@
 	},
 /turf/open/floor/iron/white/diagonal,
 /area/station/medical/storage)
+"sQy" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/obj/structure/railing{
+	dir = 10
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/space/openspace,
+/area/space/nearstation)
 "sQL" = (
 /obj/structure/cable,
 /obj/machinery/duct,
@@ -47752,6 +47771,11 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/station/commons/fitness/recreation)
+"tqA" = (
+/obj/structure/marker_beacon/burgundy,
+/obj/structure/lattice/catwalk,
+/turf/open/space/openspace,
+/area/space/nearstation)
 "tqE" = (
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
@@ -145129,15 +145153,15 @@ wVO
 wVO
 tUO
 oYm
-dSs
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+rfG
+sQy
+cJN
+cJN
+tqA
+cJN
+cJN
+tqA
+cJN
 ire
 ire
 ire
@@ -145386,16 +145410,16 @@ seS
 xQO
 tUO
 tUO
-oYm
-dSs
-cJN
-cJN
-cJN
-cJN
-cJN
-cJN
+tHZ
 ire
 ire
+ire
+ire
+ire
+ire
+ire
+cJN
+cJN
 ire
 ire
 ire
@@ -145644,16 +145668,16 @@ vVZ
 rtY
 tUO
 tUO
-rvC
 ire
 ire
 ire
-cJN
+ire
+ire
+ire
+ire
 ire
 cJN
-cJN
-cJN
-cJN
+tqA
 cJN
 ire
 ire
@@ -145901,15 +145925,15 @@ lsF
 owI
 lVS
 tUO
-iwg
+ire
+ire
+ire
+ire
+ire
 ire
 ire
 ire
 cJN
-ire
-ire
-ire
-ire
 ire
 cJN
 cJN
@@ -146162,11 +146186,11 @@ ire
 ire
 ire
 ire
-aIT
 ire
 ire
 ire
 ire
+cJN
 ire
 ire
 ire
@@ -146423,7 +146447,7 @@ ire
 ire
 ire
 ire
-ire
+cJN
 ire
 ire
 ire
@@ -146941,8 +146965,8 @@ ire
 ire
 ire
 ire
-ire
-ire
+cJN
+cJN
 cJN
 ire
 cJN
@@ -147186,6 +147210,7 @@ iSD
 xSh
 fKv
 ppj
+czk
 ire
 ire
 ire
@@ -147195,8 +147220,7 @@ ire
 ire
 ire
 ire
-ire
-ire
+cJN
 ire
 ire
 ire
@@ -147453,7 +147477,7 @@ ire
 ire
 ire
 ire
-ire
+cJN
 ire
 ire
 ire
@@ -147710,7 +147734,7 @@ ire
 ire
 ire
 ire
-ire
+cJN
 ire
 ire
 ire
@@ -148214,13 +148238,13 @@ tsp
 jUV
 vhF
 wVO
-iwg
-cJN
-cJN
-cJN
-cJN
-cJN
-cJN
+ire
+ire
+ire
+ire
+ire
+ire
+ire
 dDb
 qXL
 qXL
@@ -148471,13 +148495,13 @@ dmN
 cwn
 scn
 wVO
+iwg
 cJN
-cJN
-mto
-mto
 mto
 iwg
 mto
+mto
+iwg
 dDb
 qXL
 nZg

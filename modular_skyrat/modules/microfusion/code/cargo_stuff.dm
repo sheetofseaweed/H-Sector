@@ -1,4 +1,4 @@
-/datum/supply_pack/security/armory/mcr01
+/*/datum/supply_pack/security/armory/mcr01
 	name = "MCR-01 Microfusion Crate"
 	desc = "Micron Control Systems Incorporated supplied MCR-01 Microfusion weapons platform. Comes with 4 advanced guns!"
 	cost = CARGO_CRATE_VALUE * 20
@@ -69,4 +69,4 @@
 		/obj/item/food/pie/cream,
 		/obj/item/food/pie/cream,
 	)
-	crate_name = "MCR-01 Military Attachments Crate Type H"
+	crate_name = "MCR-01 Military Attachments Crate Type H"*/
