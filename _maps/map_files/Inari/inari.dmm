@@ -3205,6 +3205,9 @@
 /area/station/hallway/secondary/entry)
 "bvF" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "bvH" = (
@@ -11160,11 +11163,10 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/lobby)
 "evd" = (
-/obj/structure/chair/stool/bar,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	name = "air scrubber"
 	},
-/turf/open/floor/mineral/titanium/tiled/white,
+/turf/open/misc/beach/sand,
 /area/station/common/pool)
 "eve" = (
 /obj/structure/table/reinforced,
@@ -13319,6 +13321,9 @@
 	dir = 6
 	},
 /obj/machinery/light/floor,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "fxQ" = (
@@ -13833,6 +13838,12 @@
 /obj/structure/sign/departments/botany/directional/east,
 /turf/open/floor/iron/kitchen,
 /area/station/hallway/primary/central)
+"fLs" = (
+/obj/structure/punching_bag,
+/obj/effect/turf_decal/tile/yellow/full,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron/white/smooth_large,
+/area/station/common/pool)
 "fLJ" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/machinery/door/poddoor/shutters{
@@ -15626,7 +15637,12 @@
 /turf/open/floor/carpet/cyan,
 /area/station/command/heads_quarters/cmo)
 "gyP" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/corner,
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "gyY" = (
@@ -18194,6 +18210,12 @@
 	dir = 4
 	},
 /area/station/command/cc_dock)
+"hzv" = (
+/obj/structure/weightmachine,
+/obj/effect/turf_decal/tile/yellow/full,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron/white/smooth_large,
+/area/station/common/pool)
 "hzR" = (
 /obj/structure/table/wood,
 /obj/machinery/fax{
@@ -20952,6 +20974,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "iBZ" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool{
 	name = "East Pool"
@@ -22997,9 +23023,9 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/common/pool)
@@ -27395,6 +27421,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 4
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "liV" = (
@@ -29054,16 +29083,9 @@
 /area/station/maintenance/port/central)
 "lPk" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 8
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 8;
-	name = "scrubbers pipe"
-	},
-/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/effect/turf_decal/siding/wood,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "lPp" = (
@@ -32406,6 +32428,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/aft)
+"nfH" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood/corner,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/station/common/pool)
 "nga" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /obj/machinery/gear_painter,
@@ -33132,6 +33161,15 @@
 /obj/structure/steam_vent,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"nuJ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/station/common/pool)
 "nuO" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/station/commons/toilet/restrooms{
@@ -37978,6 +38016,7 @@
 	},
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/light/floor,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
 "puQ" = (
@@ -39719,6 +39758,15 @@
 /obj/structure/secure_safe/caps_spare,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/command/meeting_room)
+"qdk" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 5
+	},
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/station/common/pool)
 "qdl" = (
 /obj/machinery/computer/holodeck{
 	dir = 4
@@ -44160,9 +44208,9 @@
 /area/station/hallway/primary/starboard)
 "rSj" = (
 /obj/structure/window/reinforced/shuttle,
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plating,
@@ -44916,8 +44964,15 @@
 /turf/open/floor/iron/white/textured_large,
 /area/station/hallway/secondary/entry)
 "sjx" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 8;
+	name = "scrubbers pipe"
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 9
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/common/pool)
@@ -46304,9 +46359,9 @@
 	name = "Lockdown Blastdoor"
 	},
 /obj/structure/window/reinforced/shuttle,
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /turf/open/floor/plating,
 /area/station/common/pool)
@@ -46765,6 +46820,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/engineering/lobby)
+"sUW" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/station/common/pool)
 "sVP" = (
 /obj/machinery/firealarm/directional/north,
 /turf/open/openspace,
@@ -48347,7 +48408,6 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
 	},
-/obj/structure/chair/stool/bar,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -49008,6 +49068,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/station/common/pool/sauna)
+"tYW" = (
+/obj/structure/weightmachine/weightlifter,
+/obj/effect/turf_decal/tile/yellow/full,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron/white/smooth_large,
+/area/station/common/pool)
 "tYZ" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/machinery/door/firedoor,
@@ -50175,9 +50241,9 @@
 /obj/machinery/door/firedoor{
 	dir = 8
 	},
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/station/common/pool)
@@ -52069,6 +52135,20 @@
 	},
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
+"vox" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 8;
+	name = "scrubbers pipe"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/station/common/pool)
 "voJ" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/machinery/power/terminal{
@@ -54116,9 +54196,9 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Maintenance Access"
 	},
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /obj/machinery/duct,
 /obj/effect/turf_decal/stripes/line{
@@ -57287,9 +57367,9 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor{
-	name = "Beach Access";
-	id = "beachright"
+/obj/machinery/door/poddoor/preopen{
+	id = "beachright";
+	name = "Beach Access"
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/common/pool)
@@ -161312,10 +161392,10 @@ wgU
 uan
 uan
 uan
-lPk
+uan
 uan
 wgU
-uan
+sjx
 uan
 kwq
 tFw
@@ -161571,11 +161651,11 @@ nUo
 dKF
 nUo
 jrU
-dKF
 jrU
-jrU
-aCa
-dKF
+nfH
+sUW
+nuJ
+sUW
 liQ
 oWG
 hGq
@@ -161828,12 +161908,12 @@ xVv
 xVv
 qfk
 jrU
-nUo
 jrU
-nUo
-jrU
+lPk
+hzv
+nxF
 evd
-liQ
+vox
 aZe
 eBp
 eBp
@@ -162086,10 +162166,10 @@ nxF
 ieb
 xDO
 jrU
-jrU
-dKF
-jrU
-jrU
+lPk
+nxF
+nxF
+fLs
 bvF
 qPR
 aCa
@@ -162344,9 +162424,9 @@ oyX
 qfk
 jrU
 iBZ
-nUo
-jrU
-jrU
+tYW
+nxF
+nxF
 bvF
 xif
 xbJ
@@ -162600,10 +162680,10 @@ oNK
 hAB
 isa
 jrU
-jrU
-jrU
+qdk
 gyP
-sjx
+gyP
+gyP
 fxD
 owQ
 sLB

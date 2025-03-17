@@ -62,11 +62,11 @@
 	var/balls_enormous_size_threshold = PENIS_MAX_LENGTH - 4
 
 	/// Largest size the chem can make a mob's breasts
-	var/max_breast_size = 16
+	var/max_breast_size = 11
 	/// How much breasts are increased in size each time it's run
 	var/breast_size_increase_step = 1
 	/// Smallest size the chem can make a mob's breasts
-	var/breast_minimum_size = 2
+	var/breast_minimum_size = 1
 	/// How much to reduce the size of the breasts each time it's run
 	var/breast_size_reduction_step = 1
 
