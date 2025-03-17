@@ -181,3 +181,33 @@
 	sound = 'modular_zzplurt/sound/voice/catpeople/cat_mrrp2.ogg'
 	cooldowns = 0.8 SECONDS
 	vary = FALSE
+
+/datum/emote/living/hiss
+	key = "hiss"
+	key_third_person = "hisses"
+	message = "hisses!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/hiss/get_sound(mob/living/user)
+	return pick('modular_zzplurt/sound/voice/catpeople/cat_hiss1.ogg',
+				'modular_zzplurt/sound/voice/catpeople/cat_hiss2.ogg',
+				'modular_zzplurt/sound/voice/catpeople/cat_hiss3.ogg')
+
+/datum/emote/living/whine
+	key = "whine"
+	key_third_person = "whines"
+	message = "whines."
+	sound = 'modular_zzplurt/sound/voice/whine.ogg'
+
+/datum/emote/living/meow4
+	key = "meow4"
+	key_third_person = "meows"
+	message = "meows!"
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/meow4/get_sound(mob/living/user)
+	return pick('modular_zzplurt/sound/voice/catpeople/cat_meow4.ogg',
+				'modular_zzplurt/sound/voice/catpeople/cat_meow5.ogg',
+				'modular_zzplurt/sound/voice/catpeople/cat_meow6.ogg',
+				'modular_zzplurt/sound/voice/catpeople/cat_meow7.ogg')

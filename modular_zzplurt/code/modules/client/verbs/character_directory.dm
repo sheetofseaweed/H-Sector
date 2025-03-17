@@ -6,8 +6,8 @@
 
 	if (user?.client?.prefs)
 		data["personalExtremeTag"] = READ_PREFS(user, choiced/erp_status_extm)
-		data["personalExtremeHarmTag"] = READ_PREFS(user, choiced/erp_status_extmharm)
-		data["personalUnholyTag"] = READ_PREFS(user, choiced/erp_status_unholy)
+/*		data["personalExtremeHarmTag"] = READ_PREFS(user, choiced/erp_status_extmharm)
+		data["personalUnholyTag"] = READ_PREFS(user, choiced/erp_status_unholy)*/
 
 	return data
 

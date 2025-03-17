@@ -1,6 +1,6 @@
-/datum/controller/subsystem/processing/station
+/*/datum/controller/subsystem/processing/station //HSECTOR REMOVE - i just don't like this one
 	announcer = /datum/centcom_announcer/default/lait
-
+*/
 /datum/controller/subsystem/processing/station/proc/set_announcer(datum/centcom_announcer/new_announcer)
 	QDEL_NULL(announcer)
 	announcer = new new_announcer()
