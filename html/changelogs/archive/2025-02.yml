@@ -266,3 +266,7 @@
 2025-02-27:
   TealSeer:
   - bugfix: fixed the SAD deleting wounds
+2025-02-28:
+  Phoenix4O4:
+  - image: both normal legs and digitigrade legs are now available for xeno species
+  - image: The coroner's scrubs and jumpsuit now have digitigrade sprites.

@@ -50,7 +50,7 @@
 	item_path = /obj/item/clothing/suit/invisijacket
 
 // GWTB
-/datum/loadout_item/suit/gonersuit
+/datum/loadout_item/suit/blastwave_suit
 	name = "trencher coat"
 	item_path = /obj/item/clothing/suit/goner/fake
 
