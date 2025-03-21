@@ -37,7 +37,7 @@ GLOBAL_LIST_INIT(breast_size_to_number, list(
 	BREAST_SIZE_H = 8,
 	BREAST_SIZE_I = 9,
 	BREAST_SIZE_J = 10,
-	/*BREAST_SIZE_K = 11,
+	BREAST_SIZE_K = 11,
 	BREAST_SIZE_L = 12,
 	BREAST_SIZE_M = 13,
 	BREAST_SIZE_N = 14,
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(breast_size_to_number, list(
 	//splurt sizes here
 	BREAST_SIZE_R = 17,
 	BREAST_SIZE_S = 18,
-	BREAST_SIZE_T = 19,*/ //hsector remove
+	BREAST_SIZE_T = 19,
 	))
 
 //SPLURT EDIT START
