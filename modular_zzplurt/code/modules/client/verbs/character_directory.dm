@@ -1,4 +1,4 @@
-//#define READ_PREFS(target, pref) (target.client.prefs.read_preference(/datum/preference/pref) || "Unset") // Add this back with the 516 update because they deleted it
+#define READ_PREFS(target, pref) (target.client.prefs.read_preference(/datum/preference/pref) || "Unset")
 
 /datum/character_directory/ui_data(mob/user)
 	. = ..()
@@ -11,4 +11,4 @@
 
 	return data
 
-//#undef READ_PREFS // Add this back with the 516 update because they deleted it
+#undef READ_PREFS

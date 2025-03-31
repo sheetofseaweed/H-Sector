@@ -69,7 +69,7 @@
 			liquid_container = cached_item
 
 	if(liquid_container)
-		var/obj/item/organ/external/genital/testicles/testicles = user.get_organ_slot(ORGAN_SLOT_TESTICLES)
+		var/obj/item/organ/genital/testicles/testicles = user.get_organ_slot(ORGAN_SLOT_TESTICLES)
 		if(testicles?.internal_fluid_datum)
 			var/datum/reagents/R = new(testicles.internal_fluid_maximum)
 			testicles.transfer_internal_fluid(R, testicles.internal_fluid_count)
