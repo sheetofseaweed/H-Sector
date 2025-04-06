@@ -119,8 +119,8 @@
 
 // Butt
 /datum/sprite_accessory/genital/butt
-	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi'
-	organ_type = /obj/item/organ/external/genital/butt
+	icon = 'modular_zzplurt/icons/mob/human/genitals/butt.dmi' //was icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi'
+	organ_type = /obj/item/organ/genital/butt
 	associated_organ_slot = ORGAN_SLOT_BUTT
 	key = ORGAN_SLOT_BUTT
 	always_color_customizable = TRUE
@@ -164,7 +164,7 @@
 // Belly
 /datum/sprite_accessory/genital/belly
 	icon = 'modular_zzplurt/icons/mob/human/genitals/belly.dmi'
-	organ_type = /obj/item/organ/external/genital/belly
+	organ_type = /obj/item/organ/genital/belly
 	associated_organ_slot = ORGAN_SLOT_BELLY
 	key = ORGAN_SLOT_BELLY
 	always_color_customizable = TRUE

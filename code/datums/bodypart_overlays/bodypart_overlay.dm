@@ -95,7 +95,7 @@
 			return -BODYPARTS_LAYER
 
 ///Check whether we can draw the overlays. You generally don't want lizard snouts to draw over an EVA suit
-/datum/bodypart_overlay/proc/can_draw_on_bodypart(mob/living/carbon/human/human)
+/datum/bodypart_overlay/proc/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
 	return TRUE
 
 ///Colorizes the limb it's inserted to, if required.
