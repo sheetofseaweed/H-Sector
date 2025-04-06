@@ -65,20 +65,6 @@
 			return text2num(key)
 	return 0
 
-/obj/item/organ/genital/butt/proc/butt_size_to_text(number)
-	if(number < 0)
-		number = 0
-	var/returned = GLOB.butt_size_translation["[number]"]
-	if(!returned)
-		returned = "flat"
-	return returned
-
-/obj/item/organ/genital/butt/proc/butt_text_to_size(size)
-	for(var/key in GLOB.butt_size_translation)
-		if(GLOB.butt_size_translation[key] == size)
-			return text2num(key)
-	return 0
-
 /obj/item/organ/genital/butt/build_from_dna(datum/dna/DNA, associated_key)
 	uses_skin_color = DNA.features["butt_uses_skincolor"]
 	set_size(DNA.features["butt_size"])

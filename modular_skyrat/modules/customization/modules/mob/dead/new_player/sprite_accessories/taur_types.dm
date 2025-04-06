@@ -109,7 +109,7 @@
 /datum/sprite_accessory/taur/arachne
 	name = "Arachne"
 	icon_state = "spider"
-	organ_type = /obj/item/organ/external/taur_body/spider
+	organ_type = /obj/item/organ/taur_body/spider
 
 /datum/sprite_accessory/taur/eevee
 	name = "Eevee"

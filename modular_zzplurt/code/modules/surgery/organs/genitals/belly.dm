@@ -15,7 +15,7 @@
 	mutantpart_info = list(MUTANT_INDEX_NAME = "Belly", MUTANT_INDEX_COLOR_LIST = list("#FFEEBB"))
 	genital_type = "pair"
 
-/obj/item/organ/external/genital/belly/update_genital_icon_state()
+/obj/item/organ/genital/belly/update_genital_icon_state()
 	var/max_size = 4
 	var/current_size = FLOOR(genital_size, 1)
 	if(current_size < 0)
@@ -31,7 +31,6 @@
 	. = "[genital_type]_[floor(genital_size)]"
 	if(uses_skintones)
 		. += "_s"
-	return passed_string
 
 /obj/item/organ/genital/belly/set_size(size)
 	var/old_size = genital_size

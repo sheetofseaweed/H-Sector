@@ -142,9 +142,6 @@
 					if(R.type in GLOB.blacklisted_pool_reagents)
 						to_chat(user, "[src] cannot accept [R.name].")
 						return
-					if(R.reagent_state == SOLID)
-						to_chat(user, "The pool cannot accept reagents in solid form!.")
-						return
 				reagents.clear_reagents()
 				// This also reacts them. No nitroglycerin deathpools, sorry gamers :(
 				W.reagents.trans_to(reagents, max_beaker_transfer)
@@ -209,8 +206,6 @@
 	for(var/turf/open/pool/W in linked_turfs)
 		for(var/mob/living/carbon/human/swimee in W)
 			for(var/datum/reagent/R in reagents.reagent_list)
-				if(R.reagent_state == SOLID)
-					R.reagent_state = LIQUID
 				if(!swimee.reagents.has_reagent(R.type,POOL_NO_OVERDOSE_MEDICINE_MAX))
 					swimee.reagents.add_reagent(R.type, 0.5) //osmosis
 			reagents.expose(swimee, VAPOR, 0.03) //3 percent. Need to find a way to prevent this from stacking chems at some point like the above.

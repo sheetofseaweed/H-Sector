@@ -1161,7 +1161,7 @@
 
 			if(aux_icons)
 				for(var/image/I in aux)
-					var/mutable_appearance/aux_em = emissive_appearance(aux.icon, "[aux.icon_state]_e", location, layer = aux.layer, alpha = aux.alpha)
+					var/mutable_appearance/aux_em = emissive_appearance(I.icon, "[I.icon_state]_e", location, layer = I.layer, alpha = I.alpha)
 					aux_em.dir = image_dir
 					. += aux_em
 	//EMISSIVE CODE END

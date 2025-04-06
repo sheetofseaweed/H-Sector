@@ -51,7 +51,7 @@
 	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
 	icon_state = "leo_oxto"
 	worn_icon_state = "leo_oxto"
-	squeak_override = list('modular_zzplurt/sound/voice/raptor_purr.ogg' = 1)
+	//squeak_override = list('modular_zzplurt/sound/voice/raptor_purr.ogg' = 1)
 
 /obj/item/toy/plush/thomas_plush
 	name = "Thomas The Tank Engine Plushie"
