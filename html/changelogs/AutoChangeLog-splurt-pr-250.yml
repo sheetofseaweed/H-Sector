@@ -1,0 +1,6 @@
+author: "Zattarra-Red"
+delete-after: True
+changes:
+  - rscadd: "Adds the Pulsar hyper-resonance beam rifle, a cheaper (and cooler) but less destructive cousin of the original Event Horizon."
+  - rscdel: "Removes the gutted Event Horizon anti-existential beam rifle."
+  - refactor: "Minorly refactors some hitscan tracer generation code to allow for longer animated tracers."
