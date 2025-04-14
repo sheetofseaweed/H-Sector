@@ -119,7 +119,7 @@
 
 // Butt
 /datum/sprite_accessory/genital/butt
-	icon = 'modular_zzplurt/icons/mob/human/genitals/butt.dmi' //was icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi'
+	icon = 'modular_skyrat/master_files/icons/mob/sprite_accessory/genitals/butt_onmob.dmi' //was icon = 'modular_zzplurt/icons/mob/human/genitals/butt.dmi'
 	organ_type = /obj/item/organ/genital/butt
 	associated_organ_slot = ORGAN_SLOT_BUTT
 	key = ORGAN_SLOT_BUTT
