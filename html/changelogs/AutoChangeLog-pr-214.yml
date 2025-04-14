@@ -1,6 +1,0 @@
-author: "Anonymous"
-delete-after: True
-changes:
-  - rscadd: "You can now buy trencher/Blastwave outfit from Clothesmate (minus gasmask)."
-  - rscadd: "Cargo can import armored variant of trencher clothing as contraband."
-  - bugfix: "Removed duplicate trencher/Blastwave clothing."

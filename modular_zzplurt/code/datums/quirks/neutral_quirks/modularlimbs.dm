@@ -54,6 +54,10 @@
 	// More descriptive text, with warning
 	name = "Eject a random limb"
 	desc = "Eject a random limb from your body."
+	button_icon_state = "autotomy"
+
+	cooldown_time = 1 SECONDS
+	spell_requirements = NONE
 
 	// Default ability background
 	background_icon = 'icons/mob/actions/backgrounds.dmi'

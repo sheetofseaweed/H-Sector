@@ -1,15 +1,14 @@
 // THIS IS A HSECTOR UI FILE
-import { Button, Stack } from '../../../../../../components';
+import { Button, Stack } from 'tgui-core/components';
+
+import { useBackend } from '../../../../../../backend';
 import {
   FeatureChoiced,
-  FeatureChoicedServerData,
-  FeatureValueProps,
 } from '../../base';
 import { FeatureDropdownInput } from '../../dropdowns';
 
-const FeatureMoanDropdownInput = (
-  props: FeatureValueProps<string, string, FeatureChoicedServerData>,
-) => {
+const FeatureMoanDropdownInput = (props) => {
+  const { act } = useBackend();
   return (
     <Stack>
       <Stack.Item grow>
@@ -18,7 +17,7 @@ const FeatureMoanDropdownInput = (
       <Stack.Item>
         <Button
           onClick={() => {
-            props.act('play_moan');
+            act('play_moan');
           }}
           icon="play"
           width="100%"
