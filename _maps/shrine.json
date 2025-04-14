@@ -1,0 +1,36 @@
+{
+	"version": 1,
+	"map_name": "Shrine",
+	"map_path": "map_files/Shrine",
+	"map_file": "Shrine.dmm",
+	"shuttles": {
+		"cargo": "cargo_delta_skyrat",
+		"ferry": "ferry_skyrat",
+		"emergency": "emergency_tram"
+	},
+	"traits": [
+		{
+			"Up": true,
+			"Baseturf": "/turf/open/space/basic",
+			"Linkage": "Cross"
+		},
+		{
+			"Down": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": "Cross"
+		},
+		{
+			"Down": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": "Cross"
+		}
+	],
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/commons/lounge"]
+		},
+		"Captain": {
+			"special_charter": "Dome"
+		}
+	}
+}
