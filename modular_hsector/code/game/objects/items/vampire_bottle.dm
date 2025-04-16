@@ -7,7 +7,7 @@
 	required_drink_type = /datum/reagent/blood/fancy
 	name = "glass of Vampire Delight"
 	desc = "To sate the fanged gentlemen and gentlewomen."
-	icon_state = "glass_red"
+	icon_state = "bloodglass"
 
 /obj/item/reagent_containers/cup/glass/bottle/vampire_bottle
 	name = "Vampire Delight"
