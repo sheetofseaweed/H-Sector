@@ -167,7 +167,7 @@
 	///Whether we've provided a bomb pizza box already this shift or not.
 	var/boombox_provided = FALSE
 	/// three percent chance for a pizza box to be the pizza bomb box
-	var/bomb_pizza_chance = 3
+	var/bomb_pizza_chance = 0
 	/// 1 in 3 pizza bombs spawned will be a dud
 	var/bomb_dud_chance = 33
 
@@ -181,7 +181,7 @@
 		/obj/item/food/pizza/dank = 7,
 		/obj/item/food/pizza/sassysage = 10,
 		/obj/item/food/pizza/pineapple = 10,
-		/obj/item/food/pizza/arnold = 3,
+		// /obj/item/food/pizza/arnold = 3,
 		/obj/item/food/pizza/energy = 5
 	)
 
