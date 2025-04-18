@@ -12,17 +12,18 @@
 		{
 			"Up": true,
 			"Baseturf": "/turf/open/space/basic",
-			"Linkage": "Cross"
+			"Linkage": "Self"
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": "Self"
 		},
 		{
 			"Down": true,
 			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
-		},
-		{
-			"Down": true,
-			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
+			"Linkage": "Self"
 		}
 	],
 	"job_changes": {
