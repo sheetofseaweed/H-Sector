@@ -1,0 +1,5 @@
+author: "Bomberman66Dev"
+delete-after: True
+changes:
+  - rscadd: "Added packing peanuts, most cargo crates comes filled with them"
+  - rscadd: "Cargonians now have a liver trait that makes them love eating packing peanuts"

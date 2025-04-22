@@ -56,3 +56,27 @@
   - rscadd: New UI for the Infinity Hotel sphere
   - refactor: Minor hotel template loading refactor - new rooms can be fully modular
       now
+2025-04-12:
+  Zattarra-Red:
+  - rscadd: Adds the Pulsar hyper-resonance beam rifle, a cheaper (and cooler) but
+      less destructive cousin of the original Event Horizon.
+  - rscdel: Removes the gutted Event Horizon anti-existential beam rifle.
+  - refactor: Minorly refactors some hitscan tracer generation code to allow for longer
+      animated tracers.
+2025-04-13:
+  MosleyTheMalO:
+  - bugfix: attempts to fix undead quirk by editing its traits
+  - rscadd: adds tabletide smite lol
+2025-04-17:
+  MosleyTheMalO:
+  - rscadd: adds a ranked vote system for using lol
+2025-04-18:
+  evandarksky:
+  - rscadd: New custom storytellers
+2025-04-19:
+  MosleyTheMalO:
+  - rscadd: adds bodywriting
+2025-04-21:
+  evandarksky:
+  - rscadd: checks for `holder` and `user.client` in examine_tgui
+  - rscadd: an initialize for examine_panel on mapload for silicons
