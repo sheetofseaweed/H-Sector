@@ -1101,7 +1101,7 @@
 			color = blood_DNA_to_color(color) // SPLURT ADDITION - Colored Blood
 
 	var/image/limb = image(layer = -BODYPARTS_LAYER)
-	var/image/aux
+	var/list/aux = list()
 
 	// Handles invisibility (not alpha or actual invisibility but invisibility)
 	if(is_invisible)

@@ -3,7 +3,7 @@
 	desc = "It's a gruesome pile of thick, sticky resin shaped like a nest."
 	icon_state = "tentacle_nest"
 	max_integrity = 120
-	can_be_unanchored = FALSE
+	anchored = TRUE
 	can_buckle = TRUE
 	buckle_lying = 0
 	dir = 2
