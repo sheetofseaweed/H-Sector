@@ -26059,7 +26059,7 @@
 	pixel_y = 4
 	},
 /obj/item/stock_parts/power_store/cell/high,
-/obj/item/reagent_containers/pill/patch/aiuri,
+/obj/item/reagent_containers/applicator/patch/aiuri,
 /obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/north,
 /obj/effect/turf_decal/siding/thinplating_new/light{
@@ -31057,6 +31057,11 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/medical/storage)
+"kKH" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/machinery/self_actualization_device,
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/lobby)
 "kKJ" = (
 /obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/plating,
@@ -44873,10 +44878,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"poh" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
-/turf/open/floor/iron/white,
-/area/station/medical/medbay/lobby)
 "poj" = (
 /obj/vehicle/ridden/janicart,
 /obj/effect/turf_decal/delivery,
@@ -161545,7 +161546,7 @@ fAq
 rEJ
 dYf
 lym
-poh
+kKH
 jiB
 lTK
 qUL

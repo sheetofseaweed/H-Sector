@@ -12,6 +12,10 @@
 	examine_panel_screen.hide_from(user)
 
 /datum/examine_panel/ui_interact(mob/user, datum/tgui/ui)
+	if(!holder) //Splurt Edit Starts Here
+		return
+	if(!user.client)
+		return //Splurt Edit Ends Here
 	if(!examine_panel_screen)
 		examine_panel_screen = new
 		examine_panel_screen.name = "screen"
@@ -39,7 +43,10 @@
 
 /datum/examine_panel/ui_data(mob/user)
 	var/list/data = list()
-
+	//Splurt Edit Start
+	if(!holder)
+		return data
+	//Splurt Edit End
 	var/datum/preferences/preferences = holder.client?.prefs
 
 	var/flavor_text
