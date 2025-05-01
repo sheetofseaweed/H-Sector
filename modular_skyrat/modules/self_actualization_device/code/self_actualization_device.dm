@@ -16,9 +16,10 @@
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
 /obj/item/circuitboard/machine/self_actualization_device
-	name = "Self-Actualization Device (Machine Board)"
+	name = "Self-Actualization Device"
 	greyscale_colors = CIRCUIT_COLOR_MEDICAL
 	build_path = /obj/machinery/self_actualization_device
+	req_components = list()
 
 /obj/machinery/self_actualization_device
 	name = "Self-Actualization Device"
@@ -215,6 +216,11 @@
 	patient.client?.prefs?.safe_transfer_prefs_to_with_damage(patient, visuals_only = TRUE)
 	patient.dna.update_dna_identity()
 	SSquirks.AssignQuirks(patient, patient.client)
+	// SPLURT ADDITION START - Fix of naga with shoes
+	var/taur_mode = patient.get_taur_mode()
+	if((taur_mode & STYLE_TAUR_SNAKE) && (patient.shoes))
+		patient.dropItemToGround(patient.shoes, TRUE)
+	// SPLURT ADDITION END - Fix of naga with shoes
 	if(patient.dna.real_name != original_name)
 		log_game("[key_name(patient)] has used the Self-Actualization Device at [loc_name(src)], changed the name of their character. \
 		Original Name: [original_name], New Name: [patient.dna.real_name].")

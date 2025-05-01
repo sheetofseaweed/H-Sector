@@ -113,6 +113,10 @@
 
 /obj/structure/closet/proc/get_packed()
 	packing_overlay = new(null, src)
+	packing_overlay.update_contents(src)
+	for(var/atom/movable/inserted in src)
+		inserted.flags_1 |= IS_ONTOP_1
+		RegisterSignal(inserted, COMSIG_MOVABLE_MOVED, PROC_REF(thing_moved))
 	update_appearance(UPDATE_ICON)
 	return TRUE
 

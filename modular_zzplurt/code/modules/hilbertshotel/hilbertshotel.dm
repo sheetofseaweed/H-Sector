@@ -55,6 +55,9 @@
 	to_chat(user, span_notice("You invite [target_mob] to the hotel."))
 	ui_interact(target_mob)
 
+/obj/item/hilbertshotel/ghostdojo
+	w_class = WEIGHT_CLASS_GIGANTIC
+
 /obj/item/hilbertshotel/ghostdojo/examine(mob/user)
 	. = ..()
 	. += span_notice("It's slightly trembling.")
