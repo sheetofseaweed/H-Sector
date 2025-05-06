@@ -62,9 +62,8 @@
 	var/body_zone
 	/// The body zone of this part in english ("chest", "left arm", etc) without the species attached to it
 	var/plaintext_zone
-	//var/aux_zone // used for hands
-	//var/aux_layer
-	var/list/aux_icons //hsector edit - different hand layers
+	var/aux_zone // used for hands
+	var/aux_layer
 	/// bitflag used to check which clothes cover this bodypart
 	var/body_part
 	/// List of obj/item's embedded inside us. Managed by embedded components, do not modify directly
@@ -1014,10 +1013,8 @@
 
 	if(body_zone in owner_species.body_markings)
 		markings = LAZYCOPY(owner_species.body_markings[body_zone])
-		if(aux_icons)//HSECTOR EDIT START - hand layers
-			for(var/I in aux_icons)
-				if(I in owner_species.body_markings)
-					aux_zone_markings = LAZYCOPY(owner_species.body_markings[I])//HSECTOR EDIT END - hand layers
+		if(aux_zone && (aux_zone in owner_species.body_markings))
+			aux_zone_markings = LAZYCOPY(owner_species.body_markings[aux_zone])
 		markings_alpha = owner_species.markings_alpha
 	else
 		markings = list()
@@ -1101,7 +1098,7 @@
 			color = blood_DNA_to_color(color) // SPLURT ADDITION - Colored Blood
 
 	var/image/limb = image(layer = -BODYPARTS_LAYER)
-	var/list/aux = list()
+	var/image/aux
 
 	// Handles invisibility (not alpha or actual invisibility but invisibility)
 	if(is_invisible)
@@ -1125,26 +1122,22 @@
 
 	. += limb
 
-	if(aux_icons) //Hand shit
-		for(var/I in aux_icons)//hsector edit - different hand layers
-			var/aux_layer = aux_icons[I]
-			aux += image(limb.icon, "[limb_id]_[I]", -aux_layer)
-			. += aux
+	if(aux_zone) //Hand shit
+		aux = image(limb.icon, "[limb_id]_[aux_zone]", -aux_layer)
+		. += aux
 
 	update_draw_color()
 
 	if(is_husked)
 		huskify_image(thing_to_husk = limb)
-		if(aux_icons)
-			for(var/image/I in aux)
-				huskify_image(thing_to_husk = I)
+		if(aux)
+			huskify_image(thing_to_husk = aux)
 		draw_color = husk_color
 	if(draw_color)
 		var/limb_color = alpha != 255 ? "[draw_color][num2hex(alpha, 2)]" : "[draw_color]" // SKYRAT EDIT ADDITION - Alpha values on limbs. We check if the limb is attached and if the owner has an alpha value to append
 		limb.color = limb_color // SKYRAT EDIT CHANGE - ORIGINAL: limb.color = "[draw_color]"
-		if(aux_icons)
-			for(var/image/I in aux)
-				I.color = limb_color // SKYRAT EDIT CHANGE - ORIGINAL: aux.color = "[draw_color]"
+		if(aux_zone)
+			aux.color = limb_color // SKYRAT EDIT CHANGE - ORIGINAL: aux.color = "[draw_color]"
 
 	//EMISSIVE CODE START
 	// For some reason this was applied as an overlay on the aux image and limb image before.
@@ -1156,18 +1149,16 @@
 			var/mutable_appearance/limb_em_block = emissive_blocker(limb.icon, limb.icon_state, location, layer = limb.layer, alpha = limb.alpha)
 			. += limb_em_block
 
-			if(aux_icons)
-				for(var/image/I in aux)
-					var/mutable_appearance/aux_em_block = emissive_blocker(I.icon, I.icon_state, location, layer = I.layer, alpha = I.alpha)
-					. += aux_em_block
+			if(aux_zone)
+				var/mutable_appearance/aux_em_block = emissive_blocker(aux.icon, aux.icon_state, location, layer = aux.layer, alpha = aux.alpha)
+				. += aux_em_block
 		if(is_emissive)
 			var/mutable_appearance/limb_em = emissive_appearance(limb.icon, "[limb.icon_state]_e", location, layer = limb.layer, alpha = limb.alpha)
 			. += limb_em
 
-			if(aux_icons)
-				for(var/image/I in aux)
-					var/mutable_appearance/aux_em = emissive_appearance(I.icon, "[I.icon_state]_e", location, layer = I.layer, alpha = I.alpha)
-					. += aux_em
+			if(aux_zone)
+				var/mutable_appearance/aux_em = emissive_appearance(aux.icon, "[aux.icon_state]_e", location, layer = aux.layer, alpha = aux.alpha)
+				. += aux_em
 	//EMISSIVE CODE END
 
 	//No need to handle leg layering if dropped, we only face south anyways
@@ -1226,29 +1217,27 @@
 			if (emissive)
 				. += emissive
 
-		if(aux_icons)
-			for(var/I in aux_icons)//hsector edit - different hand layers
-				for(var/key in aux_zone_markings)
-					var/datum/body_marking/body_marking = GLOB.body_markings[key]
-					if (!body_marking) // Edge case prevention.
-						continue
+		if(aux_zone)
+			for(var/key in aux_zone_markings)
+				var/datum/body_marking/body_marking = GLOB.body_markings[key]
+				if (!body_marking) // Edge case prevention.
+					continue
 
-					var/render_limb_string = I
-					var/aux_layer_mark = aux_icons[I]
+				var/render_limb_string = aux_zone
 
-					var/mutable_appearance/emissive
-					var/mutable_appearance/accessory_overlay
-					accessory_overlay = mutable_appearance(body_marking.icon, "[body_marking.icon_state]_[render_limb_string]", -aux_layer_mark)
-					accessory_overlay.alpha = markings_alpha
-					if (aux_zone_markings[key][2])
-						emissive = emissive_appearance_copy(accessory_overlay, offset_spokesman)
-					if(override_color)
-						accessory_overlay.color = override_color
-					else
-						accessory_overlay.color = aux_zone_markings[key][1]
-					. += accessory_overlay
-					if (emissive)
-						. += emissive
+				var/mutable_appearance/emissive
+				var/mutable_appearance/accessory_overlay
+				accessory_overlay = mutable_appearance(body_marking.icon, "[body_marking.icon_state]_[render_limb_string]", -aux_layer)
+				accessory_overlay.alpha = markings_alpha
+				if (aux_zone_markings[key][2])
+					emissive = emissive_appearance_copy(accessory_overlay, offset_spokesman)
+				if(override_color)
+					accessory_overlay.color = override_color
+				else
+					accessory_overlay.color = aux_zone_markings[key][1]
+				. += accessory_overlay
+				if (emissive)
+					. += emissive
 	// SKYRAT EDIT END - MARKINGS CODE END
 	return .
 

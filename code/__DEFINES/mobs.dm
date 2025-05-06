@@ -690,7 +690,7 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
 #define BODYPARTS_LAYER 47 // SKYRAT EDIT CHANGE - ORIGINAL: 32
 /// H-sector - new boob layer
-#define BREAST_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 32
+#define BREAST_LAYER 46
 /// Mutantrace features (snout, body markings) that must appear above the body parts
 #define BODY_ADJ_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 31
 /// Underwear, undershirts, socks, eyes, lips(makeup)

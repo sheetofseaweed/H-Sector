@@ -6,3 +6,7 @@
 	name = "Mouse Alt"
 	icon_state = "husky"
 
+/datum/sprite_accessory/ears/mutant/splurt/mouse_cool
+	icon = 'modular_hsector/icons/mob/overlays/m_ears_mouse3_ADJ.dmi'
+	name = "Mouse (good)"
+	icon_state = "mouse3"

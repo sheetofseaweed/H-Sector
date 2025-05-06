@@ -1023,9 +1023,8 @@
 
 	for(var/skin_option in style_list_icons)
 		var/image/part_image = image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[limb.body_zone]")
-		if(limb.aux_icons) //Hands//hsector edit - different hand layers
-			for(var/image/I in limb.aux_icons)
-				part_image.overlays += image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[I]")
+		if(limb.aux_zone) //Hands
+			part_image.overlays += image(icon = style_list_icons[skin_option], icon_state = "[limb.limb_id]_[limb.aux_zone]")
 		skins += list("[skin_option]" = part_image)
 	var/choice = show_radial_menu(user, src, skins, require_near = TRUE)
 	if(choice && (use_charges(user, 5, requires_full = FALSE)))
