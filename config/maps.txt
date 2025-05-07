@@ -105,6 +105,14 @@ map shrine
 	votable
 endmap
 
+map valley
+	votable
+endmap
+
+map hoteltower
+	votable
+endmap
+
 map birdshot
 	votable
 endmap
