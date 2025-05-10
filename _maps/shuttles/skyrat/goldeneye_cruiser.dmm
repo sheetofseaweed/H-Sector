@@ -1,68 +1,35 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ab" = (
-/obj/structure/closet/crate,
-/obj/item/stack/sheet/rglass{
-	amount = 30;
-	pixel_x = 2;
-	pixel_y = -2
-	},
-/obj/item/stack/sheet/rglass{
-	amount = 30;
-	pixel_x = 2;
-	pixel_y = -2
-	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/storage/toolbox/electrical,
-/obj/item/storage/box/lights,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
 "ah" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "bf" = (
-/obj/machinery/goldeneye_upload_terminal,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/syndicate/cruiser/airlock)
 "bg" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
+/obj/machinery/mech_bay_recharge_port{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "bk" = (
 /obj/machinery/light/no_nightlight/directional/east,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/armory)
 "bw" = (
-/obj/structure/chair/comfy/shuttle/tactical{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
-"bx" = (
-/obj/effect/turf_decal/bot_white,
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
-"bW" = (
-/obj/effect/turf_decal/bot_white,
-/obj/machinery/portable_atmospherics/scrubber,
 /obj/machinery/light/no_nightlight/directional/south,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/armory)
+"bW" = (
+/obj/machinery/computer/monitor{
+	dir = 2
+	},
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
+/area/shuttle/syndicate/cruiser/bridge)
 "ce" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "cl" = (
 /obj/structure/chair/comfy/shuttle/tactical{
 	dir = 1
@@ -70,79 +37,49 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/bridge)
 "cu" = (
-/obj/structure/rack/shelf,
-/obj/item/storage/medkit/toxin{
-	pixel_y = 10
-	},
-/obj/item/storage/medkit/o2{
-	pixel_y = 5
-	},
-/obj/item/storage/medkit/regular,
+/obj/structure/rack/gunrack,
+/obj/item/gun/energy/e_gun/stun/blueshield,
+/obj/item/gun/energy/e_gun/dragnet,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/area/shuttle/syndicate/cruiser/hallway)
 "cw" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "syndicatecruiserwindows"
-	},
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/plating,
-/area/shuttle/syndicate/cruiser/medical)
-"cN" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/obj/structure/fluff/metalpole/end{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/bridge)
-"de" = (
-/obj/structure/rack/shelf,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/structure/closet/crate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/construction/rcd/loaded,
+/obj/item/inducer/syndicate,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
+"cN" = (
+/obj/structure/closet/crate/medical,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
+"de" = (
+/obj/machinery/power/shuttle_engine/huge,
+/turf/open/floor/plating/airless,
+/area/shuttle/syndicate/cruiser)
 "dz" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/shuttle/syndicate/cruiser)
 "dF" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "syndicatecruiserwindows";
-	name = "Window Blast Doors";
-	pixel_x = -5;
-	pixel_y = 7;
-	req_access = list("syndicate")
-	},
-/obj/machinery/button/door{
-	id = "syndicatecruiserarmory";
-	name = "Armory Blast Doors";
-	pixel_x = -5;
-	pixel_y = -6;
-	req_access = list("syndicate")
-	},
-/obj/machinery/button/door{
-	id = "syndicatecruiserhall";
-	name = "Hall Shutters";
-	pixel_x = 8;
-	req_access = list("syndicate")
+/obj/machinery/computer/records/security/syndie{
+	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
+/area/shuttle/syndicate/cruiser/hallway)
 "dQ" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/syndicate/cruiser/brig)
 "dR" = (
-/obj/machinery/computer/operating{
-	dir = 4
+/obj/structure/closet/secure_closet/wall{
+	pixel_y = 32
 	},
+/obj/effect/turf_decal/bot_white/right,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/area/shuttle/syndicate/cruiser/hallway)
 "dT" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external/glass,
@@ -166,77 +103,61 @@
 	port_direction = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "eh" = (
-/obj/structure/closet/crate,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/construction/rcd/loaded,
-/obj/item/inducer/syndicate,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/obj/structure/chair/stool/directional/east,
+/obj/machinery/light/no_nightlight/directional/west,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/brig)
 "er" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/syndicate/cruiser/bridge)
 "et" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/door/airlock/medical{
-	name = "Medbay"
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/rglass{
+	amount = 30;
+	pixel_x = 2;
+	pixel_y = -2
 	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
-"eU" = (
-/obj/machinery/light/no_nightlight/directional/south,
-/turf/open/floor/iron/smooth_large,
-/area/shuttle/syndicate/cruiser/hallway)
-"fo" = (
-/obj/structure/rack/shelf,
-/obj/item/suppressor{
-	pixel_y = 5
+/obj/item/stack/sheet/rglass{
+	amount = 30;
+	pixel_x = 2;
+	pixel_y = -2
 	},
-/obj/item/suppressor,
-/obj/item/suppressor{
-	pixel_y = -4
-	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/box/lights,
 /obj/effect/turf_decal/bot_white,
+/obj/machinery/light/no_nightlight/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
-"fH" = (
-/obj/machinery/computer/monitor{
+"eU" = (
+/obj/structure/bed/double/pod,
+/obj/item/bedsheet/syndie/double,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/hallway)
+"fo" = (
+/obj/machinery/computer/crew/syndie{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/bridge)
-"gO" = (
-/obj/structure/rack/shelf,
-/obj/item/storage/box/bodybags,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
-"ha" = (
-/obj/structure/closet/crate/freezer{
-	name = "universal blood storage"
+"fH" = (
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 8
 	},
-/obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/ethereal,
-/obj/item/reagent_containers/blood/ethereal,
-/obj/item/reagent_containers/blood/lizard,
-/obj/item/reagent_containers/blood/lizard,
-/obj/effect/turf_decal/bot_white,
+/obj/machinery/light/no_nightlight/directional/south,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/bridge)
+"gO" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/area/shuttle/syndicate/cruiser/airlock)
+"ha" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/syndicate/cruiser/hallway)
 "hk" = (
 /obj/structure/rack/shelf,
 /obj/item/storage/box/handcuffs{
@@ -249,61 +170,35 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
 "hy" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 1
-	},
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/structure/reagent_dispensers/servingdish,
-/turf/open/floor/iron/dark/diagonal,
+/obj/machinery/light/no_nightlight/directional/south,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
 "iU" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
-	},
-/obj/effect/turf_decal/box/white/corners,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/airlock)
 "ke" = (
 /obj/structure/bed/maint,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 1
-	},
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
-	},
 /obj/item/bedsheet/grey,
-/obj/item/instrument/harmonica,
-/turf/open/floor/iron/dark/diagonal,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
 "kh" = (
+/obj/machinery/computer/security{
+	dir = 8;
+	network = list("gate");
+	name = "Gate Camera Control"
+	},
 /obj/effect/turf_decal/bot_white,
-/obj/structure/tank_holder/anesthetic,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
-"ks" = (
-/obj/machinery/power/shuttle_engine/propulsion,
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/fluff/metalpole/end{
-	pixel_y = -32
-	},
-/turf/open/floor/plating/airless,
-/area/shuttle/syndicate/cruiser)
+/area/shuttle/syndicate/cruiser/hallway)
 "lO" = (
-/obj/machinery/computer/camera_advanced/syndie{
-	dir = 8
+/obj/structure/table/survival_pod,
+/obj/structure/bedsheetbin{
+	pixel_y = 3
 	},
-/obj/machinery/light/no_nightlight/directional/east,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/brig)
 "mP" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "syndicatecruiserwindows"
@@ -312,8 +207,8 @@
 /turf/open/floor/plating,
 /area/shuttle/syndicate/cruiser/bridge)
 "nZ" = (
-/turf/open/floor/mineral/titanium/tiled/white,
-/area/shuttle/syndicate/cruiser/medical)
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/shuttle/syndicate/cruiser/hallway)
 "ol" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
@@ -328,34 +223,17 @@
 	id = "syndicatecruiserhatchesright"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "oH" = (
 /obj/structure/tank_holder/extinguisher,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "pg" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
-	},
-/obj/structure/chair/stool/directional/west,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"pE" = (
-/obj/machinery/power/shuttle_engine/heater,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
-/area/shuttle/syndicate/cruiser)
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/shuttle/syndicate/cruiser/engineering)
 "pX" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/turf/closed/wall/mineral/titanium/spaceship,
+/turf/open/floor/plating/airless,
 /area/shuttle/syndicate/cruiser)
 "ql" = (
 /obj/structure/closet/secure_closet{
@@ -376,159 +254,133 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "qG" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
-"qU" = (
-/obj/machinery/door/airlock/external/glass,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
-/obj/machinery/button/door{
-	id = "syndicatecruiserhatches";
-	name = "hatches";
-	pixel_y = 32;
-	req_access = list("syndicate")
-	},
-/obj/machinery/door/poddoor{
-	id = "syndicatecruiserhatches"
-	},
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/light/no_nightlight/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
-"rj" = (
-/obj/machinery/light/no_nightlight/directional/east,
-/turf/open/floor/mineral/titanium/tiled/white,
-/area/shuttle/syndicate/cruiser/medical)
-"rk" = (
+"qU" = (
+/obj/structure/marker_beacon/burgundy,
 /turf/closed/wall/mineral/titanium,
-/area/shuttle/syndicate/cruiser/medical)
+/area/shuttle/syndicate/cruiser/airlock)
+"rj" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "syndicatecruiserwindows"
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/syndicate/cruiser/hallway)
+"rk" = (
+/obj/machinery/computer/camera_advanced/syndie{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/bridge)
 "ru" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/syndicate/cruiser/hallway)
 "rA" = (
-/obj/machinery/power/shuttle_engine/propulsion,
-/obj/effect/turf_decal/stripes/line{
-	dir = 6
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 1
 	},
-/obj/structure/fluff/metalpole/end{
-	pixel_y = -32
-	},
-/turf/open/floor/plating/airless,
-/area/shuttle/syndicate/cruiser)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/armory)
 "rF" = (
-/obj/machinery/computer/records/security/syndie{
-	dir = 4
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom{
+	freerange = 1;
+	name = "Syndicate Radio Intercom"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/bridge)
 "sP" = (
-/obj/machinery/computer/crew/syndie{
-	dir = 8
-	},
-/obj/structure/extinguisher_cabinet/directional/east,
+/obj/structure/tank_dispenser/oxygen,
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
+/area/shuttle/syndicate/cruiser/armory)
 "sX" = (
-/obj/effect/spawner/random/vending/snackvend,
+/obj/machinery/door/airlock/hatch{
+	name = "Armory"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
+/area/shuttle/syndicate/cruiser/hallway)
 "ts" = (
-/obj/structure/chair/comfy/shuttle/tactical{
-	dir = 8
+/obj/machinery/recharger{
+	pixel_x = -9;
+	pixel_y = -31
+	},
+/obj/machinery/recharger{
+	pixel_x = 8;
+	pixel_y = -31
 	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/bridge)
-"uo" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/hallway)
 "ur" = (
-/obj/machinery/autolathe/hacked,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
-"uS" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "syndicatecruisercargo"
-	},
-/turf/open/floor/engine,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/chair/stool/directional/south,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
+"uS" = (
+/obj/structure/marker_beacon/olive,
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/shuttle/syndicate/cruiser/engineering)
 "vZ" = (
-/obj/machinery/sleeper/syndie/fullupgrade{
-	dir = 4
-	},
-/obj/effect/turf_decal/bot,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/bed/maint,
+/obj/item/bedsheet/grey,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/brig)
 "wb" = (
-/obj/structure/table/optable,
-/obj/effect/turf_decal/bot,
-/obj/machinery/defibrillator_mount/directional/north,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/machinery/light/no_nightlight/directional/north,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/syndicate/cruiser/hallway)
 "ws" = (
 /obj/structure/tank_holder/oxygen/yellow,
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/light/no_nightlight/directional/south,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "wI" = (
-/obj/structure/fluff/metalpole/end{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/structure/rack/gunrack,
+/obj/item/gun/energy/disabler/smg,
+/obj/item/gun/energy/disabler/smg,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/armory)
 "xL" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/machinery/autolathe/hacked,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/armory)
 "xT" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"xX" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 1
-	},
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
-	},
-/obj/machinery/space_heater,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"yT" = (
-/obj/structure/bed/maint,
-/obj/item/bedsheet/grey,
+/obj/structure/closet/crate/radiation,
 /obj/machinery/light/no_nightlight/directional/south,
 /turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
+"xX" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east{
+	pixel_x = 3
+	},
+/obj/structure/tank_holder/extinguisher,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
+"yT" = (
+/obj/effect/turf_decal/tile/neutral/diagonal_edge,
+/obj/structure/table,
+/obj/structure/reagent_dispensers/servingdish,
+/obj/machinery/light/no_nightlight/directional/north,
+/turf/open/floor/iron/dark/diagonal,
 /area/shuttle/syndicate/cruiser/brig)
 "zh" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/obj/structure/fluff/metalpole/end{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/medical)
-"zo" = (
-/obj/machinery/door/airlock/external/glass,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/suit_storage_unit/syndicate,
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
+/area/shuttle/syndicate/cruiser/hallway)
+"zo" = (
+/turf/open/floor/iron/smooth,
+/area/shuttle/syndicate/cruiser/hallway)
 "zL" = (
 /turf/template_noop,
 /area/template_noop)
@@ -547,88 +399,62 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "Bx" = (
-/obj/effect/turf_decal/bot_white,
-/obj/structure/tank_holder,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/structure/marker_beacon/olive,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/syndicate/cruiser/armory)
 "CH" = (
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "CI" = (
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom{
-	freerange = 1;
-	name = "Syndicate Radio Intercom"
-	},
-/obj/machinery/turretid{
-	name = "DANGER: Outer Turret Control";
-	pixel_x = -28;
-	req_access = list("syndicate");
-	system_id = "cruiser_turrets_outer"
-	},
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/syndicate/cruiser/bridge)
 "CT" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/fluff/metalpole/end{
+	pixel_y = -32
+	},
+/obj/machinery/power/shuttle_engine/large,
+/turf/open/floor/plating/airless,
+/area/shuttle/syndicate/cruiser)
 "Ei" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/structure/closet/crate/large,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "El" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
 /turf/closed/wall/mineral/titanium,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "EL" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/structure/table,
-/obj/effect/spawner/random/entertainment/dice,
-/obj/machinery/light/no_nightlight/directional/north,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"Fv" = (
-/obj/structure/marker_beacon/burgundy,
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/syndicate/cruiser/hallway)
+/obj/structure/shipping_container/kahraman,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "FA" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin{
-	pixel_y = 4
+/obj/machinery/button/door{
+	id = "syndicatecruiserwindows";
+	name = "Window Blast Doors";
+	pixel_x = -5;
+	pixel_y = 7;
+	req_access = list("syndicate")
 	},
-/obj/item/pen/screwdriver,
+/obj/machinery/button/door{
+	id = "syndicatecruisercargo";
+	name = "Cargo Shutters";
+	pixel_x = -5;
+	req_access = list("syndicate");
+	pixel_y = -2
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/bridge)
 "FH" = (
-/obj/machinery/sleeper/syndie/fullupgrade{
-	dir = 4
-	},
-/obj/effect/turf_decal/bot,
-/obj/machinery/light/no_nightlight/directional/west,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/syndicate/cruiser/hallway)
 "FJ" = (
-/obj/structure/closet/crate/medical,
-/obj/item/storage/medkit/emergency,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
+/obj/machinery/space_heater/wall_mounted/directional/north,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
-"FM" = (
-/obj/machinery/smartfridge/chemistry/preloaded,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
 "FO" = (
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "Gz" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "syndicatecruiserwindows"
@@ -637,50 +463,47 @@
 /turf/open/floor/plating,
 /area/shuttle/syndicate/cruiser/brig)
 "GD" = (
-/obj/structure/marker_beacon/olive,
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "syndicatecruisercargo"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "GN" = (
-/obj/machinery/vending/medical/syndicate,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
+	pixel_x = -4
+	},
+/obj/structure/closet/crate/large,
+/obj/machinery/light/no_nightlight/directional/north,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "Hd" = (
-/obj/effect/turf_decal/bot_white,
-/obj/structure/tank_holder/extinguisher,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/obj/machinery/door/window/survival_pod/left/directional/south,
+/turf/open/floor/engine,
+/area/shuttle/syndicate/cruiser/engineering)
 "Hm" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "Hq" = (
-/obj/structure/marker_beacon/olive,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/machinery/door/window/survival_pod/left/directional/north{
+	req_access = list("syndicate");
+	name = "Holding Cell"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/brig)
 "HE" = (
 /turf/closed/wall/mineral/titanium/spaceship,
 /area/shuttle/syndicate/cruiser)
-"Ih" = (
-/obj/machinery/interrogator,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
 "JA" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/external/glass,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
-/obj/machinery/button/door{
-	id = "syndicatecruiserhatches";
-	name = "hatches";
-	pixel_y = 32;
-	req_access = list("syndicate")
-	},
-/obj/machinery/door/poddoor{
-	id = "syndicatecruiserhatches"
-	},
-/turf/open/floor/iron/dark/textured_large,
+/obj/structure/marker_beacon/olive,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/syndicate/cruiser/hallway)
 "JF" = (
 /obj/structure/rack/shelf,
@@ -692,24 +515,22 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
 "JN" = (
-/obj/item/hand_item/circlegame,
-/turf/open/floor/circuit/red/anim,
-/area/shuttle/syndicate/cruiser)
+/obj/machinery/light/no_nightlight/directional/west,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
 "JW" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "Terminal Chamber"
-	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/brig)
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating/airless,
+/area/shuttle/syndicate/cruiser)
 "JY" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/syndicate/cruiser/armory)
 "KN" = (
-/obj/structure/tank_dispenser/oxygen,
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/portable_atmospherics/scrubber,
+/obj/machinery/light/no_nightlight/directional/south,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/area/shuttle/syndicate/cruiser/airlock)
 "LI" = (
 /obj/structure/marker_beacon/olive,
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
@@ -719,136 +540,56 @@
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/shuttle/syndicate/cruiser)
 "MD" = (
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/machinery/door/airlock/hatch{
+	name = "Holding Chamber"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
+/turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/brig)
 "MO" = (
 /obj/structure/marker_beacon/burgundy,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/syndicate/cruiser/bridge)
 "Nq" = (
-/obj/structure/rack/shelf,
-/obj/item/binoculars,
+/obj/machinery/recharge_station,
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
+/area/shuttle/syndicate/cruiser/airlock)
 "NE" = (
-/obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/no_nightlight/directional/west,
-/obj/machinery/button/door/directional/east{
-	id = "syndicatecruisercargo";
-	name = "Cargo Bay External Shutters"
+/obj/structure/closet/secure_closet/wall{
+	pixel_x = -32
 	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/hallway)
 "Om" = (
-/obj/machinery/power/shuttle_engine/propulsion,
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/airless,
-/area/shuttle/syndicate/cruiser)
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "syndicatecruisercargo"
+	},
+/turf/open/floor/engine,
+/area/shuttle/syndicate/cruiser/engineering)
 "Oy" = (
 /obj/machinery/power/shuttle_engine/heater,
 /turf/open/floor/plating/airless,
 /area/shuttle/syndicate/cruiser)
 "Pj" = (
-/obj/machinery/ammo_workbench/unlocked,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/armory)
-"Py" = (
-/obj/structure/closet/secure_closet{
-	name = "Prisoner Locker";
-	req_access = list("syndicate")
-	},
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/shoes/sneakers/crimson,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
-/obj/item/clothing/under/rank/prisoner/syndicate,
+/obj/structure/rack/shelf,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
 /obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
-"PB" = (
-/obj/structure/bed/maint,
-/obj/item/bedsheet/grey{
-	dir = 1
-	},
-/turf/open/floor/catwalk_floor/iron_smooth,
-/area/shuttle/syndicate/cruiser/brig)
-"PL" = (
-/obj/machinery/power/shuttle_engine/heater,
-/obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/plating/airless,
-/area/shuttle/syndicate/cruiser)
-"QP" = (
-/obj/machinery/porta_turret/syndicate/assaultops/internal,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser/hallway)
-"QU" = (
-/obj/machinery/turretid{
-	name = "Internal Turret Control";
-	pixel_y = 30;
-	req_access = list("syndicate");
-	system_id = "cruiser_turrets_internal"
-	},
-/obj/machinery/light/no_nightlight/directional/north,
-/turf/open/floor/iron/smooth_large,
-/area/shuttle/syndicate/cruiser/hallway)
-"QV" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/structure/table,
-/obj/effect/spawner/random/entertainment/deck,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"Re" = (
-/obj/machinery/computer/shuttle/goldeneye_cruiser,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/bridge)
-"RB" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
-	},
-/obj/effect/turf_decal/box/white/corners,
-/obj/structure/table,
-/obj/structure/bedsheetbin,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"SI" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Armory"
-	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
+/obj/machinery/light/no_nightlight/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
-"SK" = (
+"PB" = (
+/obj/structure/table/survival_pod,
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
-	},
-/obj/effect/turf_decal/box/white/corners,
-/obj/structure/table,
 /obj/item/reagent_containers/cup/bowl,
 /obj/item/reagent_containers/cup/bowl{
 	pixel_y = 5
@@ -858,63 +599,97 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/shuttle/syndicate/cruiser/brig)
-"Tr" = (
-/obj/structure/chair,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
+"PL" = (
+/turf/open/floor/iron/smooth,
 /area/shuttle/syndicate/cruiser/brig)
-"TJ" = (
-/obj/structure/rack/gunrack,
-/obj/item/gun/energy/ionrifle,
+"QP" = (
+/obj/machinery/ammo_workbench/unlocked,
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/armory)
-"Ua" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/box/white/corners{
-	dir = 1
-	},
-/obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/syndicate/cruiser/brig)
-"Ud" = (
-/obj/structure/closet/crate/medical,
-/mob/living/basic/bot/medbot{
-	faction = list("Syndicate");
-	req_one_access = list(150);
-	name = "James T. Kirk";
-	radio_channel = "Syndicate"
-	},
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
+"QU" = (
+/obj/machinery/light/no_nightlight/directional/east,
+/turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/syndicate/cruiser/hallway)
-"Vm" = (
-/obj/structure/extinguisher_cabinet/directional/west,
+"QV" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 1;
+	pixel_y = -32;
+	density = 0
+	},
 /turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/engineering)
+"Re" = (
+/obj/machinery/computer/shuttle/goldeneye_cruiser,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/bridge)
+"RB" = (
+/obj/vehicle/sealed/mecha/ripley/deathripley,
+/obj/effect/turf_decal/bot_red,
+/turf/open/floor/iron/recharge_floor,
+/area/shuttle/syndicate/cruiser/engineering)
+"SI" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Armory"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/syndicate/general,
+/turf/open/floor/iron/dark/textured_large,
+/area/shuttle/syndicate/cruiser/armory)
+"SK" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/syndicate/cruiser/armory)
+"Tr" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east{
+	pixel_x = 3
+	},
+/obj/machinery/door/window/survival_pod/left/directional/south,
+/turf/open/floor/engine,
+/area/shuttle/syndicate/cruiser/engineering)
+"TJ" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/syndicate/cruiser/engineering)
+"Ua" = (
+/obj/machinery/power/shuttle_engine/heater,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/airless,
+/area/shuttle/syndicate/cruiser)
+"Ud" = (
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/shuttle/syndicate/cruiser/armory)
+"Vm" = (
+/obj/machinery/light/no_nightlight/directional/south,
+/turf/open/floor/iron/smooth_half,
 /area/shuttle/syndicate/cruiser/hallway)
 "VU" = (
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/armory)
 "Wb" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/syndicate/cruiser)
-"Wk" = (
-/obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/light/blacklight/directional/east,
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/machinery/space_heater/wall_mounted/directional/west,
+/obj/structure/table,
+/obj/effect/spawner/random/entertainment/deck,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
+"Wk" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "syndicatecruiserwindows"
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/syndicate/cruiser/airlock)
 "Wz" = (
+/obj/structure/marker_beacon/olive,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/syndicate/cruiser/bridge)
 "WF" = (
-/obj/machinery/power/shuttle_engine/propulsion,
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
+/obj/effect/turf_decal/stripes/line,
 /obj/structure/fluff/metalpole/end{
 	pixel_y = -32
 	},
+/obj/machinery/power/shuttle_engine/propulsion,
 /turf/open/floor/plating/airless,
 /area/shuttle/syndicate/cruiser)
 "Xu" = (
@@ -922,380 +697,380 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/syndicate/cruiser/bridge)
 "Yk" = (
+/obj/structure/closet/generic/wall/empty{
+	pixel_x = 32
+	},
+/obj/item/binoculars,
+/obj/item/binoculars,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/bridge)
 "YJ" = (
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/syndicate/cruiser/brig)
 "Zf" = (
-/obj/machinery/space_heater,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/hallway)
+/turf/open/floor/iron/smooth,
+/area/shuttle/syndicate/cruiser/armory)
 "Zm" = (
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/syndicate/cruiser/brig)
 "Zy" = (
-/obj/machinery/porta_turret/syndicate/assaultops/shuttle{
-	name = "Defense System Turret";
-	system_id = "cruiser_turrets_outer"
-	},
-/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
-/area/shuttle/syndicate/cruiser)
+/obj/machinery/light/no_nightlight/directional/east,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/syndicate/cruiser/bridge)
 "ZC" = (
-/obj/structure/rack/shelf,
-/obj/effect/turf_decal/bot_white,
-/obj/item/defibrillator/loaded,
-/obj/item/storage/backpack/duffelbag/syndie/surgery,
-/turf/open/floor/iron/dark/textured_large,
-/area/shuttle/syndicate/cruiser/medical)
+/obj/machinery/door/window/survival_pod/left/directional/south,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
+	pixel_x = -4
+	},
+/turf/open/floor/engine,
+/area/shuttle/syndicate/cruiser/engineering)
 
 (1,1,1) = {"
 zL
 zL
+Wz
+mP
+mP
+er
+dz
+Ua
+WF
+zL
+zL
+SK
+Bx
+SK
 zL
 zL
 zL
 zL
 zL
-El
-ru
+ha
 JA
 ru
-El
-zL
-zL
-zL
-Fv
-ru
-ru
-ru
-ru
-ru
-uo
 Ma
 HE
-zL
-zL
-zL
+Oy
+pX
+CT
 "}
 (2,1,1) = {"
-zL
-zL
-zL
 MO
 mP
-mP
 er
+fo
+rk
 er
-ah
-FO
-ws
-ru
-ru
-ru
-ru
-ru
-Bd
-Hm
-ru
-ah
-ql
-ru
-ru
 dz
 dz
-pX
-zL
-"}
-(3,1,1) = {"
-cN
-mP
-mP
-er
-fH
-rF
-FA
-er
+dz
+JY
+JY
+JY
+wI
+JY
+JY
+rj
+rj
+rj
 ru
-qU
-QP
 ru
-ur
-eh
-ab
+dF
 ru
-CH
-CH
-NE
-CH
-CH
-Py
 ru
 dz
 Oy
-ks
-zL
+pX
+JW
+"}
+(3,1,1) = {"
+mP
+Xu
+FA
+rF
+fH
+er
+ru
+ru
+JY
+JY
+QP
+Pj
+VU
+hk
+JY
+Bd
+Hm
+CH
+NE
+NE
+CH
+ql
+ru
+Oy
+pX
+pX
+de
 "}
 (4,1,1) = {"
 mP
-Xu
-dF
+Re
+cl
 CI
 ts
-Yk
-qG
 er
+qG
 oH
+JY
+VU
+VU
+VU
+VU
+Zf
+SI
+QU
+nZ
 CH
-CH
-Vm
-CH
-CH
-CH
-CH
-CH
-Hd
-dQ
-Gz
+nZ
+QU
 zo
-dQ
-dQ
-dz
+ah
+ru
 Oy
-Om
-zL
+pX
+pX
+pX
 "}
 (5,1,1) = {"
 mP
-Re
+bW
 cl
-Yk
-Yk
-Yk
+Zy
 Yk
 AM
-CH
-CH
-ru
-ru
+zo
+zo
+SI
+Zf
 Ud
-eU
+Ud
+Ud
+VU
+JY
+bf
+Wk
+gO
+bf
 dQ
-dQ
-JW
-dQ
-dQ
-bx
 MD
-bW
+Gz
 dQ
-dz
-dz
-pE
-WF
+Oy
+pX
+pX
+pX
 "}
 (6,1,1) = {"
 Wz
 mP
+mP
 er
-Nq
-sP
-lO
+er
+er
 sX
-er
-Zf
-CH
-bw
 ru
+JY
+VU
+VU
+VU
+VU
+bk
+JF
+bf
+iU
+FO
 KN
-CH
 dQ
-Tr
-MD
-Ih
+PL
+lO
 dQ
-Gz
-zo
-dQ
-dQ
-JN
 dz
-Oy
-Om
+dz
+dz
+dz
 "}
 (7,1,1) = {"
 zL
 zL
-Wz
+zL
+ru
+zh
+zo
+zo
+ru
 xL
-xL
-xL
-xL
-xL
-xL
-QU
+VU
 bw
 JY
 JY
-SI
-dQ
+JY
+JY
 bf
 Wk
 gO
+bf
 dQ
-xX
-Zm
+FJ
 hy
 dQ
-Wb
-dz
-dz
-Zy
+dQ
+dQ
+dQ
+dQ
 "}
 (8,1,1) = {"
 zL
 zL
 zL
-wI
+ru
 dR
-ZC
+nZ
 FH
-vZ
+ru
 cw
-CH
-bw
-JY
-TJ
 VU
-dQ
-dQ
-dQ
-dQ
-dQ
+Ud
+rA
+TJ
+Tr
+JN
+Ei
+ce
+ce
 RB
+Gz
+YJ
 Zm
-SK
-dQ
+ur
 Wb
-dz
-Oy
-Om
+eh
+ke
+Gz
 "}
 (9,1,1) = {"
 zL
 zL
 zL
-xL
+ru
 wb
 nZ
-nZ
-nZ
+Vm
+ru
 et
-CH
-CH
-SI
 VU
-VU
-hk
-dQ
-Ua
+Ud
+rA
+TJ
+xX
+pg
+pg
+pg
 ce
 bg
+Gz
 YJ
-yT
-dQ
-dQ
-dz
-dz
-PL
-rA
+Zm
+Hq
+YJ
+Zm
+Gz
+Gz
 "}
 (10,1,1) = {"
 zL
 zL
 zL
-xL
+ru
 cu
-nZ
+eU
 kh
-ha
-xL
-CH
-Zf
+ru
 JY
-de
-VU
-JF
-dQ
+sP
+Zf
+rA
+TJ
+Hd
+ce
+ce
 EL
 QV
-xT
-YJ
-YJ
-ke
+TJ
 dQ
-dz
-Oy
-Om
+Zm
+Zm
+vZ
+Zm
+ke
+Gz
 zL
 "}
 (11,1,1) = {"
 zL
 zL
-rk
-xL
-GN
+zL
+ha
+ru
 rj
-FM
-xL
-xL
+ru
+bf
+bf
 ol
-QP
-JY
-Pj
-bk
-fo
-dQ
+bf
+bf
+bf
+GN
+pg
+pg
 pg
 xT
-CT
+dQ
 PB
 Zm
-iU
+hy
 dQ
-dz
-Oy
-ks
+dQ
+dQ
+dQ
 zL
 "}
 (12,1,1) = {"
 zL
 zL
-zh
-Hq
-xL
-xL
-xL
-xL
-ah
+zL
+zL
+zL
+zL
+zL
+bf
+Nq
 FO
 ws
-JY
-JY
-JY
-JY
+bf
+bf
+ZC
+ce
+ce
+ce
+cN
 dQ
-FJ
+yT
 Zm
-Zm
-Zm
-Bx
 dQ
 dQ
 dz
 dz
-pX
+dz
 zL
 "}
 (13,1,1) = {"
@@ -1306,24 +1081,24 @@ zL
 zL
 zL
 zL
-El
-ru
+qU
+bf
 dT
-ru
+bf
 El
-zL
-zL
-zL
+bf
+uS
+Om
 GD
-dQ
-uS
-uS
+GD
 uS
 dQ
-Ei
+Gz
+Gz
+dQ
 LI
-HE
-zL
-zL
+dz
+Oy
+WF
 zL
 "}

@@ -1,0 +1,73 @@
+{
+	"version": 1,
+	"map_name": "Mountain Valley",
+	"map_path": "map_files/MountainValley",
+	"map_file": "valley.dmm",
+	"planetary": 1,
+	"shuttles": {
+		"emergency": "emergency_moonstation",
+		"ferry": "ferry_skyrat",
+		"cargo": "cargo_skyrat",
+		"whiteship": "whiteship_delta"
+	},
+	"traits": [
+		{
+			"Up": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/rockyground"
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/floor/plating/cobblestone/planet",
+			"No Parallax": true
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/floor/plating/cobblestone/planet",
+			"No Parallax": true
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/sandy_dirt/planet",
+			"No Parallax": true
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Station": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/grass/planet",
+			"No Parallax": true
+		},
+		{
+			"Down": true,
+			"Station": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/grass/planet",
+			"No Parallax": true
+		}
+	],
+	"minetype": "none",
+	"job_changes": {
+		"Captain": {
+			"special_charter": "moon"
+		}
+	},
+	"emergency_override": 1
+}

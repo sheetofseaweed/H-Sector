@@ -75,7 +75,7 @@
 /// Trait for quirk: Modular Limbs
 #define TRAIT_MODULAR_LIMBS		"modular_limbs"
 /// Trait for quirk: Vacuum Resistance
-#define TRAIT_VACUUM_RESIST		"vacuum_resist"
+//#define TRAIT_VACUUM_RESIST		"vacuum_resist"
 /// Trait for quirk: Overweight
 #define TRAIT_OVERWEIGHT		"overweight"
 /// Trait for quirk: Trashcan

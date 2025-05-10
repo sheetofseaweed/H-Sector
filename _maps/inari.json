@@ -20,6 +20,7 @@
 			"Linkage": "Cross"
 		}
 	],
+	"minetype": "none",
 	"job_changes": {
 		"Cook": {
 			"additional_cqc_areas": ["/area/station/commons/lounge"]
