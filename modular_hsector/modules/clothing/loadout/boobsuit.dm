@@ -10,7 +10,6 @@
 /datum/loadout_item/uniform/boobsuit
 	name = "Custom-Tailored Suit"
 	item_path = /obj/item/clothing/under/rank/civilian/lawyer/boobsuit
-	female_sprite_flags = NO_FEMALE_UNIFORM
 
 /obj/item/clothing/under/rank/civilian/lawyer/boobblouse
 	name = "custom-tailored blouse"
@@ -24,7 +23,6 @@
 /datum/loadout_item/uniform/boobblouse
 	name = "Custom-Tailored Blouse"
 	item_path = /obj/item/clothing/under/rank/civilian/lawyer/boobblouse
-	female_sprite_flags = NO_FEMALE_UNIFORM
 
 /datum/sprite_accessory/hair/cowlick
 	icon = 'modular_hsector/icons/mob/overlays/hollyhair.dmi'
