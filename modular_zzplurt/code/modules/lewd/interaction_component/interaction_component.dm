@@ -3,12 +3,9 @@
 	var/list/modified_preferences = list()
 	/// List of preference paths mapped to their toggle types
 	var/static/list/preference_paths = list(
-		"master_erp_pref" = /datum/preference/toggle/master_erp_preferences,
 		"base_erp_pref" = /datum/preference/toggle/erp,
 		// Core ERP prefs
 		"erp_sounds_pref" = /datum/preference/toggle/erp/sounds,
-		"sextoy_pref" = /datum/preference/toggle/erp/sex_toy,
-		"sextoy_sounds_pref" = /datum/preference/toggle/erp/sex_toy_sounds,
 		"bimbofication_pref" = /datum/preference/toggle/erp/bimbofication,
 		"aphro_pref" = /datum/preference/toggle/erp/aphro,
 		"breast_enlargement_pref" = /datum/preference/toggle/erp/breast_enlargement,
@@ -41,8 +38,6 @@
 		"noncon_pref" = /datum/preference/choiced/erp_status_nc,
 		"vore_pref" = /datum/preference/choiced/erp_status_v,
 		"extreme_pref" = /datum/preference/choiced/erp_status_extm,
-		"extreme_harm" = /datum/preference/choiced/erp_status_extmharm,
-		"unholy_pref" = /datum/preference/choiced/erp_status_unholy
 	)
 	/// Cache of the user's preferences, used to avoid re-reading them from the client
 	var/list/cached_preferences = list()

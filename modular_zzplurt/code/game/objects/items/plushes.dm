@@ -85,7 +85,7 @@
 	worn_icon_state = "plushie_mossy"
 	attack_verb_simple = list("lick", "nuzzle", "hump", "bark")
 	attack_verb_continuous = list("licks", "nuzzles", "humps", "barks")
-	squeak_override = list('modular_zzplurt/sound/voice/bork.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/bark1.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/bark2.ogg' = 1)
+	//squeak_override = list('modular_zzplurt/sound/voice/bork.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/bark1.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/bark2.ogg' = 1)
 
 /obj/item/toy/plush/panic
 	name = "Tired Raccoon Plushie"
@@ -96,7 +96,7 @@
 	worn_icon_state = "plushie_panic"
 	attack_verb_simple = list("record", "clip", "examine")
 	attack_verb_continuous = list("records", "clips", "examines")
-	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/wurble.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/warbles.ogg' = 10)
+	//squeak_override = list('modular_skyrat/modules/emotes/sound/voice/wurble.ogg' = 1, 'modular_skyrat/modules/emotes/sound/voice/warbles.ogg' = 10)
 
 /obj/item/toy/plush/tree_ferret
 	name = "Tree Ferret Plushie"
@@ -117,4 +117,4 @@
 	worn_icon_state = "plush_bro"
 	attack_verb_simple = list("beast")
 	attack_verb_continuous = list("beasts")
-	squeak_override = list('modular_zzplurt/sound/voice/gachi/woop.ogg' = 1)
+	//squeak_override = list('modular_zzplurt/sound/voice/gachi/woop.ogg' = 1)
