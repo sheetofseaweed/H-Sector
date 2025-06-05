@@ -4,5 +4,5 @@
 
 /datum/supply_pack/fill(obj/structure/closet/crate/C)
 	. = ..()
-	if(C.packable && !C.packing_overlay)
+	if(handle_with_care && C.packable && !C.packing_overlay)
 		C.get_packed()

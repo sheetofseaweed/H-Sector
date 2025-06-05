@@ -91,6 +91,9 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 		if(ismob(loc))
 			var/mob/wearer = loc
 			wearer.update_worn_mask()
+		// SPLURT EDIT ADDITION BEGIN - Smokin' fat darts
+		update_appearance(UPDATE_ICON)
+		// SPLURT EDIT ADDITION END
 
 /obj/item/clothing/mask/gas/attackby(obj/item/tool, mob/user)
 	var/valid_wearer = ismob(loc)
@@ -112,6 +115,9 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 		cig.forceMove(src)
 		if(valid_wearer)
 			wearer.update_worn_mask()
+		// SPLURT EDIT ADDITION BEGIN - Smokin' fat darts
+		update_appearance(UPDATE_ICON)
+		// SPLURT EDIT ADDITION END
 		return TRUE
 
 	if(cig)
@@ -136,6 +142,9 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 		if(ismob(loc))
 			var/mob/wearer = loc
 			wearer.update_worn_mask()
+		// SPLURT EDIT ADDITION BEGIN - Smokin' fat darts
+		update_appearance(UPDATE_ICON)
+		// SPLURT EDIT ADDITION END
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(!has_filter || !max_filters)
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
