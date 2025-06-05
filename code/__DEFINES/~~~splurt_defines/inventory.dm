@@ -1,8 +1,8 @@
 //Underwear and extra slots
 /// Right ear slot
-#define ITEM_SLOT_EARS_RIGHT (1<<22) // It can't use extra because it's linked to ITEM_SLOT_EARS_LEFT
+#define ITEM_SLOT_EARS_RIGHT (1<<19) // It can't use extra because it's linked to ITEM_SLOT_EARS_LEFT
 /// Slot to indicate it's an extra slot
-#define ITEM_SLOT_EXTRA (1<<23) //this will work until TG decides to use this value for a slot for some reason
+#define ITEM_SLOT_EXTRA (1<<20) //this will work until TG decides to use this value for a slot for some reason
 /// Underwear slot
 #define ITEM_SLOT_UNDERWEAR ITEM_SLOT_EXTRA | (1<<0)
 /// Socks slot
