@@ -11,7 +11,6 @@
 #define CUTTER_FORCE 6
 #define CUTTER_WOUND_BONUS 0
 #define ENHANCED_KNIFE_FORCE 15
-#define ENHANCED_CLAW_FORCE 20 //Splurt New Definer for Enhanced Razor Claws.
 #define ENHANCED_KNIFE_WOUND_BONUS 15
 #define ENHANCED_KNIFE_ARMOR_PENETRATION 10
 
@@ -38,19 +37,20 @@
 	armour_penetration = 10 //Energy isn't as good at going through armor as it is through flesh alone.
 	hitsound = 'sound/items/weapons/blade1.ogg'
 
-/obj/item/organ/cyberimp/arm/armblade
+/obj/item/organ/cyberimp/arm/toolkit/armblade
 	name = "arm blade implant"
 	desc = "An integrated blade implant designed to be installed into a persons arm. Stylish and deadly; Although, being caught with this without proper permits is sure to draw unwanted attention."
 	items_to_create = list(/obj/item/melee/implantarmblade)
 	icon = 'modular_skyrat/modules/implants/icons/implanted_blade.dmi'
 	icon_state = "mantis_blade"
 
-/obj/item/organ/cyberimp/arm/armblade/emag_act()
+/obj/item/organ/cyberimp/arm/toolkit/armblade/emag_act()
 	if(obj_flags & EMAGGED)
 		return FALSE
 	for(var/datum/weakref/created_item in items_list)
 	to_chat(usr, span_notice("You unlock [src]'s integrated energy arm blade! You madman!"))
 	items_list += WEAKREF(new /obj/item/melee/implantarmblade/energy(src))
+	obj_flags |= EMAGGED
 	return TRUE
 
 /obj/item/knife/razor_claws
@@ -61,7 +61,7 @@
 	lefthand_file = 'modular_skyrat/modules/implants/icons/razorclaws_lefthand.dmi'
 	icon_state = "wolverine"
 	inhand_icon_state = "wolverine"
-	var/knife_force = 15 //Splurt Edit
+	var/knife_force = 10
 	w_class = WEIGHT_CLASS_BULKY
 	var/knife_wound_bonus = 5
 	var/cutter_force = CUTTER_FORCE
@@ -69,8 +69,6 @@
 	var/cutter_bare_wound_bonus = CUTTER_WOUND_BONUS
 	tool_behaviour = TOOL_KNIFE
 	toolspeed = 1
-	attack_speed = 6
-	force = 15 //Splurt Edit/Addition
 	item_flags = NEEDS_PERMIT //Beepers gets angry if you get caught with this.
 
 /obj/item/knife/razor_claws/attack_self(mob/user)
@@ -93,7 +91,7 @@
 		to_chat(user, span_notice("You shift [src] into Killing mode, for slicing."))
 		icon_state = "wolverine"
 		inhand_icon_state = "wolverine"
-		force = 15 //Splurt Edit
+		force = knife_force
 		sharpness = KNIFE_SHARPNESS
 		wound_bonus = knife_wound_bonus
 		bare_wound_bonus = KNIFE_BARE_WOUND_BONUS
@@ -105,16 +103,13 @@
 /obj/item/knife/razor_claws/attackby(obj/item/stone, mob/user, param)
 	if(!istype(stone, /obj/item/scratching_stone))
 		return ..()
-	//SPLURT EDIT REMOVAL BEGIN - Knife Force - (Moved Under if(tool_behaviour == Tool_KNIFE) Works just fine still.)
-	/*
+
 	knife_force = ENHANCED_KNIFE_FORCE
-	*/
-	//SPLURT EDIT REMOVAL END
 	knife_wound_bonus = ENHANCED_KNIFE_WOUND_BONUS
 	armour_penetration = ENHANCED_KNIFE_ARMOR_PENETRATION //Let's give them some AP for the trouble.
 
 	if(tool_behaviour == TOOL_KNIFE)
-		force = ENHANCED_CLAW_FORCE //Splurt New Definer
+		force = knife_force
 		wound_bonus = knife_wound_bonus
 
 	name = "enhanced razor claws"
@@ -124,7 +119,7 @@
 	qdel(stone)
 	return ..()
 
-/obj/item/organ/cyberimp/arm/razor_claws
+/obj/item/organ/cyberimp/arm/toolkit/razor_claws
 	name = "razor claws implant"
 	desc = "A set of hidden, retractable blades built into the fingertips; cyborg mercenary approved."
 	items_to_create = list(/obj/item/knife/razor_claws)
@@ -135,11 +130,11 @@
 	retract_sound = 'sound/items/sheath.ogg'
 
 /// bespoke subtypes for augs menu since it's a bit wonky
-/obj/item/organ/cyberimp/arm/razor_claws/right_arm
+/obj/item/organ/cyberimp/arm/toolkit/razor_claws/right_arm
 	zone = BODY_ZONE_R_ARM
 	slot = ORGAN_SLOT_RIGHT_ARM_AUG
 
-/obj/item/organ/cyberimp/arm/razor_claws/left_arm
+/obj/item/organ/cyberimp/arm/toolkit/razor_claws/left_arm
 	zone = BODY_ZONE_L_ARM
 	slot = ORGAN_SLOT_LEFT_ARM_AUG
 
@@ -150,14 +145,14 @@
 	button_icon = 'modular_skyrat/master_files/icons/hud/actions.dmi'
 	button_icon_state = "wolverine"
 
-/obj/item/organ/cyberimp/arm/hacker
+/obj/item/organ/cyberimp/arm/toolkit/hacker
 	name = "hacking arm implant"
 	desc = "An small arm implant containing an advanced screwdriver, wirecutters, and multitool designed for engineers and on-the-field machine modification. Actually legal, despite what the name may make you think."
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "toolkit_engiborg_multitool"
 	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/abductor/implant)
 
-/obj/item/organ/cyberimp/arm/botany
+/obj/item/organ/cyberimp/arm/toolkit/botany
 	name = "botany arm implant"
 	desc = "A rather simple arm implant containing tools used in gardening and botanical research."
 	items_to_create = list(/obj/item/cultivator, /obj/item/shovel/spade, /obj/item/hatchet, /obj/item/gun/energy/floragun, /obj/item/plant_analyzer, /obj/item/geneshears, /obj/item/secateurs, /obj/item/storage/bag/plants, /obj/item/storage/bag/plants/portaseeder)
@@ -181,7 +176,7 @@
 	tool_behaviour = TOOL_SAW
 	toolspeed = 1
 
-/obj/item/organ/cyberimp/arm/botany/emag_act()
+/obj/item/organ/cyberimp/arm/toolkit/botany/emag_act()
 	if(obj_flags & EMAGGED)
 		return FALSE
 	for(var/datum/weakref/created_item in items_list)
@@ -196,12 +191,12 @@
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "toolkit_engiborg_multitool"
 
-/obj/item/organ/cyberimp/arm/janitor
+/obj/item/organ/cyberimp/arm/toolkit/janitor
 	name = "janitorial tools implant"
 	desc = "A set of janitorial tools on the user's arm."
 	items_to_create = list(/obj/item/lightreplacer, /obj/item/holosign_creator, /obj/item/soap/nanotrasen, /obj/item/reagent_containers/spray/cyborg_drying, /obj/item/mop/advanced, /obj/item/paint/paint_remover, /obj/item/reagent_containers/cup/beaker/large, /obj/item/reagent_containers/spray/cleaner) //Beaker if for refilling sprays
 
-/obj/item/organ/cyberimp/arm/janitor/emag_act()
+/obj/item/organ/cyberimp/arm/toolkit/janitor/emag_act()
 	if(obj_flags & EMAGGED)
 		return FALSE
 	for(var/datum/weakref/created_item in items_list)
@@ -211,12 +206,12 @@
 	obj_flags |= EMAGGED
 	return TRUE
 
-/obj/item/organ/cyberimp/arm/lighter
+/obj/item/organ/cyberimp/arm/toolkit/lighter
 	name = "lighter implant"
 	desc = "A... implanted lighter. Incredibly useless."
 	items_to_create = list(/obj/item/lighter/greyscale) //Hilariously useless.
 
-/obj/item/organ/cyberimp/arm/lighter/emag_act()
+/obj/item/organ/cyberimp/arm/toolkit/lighter/emag_act()
 	if(obj_flags & EMAGGED)
 		return FALSE
 	for(var/datum/weakref/created_item in items_list)
@@ -238,6 +233,5 @@
 #undef CUTTER_FORCE
 #undef CUTTER_WOUND_BONUS
 #undef ENHANCED_KNIFE_FORCE
-#undef ENHANCED_CLAW_FORCE //Splurt Addition
 #undef ENHANCED_KNIFE_WOUND_BONUS
 #undef ENHANCED_KNIFE_ARMOR_PENETRATION

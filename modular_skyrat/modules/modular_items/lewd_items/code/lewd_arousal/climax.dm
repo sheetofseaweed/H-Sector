@@ -8,6 +8,7 @@
 
 #define CLIMAX_ON_FLOOR "On the floor"
 #define CLIMAX_IN_OR_ON "Climax in or on someone"
+#define CLIMAX_OPEN_CONTAINER "Fill reagent container"
 
 /mob/living/proc/climax(manual = TRUE, mob/living/partner = null, datum/interaction/climax_interaction = null, interaction_position = null) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
 	if (CONFIG_GET(flag/disable_erp_preferences))
@@ -95,23 +96,66 @@
 		else
 			var/list/interactable_inrange_mobs = list()
 			var/target_choice //SPLURT EDIT CHANGE - Interactions
+			// monkey see, monkey do
+			var/list/interactable_inrange_open_containers = list()
 
 			// Unfortunately prefs can't be checked here, because byond/tgstation moment.
 			for(var/mob/living/iterating_mob in (view(1, src) - src))
 				interactable_inrange_mobs[iterating_mob.name] = iterating_mob
 
+			// this should be making a list of cups(?)
+			for(var/obj/item/reagent_containers/cup/iterating_open_container in (view(1, src) - src))
+				interactable_inrange_open_containers[iterating_open_container.name] = iterating_open_container
+
 			var/list/buttons = list(CLIMAX_ON_FLOOR)
 			if(interactable_inrange_mobs.len)
 				buttons += CLIMAX_IN_OR_ON
 
-			var/penis_climax_choice = climax_interaction && !manual ? CLIMAX_IN_OR_ON : tgui_alert(src, "Choose where to shoot your load.", "Load preference!", buttons) //SPLURT EDIT CHANGE - Interactions
+			if(interactable_inrange_open_containers.len)
+				buttons += CLIMAX_OPEN_CONTAINER
 
+			var/penis_climax_choice = climax_interaction && !manual ? CLIMAX_IN_OR_ON : tgui_alert(src, "Choose where to shoot your load.", "Load preference!", buttons) //SPLURT EDIT CHANGE - Interactions
 			var/create_cum_decal = FALSE
 
 			if(!penis_climax_choice || penis_climax_choice == CLIMAX_ON_FLOOR)
 				create_cum_decal = TRUE
 				visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
 					span_userlove("You shoot string after string of hot cum, hitting the floor!"))
+
+			else if(penis_climax_choice == CLIMAX_OPEN_CONTAINER)
+				target_choice = tgui_input_list(src, "Choose a container to cum into.", "Choose target!", interactable_inrange_open_containers) //SPLURT EDIT CHANGE - Interactions
+				if(!target_choice)
+					create_cum_decal = TRUE
+					visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
+						span_userlove("You shoot string after string of hot cum, hitting the floor!"))
+				else
+					var/obj/item/reagent_containers/cup/target_open_container = interactable_inrange_open_containers[target_choice]
+					if(target_open_container.is_refillable() && target_open_container.is_drainable())
+						// here's where we actually do the cumming(?)
+						var/obj/item/organ/genital/testicles/src_testicles = src.get_organ_slot(ORGAN_SLOT_TESTICLES)
+						var/cum_volume = src_testicles.genital_size * 10
+						var/total_volume_w_cum = cum_volume + target_open_container.reagents.total_volume
+						conditional_pref_sound(get_turf(src), SFX_DESECRATION, 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds)
+						if(target_open_container.reagents.holder_full())
+							// its full already
+							add_cum_splatter_floor(get_turf(target_open_container))
+							visible_message(span_userlove("[src] tries to cum into the [target_open_container], but it's already full, spilling their hot load onto the floor!"), \
+								span_userlove("You try to cum into the [target_open_container], but it's already full, so it all hits the floor instead!"))
+						else
+							target_open_container.reagents.add_reagent(/datum/reagent/consumable/cum, cum_volume)
+							if(total_volume_w_cum > target_open_container.volume)
+								// overflow, make the decal
+								add_cum_splatter_floor(get_turf(target_open_container))
+								visible_message(span_userlove("[src] shoots [self_their] sticky load into the [target_open_container], it's so full that it overflows!"), \
+									span_userlove("You shoot string after string of hot cum into the [target_open_container], making it overflow!"))
+							else
+								visible_message(span_userlove("[src] shoots [self_their] sticky load into the [target_open_container]!"), \
+									span_userlove("You shoot string after string of hot cum into the [target_open_container]!"))
+					else
+						// cum fail
+						create_cum_decal = TRUE
+						visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
+							span_userlove("You shoot string after string of hot cum, hitting the floor!"))
 
 			else
 				target_choice = climax_interaction && !manual ? partner?.name : tgui_input_list(src, "Choose a person to cum in or on.", "Choose target!", interactable_inrange_mobs) //SPLURT EDIT CHANGE - Interactions
@@ -144,7 +188,14 @@
 
 					//SPLURT EDIT CHANGE BEGIN - Interactions
 					var/climax_into_choice
-					var/interaction_inside = partner?.get_organ_slot(climax_interaction?.cum_target[interaction_position]) || target_buttons.Find(climax_interaction?.cum_target[interaction_position])
+					var/interaction_inside = partner?.get_organ_slot(climax_interaction?.cum_target[interaction_position])
+					if(!interaction_inside)
+						interaction_inside = target_buttons.Find(climax_interaction?.cum_target[interaction_position])
+						if(interaction_inside)
+							interaction_inside = climax_interaction.cum_target[interaction_position]
+					else
+						var/obj/item/organ/genital = interaction_inside
+						interaction_inside = genital.slot
 
 					if(climax_interaction && !manual && interaction_inside)
 						climax_into_choice = climax_interaction.cum_target[interaction_position]
@@ -171,10 +222,27 @@
 							span_userlove("You hilt your cock into [target_mob]'s [climax_into_choice], shooting cum into [target_mob_them]!"))
 						to_chat(target_mob, span_userlove("Your [climax_into_choice] fills with warm cum as [src] shoots [self_their] load into it."))
 						conditional_pref_sound(get_turf(target_mob), climax_into_choice == "mouth" ? pick('modular_zzplurt/sound/interactions/mouthend (1).ogg', 'modular_zzplurt/sound/interactions/mouthend (2).ogg') : 'modular_zzplurt/sound/interactions/endout.ogg', 50, TRUE, pref_to_check = /datum/preference/toggle/erp/sounds) //SPLURT EDIT CHANGE - Interactions
-						//SPLURT EDIT ADDITION BEGIN - Genital Inflation
+						//SPLURT EDIT ADDITION BEGIN - Genital Inflation and pregnancy
 						var/datum/component/interactable/interactable = target_mob.GetComponent(/datum/component/interactable)
 						if(interactable)
 							interactable.climax_inflate_genital(src, "testicles", climax_into_choice)
+						var/client/preference_source = GET_CLIENT(target_mob)
+						#ifdef TESTING
+						if(!preference_source)
+							preference_source = GET_CLIENT(src)
+						#endif
+						if(ishuman(target_mob) && preference_source && \
+							!HAS_TRAIT(src, TRAIT_INFERTILE) && !HAS_TRAIT(target_mob, TRAIT_INFERTILE))
+							var/genital_pass = FALSE
+							switch(interaction_inside)
+								if(ORGAN_SLOT_ANUS)
+									genital_pass = preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/anal_insemination)
+								if(ORGAN_SLOT_VAGINA)
+									genital_pass = preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/vaginal_insemination)
+								if(CLIMAX_TARGET_MOUTH)
+									genital_pass = preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/oral_insemination)
+							if(genital_pass && prob(preference_source.prefs.read_preference(/datum/preference/numeric/pregnancy/chance)))
+								target_mob.apply_status_effect(/datum/status_effect/pregnancy, target_mob, src)
 						//SPLURT EDIT ADDITION END
 
 			var/obj/item/organ/genital/testicles/testicles = get_organ_slot(ORGAN_SLOT_TESTICLES)
@@ -280,7 +348,14 @@
 					target_buttons += "On [target_mob_them]"
 
 					var/climax_into_choice
-					var/interaction_inside = partner?.get_organ_slot(climax_interaction?.cum_target[interaction_position]) || target_buttons.Find(climax_interaction?.cum_target[interaction_position])
+					var/interaction_inside = partner?.get_organ_slot(climax_interaction?.cum_target[interaction_position])
+					if(!interaction_inside)
+						interaction_inside = target_buttons.Find(climax_interaction?.cum_target[interaction_position])
+						if(interaction_inside)
+							interaction_inside = climax_interaction.cum_target[interaction_position]
+					else
+						var/obj/item/organ/genital = interaction_inside
+						interaction_inside = genital.slot
 
 					if(climax_interaction && !manual && interaction_inside)
 						climax_into_choice = climax_interaction.cum_target[interaction_position]
@@ -365,3 +440,4 @@
 
 #undef CLIMAX_ON_FLOOR
 #undef CLIMAX_IN_OR_ON
+#undef CLIMAX_OPEN_CONTAINER

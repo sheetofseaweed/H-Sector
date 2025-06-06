@@ -5,7 +5,7 @@
 	icon = 'modular_zzplurt/icons/obj/stack_objects.dmi'
 	icon_state = "packing_peanuts"
 	base_icon_state = "packing_peanuts"
-	dye_color = DYE_SYNDICATE
+	dye_color = DYE_RED
 	w_class = WEIGHT_CLASS_TINY
 	max_amount = 50
 	item_flags = NOBLUDGEON

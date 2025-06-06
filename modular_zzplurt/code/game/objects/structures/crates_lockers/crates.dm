@@ -1,5 +1,5 @@
 /obj/structure/closet/crate
-	packable = FALSE
+	packable = TRUE
 
 /obj/structure/closet/crate/trashcart
 	packable = FALSE

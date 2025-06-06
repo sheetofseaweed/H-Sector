@@ -57,7 +57,7 @@
 	try_unpacking(user, create_peanuts = TRUE)
 	return CLICK_ACTION_BLOCKING
 
-/obj/structure/closet/attackby(obj/item/W, mob/user, params)
+/obj/structure/closet/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(W, /obj/item/stack/packing_peanuts) && opened && packable && !packing_overlay)
 		try_packing(W, user)
 		take_contents()
@@ -113,6 +113,10 @@
 
 /obj/structure/closet/proc/get_packed()
 	packing_overlay = new(null, src)
+	packing_overlay.update_contents(src)
+	for(var/atom/movable/inserted in src)
+		inserted.flags_1 |= IS_ONTOP_1
+		RegisterSignal(inserted, COMSIG_MOVABLE_MOVED, PROC_REF(thing_moved))
 	update_appearance(UPDATE_ICON)
 	return TRUE
 
