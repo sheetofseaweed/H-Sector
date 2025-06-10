@@ -98,3 +98,16 @@
   - bugfix: 306 issue fixed
   - rscadd: Added more alter job-titles
   - bugfix: 308 issue fixed
+2025-04-25:
+  MosleyTheMalO:
+  - admin: adds discord logging for admin actions
+2025-04-27:
+  Bomberman66Dev:
+  - rscadd: My style is ridiculous
+2025-04-28:
+  Bomberman66Dev:
+  - qol: You can now see cigarettes attached to your mask on your inventory
+  - qol: Procedurally generated six pack sprites
+2025-04-30:
+  idrk13:
+  - rscdel: Removed puddle transform's door and table passthrough

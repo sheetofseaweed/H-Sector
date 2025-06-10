@@ -589,22 +589,22 @@
 	// BUBBER EDIT END
 	//"New" ERP slots h-sector
 	//c
-	if(crotch && !crotch_hidden() && !(crotch.item_flags & TRAIT_EXAMINE_SKIP))
+	if(crotch && !crotch_hidden() && !HAS_TRAIT(crotch, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [crotch.examine_title_worn(user)] on [t_his] crotch."
 	//p
-	if(penis && !penis_hidden() && !(penis.item_flags & TRAIT_EXAMINE_SKIP))
+	if(penis && !penis_hidden() && !HAS_TRAIT(penis, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [penis.examine_title_worn(user)] on [t_his] penis."
 	//v
-	if(vagina && !vagina_hidden() && !(vagina.item_flags & TRAIT_EXAMINE_SKIP))
+	if(vagina && !vagina_hidden() && !HAS_TRAIT(vagina, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_has] a [vagina.examine_title_worn(user)] in [t_his] vagina."
 	//a
-	if(anus && !anus_hidden() && !(anus.item_flags & TRAIT_EXAMINE_SKIP))
+	if(anus && !anus_hidden() && !HAS_TRAIT(anus, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_has] a [anus.examine_title_worn(user)] in [t_his] anus."
 	//n
-	if(nipples && !nipples_hidden() && !(nipples.item_flags & TRAIT_EXAMINE_SKIP))
+	if(nipples && !nipples_hidden() && !HAS_TRAIT(nipples, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [nipples.examine_title_worn(user)] on [t_his] nipples."
 	//m
-	if(mouth && !mouth_hidden() && !(mouth.item_flags & TRAIT_EXAMINE_SKIP))
+	if(mouth && !mouth_hidden() && !HAS_TRAIT(mouth, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_has] a [mouth.examine_title_worn(user)] in [t_his] mouth."
 
 /// Collects info displayed about any HUDs the user has when examining src
