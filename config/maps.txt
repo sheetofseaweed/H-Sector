@@ -106,11 +106,16 @@ endmap
 ##HSECTOR MAPS##
 
 map inari
-	default
+	#default
 	votable
 endmap
 
 map shrine
+	votable
+endmap
+
+map crescent
+	default
 	votable
 endmap
 
