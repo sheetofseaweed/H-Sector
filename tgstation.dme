@@ -6857,6 +6857,7 @@
 #include "modular_hsector\modules\clothing\mask.dm"
 #include "modular_hsector\modules\clothing\loadout\boobsuit.dm"
 #include "modular_hsector\modules\clothing\loadout\mask.dm"
+#include "modular_hsector\modules\clothing\loadout\skirt.dm"
 #include "modular_hsector\modules\clothing\underwear\boxers.dm"
 #include "modular_hsector\modules\clothing\underwear\shirts.dm"
 #include "modular_hsector\modules\clothing\underwear\socks.dm"
