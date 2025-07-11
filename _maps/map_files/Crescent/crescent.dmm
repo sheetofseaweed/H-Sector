@@ -6,16 +6,6 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/station/commons/dorms/room1)
-"ab" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/structure/chair/pew{
-	pixel_y = -4
-	},
-/turf/open/floor/wood,
-/area/space)
 "ac" = (
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 4
@@ -455,12 +445,9 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/hallway/floor3)
 "ba" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/effect/turf_decal/siding/white{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/space)
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white/smooth_large,
+/area/station/maintenance/department/medical/central)
 "bb" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -483,7 +470,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood/corner,
-/obj/structure/cable,
 /turf/open/floor/carpet/royalblack,
 /area/station/commons/dorms/apartment1{
 	name = "Персональная каюта"
@@ -1418,8 +1404,16 @@
 	dir = 8
 	},
 /obj/machinery/space_heater,
+/obj/machinery/power/apc/auto_name/directional/north{
+	area = "/area/station/common/pool"
+	},
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/starboard)
+/area/station/common/pool{
+	ambience_index = "away";
+	ambient_buzz_vol = 20;
+	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
+	})
 "dm" = (
 /obj/effect/turf_decal/trimline/white/filled/corner{
 	dir = 4
@@ -1839,8 +1833,17 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding{
+	dir = 6
+	},
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/turf/open/floor/iron/white/diagonal,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "ek" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -1884,6 +1887,7 @@
 	dir = 5
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/jukebox/no_access,
 /turf/open/floor/wood/parquet,
 /area/station/hallway/secondary/recreation)
 "eq" = (
@@ -2062,17 +2066,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal)
-"eP" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 4
-	},
-/obj/structure/sauna_oven{
-	pixel_y = 8;
-	pixel_x = -4
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/east,
-/turf/open/floor/stone,
-/area/space)
 "eQ" = (
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 4
@@ -2185,19 +2178,22 @@
 	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
 	})
 "eZ" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 6
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/item/stack/sheet/mineral/wood/fifty{
+	pixel_x = -1;
+	pixel_y = 4
 	},
-/obj/structure/reagent_dispensers/watertank/high{
-	icon_state = "water_basin";
-	icon = 'modular_skyrat/modules/reagent_forging/icons/obj/forge_structures.dmi';
-	name = "high-capacity water barrel";
-	pixel_y = 4;
-	pixel_x = -4
+/obj/item/stack/sheet/mineral/wood/fifty{
+	pixel_x = 9;
+	pixel_y = 0
 	},
-/obj/structure/window/reinforced/tinted/spawner/directional/east,
-/turf/open/floor/stone,
-/area/space)
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/wood,
+/area/station/common/pool{
+	ambience_index = "away";
+	ambient_buzz_vol = 20;
+	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
+	})
 "fa" = (
 /obj/machinery/computer/telecomms/monitor{
 	dir = 1;
@@ -2259,9 +2255,7 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/medbay/central)
 "ff" = (
-/obj/structure/flora/rock/pile/jungle/style_random,
-/obj/machinery/light/warm/directional/east,
-/turf/open/misc/beach/sand,
+/turf/open/water/hot_spring,
 /area/station/common/pool{
 	ambience_index = "away";
 	ambient_buzz_vol = 20;
@@ -2481,6 +2475,8 @@
 /turf/closed/wall,
 /area/station/medical/surgery)
 "fH" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wood,
 /obj/structure/decorative{
 	icon_state = "siding_plain";
 	icon = 'icons/turf/decals.dmi';
@@ -2491,10 +2487,25 @@
 	layer = 2;
 	pixel_y = -32
 	},
-/obj/effect/turf_decal/siding/wideplating_new/dark,
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/closet/generic/wall/empty{
+	pixel_y = -32;
+	color = "#79797d";
+	name = "Hall Closet"
+	},
+/obj/item/card/id/advanced/black{
+	access = list("room0");
+	name = "Ключ от Каюты";
+	assignment = "#0";
+	registered_name = "Ключ от Каюты";
+	pixel_y = -6
+	},
+/obj/item/card/id/advanced/black{
+	access = list("room0");
+	name = "Ключ от Каюты";
+	assignment = "#0";
+	registered_name = "Ключ от Каюты";
+	pixel_y = -6
+	},
 /turf/open/floor/carpet/royalblack,
 /area/station/commons/dorms/apartment1{
 	name = "Персональная каюта"
@@ -2630,7 +2641,9 @@
 /area/station/hallway/floor2)
 "fY" = (
 /turf/closed/wall,
-/area/station/maintenance/aft)
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "fZ" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 5
@@ -2871,18 +2884,16 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/floor1)
 "gF" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron/dark/smooth_large,
-/area/station/maintenance/aft)
+/turf/closed/wall,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "gG" = (
 /obj/effect/turf_decal/trimline/white/filled/corner{
 	dir = 4
@@ -3619,8 +3630,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
 /turf/open/floor/wood/parquet,
 /area/station/hallway/secondary/recreation)
 "if" = (
@@ -3656,6 +3665,7 @@
 /area/space/nearstation)
 "ih" = (
 /obj/structure/chair/sofa/corp/corner,
+/obj/structure/sign/poster/timeclock_psa/directional/east,
 /turf/open/floor/iron/shuttle/exploration/corner_invcorner{
 	dir = 8
 	},
@@ -4008,15 +4018,23 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "jr" = (
-/obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding{
+	dir = 10
+	},
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/turf/open/floor/iron/white/diagonal,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "js" = (
 /obj/machinery/door/airlock/external{
 	name = "External Access";
@@ -4480,8 +4498,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/white/textured_large,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "kh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west{
@@ -4864,14 +4885,12 @@
 /turf/open/floor/circuit/green/off,
 /area/station/commons/dorms/room1)
 "kT" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/effect/turf_decal/siding/wideplating_new/light,
 /obj/effect/turf_decal/siding/wood{
-	dir = 6
+	dir = 4
 	},
-/obj/item/stack/sheet/mineral/wood/fifty{
-	pixel_x = -1;
-	pixel_y = 4
-	},
+/obj/effect/turf_decal/siding/wideplating_new/light/corner,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/wood,
 /area/station/common/pool{
 	ambience_index = "away";
@@ -5085,7 +5104,7 @@
 /obj/structure/sink{
 	icon_state = "sinkbowl";
 	dir = 2;
-	pixel_shift = 0;
+	pixel_shift = 5;
 	pixel_y = -5
 	},
 /obj/structure/decorative{
@@ -5492,6 +5511,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "mi" = (
@@ -5562,6 +5582,7 @@
 /obj/effect/turf_decal/trimline/blue/mid_joiner{
 	dir = 1
 	},
+/obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/medbay/central)
 "ms" = (
@@ -5616,6 +5637,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/carpet/neon/simple/purple,
 /area/station/common/arcade)
 "mw" = (
@@ -5725,25 +5747,36 @@
 /turf/open/floor/carpet/purple,
 /area/station/commons/dorms/room1)
 "mG" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
+/obj/machinery/sleeper/old{
+	name = "neuro-box";
+	desc = "An enclosed machine used for the support and treatment of patients.";
+	pixel_y = 5
 	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
-/obj/structure/window/reinforced/tinted/spawner/directional/west,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 9;
-	density = 0
+/obj/effect/turf_decal/siding{
+	dir = 4
 	},
-/obj/structure/closet/crate/freezer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/reagent_containers/cup/soda_cans/beer/rice,
-/obj/item/reagent_containers/cup/soda_cans/beer/rice,
-/obj/item/reagent_containers/cup/soda_cans/beer/rice,
-/obj/item/reagent_containers/cup/soda_cans/beer/rice,
-/obj/item/reagent_containers/cup/glass/bottle/beer/light,
-/obj/item/reagent_containers/cup/glass/bottle/beer/light,
-/turf/open/floor/wood/large,
-/area/space)
+/obj/effect/turf_decal/siding{
+	dir = 8;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/siding{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding,
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner,
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/circuit/green/anim,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "mH" = (
 /obj/structure/table/glass,
 /obj/machinery/processor/slime{
@@ -7618,6 +7651,7 @@
 /obj/structure/hedge,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/machinery/light/cold/directional/south,
+/obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/plating/cobblestone,
 /area/station/common/arcade)
 "rj" = (
@@ -8140,14 +8174,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/floor2)
-"sF" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/table/wood,
-/turf/open/floor/wood,
-/area/space)
 "sG" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -8243,9 +8269,6 @@
 /area/station/commons/dorms/apartment1{
 	name = "Персональная каюта"
 	})
-"sT" = (
-/turf/open/floor/wood,
-/area/space)
 "sU" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -8879,12 +8902,6 @@
 	},
 /turf/open/floor/plating,
 /area/space/nearstation)
-"uq" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/starboard)
 "ur" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -9071,9 +9088,6 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/wall{
-	pixel_y = -32
-	},
 /obj/machinery/light/floor{
 	pixel_y = 16;
 	bulb_colour = "#ad875a";
@@ -9100,7 +9114,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/break_room)
 "uR" = (
-/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/wideplating_new/light/corner,
 /turf/open/floor/wood/large,
 /area/station/common/pool{
 	ambience_index = "away";
@@ -9150,13 +9164,15 @@
 /turf/open/floor/carpet/black,
 /area/station/commons/dorms/apartment2)
 "uX" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/table/wood,
-/obj/item/flashlight/lantern/on{
-	pixel_y = 9
+/obj/structure/marker_beacon/teal{
+	remove_speed = 999;
+	pixel_y = -12;
+	pixel_x = 12
 	},
-/turf/open/floor/wood,
-/area/space)
+/turf/open/water/hot_spring,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "uY" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -9888,7 +9904,7 @@
 	},
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/north{
-	preset_destination_names = list("3" = "Научная палуба", "4" = "Палуба отдыха", "5" = "Жилая палуба", "6"="Палуба снабжения");
+	preset_destination_names = list("2" = "Крио-Палуба", "3" = "Научная палуба", "4" = "Палуба отдыха", "5" = "Жилая палуба", "6"="Палуба снабжения");
 	linked_elevator_id = "Elevator";
 	name = "Elevator Panel";
 	pixel_y = 31
@@ -10078,6 +10094,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
+/obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/circuit/green/off,
 /area/station/hallway/floor4)
 "wS" = (
@@ -10114,6 +10131,7 @@
 /obj/effect/turf_decal/siding/green{
 	dir = 8
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "wV" = (
@@ -11032,6 +11050,7 @@
 /obj/effect/turf_decal/siding/dark/end{
 	dir = 1
 	},
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/carpet/black,
 /area/station/hallway/secondary/recreation)
 "yH" = (
@@ -11409,25 +11428,6 @@
 	},
 /obj/structure/decorative{
 	icon_state = "siding_plain";
-	pixel_y = -5;
-	icon = 'icons/turf/decals.dmi';
-	base_icon_state = "elevatorshaft";
-	color = "#36373a";
-	dir = 2;
-	anchored = 1
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	icon = 'icons/turf/decals.dmi';
-	base_icon_state = "elevatorshaft";
-	color = "#36373a";
-	dir = 1;
-	anchored = 1;
-	pixel_y = -32;
-	pixel_x = 32
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain";
 	pixel_y = 0;
 	icon = 'icons/turf/decals.dmi';
 	base_icon_state = "elevatorshaft";
@@ -11444,6 +11444,26 @@
 	pixel_x = 9
 	},
 /obj/effect/turf_decal/siding/wood/end,
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 2;
+	anchored = 1;
+	layer = 2;
+	pixel_y = -5
+	},
+/obj/structure/decorative{
+	icon_state = "siding_plain_corner";
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 1;
+	anchored = 1;
+	pixel_x = 32;
+	pixel_y = -32
+	},
 /turf/open/floor/carpet/royalblack,
 /area/station/commons/dorms/apartment1{
 	name = "Персональная каюта"
@@ -12312,13 +12332,6 @@
 /obj/structure/closet/secure_closet/wall{
 	req_access = list("room0");
 	pixel_y = -32
-	},
-/obj/item/card/id/advanced/black{
-	access = list("room0");
-	name = "Ключ от Каюты";
-	assignment = "#0";
-	registered_name = "Ключ от Каюты";
-	pixel_y = -6
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -13458,8 +13471,11 @@
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
 "DM" = (
-/turf/closed/wall/r_wall,
-/area/station/maintenance/aft)
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/engine,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "DN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -13467,10 +13483,29 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/weather/sand{
+/obj/effect/turf_decal/siding/thinplating/light{
 	dir = 10
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/item/storage/bag/tray{
+	layer = 2.9;
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/structure/decorative{
+	icon = 'icons/obj/clothing/accessories.dmi';
+	dir = 8;
+	name = "plaid";
+	icon_state = "medband";
+	desc = "Soft to the touch.";
+	pixel_y = 0
+	},
+/obj/structure/marker_beacon/yellow{
+	color = "#FFFFFF";
+	alpha = 120;
+	remove_speed = 999;
+	pixel_y = 14;
+	pixel_x = 13
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/common/pool{
 	ambience_index = "away";
@@ -13710,12 +13745,6 @@
 	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/awaymission/station/service/cafeteria)
-"Er" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/space)
 "Eu" = (
 /turf/open/space/basic,
 /area/space)
@@ -14045,11 +14074,13 @@
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
 "Fq" = (
-/obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
-/obj/machinery/camera/autoname/directional/west,
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/power/apc/auto_name/directional/west,
+/turf/open/floor/iron/white/textured_large,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "Fr" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -14216,6 +14247,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/maintenance/starboard)
 "FO" = (
@@ -15415,9 +15447,17 @@
 /turf/open/floor/wood,
 /area/station/hallway/secondary/recreation)
 "Iv" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/engine,
-/area/space)
+/obj/effect/turf_decal/siding/wideplating_new/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/wideplating_new/light/corner,
+/turf/open/floor/wood/large,
+/area/station/common/pool{
+	ambience_index = "away";
+	ambient_buzz_vol = 20;
+	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
+	})
 "Iw" = (
 /turf/closed/wall/r_wall,
 /area/station/cargo/storage)
@@ -15892,6 +15932,7 @@
 /area/station/medical/medbay/central)
 "Ju" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "Jv" = (
@@ -16098,18 +16139,11 @@
 	},
 /area/space/nearstation)
 "JT" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/structure/chair/pew/left{
-	pixel_y = -4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/turf/open/floor/wood,
-/area/space)
+/obj/structure/curtain/bounty/start_closed,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "JU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -16190,23 +16224,16 @@
 /turf/open/floor/bamboo,
 /area/station/commons/dorms/room7)
 "Kg" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 10;
-	density = 0;
-	pixel_y = 0
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 5
 	},
-/obj/effect/turf_decal/siding/dark,
-/obj/structure/marker_beacon/yellow{
-	pixel_x = -12;
-	pixel_y = 0;
-	alpha = 155;
-	color = "#FFFFFF"
+/obj/effect/turf_decal/siding{
+	dir = 5
 	},
-/turf/open/floor/wood/large,
-/area/station/common/pool{
-	ambience_index = "away";
-	ambient_buzz_vol = 20;
-	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/turf/open/floor/iron/white/diagonal,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
 	})
 "Kh" = (
 /obj/effect/turf_decal/tile/blue/diagonal_edge,
@@ -16418,20 +16445,13 @@
 /turf/open/floor/carpet/black,
 /area/station/common/arcade)
 "KC" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/effect/turf_decal/siding/white,
-/obj/structure/table/wood,
-/obj/item/reagent_containers/cup/bucket/wooden,
-/obj/structure/window/reinforced/tinted/spawner/directional/east,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 5;
-	density = 0
-	},
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/wood,
-/area/space)
+/area/station/common/pool{
+	ambience_index = "away";
+	ambient_buzz_vol = 20;
+	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
+	})
 "KD" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/condiment/protein{
@@ -16825,12 +16845,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/common/night_club)
-"Ls" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/space)
 "Lt" = (
 /obj/machinery/computer/message_monitor{
 	dir = 2
@@ -16918,19 +16932,6 @@
 	},
 /turf/open/floor/iron/freezer,
 /area/station/medical/surgery)
-"LD" = (
-/obj/structure/marker_beacon/yellow{
-	color = "#FFFFFF";
-	alpha = 120;
-	remove_speed = 999
-	},
-/obj/machinery/light/cold/directional/south,
-/turf/open/misc/beach/sand,
-/area/station/common/pool{
-	ambience_index = "away";
-	ambient_buzz_vol = 20;
-	ambientsounds = list('sound/ambience/beach/shore.ogg','sound/ambience/beach/seag1.ogg','sound/ambience/beach/seag2.ogg','sound/ambience/beach/seag3.ogg','sound/ambience/misc/ambiodd.ogg','sound/ambience/medical/ambinice.ogg')
-	})
 "LG" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -18416,16 +18417,14 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/break_room)
 "OF" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/machinery/elevator_control_panel/directional/north{
+	preset_destination_names = list("3" = "Научная палуба", "4" = "Палуба отдыха", "5" = "Жилая палуба", "6"="Палуба снабжения");
+	linked_elevator_id = "Elevator";
+	name = "Elevator Panel";
+	pixel_y = 31
 	},
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/structure/chair/pew/right{
-	pixel_y = -4
-	},
-/obj/effect/turf_decal/siding/white/corner,
-/turf/open/floor/wood,
-/area/space)
+/turf/closed/wall/r_wall,
+/area/station/hallway/secondary/recreation)
 "OG" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood,
@@ -19389,25 +19388,6 @@
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
 /area/awaymission/station/service/cafeteria)
-"QP" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/west,
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 10;
-	density = 0;
-	pixel_y = 0
-	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 9;
-	density = 0
-	},
-/obj/item/stack/sheet/mineral/wood/fifty,
-/obj/structure/rack,
-/turf/open/floor/wood/large,
-/area/space)
 "QR" = (
 /turf/closed/wall/r_wall,
 /area/station/maintenance/disposal)
@@ -19417,6 +19397,7 @@
 	dir = 8
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/secondary/recreation)
 "QU" = (
@@ -19599,17 +19580,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/gravity_generator)
 "Rw" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 6;
-	density = 0
-	},
-/obj/effect/turf_decal/siding/dark,
-/obj/structure/marker_beacon/yellow{
-	pixel_x = 13;
-	pixel_y = 0;
-	alpha = 155;
-	color = "#FFFFFF"
-	},
+/obj/effect/turf_decal/siding/wideplating_new/light,
 /turf/open/floor/wood/large,
 /area/station/common/pool{
 	ambience_index = "away";
@@ -19828,9 +19799,17 @@
 /area/station/medical/pharmacy)
 "RP" = (
 /obj/structure/disposalpipe/trunk/multiz/down,
-/obj/machinery/space_heater,
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/turf/open/floor/iron/white/diagonal,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "RQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/effect/turf_decal/tile/purple/diagonal_centre,
@@ -20149,9 +20128,20 @@
 /obj/machinery/atmospherics/pipe/multiz/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/maintenance/aft)
+/obj/machinery/iv_drip/health_station/directional/east{
+	pixel_y = -7
+	},
+/obj/machinery/biogenerator/medstation/directional/east{
+	pixel_x = 32;
+	pixel_y = 13;
+	biomass = 9000
+	},
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/white/textured_large,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "Sv" = (
 /obj/structure/table/bronze,
 /turf/open/misc/beach/sand,
@@ -20561,6 +20551,7 @@
 /area/station/hallway/floor2)
 "Tm" = (
 /obj/structure/chair/sofa/corp/left,
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/science/research)
 "To" = (
@@ -20724,17 +20715,15 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/gravity_generator)
 "TH" = (
-/obj/effect/turf_decal/siding/dark{
-	dir = 8
+/obj/structure/marker_beacon/teal{
+	remove_speed = 999;
+	pixel_y = 12;
+	pixel_x = 12
 	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/door/window/survival_pod/left/directional/west{
-	name = "Sauna"
-	},
-/turf/open/floor/wood/large,
-/area/space)
+/turf/open/water/hot_spring,
+/area/station/commons/dorms/apartment1{
+	name = "Персональная каюта"
+	})
 "TI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1;
@@ -20889,12 +20878,6 @@
 /area/station/engineering/break_room)
 "Ud" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/west{
-	dir = 10;
-	density = 0;
-	pixel_y = 0
-	},
 /turf/open/floor/wood,
 /area/station/common/pool{
 	ambience_index = "away";
@@ -20905,6 +20888,11 @@
 /obj/structure/railing/stone,
 /obj/structure/hedge,
 /obj/structure/flora/bush/flowers_yw/style_random,
+/obj/machinery/camera/directional/north{
+	c_tag = "3-я Палуба - Казино";
+	name = "floor 3 camera";
+	network = list("ss13","show")
+	},
 /turf/open/floor/plating/cobblestone,
 /area/station/common/arcade)
 "Ug" = (
@@ -20970,6 +20958,7 @@
 "Um" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "Un" = (
@@ -21484,6 +21473,7 @@
 /area/station/science/xenobiology/control)
 "Vw" = (
 /obj/machinery/door/firedoor,
+/obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/hallway/floor3/aft)
 "Vx" = (
@@ -22079,6 +22069,7 @@
 /area/station/commons/fitness)
 "WJ" = (
 /obj/structure/closet/crate/freezer/blood,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/maintenance/department/medical/central)
 "WK" = (
@@ -23021,7 +23012,6 @@
 /obj/structure/chair/sofa/corp{
 	dir = 8
 	},
-/obj/structure/sign/poster/timeclock_psa/directional/east,
 /turf/open/floor/iron/shuttle/exploration/doubleside{
 	dir = 8
 	},
@@ -31593,7 +31583,7 @@ OK
 br
 Lq
 zc
-qw
+OF
 HA
 ZC
 fs
@@ -46218,7 +46208,7 @@ mh
 Um
 Nb
 Nb
-Nb
+ba
 iP
 OP
 OP
@@ -94724,8 +94714,8 @@ uw
 zR
 lK
 Ud
-iy
-LD
+eZ
+BT
 KQ
 KQ
 OP
@@ -94850,9 +94840,9 @@ no
 uw
 ch
 Gy
-Kg
-BT
-Ff
+Gy
+KC
+bh
 vC
 Wr
 OP
@@ -94978,8 +94968,8 @@ uw
 pb
 bx
 uR
-bh
-Ff
+Iv
+Nl
 vC
 NV
 OP
@@ -95105,8 +95095,8 @@ uw
 cV
 Gy
 Rw
-Nl
-Ba
+ff
+ff
 vC
 NV
 OP
@@ -95232,8 +95222,8 @@ bF
 ZH
 Yp
 kT
-hj
-ip
+ff
+ff
 vC
 lm
 OP
@@ -95488,7 +95478,7 @@ zs
 bF
 gF
 fY
-DM
+bF
 OP
 OP
 OP
@@ -95612,17 +95602,17 @@ fl
 Xs
 fH
 bF
-DM
+mG
 kg
 Fq
 DM
 OP
 OP
 OP
-QP
-TH
-mG
-Iv
+OP
+OP
+OP
+OP
 OP
 OP
 OP
@@ -95738,7 +95728,7 @@ Hi
 DE
 Pi
 uO
-bF
+JT
 RP
 jr
 DM
@@ -95746,10 +95736,10 @@ DM
 OP
 OP
 OP
-JT
-Ls
-sF
-Iv
+OP
+OP
+OP
+OP
 OP
 OP
 OP
@@ -95855,7 +95845,7 @@ OP
 OP
 GD
 Zt
-uq
+gS
 bF
 bF
 Rh
@@ -95866,17 +95856,17 @@ km
 ut
 Bq
 bF
-bF
+Kg
 ej
 DM
 Dn
 OP
 OP
 OP
-ab
-sT
-uX
-Iv
+OP
+OP
+OP
+OP
 OP
 OP
 OP
@@ -96000,10 +95990,10 @@ NQ
 OP
 OP
 OP
-OF
-Er
-ba
-Iv
+OP
+OP
+OP
+OP
 OP
 OP
 OP
@@ -96121,16 +96111,16 @@ XB
 eS
 dO
 bF
-DM
-DM
+bF
+bF
 NQ
 OP
 OP
 OP
-KC
-eP
-eZ
-Iv
+OP
+OP
+OP
+OP
 OP
 OP
 OP
@@ -96241,9 +96231,9 @@ Ts
 Ts
 Ts
 Ts
+TH
 xf
-xf
-xf
+uX
 pS
 xY
 pc
