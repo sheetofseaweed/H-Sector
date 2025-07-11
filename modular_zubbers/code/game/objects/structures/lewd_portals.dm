@@ -66,9 +66,9 @@
 		return CONTEXTUAL_SCREENTIP_SET
 
 /obj/structure/lewd_portal/user_buckle_mob(mob/living/M, mob/user, check_loc)
-	if(!M.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
+	/*if(!M.check_erp_prefs(/datum/preference/toggle/erp/sex_toy, user, src))
 		to_chat(user, span_danger("Looks like [M] doesn't want you to do that."))
-		return FALSE
+		return FALSE*/
 	if (!ishuman(M))
 		balloon_alert(user, "[M.p_they()] does not fit!")
 		return FALSE

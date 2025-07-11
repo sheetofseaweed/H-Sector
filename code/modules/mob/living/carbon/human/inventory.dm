@@ -405,28 +405,28 @@
 		if(!QDELETED(src))
 			update_worn_wrists()
 	//hsector edit
-	else if(I == penis)
+	else if(item_dropping == penis)
 		penis = null
 		if(!QDELETED(src))
 			update_worn_penis()
-	else if(I == vagina)
+	else if(item_dropping == vagina)
 		vagina = null
 		if(!QDELETED(src))
 			update_worn_vagina()
-	else if(I == anus)
+	else if(item_dropping == anus)
 		anus = null
 		if(!QDELETED(src))
 			update_worn_anus()
-	else if(I == nipples)
+	else if(item_dropping == nipples)
 		nipples = null
 		if(!QDELETED(src))
 			update_worn_nipples()
-	else if(I == mouth)
+	else if(item_dropping == mouth)
 		mouth.RemoveElement(/datum/element/muffles_speech)
 		mouth = null
 		if(!QDELETED(src))
 			update_worn_mouth()
-	else if(I == crotch)
+	else if(item_dropping == crotch)
 		crotch = null
 		if(!QDELETED(src))
 			update_worn_crotch()
