@@ -1,16 +1,3 @@
-/*
-//SPLURT EDIT ADDITION BEGIN - INTERACTION MENU PREFERENCES - Adding global list of interaction menu preferences
-GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
-	///datum/preference/toggle/master_erp_preferences,
-	/datum/preference/toggle/erp,
-	/datum/preference/choiced/erp_status,
-	/datum/preference/choiced/erp_status_nc,
-	/datum/preference/choiced/erp_status_v,
-	/datum/preference/choiced/erp_status_extm,
-	///datum/preference/choiced/erp_status_unholy,
-	///datum/preference/choiced/erp_status_extmharm,
-)))
-//SPLURT EDIT ADDITION END
 
 /datum/component/interactable
 	/// A hard reference to the parent
@@ -19,70 +6,8 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	var/list/datum/interaction/interactions
 	var/interact_last = 0
 	var/interact_next = 0
-	/// List of preferences that have been modified and need to be saved
-	var/list/modified_preferences = list()
-	/// List of preference paths mapped to their toggle types
-	var/static/list/preference_paths = list(
-		//"master_erp_pref" = /datum/preference/toggle/master_erp_preferences,
-		//"base_erp_pref" = /datum/preference/toggle/erp,
-		// Core ERP prefs
-		"erp_sounds_pref" = /datum/preference/toggle/erp/sounds,
-		//"sextoy_pref" = /datum/preference/toggle/erp/sex_toy,
-		//"sextoy_sounds_pref" = /datum/preference/toggle/erp/sex_toy_sounds,
-		"bimbofication_pref" = /datum/preference/toggle/erp/bimbofication,
-		"aphro_pref" = /datum/preference/toggle/erp/aphro,
-		"breast_enlargement_pref" = /datum/preference/toggle/erp/breast_enlargement,
-		"breast_shrinkage_pref" = /datum/preference/toggle/erp/breast_shrinkage,
-		"penis_enlargement_pref" = /datum/preference/toggle/erp/penis_enlargement,
-		"penis_shrinkage_pref" = /datum/preference/toggle/erp/penis_shrinkage,
-		"gender_change_pref" = /datum/preference/toggle/erp/gender_change,
-		"autocum_pref" = /datum/preference/toggle/erp/autocum,
-		"autoemote_pref" = /datum/preference/toggle/erp/autoemote,
-		"genitalia_removal_pref" = /datum/preference/toggle/erp/genitalia_removal,
-		"new_genitalia_growth_pref" = /datum/preference/toggle/erp/new_genitalia_growth,
-		// SPLURT additions
-		"butt_enlargement_pref" = /datum/preference/toggle/erp/butt_enlargement,
-		"butt_shrinkage_pref" = /datum/preference/toggle/erp/butt_shrinkage,
-		"belly_enlargement_pref" = /datum/preference/toggle/erp/belly_enlargement,
-		"belly_shrinkage_pref" = /datum/preference/toggle/erp/belly_shrinkage,
-		"forced_neverboner_pref" = /datum/preference/toggle/erp/forced_neverboner,
-		"custom_genital_fluids_pref" = /datum/preference/toggle/erp/custom_genital_fluids,
-		"cumflation_pref" = /datum/preference/toggle/erp/cumflation,
-		"cumflates_partners_pref" = /datum/preference/toggle/erp/cumflates_partners,
-		// Vore prefs
-		"vore_enable_pref" = /datum/preference/toggle/erp/vore_enable,
-		"vore_overlays" = /datum/preference/toggle/erp/vore_overlays,
-		"vore_overlay_options" = /datum/preference/toggle/erp/vore_overlay_options,
-		// Hsector additions
-		"erp_mob_sex_pref" = /datum/preference/toggle/erp/mobsexpref,
-		"sex_jitter_pref" = /datum/preference/toggle/erp/sex_jitter,
-		"afk_erp_pref" = /datum/preference/toggle/erp/afk_erp,
-		"horny_virus_imm_pref" = /datum/preference/toggle/erp/horny_virus_imm,
-		"erp_event_participation_pref" = /datum/preference/toggle/erp/erp_event_participation
-	)
-	/// List of character preference paths mapped to their types
-	var/static/list/character_preference_paths = list(
-		"erp_pref" = /datum/preference/choiced/erp_status,
-		"noncon_pref" = /datum/preference/choiced/erp_status_nc,
-		"vore_pref" = /datum/preference/choiced/erp_status_v,
-		"extreme_pref" = /datum/preference/choiced/erp_status_extm,
-		//"extreme_harm" = /datum/preference/choiced/erp_status_extmharm,
-		//"unholy_pref" = /datum/preference/choiced/erp_status_unholy
-	)
-	// SPLURT EDIT START - INTERACTIONS - A list of mobs that should be genderized
-	// A list of mobs that should be genderized.
-	var/static/list/should_be_genderized = typecacheof(list(
-		// /mob/living/basic/pet/cat // anuything soes here
-	))
-	// SPLURT EDIT END
- */
-/datum/component/interactable
-	/// A hard reference to the parent
-	var/mob/living/self = null 	// SPLURT EDIT - INTERACTIONS - All mobs should be interactable
-	/// A list of interactions that the user can engage in.
-	var/list/datum/interaction/interactions
-	var/interact_last = 0
-	var/interact_next = 0
+	///Holds a reference to a relayed body if one exists
+	var/obj/body_relay = null
 
 /datum/component/interactable/Initialize(...)
 	if(QDELETED(parent))
@@ -143,7 +68,8 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	if(interaction.lewd && (!ishuman(target) && !target.client && SSinteractions.is_blacklisted(target))) // SPLURT EDIT - INTERACTIONS - All mobs should be interactable
 		return FALSE
 	if(!interaction.distance_allowed && !target.Adjacent(self))
-		return FALSE
+		if(!body_relay || !target.Adjacent(body_relay))
+			return FALSE
 	if(interaction.category == INTERACTION_CAT_HIDE)
 		return FALSE
 	if(self == target && interaction.usage == INTERACTION_OTHER)
@@ -207,10 +133,13 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 	data["ref_self"] = REF(self)
 	data["self"] = self.name
 	data["block_interact"] = user_interaction_component?.interact_next >= world.time // SPLURT EDIT - INTERACTIONS - Original: interact_next >= world.time
+	if(body_relay)
+		if(!can_see(user, self))
+			data["self"] = body_relay.name
 	data["interactions"] = categories
 
 	var/list/parts = list()
-	if(ishuman(user) && can_lewd_strip(user, self))
+	if(ishuman(user) && ishuman(self) && can_lewd_strip(user, self)) // SPLURT EDIT - INTERACTIONS - Original: if(ishuman(user) && can_lewd_strip(user, self))
 		if(self.has_vagina())
 			parts += list(generate_strip_entry(ORGAN_SLOT_VAGINA, self, user, human_self.vagina)) // SPLURT EDIT - INTERACTIONS - Original: generate_strip_entry(ORGAN_SLOT_VAGINA, self, user, self.vagina)
 		if(self.has_penis())
@@ -274,7 +203,10 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 			if(interact_next >= world.time)
 				return FALSE
 
-			selected_interaction.act(source, target)
+			if(body_relay && !can_see(user, self))
+				selected_interaction.act(source, target, body_relay)
+			else
+				selected_interaction.act(source, target)
 			var/datum/component/interactable/interaction_component = source.GetComponent(/datum/component/interactable)
 			interaction_component.interact_last = world.time
 			interaction_component.interact_next = interaction_component.interact_last + INTERACTION_COOLDOWN
@@ -378,6 +310,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 						target.vars[item_index] = new_item
 						new_item.forceMove(target)
 						new_item.on_equipped(target, item_index)
+				if(ishuman(target)) // SPLURT EDIT - INTERACTIONS
 					target.update_inv_lewd()
 
 			else
@@ -460,7 +393,7 @@ GLOBAL_LIST_INIT(interaction_menu_preferences, typecacheof(list(
 /datum/component/interactable/proc/can_lewd_strip(mob/living/carbon/human/source, mob/living/carbon/human/target, slot_index)
 	if(!(source.loc == target.loc || source.Adjacent(target)))
 		return FALSE
-	if(!source.has_arms())
+	if(ishuman(source) && !source.has_arms()) // SPLURT EDIT - INTERACTIONS
 		return FALSE
 	if(!slot_index) // This condition is for the UI to decide if the button is shown at all. Slot index should never be null otherwise.
 		return TRUE
