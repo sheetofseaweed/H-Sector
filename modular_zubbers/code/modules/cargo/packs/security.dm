@@ -83,4 +83,14 @@
 	contains = list(/obj/item/gun/ballistic/automatic/miecz = 1,
 	/obj/item/ammo_box/magazine/miecz = 1)
 	cost = CARGO_CRATE_VALUE * 10
-	access = ACCESS_SECURITY*/
+	access = ACCESS_SECURITY
+
+/datum/supply_pack/security/armory/swat
+	desc = "Contains two fullbody sets of tough, fireproof suits designed in a joint \
+		effort by IS-ERI and Nanotrasen. Each set contains a suit, helmet, mask, combat belt, a pepperball gun, \
+		and gorilla gloves."
+
+/datum/supply_pack/security/armory/swat/New()
+	. = ..()
+	contains += list(/obj/item/storage/toolbox/guncase/skyrat/pistol/pepperball = 2)
+	*/
