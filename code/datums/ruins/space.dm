@@ -60,7 +60,6 @@
 
 /datum/map_template/ruin/space/bigderelict1
 	id = "bigderelict1"
-	prefix = "_maps/RandomRuins/SpaceRuins/splurt/" //SPLURT EDIT
 	suffix = "bigderelict1.dmm"
 	name = "Space-Ruin Derelict Tradepost"
 	description = "A once-bustling tradestation that handled imports and exports from nearby stations now lays eerily dormant. \
