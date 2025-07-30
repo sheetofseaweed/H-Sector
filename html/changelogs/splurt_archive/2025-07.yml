@@ -16,3 +16,9 @@
 2025-07-16:
   SapphoQueer:
   - bugfix: Proteans no longer get thirsty.
+2025-07-29:
+  Silver-Paws:
+  - bugfix: Penis Taur Mode is now working properly for "chemlight" and "noodle dragon"
+      taur bodies.
+  - bugfix: Chemnaga taur body should work properly with MODs and is now considered
+      as serpentine organ.
