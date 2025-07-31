@@ -53,6 +53,10 @@
 	name = "Loose Sweater"
 	item_path = /obj/item/clothing/suit/toji
 
+/datum/loadout_item/suit/loose_jersey
+	name = "Loose Jersey"
+	item_path = /obj/item/clothing/suit/large_jersey
+
 // GWTB
 /datum/loadout_item/suit/blastwave_suit
 	name = "trencher coat"
