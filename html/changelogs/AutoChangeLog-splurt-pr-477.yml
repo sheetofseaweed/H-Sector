@@ -1,0 +1,5 @@
+author: "MosleyTheMalO"
+delete-after: True
+changes:
+  - bugfix: "fixes some errors with climaxing that broke said feature"
+  - bugfix: "makes the autointeraction modals not broken by the scrollbar."
