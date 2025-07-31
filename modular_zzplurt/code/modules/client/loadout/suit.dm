@@ -49,6 +49,10 @@
 	name = "invisifiber jacket"
 	item_path = /obj/item/clothing/suit/invisijacket
 
+/datum/loadout_item/suit/toji
+	name = "Loose Sweater"
+	item_path = /obj/item/clothing/suit/toji
+
 // GWTB
 /datum/loadout_item/suit/blastwave_suit
 	name = "trencher coat"
