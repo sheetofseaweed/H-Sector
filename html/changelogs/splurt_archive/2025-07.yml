@@ -22,3 +22,7 @@
       taur bodies.
   - bugfix: Chemnaga taur body should work properly with MODs and is now considered
       as serpentine organ.
+2025-07-31:
+  MosleyTheMalO:
+  - bugfix: fixes some errors with climaxing that broke said feature
+  - bugfix: makes the autointeraction modals not broken by the scrollbar.
