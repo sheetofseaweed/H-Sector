@@ -82,7 +82,7 @@
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "aU" = (
-/obj/structure/closet/crate/secure/loot,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "bb" = (
@@ -3516,6 +3516,7 @@
 "WX" = (
 /obj/structure/sign/poster/contraband/operative_duffy/directional/south,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/clothing,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "Xa" = (
