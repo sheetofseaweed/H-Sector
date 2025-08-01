@@ -81,6 +81,10 @@
 /obj/effect/decal/cleanable/garbage,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
+"aU" = (
+/obj/structure/closet/crate/secure/loot,
+/turf/open/floor/iron/dark,
+/area/ruin/space/has_grav/allamericandiner)
 "bb" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
@@ -404,7 +408,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/hop{
-	name = "Manager's Office"
+	name = "Manager's Office";
+	id_tag = "allamerican_bolt"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/away/command,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -629,7 +634,6 @@
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cell_10k,
 /obj/effect/mapping_helpers/apc/full_charge,
-/obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
@@ -945,6 +949,7 @@
 /obj/effect/turf_decal/stripes/full,
 /obj/machinery/plumbing/synthesizer/colony_hydroponics,
 /obj/machinery/light/small/directional/north,
+/obj/structure/sign/flag/usa/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "nM" = (
@@ -1183,7 +1188,7 @@
 	pixel_x = 9;
 	pixel_y = 5
 	},
-/obj/item/paper/fluff/ruins/allamericandiner/better,
+/obj/item/paper/fluff/ruins/allamericandiner/better/manager,
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/allamericandiner)
 "rC" = (
@@ -1267,6 +1272,13 @@
 /obj/effect/turf_decal/tile/red/real_red/opposingcorners,
 /turf/open/floor/iron/checker,
 /area/ruin/space/has_grav/allamericandiner)
+"sN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/duct,
+/turf/open/floor/iron/kitchen,
+/area/ruin/space/has_grav/allamericandiner)
 "sU" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -1341,7 +1353,9 @@
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/structure/closet/secure_closet/hydroponics,
+/obj/structure/closet/secure_closet/hydroponics{
+	req_access = list("away_general")
+	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/allamericandiner)
@@ -1679,8 +1693,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "xY" = (
 /obj/structure/table,
-/obj/item/plate/large,
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/processor,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "yb" = (
@@ -1691,6 +1704,19 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark/small,
+/area/ruin/space/has_grav/allamericandiner)
+"yc" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/sign/flag/usa/directional/north,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/turf/open/floor/grass,
 /area/ruin/space/has_grav/allamericandiner)
 "yj" = (
 /obj/structure/chair{
@@ -1850,7 +1876,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/obj/item/paper/guides/jobs/engi/solars,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "Ai" = (
@@ -2013,12 +2038,6 @@
 /obj/structure/filingcabinet{
 	pixel_x = 10
 	},
-/obj/machinery/button/door{
-	id = "vortexevaccarg";
-	name = "Window Shutters Control";
-	pixel_x = -25;
-	req_access = list("medical")
-	},
 /obj/machinery/status_display/department_balance{
 	credits_account = "AAD";
 	name = "all-american diner budget display";
@@ -2033,11 +2052,18 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/allamericandiner)
+"CI" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/plate/large,
+/turf/open/floor/iron/kitchen/small,
+/area/ruin/space/has_grav/allamericandiner)
 "CJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/confetti,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/duct,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "Da" = (
@@ -2086,14 +2112,22 @@
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
 /obj/machinery/light/small/directional/west,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/tile/iron,
+/obj/item/stack/tile/iron/solarpanel,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "De" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
 /obj/machinery/duct,
-/turf/open/floor/iron/kitchen,
+/mob/living/basic/bot/cleanbot{
+	req_one_access = list("away_general");
+	name = "Patriotic Custodian"
+	},
+/turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "DK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2343,6 +2377,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/away/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/paper/fluff/ruins/allamericandiner/better,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/allamericandiner)
 "Hx" = (
@@ -2496,8 +2531,8 @@
 /area/ruin/space/has_grav/allamericandiner)
 "JM" = (
 /obj/structure/table,
-/obj/machinery/microwave,
 /obj/structure/sign/warning/cold_temp/directional/north,
+/obj/machinery/processor,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "JV" = (
@@ -2542,7 +2577,6 @@
 /area/ruin/space/has_grav/allamericandiner)
 "KQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/paper/fluff/ruins/allamericandiner/better,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/herringbone,
@@ -2568,6 +2602,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/egg_smudge,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/duct,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "Lx" = (
@@ -2877,18 +2912,8 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/item/stack/rods/fifty,
-/obj/item/stack/rods/fifty,
-/obj/item/stack/tile/iron{
-	amount = 50;
-	pixel_y = 4;
-	pixel_x = -3
-	},
-/obj/item/stack/tile/iron/solarpanel{
-	amount = 50;
-	pixel_y = -3;
-	pixel_x = 3
-	},
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/paper/guides/jobs/engi/solars,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "PS" = (
@@ -2965,15 +2990,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/smartfridge/wooden/produce_bin,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/allamericandiner)
 "QW" = (
@@ -3263,8 +3279,8 @@
 	req_access = list("away_general");
 	pixel_x = -6
 	},
-/obj/machinery/processor,
 /obj/structure/table,
+/obj/machinery/microwave,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "TW" = (
@@ -3392,7 +3408,9 @@
 "Vz" = (
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/hydroponics,
+/obj/structure/closet/secure_closet/hydroponics{
+	req_access = list("away_general")
+	},
 /obj/machinery/newscaster/directional/south,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
@@ -3923,7 +3941,7 @@ bl
 bl
 tc
 nL
-fj
+De
 tc
 Fw
 ah
@@ -4200,7 +4218,7 @@ ar
 PS
 uC
 Om
-Qx
+xY
 SA
 Uy
 bG
@@ -4313,7 +4331,7 @@ Fb
 tc
 JM
 XP
-Zv
+CI
 Fy
 Nj
 VT
@@ -4389,7 +4407,7 @@ rC
 tc
 iu
 Yp
-xY
+Zv
 bR
 zq
 oy
@@ -4491,7 +4509,7 @@ qI
 bl
 bl
 tc
-PX
+yc
 WI
 FL
 Vz
@@ -4509,7 +4527,7 @@ Ov
 nn
 HE
 pV
-De
+sN
 wb
 wt
 aA
@@ -4621,7 +4639,7 @@ yj
 tc
 ft
 xv
-cr
+aU
 tc
 dj
 Qw

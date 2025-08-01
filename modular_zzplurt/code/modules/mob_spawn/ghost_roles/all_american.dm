@@ -12,8 +12,8 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	prompt_name = "a diner employee"
-	you_are_text = "You are a non-descript employee for a All-American Diner joint in the middle of space."
-	flavour_text = "Your employers sent you to a workplace in the middle of space, with a beacon, and teleporter. You're to help all the customers to their meals, and requests until your manager says otherwise!"
+	you_are_text = "You are a non-descript employee for a All-American Diner joint in Nanotrasen space."
+	flavour_text = "Your employers sent you to an old-fashioned, newly reopened All-American Diner joint in Nanotrasen space, with a beacon, and teleporter. You're to help all the customers to their meals, and requests until your manager says otherwise!"
 	important_text = "Do NOT abandon the Diner or let it get damaged!"
 	spawner_job_path = /datum/job/allamerican
 	quirks_enabled = TRUE
@@ -51,8 +51,8 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	prompt_name = "a diner manager"
-	you_are_text = "You are a non-descript manager for a All-American Diner joint in the middle of space."
-	flavour_text = "Your employers sent you to a workplace in the middle of space, with a beacon, and teleporter. You're to help all the customers to their needs, and requests! You're the boss, make the rules!"
+	you_are_text = "You are a non-descript manager for a All-American Diner joint in Nanotrasen space."
+	flavour_text = "Your employers sent you to an old-fashioned, newly reopened All-American Diner joint in Nanotrasen space, with a beacon, and teleporter. You're to help all the customers to their needs, and requests! You're the boss, make the rules!"
 	important_text = "Do NOT abandon the Diner or let it get damaged!"
 	spawner_job_path = /datum/job/allamerican
 	quirks_enabled = TRUE
@@ -85,8 +85,8 @@
 	anchored = TRUE
 	density = FALSE
 	spawner_job_path = /datum/job/allamerican
-	you_are_text = "You are a cyborg assigned to a All-American Diner joint in the middle of space."
-	flavour_text = "Your employers sent you to a workplace in the middle of space, with a beacon, and teleporter. You're to help all the customers to their meals, and requests until your manager says otherwise!"
+	you_are_text = "You are a cyborg assigned to a All-American Diner joint in Nanotrasen space."
+	flavour_text = "Your employers sent you to an old-fashioned, newly reopened All-American Diner joint in Nanotrasen space, with a beacon, and teleporter. You're to help all the customers to their meals, and requests until your manager says otherwise!"
 	deletes_on_zero_uses_left = TRUE
 
 /obj/effect/mob_spawn/ghost_role/robot/diner/special(mob/living/silicon/robot/new_spawn)
@@ -94,7 +94,6 @@
 	if(new_spawn.client) //It should have a client, right?
 		new_spawn.faction += ROLE_ALLAMERICAN
 		new_spawn.UnlinkSelf() //This should prevent AI linking and consoles to see or lock them down.
-		new_spawn.SetEmagged(TRUE) //just to be sure.
 		new_spawn.laws = new /datum/ai_laws/allamerican()
 		new_spawn.show_laws() //Check your laws.
 		new_spawn.custom_name = null //Taken from ghostcafe, otherwise it'll lead to a runtime if random_appeareance is set to FALSE.
@@ -130,11 +129,11 @@
 
 /datum/id_trim/away/allamerican
 	assignment = "All-American Diner Employee"
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINEERING)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINEERING, ACCESS_ROBOTICS)
 
 /datum/id_trim/away/allamerican/manager
 	assignment = "All-American Diner Manager"
-	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINEERING, ACCESS_AWAY_COMMAND)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINEERING, ACCESS_AWAY_COMMAND, ACCESS_ROBOTICS, ACCESS_WEAPONS)
 
 /obj/item/card/id/departmental_budget/allamerican
 	department_ID = ACCOUNT_AAD
@@ -183,4 +182,4 @@
 
 /obj/item/paper/fluff/ruins/allamericandiner/better/manager
 	name = "Notice for Managers"
-	default_raw_text = "Welcome to your new position of Manager! Remember to PAY YOUR EMPLOYEES A SALARY! Giving them a constant paycheck makes sure that they stay loyal to your leadership, we won't want a mutiny within one of our diners now would we? So, keep paying them. - CORPORATE."
+	default_raw_text = "Welcome to your new position of Manager! Remember to PAY YOUR EMPLOYEES A SALARY! Giving them a constant paycheck makes sure that they stay loyal to your leadership, we won't want a mutiny within one of our diners now would we? So, keep paying them. - REGIONAL MANAGER."
