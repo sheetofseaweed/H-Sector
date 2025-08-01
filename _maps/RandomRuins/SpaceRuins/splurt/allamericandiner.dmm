@@ -41,6 +41,7 @@
 /obj/machinery/power/solar_control,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "ar" = (
@@ -52,6 +53,7 @@
 /obj/machinery/vending/cola,
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "aA" = (
@@ -323,6 +325,8 @@
 "dj" = (
 /obj/structure/urinal/directional/north,
 /obj/machinery/duct,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "dl" = (
@@ -344,6 +348,9 @@
 /area/ruin/space/has_grav/allamericandiner)
 "dF" = (
 /obj/effect/decal/cleanable/food/plant_smudge,
+/obj/machinery/duct,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "dJ" = (
@@ -466,6 +473,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/lusty_xenomorph/directional/south,
 /obj/machinery/duct,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "fO" = (
@@ -803,9 +813,6 @@
 /obj/machinery/firealarm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/machinery/duct,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "lJ" = (
@@ -937,6 +944,7 @@
 "nL" = (
 /obj/effect/turf_decal/stripes/full,
 /obj/machinery/plumbing/synthesizer/colony_hydroponics,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "nM" = (
@@ -1030,12 +1038,11 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/allamericandiner)
 "oQ" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
 /obj/structure/urinal/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cum,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "oT" = (
@@ -1095,7 +1102,6 @@
 /area/ruin/space/has_grav/allamericandiner)
 "qh" = (
 /obj/structure/cable,
-/obj/machinery/light/floor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -1336,6 +1342,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/structure/closet/secure_closet/hydroponics,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/allamericandiner)
 "tG" = (
@@ -1685,10 +1692,6 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/allamericandiner)
-"yc" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall/r_wall,
-/area/ruin/space/has_grav/allamericandiner)
 "yj" = (
 /obj/structure/chair{
 	dir = 4
@@ -1888,6 +1891,7 @@
 /obj/item/clothing/sextoy/condom,
 /obj/effect/spawner/random/trash/food_packaging,
 /obj/effect/spawner/random/trash/food_packaging,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "At" = (
@@ -2081,12 +2085,15 @@
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/allamericandiner)
 "De" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/duct,
+/turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "DK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2420,6 +2427,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "Iu" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/decal/cleanable/glitter,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "Iv" = (
@@ -2476,11 +2484,9 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
 "Jt" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
 /obj/structure/sink/directional/south,
 /obj/structure/mirror/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "JG" = (
@@ -2997,6 +3003,9 @@
 /obj/machinery/light/small/directional/south,
 /obj/machinery/newscaster/directional/south,
 /obj/machinery/duct,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/allamericandiner)
 "Re" = (
@@ -3385,6 +3394,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/hydroponics,
 /obj/machinery/newscaster/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/allamericandiner)
 "VC" = (
@@ -3668,6 +3678,8 @@
 	name = "Bathroom"
 	},
 /obj/machinery/duct,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/allamericandiner)
 "YS" = (
@@ -3964,8 +3976,8 @@ xq
 aJ
 dQ
 zO
-Xg
-Xg
+Rv
+dl
 VE
 eQ
 lv
@@ -4073,7 +4085,7 @@ CF
 tc
 Sh
 JV
-Xg
+dl
 Up
 IT
 hl
@@ -4497,7 +4509,7 @@ Ov
 nn
 HE
 pV
-dl
+De
 wb
 wt
 aA
@@ -4572,7 +4584,7 @@ tc
 tc
 tc
 tc
-De
+tc
 YL
 tc
 tc
@@ -4610,7 +4622,7 @@ tc
 ft
 xv
 cr
-De
+tc
 dj
 Qw
 LI
@@ -4648,7 +4660,7 @@ tc
 Li
 HI
 WX
-De
+tc
 oQ
 Rc
 tc
@@ -4686,7 +4698,7 @@ tc
 wD
 Bl
 cr
-yc
+tc
 Ao
 Qw
 Xt
@@ -4724,7 +4736,7 @@ tc
 sa
 hh
 gp
-yc
+tc
 Jt
 fI
 tc
