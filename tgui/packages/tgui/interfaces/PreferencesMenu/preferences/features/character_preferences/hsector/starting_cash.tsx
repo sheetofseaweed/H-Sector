@@ -1,5 +1,5 @@
 // THIS IS A HSECTOR UI FILE
-import { FeatureChoiced } from '../../base';
+import type { FeatureChoiced } from '../../base';
 import { FeatureDropdownInput } from '../../dropdowns';
 
 export const starting_cash_amount: FeatureChoiced = {
