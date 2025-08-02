@@ -236,6 +236,11 @@ DEFINE_BITFIELD(smoothing_junction, list(
 #define SMOOTH_GROUP_LEWD_TENTACLES S_OBJ(87) ///obj/structure/tentacle_lair/weeds
 //HSECTOR EDIT END
 
+//SKYRAT EDIT ADDITION
+#define SMOOTH_GROUP_SHUTTERS S_OBJ(88)
+
+#define SMOOTH_GROUP_WATER S_OBJ(89) ///obj/effect/abstract/liquid_turf
+//SKYRAT EDIT END
 /// Performs the work to set smoothing_groups and canSmoothWith.
 /// An inlined function used in both turf/Initialize and atom/Initialize.
 #define SETUP_SMOOTHING(...) \
