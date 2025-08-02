@@ -1,6 +1,6 @@
 /datum/sprite_accessory/tails/mammal/wagging/vulpkanin/fox/ann
 	name = "Fox (Alt 3)"
-	icon = 'modular_zzplurt/icons/mob/sprite_accessories/tails.dmi'icon = 'modular_zzplurt/icons/mob/sprite_accessories/tails.dmi'
+	icon = 'modular_zzplurt/icons/mob/sprite_accessories/tails.dmi'
 	icon_state = "foxann"
 
 
