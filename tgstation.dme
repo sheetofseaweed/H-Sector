@@ -10097,6 +10097,7 @@
 #include "modular_zzplurt\code\modules\clothing\wrists\watches.dm"
 #include "modular_zzplurt\code\modules\colormate\color_matrix.dm"
 #include "modular_zzplurt\code\modules\colormate\colormate.dm"
+#include "modular_zzplurt\code\modules\customization\modules\mob\dead\new_player\sprite_accessories\tails.dm"
 #include "modular_zzplurt\code\modules\customization\modules\mob\dead\new_player\sprite_accessories\underwear\bras.dm"
 #include "modular_zzplurt\code\modules\customization\modules\mob\dead\new_player\sprite_accessories\underwear\socks.dm"
 #include "modular_zzplurt\code\modules\customization\modules\mob\dead\new_player\sprite_accessories\underwear\undershirts.dm"
@@ -10359,5 +10360,4 @@
 #include "modular_zzplurt\code\modules\vending\vending.dm"
 #include "modular_zzplurt\code\modules\wiremod\core\integrated_circuit.dm"
 #include "modular_zzplurt\maps\offstation\seedvault.dm"
-#include "modular_zzplurt\code\modules\customization\modules\mob\dead\new_player\sprite_accessories\tails.dm"
 // END_INCLUDE
