@@ -1,4 +1,4 @@
-// This is a bubbers UI file
+// This is a splurt UI file
 import { Antagonist, Category } from '../base';
 
 const HackedSynthetic: Antagonist = {
