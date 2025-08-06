@@ -242,7 +242,7 @@
 			Status: [robot_status]",
 			"src=[REF(src)];track_cyborg=[text_ref(connected_robot)]",
 		))
-	// Bubbers Edit Start
+	// Splurt Edit Start
 	var/connected_ipc_amt = length(connected_ipcs)
 	if(connected_ipc_amt)
 		. += "Connected Synthetics: [connected_ipc_amt]"
@@ -250,7 +250,7 @@
 			var/robot_status = (connected_ipc.stat != CONSCIOUS || !connected_ipc.client) ? "OFFLINE" : "Nominal"
 			//Name. Area, and Status! Everything an AI wants to know about it's hacked synthetics!
 			. += "[connected_ipc.name] | S.Integrity: [connected_ipc.health]% | Loc: [get_area_name(connected_ipc, TRUE)] | Status: [robot_status]"
-	// Bubbers Edit End
+	// Splurt Edit End
 	. += "AI shell beacons detected: [LAZYLEN(GLOB.available_ai_shells)]" //Count of total AI shells
 
 /mob/living/silicon/ai/proc/ai_call_shuttle()
