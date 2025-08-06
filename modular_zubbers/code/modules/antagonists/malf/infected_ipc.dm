@@ -2,7 +2,7 @@
 	name = "\improper Infected Synthetic"
 	roundend_category = "traitors"
 	antagpanel_category = "Malf AI"
-	job_rank = ROLE_INFECTED_SYNTHETIC
+	pref_flag = ROLE_INFECTED_SYNTHETIC
 	antag_hud_name = "traitor"
 	ui_name = "AntagInfoHackedSynthetic"
 	antag_moodlet = /datum/mood_event/infected_ipc
