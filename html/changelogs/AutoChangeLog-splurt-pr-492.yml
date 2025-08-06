@@ -1,0 +1,4 @@
+author: "ShamanSliph"
+delete-after: True
+changes:
+  - bugfix: "Fixed Kinky Headphones making a user permanently deaf."
