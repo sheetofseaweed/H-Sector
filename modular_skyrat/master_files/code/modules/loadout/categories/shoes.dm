@@ -266,7 +266,7 @@
 */
 
 /datum/loadout_item/shoes/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/shoes/donator/blackjackboots
 	name = "Black Jackboots"

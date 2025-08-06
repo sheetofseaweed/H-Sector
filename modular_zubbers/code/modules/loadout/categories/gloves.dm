@@ -5,7 +5,7 @@
 /datum/loadout_item/gloves/lace_gloves
 	name = "Lace Gloves"
 	item_path = /obj/item/clothing/gloves/evening/lace
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/gloves/rubber_gloves
 	name = "Long Rubber Gloves"
@@ -19,7 +19,7 @@
 /datum/loadout_item/gloves/tactical_maid //Donor item for skyefree
 	name = "Tactical Maid Gloves"
 	item_path = /obj/item/clothing/gloves/tactical_maid
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/gloves/color/black/security
 	name = "Security gloves"

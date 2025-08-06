@@ -163,7 +163,7 @@
 */
 
 /datum/loadout_item/mask/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 
 /datum/loadout_item/mask/donator/nightlight_mask/alldono

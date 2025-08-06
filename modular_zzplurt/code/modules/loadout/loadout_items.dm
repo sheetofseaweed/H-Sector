@@ -4,10 +4,10 @@
 
 /datum/loadout_item/New(category)
 	. = ..()
-	if((donator_tier || LAZYLEN(ckeywhitelist)) && !donator_only)
-		donator_only = TRUE
-	if((donator_only || LAZYLEN(ckeywhitelist)) && !donator_tier)
-		donator_tier = DONATOR_TIER_1
+	//if((donator_tier || LAZYLEN(ckeywhitelist)) && !donator_only)
+	//	donator_only = TRUE
+	//if((donator_only || LAZYLEN(ckeywhitelist)) && !donator_tier)
+	//	donator_tier = DONATOR_TIER_1
 
 /datum/loadout_item/to_ui_data()
 	var/list/data = ..()
@@ -16,8 +16,8 @@
 
 /datum/loadout_item/get_item_information()
 	. = ..()
-	if(donator_tier)
-		. += list(FA_ICON_MONEY_BILL = "Tier [donator_tier] Donator only")
+	//if(donator_tier)
+	//	. += list(FA_ICON_MONEY_BILL = "Tier [donator_tier] Donator only")
 
 /datum/loadout_item/handle_loadout_action(datum/preference_middleware/loadout/manager, mob/user, action, params)
 	. = ..()

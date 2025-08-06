@@ -690,7 +690,7 @@
 */
 
 /datum/loadout_item/suit/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/suit/donator/furredjacket
 	name = "Furred Jacket"

@@ -76,7 +76,7 @@
 		if(!item.category.handle_duplicate_entires(src, item, selected_item, loadout_datums))
 			return
 	// SKYRAT EDIT ADDITION
-	if(!isnull(selected_item.ckeywhitelist) && !(preferences?.parent?.ckey in selected_item.ckeywhitelist))
+	/*if(!isnull(selected_item.ckeywhitelist) && !(preferences?.parent?.ckey in selected_item.ckeywhitelist))
 		to_chat(preferences.parent, span_warning("You cannot select this item!"))
 		return
 
@@ -87,7 +87,7 @@
 	// SPLURT EDIT START: Donator tier check
 	if(selected_item.donator_tier && GLOB.donator_list[preferences?.parent?.ckey] < selected_item.donator_tier)
 		to_chat(preferences.parent, span_warning("Tier [selected_item.donator_tier] donator access required."))
-		return
+		return*/
 	// SPLURT EDIT END
 
 	LAZYSET(loadout, selected_item.item_path, list())

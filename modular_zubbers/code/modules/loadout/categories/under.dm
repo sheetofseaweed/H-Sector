@@ -1,7 +1,7 @@
 /datum/loadout_item/uniform/security/hecu
 	name = "Urban Camouflage BDU"
 	item_path = /obj/item/clothing/under/rank/security/officer/hecu
-	donator_only = TRUE
+//	donator_only = TRUE
 	restricted_roles = list(ALL_JOBS_SEC, JOB_BLUESHIELD)
 
 /datum/loadout_item/uniform/command/stripper //Sprites by SierraGenevese
@@ -77,7 +77,7 @@
 /datum/loadout_item/uniform/miscellaneous/tactical_maid //Donor item for skyefree
 	name = "Tactical Maid Costume"
 	item_path = /obj/item/clothing/under/misc/maid/tactical
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/uniform/miscellaneous/bubber/clown/skirt/red
 	name = "Clown Skirt"
