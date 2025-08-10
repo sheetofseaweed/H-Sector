@@ -10136,6 +10136,7 @@
 #include "modular_zzplurt\code\modules\jobs\job_types\nanotrasen_consultant.dm"
 #include "modular_zzplurt\code\modules\jobs\job_types\quartermaster.dm"
 #include "modular_zzplurt\code\modules\jobs\job_types\shaft_miner.dm"
+#include "modular_zzplurt\code\modules\jobs\job_types\stowaway.dm"
 #include "modular_zzplurt\code\modules\language\_language_holder.dm"
 #include "modular_zzplurt\code\modules\language\buzzwords.dm"
 #include "modular_zzplurt\code\modules\lewd\pain.dm"
