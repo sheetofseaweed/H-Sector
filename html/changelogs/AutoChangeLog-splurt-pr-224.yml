@@ -1,7 +1,0 @@
-author: "Phoenix4O4"
-delete-after: True
-changes:
-  - qol: "Title menu now only visible on hover, auto-fades when not in use"
-  - qol: "adds our new logo (credits to moldb)"
-  - qol: "adds a toggle to hide the round's splashscreen"
-  - qol: "makes the default splashscreen show if the dob prompt isn't completed yet."
