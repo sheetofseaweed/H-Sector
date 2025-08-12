@@ -23,6 +23,13 @@
   Phoenix4O4:
   - bugfix: Stowaway job is no longer available
 2025-08-12:
+  Mosley and Phoenix4O4:
+  - qol: Title menu now only visible on hover, auto-fades when not in use
+  - qol: adds our new logo (credits to moldb)
+  - qol: adds a toggle to hide the round's splashscreen
+  - qol: makes the default splashscreen show if the dob prompt isn't completed yet.
+  - qol: adds a new loading animation
+  - qol: New relays button that points to our actual relays
   Phoenix4O4:
   - qol: Title menu now only visible on hover, auto-fades when not in use
   - qol: adds our new logo (credits to moldb)
