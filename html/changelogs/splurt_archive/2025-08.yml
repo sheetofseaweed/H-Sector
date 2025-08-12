@@ -13,3 +13,12 @@
       your character creation screen as well.
   ShamanSliph:
   - bugfix: Fixed Kinky Headphones making a user permanently deaf.
+2025-08-11:
+  IgiariValkyr:
+  - rscadd: Dagoth Ur is a lot more vocal, sarcastic, and hateful.
+  MosleyTheMalO:
+  - rscadd: adds OPFOR-only versions of storytellers, these work the same as normal
+      storytellers, except antags are OPFOR-only. Feel free to apply to become an
+      antag for the round!
+  Phoenix4O4:
+  - bugfix: Stowaway job is no longer available
