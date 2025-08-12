@@ -76,7 +76,7 @@
 			.progress_bar {
 				width: 0%;
 				height: 100%;
-				background-image: url('https://i.ibb.co/VwbrcpV/splurt-prog-pink900px.gif');
+				background-image: url('https://i.ibb.co/TxhFBRy1/splurt-prog-newlogo900px-0-00.gif');
 				background-position: center right;
 				background-color: #000000;
 			}
