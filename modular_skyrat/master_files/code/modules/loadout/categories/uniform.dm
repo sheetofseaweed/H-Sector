@@ -978,10 +978,10 @@
 	name  = "Captains Black Uniform"
 	item_path = /obj/item/clothing/under/rank/captain/skyrat/black
 	restricted_roles = list(JOB_CAPTAIN)
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/uniform/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/uniform/donator/enclavesergeant
 	name = "Enclave - Sergeant"

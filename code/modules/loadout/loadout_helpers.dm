@@ -51,7 +51,7 @@
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to species restrictions!"))
 			continue
 
-		if(item.donator_only && !SSplayer_ranks.is_donator(preference_source?.parent))
+		/*if(item.donator_only && !SSplayer_ranks.is_donator(preference_source?.parent))
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to donator restrictions!"))
 			continue
@@ -59,7 +59,7 @@
 		if(item.ckeywhitelist && !(preference_source?.parent?.ckey in item.ckeywhitelist)) // Sanity checking
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to CKEY restrictions!"))
-			continue
+			continue*/
 
 		if(loadout_placement_preference == LOADOUT_OVERRIDE_CASE && !visuals_only)
 			if(!travel_suitcase)

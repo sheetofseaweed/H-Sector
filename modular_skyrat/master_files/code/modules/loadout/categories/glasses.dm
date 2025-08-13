@@ -75,7 +75,7 @@
 	item_path = /obj/item/clothing/glasses/fake_sunglasses/aviator
 
 /datum/loadout_item/glasses/retinal_projector
-	name = "Civilian Retinal Projector"
+	name = "Retinal Projector"
 	item_path = /obj/item/clothing/glasses/hud/ar/projector
 
 /*
@@ -227,4 +227,4 @@
 /datum/loadout_item/glasses/fake_sunglasses
 	name = "Fake Sunglasses"
 	item_path = /obj/item/clothing/glasses/fake_sunglasses
-	donator_only = TRUE
+//	donator_only = TRUE

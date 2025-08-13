@@ -367,11 +367,11 @@ GLOBAL_LIST_INIT(all_loadout_categories, init_loadout_categories())
 		displayed_text[FA_ICON_SWATCHBOOK] = "Reskinnable"
 
 	// SKYRAT EDIT ADDITION
-	if(donator_only)
+	/*if(donator_only)
 		displayed_text[FA_ICON_MONEY_BILL] = "Donator only"
 
 	if(ckeywhitelist)
-		displayed_text[FA_ICON_LOCK] = "Player Whitelist: [ckeywhitelist.Join(", ")]"
+		displayed_text[FA_ICON_LOCK] = "Player Whitelist: [ckeywhitelist.Join(", ")]"*/
 
 	if(restricted_roles || blacklisted_roles)
 		var/list/tooltip_text = list()

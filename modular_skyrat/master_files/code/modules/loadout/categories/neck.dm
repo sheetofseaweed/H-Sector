@@ -250,7 +250,7 @@
 */
 
 /datum/loadout_item/neck/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/neck/donator/mantle/regal
 	name = "Regal Mantle"

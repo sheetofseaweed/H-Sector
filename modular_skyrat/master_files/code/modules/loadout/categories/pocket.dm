@@ -195,7 +195,7 @@
 */
 
 /datum/loadout_item/pocket_items/donator
-	donator_only = TRUE
+//	donator_only = TRUE
 
 /datum/loadout_item/pocket_items/donator/coin
 	name = "Iron Coin"
