@@ -730,21 +730,23 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Total number of layers for mob overlays
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK
 /// Also consider updating layers_to_offset
-#define TOTAL_LAYERS 51 // SKYRAT EDIT CHANGE - ORIGINAL: 35
+#define TOTAL_LAYERS 52 // SKYRAT EDIT CHANGE - ORIGINAL: 36
 /// Mutations layer - Tk headglows, cold resistance glow, etc
-#define MUTATIONS_LAYER 51 // SKYRAT EDIT CHANGE - ORIGINAL: 35
+#define MUTATIONS_LAYER 52 // SKYRAT EDIT CHANGE - ORIGINAL: 36
 /// Mutantrace features (tail when looking south) that must appear behind the body parts
-#define BODY_BEHIND_LAYER 50 // SKYRAT EDIT CHANGE - ORIGINAL: 34
+#define BODY_BEHIND_LAYER 51 // SKYRAT EDIT CHANGE - ORIGINAL: 35
 /// Layer for bodyparts that should appear behind every other bodypart - Mostly, legs when facing WEST or EAST
-#define BODYPARTS_LOW_LAYER 49 // SKYRAT EDIT CHANGE - ORIGINAL: 33
+#define BODYPARTS_LOW_LAYER 50 // SKYRAT EDIT CHANGE - ORIGINAL: 34
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
-#define BODYPARTS_LAYER 48 // SKYRAT EDIT CHANGE - ORIGINAL: 32
+#define BODYPARTS_LAYER 49 // SKYRAT EDIT CHANGE - ORIGINAL: 33
 /// H-sector - new boob layer
-#define BREAST_LAYER 47
+#define BREAST_LAYER 48
 /// Mutantrace features (snout, body markings) that must appear above the body parts
-#define BODY_ADJ_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 31
+#define BODY_ADJ_LAYER 47 // SKYRAT EDIT CHANGE - ORIGINAL: 32
 /// Underwear, undershirts, socks, eyes, lips(makeup)
-#define BODY_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 31
+#define BODY_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 31
+/// Eyes and eyelids
+#define EYES_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 31
 
 //H-Sector Edit mouth and crotch
 #define MOUTH_LAYER				44
@@ -868,7 +870,8 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 	// to show how many filters are added at a glance
 	// BACK_LAYER (backpacks are big)
 	// BODYPARTS_HIGH_LAYER (arms)
-	// BODY_LAYER (body markings (full body), underwear (full body), eyes)
+	// BODY_LAYER (body markings (full body), underwear (full body))
+	// EYES_LAYER,
 	// BODY_ADJ_LAYER (external organs like wings)
 	// BODY_BEHIND_LAYER (external organs like wings)
 	// BODY_FRONT_LAYER (external organs like wings)

@@ -53,12 +53,10 @@ menu "menu"
 		command = "Hotkeys-Help"
 		category = "&Help"
 		saved-params = "is-checked"
-	# SPLURT STATION EDIT: START
-	#elem  "Use Internet Routing Relay"
-	#	name = "Internet Routing Relays"
-	#	command = "go2relay"
-	#	saved-params = "is-checked"
-	# SPLURT STATION EDIT: END
+	elem  "Use Internet Routing Relay"
+		name = "Internet Routing Relays"
+		command = "go2relay"
+		saved-params = "is-checked"
 
 window "mainwindow"
 	elem "mainwindow"

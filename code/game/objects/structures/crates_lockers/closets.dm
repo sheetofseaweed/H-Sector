@@ -1044,8 +1044,6 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	return TRUE
 
 /obj/structure/closet/container_resist_act(mob/living/user, loc_required = TRUE)
-	if(isstructure(loc))
-		relay_container_resist_act(user, loc)
 	if(opened)
 		// SPLURT EDIT ADDITION - PACKING PEANUTS
 		if(packing_overlay)
@@ -1055,8 +1053,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	if(ismovable(loc))
 		user.changeNext_move(CLICK_CD_BREAKOUT)
 		user.last_special = world.time + CLICK_CD_BREAKOUT
-		var/atom/movable/AM = loc
-		AM.relay_container_resist_act(user, src)
+		var/atom/movable/movable_parent = loc
+		movable_parent.relay_container_resist_act(user, src)
 		return
 	if(!welded && !locked)
 		open()
@@ -1085,7 +1083,7 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 			to_chat(user, span_warning("You fail to break out of [src]!"))
 
 /obj/structure/closet/relay_container_resist_act(mob/living/user, obj/container)
-	container.container_resist_act(user)
+	container_resist_act(user)
 
 /// Check if someone is still resisting inside, and choose to either keep shaking or stop shaking the closet
 /obj/structure/closet/proc/check_if_shake()
