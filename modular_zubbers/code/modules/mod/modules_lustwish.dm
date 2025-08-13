@@ -103,7 +103,7 @@
 	var/list/data = list()
 	data["linked_suit"] = !!module?.mod
 	data["wearer"] = !!module.mod?.wearer
-	data["erp_pref_check"] = module.mod?.wearer?.client?.prefs.read_preference(/datum/preference/toggle/erp/sex_toy)
+	data["erp_pref_check"] = TRUE//module.mod?.wearer?.client?.prefs.read_preference(/datum/preference/toggle/erp/sex_toy)
 	if(module.mod)
 		data += module.mod.ui_data()
 	return data
