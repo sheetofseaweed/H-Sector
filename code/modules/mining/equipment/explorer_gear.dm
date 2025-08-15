@@ -244,19 +244,3 @@
 	icon_state = "explorer_syndicate"
 	armor_type = /datum/armor/hooded_explorer_syndicate
 
-/obj/item/clothing/suit/hooded/explorer/explorerharness
-	name = "explorer suit harness"
-	desc = "An armored harness for those who are more daring than others or just like to show off the goods as they mine."
-	icon_state = "gear_harness"
-	icon = 'modular_skyrat/master_files/icons/obj/clothing/under/misc.dmi'
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-	hoodtype = /obj/item/clothing/head/hooded/explorer/invisiblehood
-
-/obj/item/clothing/head/hooded/explorer/invisiblehood
-	name = "invisifiber hood"
-	desc = "A hood made of transparent fibers, this one is used for the hood of the explorer gear harness"
-	icon = 'modular_zzplurt/icons/obj/clothing/head.dmi'
-	worn_icon = 'modular_zzplurt/icons/mob/clothing/hats.dmi'
-	icon_state = "hat_transparent"
-	worn_icon_state = "none"
-	flags_inv = NONE
