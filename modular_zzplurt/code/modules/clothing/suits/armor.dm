@@ -107,6 +107,7 @@
 /obj/item/clothing/suit/hooded/explorer/explorerharness
 	name = "explorer suit harness"
 	desc = "An armored harness for those who are more daring than others or just like to show off the goods as they mine."
+	hood_up_affix = ""
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/under/misc.dmi'
 	icon_state = "gear_harness"
 	worn_icon = 'modular_zubbers/icons/mob/clothing/suits.dmi'
