@@ -1,5 +1,5 @@
 /datum/antagonist/infected_ipc
-	name = "\improper Infected Synthetic"
+	name = "\improper Hacked Synthetic"
 	roundend_category = "traitors"
 	antagpanel_category = "Malf AI"
 	pref_flag = ROLE_INFECTED_SYNTHETIC
