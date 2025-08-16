@@ -243,4 +243,3 @@
 	desc = "An armoured hood for exploring harsh environments."
 	icon_state = "explorer_syndicate"
 	armor_type = /datum/armor/hooded_explorer_syndicate
-
