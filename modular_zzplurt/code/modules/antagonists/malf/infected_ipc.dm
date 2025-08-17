@@ -154,4 +154,4 @@
 
 //Icon in antag menu
 /datum/antagonist/infected_ipc/get_preview_icon()
-	return finish_preview_icon(icon('modular_zubbers/icons/human-player/infectedipc.dmi', "hsynth"))
+	return finish_preview_icon(icon('modular_zzplurt/icons/human-player/infectedipc.dmi', "hsynth"))

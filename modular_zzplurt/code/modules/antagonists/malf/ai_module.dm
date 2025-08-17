@@ -12,7 +12,7 @@
 /datum/action/innate/ai/ranged/override_directive
 	name = "Subvert Positronic Chassis"
 	desc = "Subverts a Synthetic's directives to make them your pawn. Synthetic must be inoperational and not mindshielded for virus payload to deliver."
-	button_icon = 'modular_zubbers/icons/action/milf_ai_ability.dmi'
+	button_icon = 'modular_zzplurt/icons/action/milf_ai_ability.dmi'
 	button_icon_state = "synth_hacking_icon"
 	uses = 1
 	ranged_mousepointer = 'icons/effects/mouse_pointers/override_machine_target.dmi'
