@@ -4,6 +4,6 @@
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/under/misc.dmi'
 	icon_state = "gear_harness"
 	set_items = list(
-		/obj/item/clothing/suit/hooded/explorer,
+		/obj/item/clothing/suit/hooded/explorer/explorerharness,
 		/obj/item/clothing/mask/gas/explorer,
 	)
