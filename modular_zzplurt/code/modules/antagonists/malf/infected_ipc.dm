@@ -4,7 +4,6 @@
 	antagpanel_category = "Malf AI"
 	pref_flag = ROLE_INFECTED_SYNTHETIC
 	antag_hud_name = "traitor"
-	ui_name = "AntagInfoHackedSynthetic"
 	antag_moodlet = /datum/mood_event/infected_ipc
 	///radio binary for synthetic
 	var/obj/item/implant/radio/infected_ipc/internal_radio
