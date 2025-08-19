@@ -6,6 +6,7 @@
 			@font-face {
 				font-family: "Fixedsys";
 				src: url("FixedsysExcelsior3.01Regular.ttf");
+				font-display: swap;
 			}
 			body,
 			html {
@@ -284,8 +285,7 @@
 				isMenuHovered = true;
 				const navContainer = document.querySelector('.container_nav');
 				if (navContainer) {
-					navContainer.classList.remove('inactive');
-					navContainer.classList.remove('hidden');
+					navContainer.classList.remove('inactive', 'hidden');
 					isMenuHidden = false;
 				}
 				clearTimeout(fadeTimer);
@@ -298,21 +298,49 @@
 				updateMenuVisibility();
 			}
 
-			// Initialize when window loads
 			window.addEventListener('load', function() {
 				const navContainer = document.querySelector('.container_nav');
 				if (navContainer) {
-					// Add initial inactive state
-					navContainer.classList.add('inactive');
+					// Setup menu hover events
+					navContainer.addEventListener('mouseenter', handleMenuMouseEnter);
+					navContainer.addEventListener('mouseleave', handleMenuMouseLeave);
+
+					// Reset state
+					isMenuHidden = false;
+					isMenuHovered = false;
+					navContainer.classList.remove('inactive', 'hidden');
+
+					setTimeout(function() {
+						if (!isMenuHovered) {
+							updateMenuVisibility();
+						}
+					}, 2500); // 2.5 second delay before starting fade
+				}
+			});
+
+			function initializeMenu() {
+				const navContainer = document.querySelector('.container_nav');
+				if (navContainer && !navContainer.dataset.initialized) {
+					navContainer.dataset.initialized = 'true';
 
 					// Setup menu hover events
 					navContainer.addEventListener('mouseenter', handleMenuMouseEnter);
 					navContainer.addEventListener('mouseleave', handleMenuMouseLeave);
-				}
 
-				// Start with menu faded out
-				updateMenuVisibility();
-			});
+					isMenuHidden = false;
+					isMenuHovered = false;
+					navContainer.classList.remove('inactive', 'hidden');
+					setTimeout(function() {
+						if (!isMenuHovered) {
+							updateMenuVisibility();
+						}
+					}, 2500);
+				}
+			}
+
+			window.addEventListener('DOMContentLoaded', initializeMenu);
+
+			setTimeout(initializeMenu, 250);
 		</script>
 	</body>
 </html>
