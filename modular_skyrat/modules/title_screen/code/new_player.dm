@@ -166,8 +166,13 @@
  */
 /mob/dead/new_player/proc/update_title_screen()
 	var/dat = get_title_html()
-
-	src << browse(SStitle.current_title_screen, "file=loading_screen.gif;display=0")
+	//SPLURT EDIT START - Splashscreen toggle
+	//src << browse(SStitle.current_title_screen, "file=loading_screen.gif;display=0")
+	if(client?.prefs?.read_preference(/datum/preference/toggle/hide_splashscreen) || (!client?.maturity_prompt_whitelist && CONFIG_GET(flag/age_prompt_system)))
+		src << browse(DEFAULT_TITLE_SCREEN_IMAGE, "file=loading_screen.gif;display=0")
+	else
+		src << browse(SStitle.current_title_screen, "file=loading_screen.gif;display=0")
+	//SPLURT EDIT END
 	src << browse(dat, "window=title_browser")
 
 /datum/asset/simple/lobby

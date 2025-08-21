@@ -266,9 +266,6 @@
 		</style>
 	</head>
 	<body>
-		<div class="container_logo">
-			<img class="logo_image" src="https://i.ibb.co/FLcjXLfL/splurtlogo.png" alt="SPLURT Logo">
-		</div>
 		<script type="text/javascript">
 			let lastActivity = Date.now();
 			let fadeTimer;
