@@ -1,0 +1,4 @@
+author: "Phoenix4O4"
+delete-after: True
+changes:
+  - bugfix: "Fixed menu fade-out effect not working when reconnecting to running servers"
