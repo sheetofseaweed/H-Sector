@@ -10203,6 +10203,7 @@
 #include "modular_zzplurt\code\modules\maturity_prompt\maturity_prompt.dm"
 #include "modular_zzplurt\code\modules\mecha\armor_plates.dm"
 #include "modular_zzplurt\code\modules\mining\mine_items.dm"
+#include "modular_zzplurt\code\modules\mining\voucher_sets.dm"
 #include "modular_zzplurt\code\modules\mining\boulder_processing\boulder_types.dm"
 #include "modular_zzplurt\code\modules\mining\lavaland\necropolis_chest.dm"
 #include "modular_zzplurt\code\modules\mob\funclaw.dm"
