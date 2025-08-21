@@ -38,3 +38,8 @@
 2025-08-19:
   CloverIsLucky:
   - balance: Paddy has same movement speed as Ripley MK-1 again.
+2025-08-21:
+  Phoenix4O4:
+  - bugfix: Fixed menu fade-out effect not working when reconnecting to running servers
+  thegrb93:
+  - bugfix: Missing medic, virologist, chemist, and cmo digitigrade style bunnysuits
