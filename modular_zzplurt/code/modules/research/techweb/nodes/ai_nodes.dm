@@ -3,7 +3,6 @@
 	. = ..()
 	design_ids -= "robocop_module"
 
-/// Disable robocop design completely
-/datum/design/board/robocop_module/New()
-	. = ..()
-	qdel(src)
+/// Mark robocop design as ignored by unit tests
+/datum/design/board/robocop_module
+	id = DESIGN_ID_IGNORE
