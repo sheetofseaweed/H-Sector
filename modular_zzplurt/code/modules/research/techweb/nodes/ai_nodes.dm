@@ -3,5 +3,7 @@
 	. = ..()
 	design_ids -= "robocop_module"
 
-/datum/design/board/robocop_module/Initialize(mapload)
-	return INITIALIZE_HINT_QDEL
+/// Disable robocop design completely
+/datum/design/board/robocop_module/New()
+	. = ..()
+	qdel(src)
