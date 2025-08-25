@@ -126,8 +126,7 @@
 	always_color_customizable = TRUE
 	default_color = DEFAULT_SKIN_OR_PRIMARY
 	has_skintone_shading = TRUE
-	relevent_layers = list(BODYPARTS_LAYER)
-	genetic = TRUE
+	relevent_layers = list(BODY_ADJ_LAYER, BODY_FRONT_LAYER)
 
 /datum/sprite_accessory/genital/butt/none
 	icon_state = "none"
@@ -170,8 +169,7 @@
 	always_color_customizable = TRUE
 	has_skintone_shading = TRUE
 	default_color = DEFAULT_SKIN_OR_PRIMARY
-	genetic = TRUE
-	relevent_layers = list(BODYPARTS_LAYER)
+	relevent_layers = list(BODYPARTS_LAYER, BODY_BEHIND_LAYER)
 
 /datum/sprite_accessory/genital/belly/none
 	icon_state = "none"
