@@ -322,8 +322,7 @@
 					isMenuHidden = false;
 				}
 				if (logoContainer) {
-					logoContainer.classList.remove('inactive');
-					logoContainer.classList.remove('hidden');
+					logoContainer.classList.remove('inactive', 'hidden');
 				}
 				clearTimeout(fadeTimer);
 				clearTimeout(hideTimer);
@@ -373,7 +372,8 @@
 					isMenuHidden = false;
 					isMenuHovered = false;
 					navContainer.classList.remove('inactive', 'hidden');
-					if (logoContainer) {
+					if (logoContainer && !logoContainer.dataset.initialized) {
+						logoContainer.dataset.initialized = 'true';
 						logoContainer.classList.remove('inactive', 'hidden');
 					}
 

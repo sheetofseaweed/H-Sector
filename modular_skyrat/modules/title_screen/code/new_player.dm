@@ -168,10 +168,11 @@
 	var/dat = get_title_html()
 	//SPLURT EDIT START - Splashscreen toggle
 	//src << browse(SStitle.current_title_screen, "file=loading_screen.gif;display=0")
-	if(client?.prefs?.read_preference(/datum/preference/toggle/hide_splashscreen) || (!client?.maturity_prompt_whitelist && CONFIG_GET(flag/age_prompt_system)))
-		src << browse(DEFAULT_TITLE_SCREEN_IMAGE, "file=loading_screen.gif;display=0")
-	else
-		src << browse(SStitle.current_title_screen, "file=loading_screen.gif;display=0")
+	var/hide_splashscreen = (client && client.prefs.read_preference(/datum/preference/toggle/hide_splashscreen)) || (!client?.maturity_prompt_whitelist && CONFIG_GET(flag/age_prompt_system))
+	var/splashscreen_to_load = SStitle.current_title_screen
+	if(splashscreen_to_load && hide_splashscreen) // Check that we're not in the loading screen
+		splashscreen_to_load = DEFAULT_TITLE_SCREEN_IMAGE
+	src << browse(splashscreen_to_load, "file=loading_screen.gif;display=0")
 	//SPLURT EDIT END
 	src << browse(dat, "window=title_browser")
 
