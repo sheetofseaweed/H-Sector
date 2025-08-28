@@ -63,6 +63,6 @@
 	var/attr_img = length(img_style) ? " style='[img_style]'" : ""
 
 	. += {"<div class="container_logo"[attr_container]>
-			<img class="logo_image" src="https://i.ibb.co/FLcjXLfL/splurtlogo.png" alt="SPLURT Logo"[attr_img]>
+			<img class="logo_image" src="https://i.ibb.co/FLcjXLfL/splurtlogo.png" alt="SPLURT Title Logo"[attr_img]>
 		</div>"}
 
