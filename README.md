@@ -1,3 +1,7 @@
+<p align="center">
+<img width="2149" height="801" alt="splurtlogo" src="https://github.com/user-attachments/assets/69856f7c-58db-4927-a03a-717ec2aec6d6" />
+</p>
+
 ## SPLURT Station (Bubberstation Downstream)
 
 [![CI Suite](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/actions/workflows/ci_suite.yml)
