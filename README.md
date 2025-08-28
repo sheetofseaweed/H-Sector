@@ -8,9 +8,9 @@
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Git / GitHub cheatsheet     | [https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833](https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833) |
 | Guide to Modularization     | [./modular_zzplurt/readme.md](./modular_zzplurt/readme.md)                                                                             |
-| Website                     | [https://splurtstation.com](https://splurtstation.com)                                                                                 |
+| Website                     | [https://splurt.space](https://splurt.space)                                                                                           |
 | Code                        | [https://github.com/SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)                                   |
-| Wiki                        | [https://splurtstation.com](https://splurtstation.com)                                                                                 |
+| Wiki                        | [https://wiki.splurt.space](https://wiki.splurt.space)                                                                                           |
 | Codedocs                    | [https://skyrat-ss13.github.io/Skyrat-tg/](https://skyrat-ss13.github.io/Skyrat-tg/)                                                   |
 | S.P.L.U.R.T Station Discord | [https://discord.gg/wynHVMzHzC](https://discord.gg/wynHVMzHzC)                                                                         |
 | Coderbus Discord            | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)                                                                               |
