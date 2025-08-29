@@ -362,8 +362,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
 	},
-/obj/structure/frame/machine,
-/obj/item/stack/sheet/plasteel/twenty,
+/obj/structure/closet/secure_closet/miner/unlocked,
 /turf/open/floor/iron/dark/smooth_half{
 	dir = 1
 	},
@@ -567,19 +566,11 @@
 /turf/open/floor/carpet/purple,
 /area/station/commons/dorms)
 "alF" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/green{
-	dir = 10
-	},
-/obj/machinery/light/directional/south,
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/camera/directional/west,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/trimline/brown/line,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/small,
+/area/station/cargo/bitrunning/den)
 "alI" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 8
@@ -609,7 +600,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 3";
-	id_tag = "LCabin3"
+	id_tag = "LCabin3";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -877,7 +869,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/airalarm/directional/south,
-/turf/open/floor/iron/dark/small,
+/turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/bitrunning/den)
 "ash" = (
 /obj/effect/turf_decal/siding/wood{
@@ -970,24 +962,10 @@
 /turf/open/floor/iron/white,
 /area/station/science/lab)
 "avb" = (
-/obj/effect/turf_decal/siding/green/end{
-	dir = 1
-	},
-/obj/machinery/shower/directional/east,
-/obj/machinery/button/door/directional/east{
-	id = "SU1";
-	name = "Shower Privacy Lock";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
-	},
-/obj/structure/closet/generic/wall/empty{
-	pixel_y = 32
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/computer/order_console/bitrunning,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "avf" = (
 /obj/structure/bed/double/pod,
 /obj/item/bedsheet/runtime/double,
@@ -1532,10 +1510,6 @@
 	dir = 6
 	},
 /obj/structure/dresser,
-/obj/machinery/pollution_scrubber{
-	pixel_y = 6;
-	pixel_x = 7
-	},
 /turf/open/floor/carpet/royalblue,
 /area/station/command/heads_quarters/blueshield)
 "aFL" = (
@@ -1630,10 +1604,6 @@
 "aHH" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/spray/cleaner,
-/obj/machinery/pollution_scrubber{
-	pixel_y = -10;
-	pixel_x = -9
-	},
 /turf/open/floor/mineral/titanium/white,
 /area/station/command/heads_quarters/captain/private)
 "aHN" = (
@@ -2039,19 +2009,15 @@
 /turf/open/floor/iron/white,
 /area/station/engineering/atmos)
 "aTB" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+/obj/structure/cable,
+/obj/effect/turf_decal/trimline/brown/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/green{
-	dir = 1
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
 	},
-/obj/machinery/duct,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "aTC" = (
 /obj/structure/chair/sofa/corp/left{
 	desc = "Looks like someone threw it out. Covered in donut crumbs.";
@@ -3344,7 +3310,8 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/cmo{
-	name = "CMO's Quarters"
+	name = "CMO's Quarters";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 1;
@@ -3421,7 +3388,6 @@
 /obj/structure/window/reinforced/tinted/spawner/directional/east{
 	icon_state = "twindow"
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/main)
 "bzs" = (
 /obj/effect/turf_decal/siding/dark{
@@ -3922,6 +3888,16 @@
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/station/engineering/supermatter)
+"bJr" = (
+/obj/structure/chair/sofa/corp,
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "bJG" = (
 /obj/effect/turf_decal/tile/green/half{
 	dir = 4
@@ -3972,7 +3948,8 @@
 	},
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
 /obj/machinery/door/airlock/hos{
-	name = "HOS's Quarters"
+	name = "HOS's Quarters";
+	dir = 4
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/dark/textured_large,
@@ -3980,7 +3957,8 @@
 "bKf" = (
 /obj/machinery/door/airlock/research{
 	id_tag = "ResearchExt";
-	name = "Research Division"
+	name = "Research Division";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
@@ -4354,7 +4332,8 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
 /obj/machinery/door/airlock/atmos/glass{
-	name = "Distribution Loop"
+	name = "Distribution Loop";
+	dir = 4
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -4432,7 +4411,9 @@
 /turf/open/floor/iron/freezer,
 /area/station/medical/chemistry)
 "bSm" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -5377,7 +5358,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/office)
@@ -6739,7 +6719,6 @@
 "cPd" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/machinery/light/directional/south,
-/obj/structure/closet/secure_closet/nanotrasen_consultant/station,
 /obj/item/stamp/centcom,
 /obj/item/clothing/accessory/medal/gold/ordom,
 /obj/item/storage/briefcase/secure/white,
@@ -7626,16 +7605,14 @@
 	},
 /area/station/hallway/secondary/service)
 "dhm" = (
-/obj/machinery/door/airlock{
-	id_tag = "SU2";
-	name = "Shower 2"
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 8
 	},
-/obj/effect/turf_decal/siding/green/end,
-/obj/machinery/duct,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "dhE" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -8707,24 +8684,8 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "dBT" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 4;
-	name = "scrubbers pipe"
-	},
-/obj/effect/turf_decal/siding/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/dark_green/diagonal_centre,
-/obj/machinery/duct,
-/turf/open/floor/iron/dark/diagonal,
-/area/station/hallway/primary/fore)
+/turf/closed/mineral/asteroid,
+/area/lavaland/surface/outdoors/unexplored/danger/no_ruins)
 "dBX" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "psych_shutters";
@@ -9824,7 +9785,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/engineering/glass{
-	name = "Engineering's Room"
+	name = "Engineering's Room";
+	dir = 4
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/curtain/cloth/fancy{
@@ -12664,7 +12626,8 @@
 "fdi" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "Unit_2";
-	name = "Unit 2"
+	name = "Unit 2";
+	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/commons/toilet/restrooms)
@@ -13339,7 +13302,6 @@
 	dir = 4;
 	name = "scrubbers pipe"
 	},
-/obj/machinery/duct,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/primary/fore)
 "fuV" = (
@@ -13598,7 +13560,8 @@
 "fDH" = (
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "outerbrig";
-	name = "Brig"
+	name = "Brig";
+	dir = 8
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
@@ -13743,7 +13706,8 @@
 /area/station/hallway/primary/aft)
 "fHQ" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Gravity Generator"
+	name = "Gravity Generator";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -14287,16 +14251,14 @@
 /turf/open/floor/iron/dark/small,
 /area/station/science/xenobiology)
 "fSR" = (
-/obj/machinery/door/airlock{
-	id_tag = "SU1";
-	name = "Shower 1"
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 5
 	},
-/obj/effect/turf_decal/siding/green/end,
-/obj/machinery/duct,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 5
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/cargo/bitrunning/den)
 "fSU" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
@@ -14909,7 +14871,8 @@
 "ghU" = (
 /obj/machinery/door/airlock{
 	id_tag = "Toilet3";
-	name = "Unit 3"
+	name = "Unit 3";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms{
@@ -14952,7 +14915,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/bathroom{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /obj/machinery/duct,
 /turf/open/floor/carpet/orange,
@@ -15170,7 +15134,8 @@
 "gmL" = (
 /obj/machinery/door/airlock{
 	id_tag = "Toilet2";
-	name = "Unit 2"
+	name = "Unit 2";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms{
@@ -16711,7 +16676,6 @@
 	})
 "gUp" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/cup/rag,
 /obj/item/food/lasagna{
 	name = "Bitch Lasagna";
 	desc = "A slice of Bitch lasagna. Perfect for a Monday afternoon."
@@ -16778,13 +16742,8 @@
 /turf/open/floor/iron/white,
 /area/station/science/lab)
 "gVD" = (
-/obj/effect/turf_decal/siding/green,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/closed/mineral/asteroid,
+/area/ruin/space/has_grav/crashedship/big_asteroid)
 "gVO" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
@@ -17360,7 +17319,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 1";
-	id_tag = "LCabin1"
+	id_tag = "LCabin1";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/effect/turf_decal/siding{
@@ -17563,7 +17523,8 @@
 /area/station/hallway/primary/central)
 "hjZ" = (
 /obj/machinery/door/airlock/research{
-	name = "Xenobiology Lab"
+	name = "Xenobiology Lab";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/full,
@@ -18032,13 +17993,8 @@
 /turf/open/floor/carpet/blue,
 /area/station/medical/psychology)
 "htW" = (
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/pollution_scrubber{
-	pixel_x = -7;
-	pixel_y = 4
-	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/station/service/bar)
+/area/station/cargo/bitrunning/den)
 "huq" = (
 /obj/structure/mineral_door/wood,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -18490,24 +18446,15 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "hCU" = (
-/obj/structure/toilet{
-	pixel_y = 13
-	},
-/obj/effect/turf_decal/siding/green/end{
+/obj/structure/chair/sofa/corp/right,
+/obj/effect/turf_decal/trimline/brown/line{
 	dir = 1
 	},
-/obj/machinery/button/door{
-	id = "TU1";
-	name = "Toilet Privacy Lock";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	pixel_y = 29
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "hCW" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/structure/table/reinforced/titaniumglass,
@@ -19189,10 +19136,6 @@
 	pixel_y = 3
 	},
 /obj/item/serviette_pack,
-/obj/machinery/pollution_scrubber{
-	pixel_x = 7;
-	pixel_y = -5
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8;
 	name = "air scrubber"
@@ -19355,7 +19298,8 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/qm{
-	name = "QM's Quarters"
+	name = "QM's Quarters";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/qm,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -19840,17 +19784,16 @@
 /turf/open/floor/iron,
 /area/station/engineering/gravity_generator)
 "idM" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+/obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 6
 	},
-/obj/effect/turf_decal/siding/green{
-	dir = 9
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 6
 	},
-/obj/machinery/duct,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/structure/cable,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/dark/small,
+/area/station/cargo/bitrunning/den)
 "idU" = (
 /obj/effect/turf_decal/trimline/dark_blue/filled/line{
 	dir = 4
@@ -20452,6 +20395,24 @@
 /obj/effect/turf_decal/tile/blue/diagonal_edge,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/common/night_club)
+"irs" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark_green/diagonal_centre,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/hallway/primary/fore)
 "irt" = (
 /obj/machinery/status_display/door_timer{
 	id = "Cell 2";
@@ -20465,11 +20426,12 @@
 /obj/effect/turf_decal/trimline/brown/line{
 	dir = 9
 	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 9
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/navigate_destination/autoname,
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/bitrunning/den)
 "isf" = (
@@ -21191,6 +21153,11 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
 /area/station/commons/dorms)
+"iGk" = (
+/obj/machinery/netpod,
+/obj/machinery/light/directional/south,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/cargo/bitrunning/den)
 "iGl" = (
 /obj/effect/turf_decal/trimline/red/line,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -21274,7 +21241,8 @@
 /area/station/common/pool/sauna)
 "iIP" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Gravity Generator"
+	name = "Gravity Generator";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
@@ -21874,7 +21842,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 5";
-	id_tag = "RCabin5"
+	id_tag = "RCabin5";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -23194,18 +23163,9 @@
 /turf/open/floor/stone,
 /area/station/common/pool)
 "jyh" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/green{
-	dir = 1
-	},
-/obj/machinery/duct,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/structure/cable,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/station/cargo/bitrunning/den)
 "jyp" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/recharge_station,
@@ -23677,24 +23637,15 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "jID" = (
-/obj/effect/turf_decal/siding/green/end{
-	dir = 1
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 9
 	},
-/obj/machinery/shower/directional/east,
-/obj/machinery/button/door/directional/east{
-	name = "Shower Privacy Lock";
-	id = "SU2";
-	normaldoorcontrol = 1;
-	specialfunctions = 4
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 9
 	},
-/obj/structure/closet/generic/wall/empty{
-	pixel_y = 32
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "jIM" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -24389,7 +24340,9 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/aft)
 "jXw" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -24662,23 +24615,12 @@
 	name = "East Dormitories"
 	})
 "kdg" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 6;
-	name = "scrubbers pipe"
-	},
-/obj/effect/turf_decal/siding/green{
-	dir = 5
-	},
-/obj/machinery/duct,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "kep" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/window/reinforced/spawner/directional/west{
@@ -25186,10 +25128,6 @@
 	},
 /obj/item/disk/holodisk,
 /obj/item/disk/holodisk{
-	pixel_y = 4
-	},
-/obj/machinery/pollution_scrubber{
-	pixel_x = 7;
 	pixel_y = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
@@ -26285,9 +26223,6 @@
 /area/station/engineering/lobby)
 "kJz" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/reagent_containers/cup/rag{
-	pixel_y = 3
-	},
 /obj/item/storage/box/matches{
 	pixel_x = -1;
 	pixel_y = 6
@@ -26306,23 +26241,8 @@
 /turf/open/floor/wood/tile,
 /area/station/service/bar)
 "kJU" = (
-/obj/machinery/door/airlock{
-	name = "Unisex Restrooms"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4;
-	name = "scrubbers pipe"
-	},
-/obj/machinery/duct,
-/obj/machinery/door/firedoor,
-/obj/structure/cable,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/open/genturf,
+/area/lavaland/surface/outdoors/unexplored/danger/no_ruins)
 "kKb" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
@@ -26395,7 +26315,10 @@
 	dir = 4;
 	name = "scrubbers pipe"
 	},
-/obj/machinery/door/airlock/atmos/glass,
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Distribution Loop";
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -26516,7 +26439,6 @@
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/power/shuttle_engine/heater,
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/lobby)
 "kOy" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
@@ -26888,7 +26810,8 @@
 "kVH" = (
 /obj/machinery/door/airlock/freezer{
 	critical_machine = 1;
-	name = "Medical Freezer"
+	name = "Medical Freezer";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
 /obj/structure/cable,
@@ -27492,7 +27415,6 @@
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/power/shuttle_engine/heater,
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/main)
 "lka" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -27754,7 +27676,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -27896,7 +27817,8 @@
 /area/station/commons/dorms)
 "lsN" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Equipment Room"
+	name = "Equipment Room";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -28446,6 +28368,16 @@
 /obj/effect/turf_decal/tile/dark_red/diagonal_centre,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/commons/fitness/recreation/entertainment)
+"lBL" = (
+/obj/effect/landmark/navigate_destination/autoname,
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/cargo/bitrunning/den)
 "lBO" = (
 /obj/effect/turf_decal/siding/wideplating/light{
 	dir = 8
@@ -28507,10 +28439,6 @@
 /obj/effect/turf_decal/siding/dark/end,
 /obj/item/towel{
 	pixel_y = 5
-	},
-/obj/machinery/pollution_scrubber{
-	pixel_y = -10;
-	pixel_x = 8
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/station/command/heads_quarters/nt_rep)
@@ -28781,7 +28709,6 @@
 /turf/open/floor/circuit/telecomms/server,
 /area/station/science/server)
 "lJB" = (
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -29207,7 +29134,6 @@
 /area/station/commons/fitness/recreation)
 "lTt" = (
 /obj/structure/grille,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/atmos)
 "lTL" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
@@ -29241,14 +29167,16 @@
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
 "lUk" = (
-/obj/effect/turf_decal/siding/green,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/south,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/machinery/firealarm/directional/west,
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 10
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "lUm" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 8
@@ -29388,7 +29316,8 @@
 "lXX" = (
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "outerbrig";
-	name = "Brig"
+	name = "Brig";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 8
@@ -29659,7 +29588,6 @@
 /area/station/hallway/secondary/entry)
 "mbv" = (
 /obj/item/radio/intercom/directional/west,
-/obj/structure/aquarium/lawyer,
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
@@ -29811,9 +29739,9 @@
 	name = "scrubbers pipe"
 	},
 /obj/machinery/door/airlock/mining{
-	name = "Bitrunning Den"
+	name = "Bitrunning Den";
+	dir = 4
 	},
-/obj/effect/mapping_helpers/airlock/access/any/supply/bit_den,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
@@ -29925,7 +29853,8 @@
 /area/station/command/heads_quarters/nt_rep)
 "mfG" = (
 /obj/machinery/door/airlock/research{
-	name = "Robotics Lab"
+	name = "Robotics Lab";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/robotics,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -30040,7 +29969,8 @@
 "mhW" = (
 /obj/machinery/door/airlock{
 	id_tag = "Toilet1";
-	name = "Unit 1"
+	name = "Unit 1";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms{
@@ -30120,7 +30050,6 @@
 /obj/machinery/camera/directional/south{
 	network = list("ss13","entertaiment")
 	},
-/obj/structure/altar_of_gods,
 /turf/open/floor/iron/terracotta/herringbone,
 /area/station/service/chapel)
 "mjb" = (
@@ -31537,6 +31466,13 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/common/night_club)
+"mMb" = (
+/obj/machinery/door/airlock/mining{
+	name = "Bitrunning Den"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/office)
 "mMl" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -31677,10 +31613,6 @@
 "mOB" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/table/bronze,
-/obj/machinery/pollution_scrubber{
-	pixel_y = -4;
-	pixel_x = -7
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/turf_decal/trimline/white/corner{
 	dir = 8
@@ -32609,7 +32541,9 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/port)
 "nlA" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -32761,17 +32695,16 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "nnN" = (
+/obj/effect/turf_decal/trimline/brown/line,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/effect/turf_decal/trimline/brown/line{
-	dir = 6
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
 /obj/structure/cable,
-/obj/machinery/light/directional/east,
-/obj/machinery/firealarm/directional/east,
-/obj/effect/landmark/start/bitrunner,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/bitrunning/den)
 "nnW" = (
@@ -33081,10 +33014,14 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "nuO" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "nuZ" = (
 /obj/machinery/quantumpad{
 	map_pad_id = "1";
@@ -33590,7 +33527,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -35800,7 +35736,7 @@
 /obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 1
 	},
-/obj/structure/frame/machine,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/iron/dark/smooth_corner,
 /area/station/cargo/storage)
 "oBh" = (
@@ -36315,7 +36251,6 @@
 	name = "Cargo Office"
 	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -37147,14 +37082,16 @@
 /area/station/hallway/primary/central)
 "pcC" = (
 /obj/effect/turf_decal/trimline/brown/line{
-	dir = 5
+	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/oil/streak,
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
+/obj/effect/landmark/start/bitrunner,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/bitrunning/den)
 "pcK" = (
@@ -37184,24 +37121,17 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "pdh" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1;
-	name = "air scrubber"
-	},
-/obj/effect/turf_decal/siding/green{
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/obj/effect/turf_decal/trimline/brown/line{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/light/directional/south,
-/obj/machinery/dryer{
-	dir = 8;
-	pixel_x = 6
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 6
 	},
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "pdj" = (
 /obj/machinery/light/floor{
 	color = "#33CCFF"
@@ -37656,7 +37586,6 @@
 	name = "Supply Shuttle Airlock"
 	},
 /obj/structure/fans/tiny,
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/storage)
 "ppL" = (
@@ -37669,7 +37598,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 2";
-	id_tag = "RCabin2"
+	id_tag = "RCabin2";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -38220,7 +38150,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 4";
-	id_tag = "LCabin4"
+	id_tag = "LCabin4";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -38276,7 +38207,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/bathroom{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/dorms)
@@ -39284,18 +39216,15 @@
 /turf/open/floor/iron/terracotta/diagonal,
 /area/station/commons/vacant_room/commissary)
 "pVb" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 8
+/obj/structure/window/reinforced/spawner/directional/south{
+	layer = 2.9
 	},
-/obj/effect/turf_decal/siding/green{
-	dir = 1
-	},
-/obj/machinery/duct,
-/obj/structure/cable,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/flowers_pp,
+/obj/structure/flora/bush/lavendergrass/style_random,
+/turf/open/floor/grass,
+/area/station/cargo/office)
 "pVe" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /obj/machinery/cell_charger_multi/wall_mounted/directional/south,
@@ -39960,7 +39889,8 @@
 /area/station/service/theater)
 "qiS" = (
 /obj/machinery/door/airlock/research{
-	name = "Xenobiology Lab"
+	name = "Xenobiology Lab";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/full,
@@ -41007,7 +40937,10 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 6
 	},
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	name = "air scrubber"
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/bitrunning/den)
 "qGD" = (
@@ -41410,7 +41343,8 @@
 /obj/effect/mapping_helpers/airlock/access/all/medical/chemistry,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical/glass{
-	name = "Chemistry"
+	name = "Chemistry";
+	dir = 4
 	},
 /obj/effect/landmark/navigate_destination/autoname,
 /obj/structure/cable,
@@ -41493,7 +41427,6 @@
 "qOL" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/power/shuttle_engine/heater,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/main)
 "qOP" = (
 /obj/structure/chair/sofa/bench/left{
@@ -41764,7 +41697,9 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/station/hallway/secondary/entry)
 "qUM" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -41836,6 +41771,8 @@
 	dir = 10
 	},
 /obj/effect/turf_decal/bot/left,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/bitrunning/den)
 "qVr" = (
@@ -41912,16 +41849,13 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/central)
 "qWk" = (
-/obj/structure/mirror{
-	pixel_y = -28
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/mining{
+	name = "Bitrunning Den";
+	dir = 4
 	},
-/obj/structure/sink/directional/north,
-/obj/effect/turf_decal/siding/green,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "qWo" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -42136,16 +42070,17 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/commons/vacant_room/commissary)
 "rbi" = (
-/obj/machinery/door/airlock{
-	id_tag = "TU2";
-	name = "Unit 2"
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
 	},
-/obj/effect/turf_decal/siding/green/end,
-/obj/machinery/duct,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "rbo" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -43140,7 +43075,6 @@
 	codes_txt = "patrol;next_patrol=hall6";
 	location = "hall5"
 	},
-/obj/machinery/duct,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/hallway/primary/fore)
 "rvm" = (
@@ -43328,7 +43262,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 2";
-	id_tag = "LCabin2"
+	id_tag = "LCabin2";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -43473,7 +43408,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 5";
-	id_tag = "LCabin5"
+	id_tag = "LCabin5";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -43874,10 +43810,6 @@
 /obj/item/toy/plush/Synth{
 	pixel_y = 12;
 	pixel_x = 9
-	},
-/obj/machinery/pollution_scrubber{
-	pixel_y = 6;
-	pixel_x = -7
 	},
 /obj/structure/sign/calendar/directional/south,
 /turf/open/floor/carpet/executive,
@@ -44723,7 +44655,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
 	},
-/obj/structure/frame/machine,
+/obj/machinery/suit_storage_unit/mining/eva,
 /turf/open/floor/iron/dark/smooth_half{
 	dir = 1
 	},
@@ -44865,7 +44797,8 @@
 "sjc" = (
 /obj/machinery/door/airlock{
 	id_tag = "Toilet4";
-	name = "Unit 4"
+	name = "Unit 4";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms{
@@ -45108,16 +45041,9 @@
 /turf/open/floor/iron/dark/small,
 /area/station/common/night_club)
 "soY" = (
-/obj/machinery/door/airlock{
-	id_tag = "TU1";
-	name = "Unit 1"
-	},
-/obj/effect/turf_decal/siding/green/end,
-/obj/machinery/duct,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "soZ" = (
 /obj/machinery/computer/records/medical{
 	dir = 4;
@@ -45418,7 +45344,8 @@
 /area/station/command/bridge)
 "stI" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Security Desk"
+	name = "Security Desk";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/brig,
 /obj/machinery/door/firedoor,
@@ -45842,7 +45769,8 @@
 	color = "#4D4D4D"
 	},
 /obj/machinery/door/airlock/engineering/glass{
-	name = "Engineering's Room"
+	name = "Engineering's Room";
+	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/station/engineering/break_room{
@@ -45877,7 +45805,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 4";
-	id_tag = "RCabin4"
+	id_tag = "RCabin4";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -47453,7 +47382,7 @@
 /area/station/hallway/secondary/service)
 "tli" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/computer/order_console/bitrunning,
+/obj/machinery/computer/order_console/mining,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/office)
 "tln" = (
@@ -48147,20 +48076,9 @@
 /turf/open/floor/carpet/green,
 /area/station/commons/dorms)
 "tCg" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/green{
-	dir = 1
-	},
-/obj/machinery/duct,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable,
-/obj/effect/landmark/navigate_destination/autoname,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "tCu" = (
 /obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
@@ -48728,7 +48646,6 @@
 /obj/structure/window/reinforced/tinted/spawner/directional/east{
 	icon_state = "twindow"
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/lobby)
 "tUb" = (
 /obj/effect/turf_decal/siding{
@@ -49716,10 +49633,6 @@
 	dir = 6
 	},
 /obj/structure/aquarium/prefilled,
-/obj/item/fish_feed{
-	pixel_y = 16;
-	pixel_x = 9
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
@@ -49793,15 +49706,10 @@
 /turf/open/floor/grass,
 /area/station/hallway/primary/aft)
 "uvq" = (
-/obj/structure/mirror{
-	pixel_y = -28
-	},
-/obj/structure/sink/directional/north,
-/obj/effect/turf_decal/siding/green,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/effect/turf_decal/trimline/brown/line,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "uvw" = (
 /obj/effect/turf_decal/siding/dark_blue/corner{
 	dir = 4
@@ -50219,7 +50127,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 1";
-	id_tag = "RCabin1"
+	id_tag = "RCabin1";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -50865,10 +50774,6 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/machinery/conveyor_switch{
-	id = "packageExternal";
-	pixel_y = 18
-	},
 /turf/open/floor/iron/dark/smooth_half,
 /area/station/cargo/office)
 "uQW" = (
@@ -51233,7 +51138,8 @@
 /area/station/hallway/primary/starboard)
 "uXs" = (
 /obj/machinery/door/airlock/command{
-	name = "Captain's Office"
+	name = "Captain's Office";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
 /obj/machinery/door/firedoor,
@@ -51752,7 +51658,8 @@
 "vkY" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "Unit_1";
-	name = "Unit 1"
+	name = "Unit 1";
+	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/commons/toilet/restrooms)
@@ -52021,7 +51928,8 @@
 /area/station/hallway/secondary/command)
 "vqj" = (
 /obj/machinery/door/airlock{
-	name = "Showers"
+	name = "Showers";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -52568,6 +52476,24 @@
 	},
 /turf/open/floor/stone,
 /area/station/commons/vacant_room/commissary)
+"vFC" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 8;
+	name = "scrubbers pipe"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/medical/general,
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay Storage";
+	dir = 4
+	},
+/obj/machinery/duct,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/white/textured_large,
+/area/station/medical/storage)
 "vFT" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
@@ -53774,33 +53700,27 @@
 /turf/open/floor/engine/plasma,
 /area/station/engineering/atmos)
 "wcj" = (
-/obj/structure/toilet{
-	pixel_y = 13
+/obj/structure/chair/sofa/corp/corner,
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 5
 	},
-/obj/effect/turf_decal/siding/green/end{
-	dir = 1
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 5
 	},
-/obj/machinery/button/door{
-	id = "TU2";
-	name = "Toilet Privacy Lock";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	pixel_y = 29
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/freezer,
-/area/station/commons/toilet/restrooms{
-	name = "Central Restrooms"
-	})
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/bitrunning/den)
 "wcx" = (
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "wcU" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/effect/turf_decal/trimline/brown/line,
-/obj/effect/turf_decal/trimline/brown/corner{
-	dir = 1
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 10
 	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 10
+	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -53808,7 +53728,6 @@
 	dir = 4;
 	name = "scrubbers pipe"
 	},
-/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/bitrunning/den)
 "wdc" = (
@@ -54851,10 +54770,6 @@
 	dir = 10
 	},
 /obj/structure/aquarium/prefilled,
-/obj/item/fish_feed{
-	pixel_y = 16;
-	pixel_x = -6
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
@@ -55456,6 +55371,7 @@
 /obj/effect/turf_decal/trimline/brown/line{
 	dir = 4
 	},
+/obj/item/stack/sheet/plasteel/twenty,
 /turf/open/floor/iron/smooth_half{
 	dir = 1
 	},
@@ -56990,7 +56906,8 @@
 	},
 /obj/machinery/door/airlock/wood{
 	name = "Cabin 3";
-	id_tag = "RCabin3"
+	id_tag = "RCabin3";
+	dir = 4
 	},
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
@@ -57082,7 +56999,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/command{
-	name = "Blueshield & CR Quarters"
+	name = "Blueshield & CR Quarters";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -57168,7 +57086,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/bathroom{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
@@ -57511,7 +57430,8 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/rd{
-	name = "RD's Quarters"
+	name = "RD's Quarters";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/rd,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -58182,7 +58102,7 @@
 /obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 8
 	},
-/obj/structure/frame/machine,
+/obj/machinery/suit_storage_unit/mining/eva,
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},
@@ -58316,7 +58236,6 @@
 "xTe" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/power/shuttle_engine/heater,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/engineering/lobby)
 "xTn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -58748,13 +58667,12 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/storage)
 "yaR" = (
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/pollution_scrubber{
-	pixel_x = 7;
-	pixel_y = 4
+/obj/machinery/conveyor_switch{
+	id = "packageExternal";
+	pixel_y = 18
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/station/service/bar)
+/turf/open/floor/iron/dark/herringbone,
+/area/station/cargo/office)
 "ybi" = (
 /obj/machinery/light/floor{
 	color = "#33CCFF"
@@ -58903,7 +58821,8 @@
 	},
 /obj/machinery/duct,
 /obj/machinery/door/airlock/bathroom{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/station/commons/dorms)
@@ -125109,14 +125028,14 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -125366,21 +125285,21 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -125617,31 +125536,31 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -125874,32 +125793,32 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -126130,34 +126049,34 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -126386,36 +126305,36 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -126643,36 +126562,36 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -126900,37 +126819,37 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -127156,39 +127075,39 @@ ire
 (10,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -127413,39 +127332,39 @@ ire
 (11,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -127670,39 +127589,39 @@ ire
 (12,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -127927,39 +127846,39 @@ ire
 (13,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -128184,39 +128103,39 @@ ire
 (14,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -128441,40 +128360,40 @@ ire
 (15,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -128698,40 +128617,40 @@ ire
 (16,1,2) = {"
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -128955,6 +128874,40 @@ ire
 (17,1,2) = {"
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -129138,48 +129091,14 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -129212,6 +129131,40 @@ ire
 (18,1,2) = {"
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -129389,54 +129342,20 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -129469,6 +129388,40 @@ ire
 (19,1,2) = {"
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -129639,67 +129592,33 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -129726,6 +129645,40 @@ ire
 (20,1,2) = {"
 ire
 ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -129896,68 +129849,34 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -129984,6 +129903,39 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -130152,73 +130104,40 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -130241,6 +130160,39 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -130409,77 +130361,44 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -130498,6 +130417,39 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -130661,82 +130613,49 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -130755,6 +130674,39 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -130918,82 +130870,49 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131012,6 +130931,39 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -131175,82 +131127,49 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131269,6 +131188,37 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131433,81 +131383,50 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131526,6 +131445,37 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131689,83 +131639,52 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -131783,6 +131702,37 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -131945,84 +131895,53 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132040,6 +131959,37 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132202,85 +132152,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -132297,6 +132216,37 @@ ire
 ire
 ire
 ire
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -132459,85 +132409,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132557,6 +132476,32 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132721,80 +132666,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132814,6 +132733,32 @@ ire
 ire
 ire
 ire
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -132978,80 +132923,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133073,6 +132992,30 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133236,79 +133179,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133330,6 +133249,30 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -133493,79 +133436,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133587,6 +133506,26 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133754,75 +133693,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -133844,6 +133763,26 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -134011,75 +133950,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -134101,6 +134020,26 @@ ire
 ire
 ire
 ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -134268,75 +134207,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -134358,6 +134277,23 @@ ire
 ire
 ire
 ire
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -134528,72 +134464,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -134618,6 +134537,20 @@ ire
 ire
 ire
 ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -134788,69 +134721,55 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -134875,6 +134794,17 @@ ire
 ire
 ire
 ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -135048,65 +134978,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -135316,54 +135235,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -135573,54 +135492,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -135830,54 +135749,54 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -136088,53 +136007,53 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -136345,53 +136264,53 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -136602,53 +136521,53 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
 ire
 ire
 ire
@@ -136859,52 +136778,52 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -137116,52 +137035,52 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+dBT
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -137374,48 +137293,48 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -137631,48 +137550,48 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+dBT
+dBT
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -137889,44 +137808,44 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -138148,42 +138067,42 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -138407,40 +138326,40 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -138664,36 +138583,36 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -138921,36 +138840,36 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -139178,31 +139097,31 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -139436,30 +139355,30 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -139693,28 +139612,28 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+kJU
+gVD
 ire
 ire
 ire
@@ -139956,22 +139875,22 @@ ire
 ire
 ire
 ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
-ire
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
+gVD
 ire
 ire
 ire
@@ -150112,7 +150031,7 @@ uZc
 qVq
 irX
 wcU
-bGV
+iGk
 xij
 shr
 xFn
@@ -150623,10 +150542,10 @@ bmt
 iJh
 oVv
 uZc
-uZc
-uZc
-uZc
-uZc
+htW
+lBL
+alF
+bGV
 xij
 tli
 xVf
@@ -150879,11 +150798,11 @@ ciO
 yhZ
 xcK
 nsi
-nuO
+uZc
 avb
 fSR
 idM
-alF
+bGV
 xij
 qKa
 oIu
@@ -150967,7 +150886,7 @@ smy
 smy
 qMU
 smy
-hhs
+vFC
 qkG
 qkG
 bLm
@@ -151136,11 +151055,11 @@ dtl
 bmt
 cfj
 pAy
-nuO
-nuO
-nuO
+uZc
+uZc
+qWk
 jyh
-uvq
+uZc
 xij
 koO
 xVf
@@ -151393,7 +151312,7 @@ jSw
 bmt
 cfj
 pAy
-nuO
+uZc
 jID
 dhm
 aTB
@@ -151650,12 +151569,12 @@ wnp
 bmt
 aQP
 cIV
+uZc
 nuO
-nuO
-nuO
-pVb
+htW
+tCg
 uvq
-xij
+mMb
 uQD
 edi
 vSd
@@ -151907,11 +151826,11 @@ awj
 bmt
 efA
 nsi
-nuO
+uZc
 hCU
 soY
 tCg
-gVD
+uvq
 xij
 sar
 edi
@@ -152164,14 +152083,14 @@ bmt
 bmt
 efA
 ktq
-nuO
-nuO
-nuO
+uZc
+bJr
+soY
+tCg
+uvq
 pVb
-qWk
-xij
 iCH
-pPa
+yaR
 pPa
 isT
 tTN
@@ -152421,7 +152340,7 @@ bmt
 aOE
 efA
 ktq
-nuO
+uZc
 wcj
 rbi
 kdg
@@ -152678,11 +152597,11 @@ bmt
 pAy
 vWI
 wgV
-nuO
-nuO
-nuO
-kJU
-nuO
+uZc
+uZc
+uZc
+uZc
+uZc
 xij
 dNU
 qwg
@@ -152935,7 +152854,7 @@ bmt
 bQt
 mAr
 bQt
-nuO
+uZc
 vMS
 cAo
 ftT
@@ -153195,7 +153114,7 @@ nuE
 gxt
 pCz
 rvk
-dBT
+wun
 wun
 wun
 wun
@@ -153448,10 +153367,10 @@ cAo
 vMF
 pCz
 rXu
-dBT
-dBT
-dBT
-sav
+wun
+wun
+wun
+irs
 ilG
 uoW
 uoW
@@ -154228,7 +154147,7 @@ nRB
 fkv
 fkv
 lgW
-htW
+rEJ
 rEJ
 tuZ
 rEJ
@@ -156284,7 +156203,7 @@ wys
 lBO
 lBO
 sJm
-yaR
+rEJ
 vTL
 rEJ
 rEJ
