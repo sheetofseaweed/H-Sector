@@ -35,3 +35,14 @@
   - qol: adds our new logo (credits to moldb)
   - qol: adds a toggle to hide the round's splashscreen
   - qol: makes the default splashscreen show if the dob prompt isn't completed yet.
+2025-08-19:
+  CloverIsLucky:
+  - balance: Paddy has same movement speed as Ripley MK-1 again.
+2025-08-21:
+  Phoenix4O4:
+  - bugfix: Fixed menu fade-out effect not working when reconnecting to running servers
+  thegrb93:
+  - bugfix: Missing medic, virologist, chemist, and cmo digitigrade style bunnysuits
+2025-08-22:
+  Vanilla1040:
+  - rscadd: New explorer harness which acts like your normal explorer suit
