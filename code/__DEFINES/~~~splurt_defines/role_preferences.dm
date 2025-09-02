@@ -1,2 +1,2 @@
 // Midround roles
-#define ROLE_INFECTED_SYNTHETIC "Hacked Synthetic" //Splurt Edit
+#define ROLE_INFECTED_SYNTHETIC "Hacked Synthetic"
