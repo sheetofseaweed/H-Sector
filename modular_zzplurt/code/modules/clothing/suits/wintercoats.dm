@@ -8,10 +8,6 @@
 	var/toggled = FALSE
 	var/obj/effect/dummy/lighting_obj/moblight/glow_light
 
-/obj/item/clothing/suit/hooded/wintercoat/fluffy_coat/Initialize(mapload)
-	. = ..()
-	register_context()
-
 /obj/item/clothing/suit/hooded/wintercoat/fluffy_coat/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
 	context[SCREENTIP_CONTEXT_ALT_RMB] = "Toggle glow"
