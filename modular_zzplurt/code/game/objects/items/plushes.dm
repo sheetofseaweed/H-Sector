@@ -146,7 +146,7 @@
 	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
 	icon_state = "glitchy_protogen"
 	base_icon_state = "glitchy_protogen"
-	inhand_icon_state = "glitchy_protogen"
+	inhand_icon_state = null
 	worn_icon_state = "glitchy_protogen"
 	change_sprite = FALSE
 

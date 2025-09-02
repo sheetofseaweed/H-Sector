@@ -4,7 +4,7 @@
 	icon_state = "furcoat_lit"
 	icon = 'modular_zzplurt/icons/mob/clothing/suit/wintercoat.dmi'
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit/wintercoat.dmi'
-	inhand_icon_state = "furcoat"
+	inhand_icon_state = null
 	var/toggled = FALSE
 	var/obj/effect/dummy/lighting_obj/moblight/glow_light
 
