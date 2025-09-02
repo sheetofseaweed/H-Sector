@@ -1,0 +1,4 @@
+author: "theXDkidoflol"
+delete-after: True
+changes:
+  - bugfix: "The flutter quirk no longer prevents you from moving along walls in zero gravity."
