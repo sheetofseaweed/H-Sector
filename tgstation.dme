@@ -562,6 +562,7 @@
 #include "code\__DEFINES\~~~splurt_defines\mobs.dm"
 #include "code\__DEFINES\~~~splurt_defines\preferences.dm"
 #include "code\__DEFINES\~~~splurt_defines\pregnant_man.dm"
+#include "code\__DEFINES\~~~splurt_defines\role_preferences.dm"
 #include "code\__DEFINES\~~~splurt_defines\sizecode.dm"
 #include "code\__DEFINES\~~~splurt_defines\span.dm"
 #include "code\__DEFINES\~~~splurt_defines\species_clothing_paths.dm"
