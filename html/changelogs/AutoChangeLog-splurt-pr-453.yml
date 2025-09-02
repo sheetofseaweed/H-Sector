@@ -1,0 +1,6 @@
+author: "MosleyTheMalO"
+delete-after: True
+changes:
+  - rscadd: "Expands character customization by adding all species limbs to the augments tab."
+  - bugfix: "Fixes augments that use icon_greyscale not rendering properly on character creation."
+  - rscadd: "Added an ears category and cybernetic ears to the Augments+ screen."
