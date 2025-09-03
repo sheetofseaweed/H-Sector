@@ -2,6 +2,7 @@
 	// Bird-like humanoids
 	name = "Vox"
 	id = SPECIES_VOX
+	//eyes_icon = 'modular_skyrat/modules/organs/icons/vox_eyes.dmi' //SPLURT EDIT - https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/453
 	can_augment = FALSE
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,

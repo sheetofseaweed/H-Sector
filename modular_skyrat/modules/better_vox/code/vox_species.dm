@@ -1,6 +1,7 @@
 /datum/species/vox_primalis
 	name = "Vox Primalis"
 	id = SPECIES_VOX_PRIMALIS
+	//eyes_icon = 'modular_skyrat/modules/better_vox/icons/bodyparts/vox_eyes.dmi' //SPLURT EDIT - https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/453
 	can_augment = FALSE
 	body_size_restricted = TRUE
 	digitigrade_customization = DIGITIGRADE_NEVER // We have our own unique sprites!
