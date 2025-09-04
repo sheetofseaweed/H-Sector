@@ -2,7 +2,6 @@
 /obj/item/bodypart/head/mutant/insect
 	icon_greyscale = BODYPART_ICON_INSECT
 	limb_id = SPECIES_INSECT
-	eyes_icon = 'modular_skyrat/modules/organs/icons/insect_eyes.dmi'
 
 /obj/item/bodypart/chest/mutant/insect
 	icon_greyscale = BODYPART_ICON_INSECT
