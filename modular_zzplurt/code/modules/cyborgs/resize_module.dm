@@ -14,6 +14,8 @@
  * * Code that disables the printing of expand/shrink modules.
  */
 
+#define TECHWEB_NODE_BORG_OLD_SIZE "old_size"
+
 /mob/living/silicon/robot
 	// If the borg has been resized already, utilized to prevent people from inserting yet another borg resizer module and possibly causing sprite size issues.
 	var/resized = FALSE
@@ -141,3 +143,16 @@
 	design_ids += list(
 		"borg_upgrade_resize"
 	)
+
+/datum/techweb_node/old_resize
+	id = TECHWEB_NODE_BORG_OLD_SIZE
+	display_name = "Old Expander Tech"
+	description = "If you're seeing this, then something has gone horribly, horribly wrong"
+	design_ids = list(
+		"borg_upgrade_expand",
+		"borg_upgrade_shrink"
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS)
+	hidden = TRUE
+
+#undef TECHWEB_NODE_BORG_OLD_SIZE
