@@ -91,13 +91,14 @@ const areaSort = (a: CrewSensor, b: CrewSensor) => {
 };
 
 const getHealthLevel = (healthSum: number): number => {
+  //Splurt Edit Start
   if (healthSum <= 74) return 0;
   if (healthSum <= 95) return 1;
   if (healthSum <= 116) return 2;
   if (healthSum <= 137) return 3;
   if (healthSum <= 158) return 4;
   return 5; // over 158 (near crit)
-  return 5; // over 116 (near crit)
+  //Splurt Edit End
 };
 
 const healthToAttribute = (
