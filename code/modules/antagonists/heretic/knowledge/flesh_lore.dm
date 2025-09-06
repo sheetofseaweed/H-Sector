@@ -119,7 +119,7 @@
 	// BUBBER CHANGE BELOW - GHOUL MAXHP
 	desc = "Allows you to transmute a corpse and a poppy to create a Voiceless Dead. \
 		The corpse does not need to have a soul. \
-		Voiceless Dead are mute ghouls and have 135 health, but can use Bloody Blades effectively. \
+		Voiceless Dead are mute ghouls and have 120 health, but can use Bloody Blades effectively. \
 		You can only create two at a time."
 	gain_text = "I found notes of a dark ritual, unfinished... yet still, I pushed forward."
 	required_atoms = list(
