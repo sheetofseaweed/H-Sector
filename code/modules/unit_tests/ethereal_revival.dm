@@ -34,7 +34,7 @@
 	crit_wound.apply_wound(right_leg)
 	kill_and_revive(victim, respawn_heart)
 
-	TEST_ASSERT(victim.health == victim.maxHealth, "Ethereal not fully healed after reviving.")
+	TEST_ASSERT(victim.health == victim.maxHealth, "Ethereal not fully healed after reviving. Expected [victim.maxHealth], got [victim.health]")
 	TEST_ASSERT_NOTNULL(victim.get_bodypart(BODY_ZONE_L_LEG), "Ethereal failed to regrow limb when reviving.")
 	TEST_ASSERT(!length(right_leg.wounds), "Ethereal failed to fix wound when reviving.")
 	var/list/current_traumas = victim.get_traumas()
