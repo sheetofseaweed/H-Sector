@@ -1,3 +1,3 @@
 /mob/living/silicon/robot
-	maxHealth = 135
-	health = 135
+	maxHealth = 120
+	health = 120
