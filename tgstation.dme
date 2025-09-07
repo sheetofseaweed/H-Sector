@@ -10363,6 +10363,7 @@
 #include "modular_zzplurt\code\modules\surgery\organs\genitals\genitals.dm"
 #include "modular_zzplurt\code\modules\surgery\organs\genitals\testicles.dm"
 #include "modular_zzplurt\code\modules\surgery\organs\genitals\vagina.dm"
+#include "modular_zzplurt\code\modules\surgery\organs\internal\cyberimp\augments_arms.dm"
 #include "modular_zzplurt\code\modules\surgery\organs\internal\cyberimp\augments_chest.dm"
 #include "modular_zzplurt\code\modules\surgery\organs\internal\eyes\_eyes.dm"
 #include "modular_zzplurt\code\modules\surgery\organs\internal\liver\_liver.dm"

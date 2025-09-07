@@ -15,6 +15,22 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
+/datum/design/cyberimp_claws
+	name = "Razor Claws Implant"
+	desc = "Long, sharp, double-edged razors installed within the fingers, functional for cutting. All kinds of cutting."
+	id = "ci-razor"
+	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
+	materials = list (
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT,
+		/datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/silver = HALF_SHEET_MATERIAL_AMOUNT,
+	)
+	construction_time = 20 SECONDS
+	build_path = /obj/item/organ/cyberimp/arm/toolkit/razor_claws
+	category = list(
+		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_IMPLANTS_TOOLS,
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SECURITY
 
 /datum/design/cyberimp_flash
 	name = "Photon Projector Implant"
