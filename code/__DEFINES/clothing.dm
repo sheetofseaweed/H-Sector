@@ -73,3 +73,7 @@
 #define FSATCHEL "Frontier Satchel"
 #define FMESSENGER "Frontier Messenger Bag"
 // BUBBER EDIT END
+// SPLURT EDIT ADDITION - Extra roundstart backpacks
+#define SNAIL_SHELL "Snail Shell"
+#define SLOOG_SHELL "Sloog Shell"
+// SPLURT EDIT ADDITION END
