@@ -2,8 +2,6 @@
 
 #define PULL_OVERSIZED_SLOWDOWN 2
 
-#define HUMAN_HEALTH_MODIFIER 1.20 //Splurt Edit
-
 #define HUMAN_MAXHEALTH MAX_LIVING_HEALTH + 20 //Splurt Edit
 
 #define UNDERWEAR_HIDE_SOCKS (1<<0)
