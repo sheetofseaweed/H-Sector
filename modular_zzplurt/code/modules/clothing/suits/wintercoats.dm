@@ -34,8 +34,8 @@
 	if(toggled)
 		// Add glow effect if worn
 		if(ishuman(wearer) && wearer.get_item_by_slot(ITEM_SLOT_OCLOTHING) == src)
-			glow_light = wearer.mob_light(range = 3, power = 1.5, color = "#FFD700")
-			wearer.add_filter("fluffy_coat_glow", 2, list("type" = "outline", "color" = "#FFD700", "alpha" = 80, "size" = 2))
+			glow_light = wearer.mob_light(range = 3, power = 1.5, color = "#9900ff")
+			wearer.add_filter("fluffy_coat_glow", 2, list("type" = "outline", "color" = "#9900ff", "alpha" = 80, "size" = 2))
 
 		to_chat(wearer, span_notice("You activate the glow on \the [src]!"))
 	else
@@ -55,8 +55,8 @@
 	. = ..()
 	if(!(toggled && slot == ITEM_SLOT_OCLOTHING))
 		return
-	glow_light = user.mob_light(range = 3, power = 1.5, color = "#FFD700")
-	user.add_filter("fluffy_coat_glow", 2, list("type" = "outline", "color" = "#FFD700", "alpha" = 80, "size" = 2))
+	glow_light = user.mob_light(range = 3, power = 1.5, color = "#9900ff")
+	user.add_filter("fluffy_coat_glow", 2, list("type" = "outline", "color" = "#9900ff", "alpha" = 80, "size" = 2))
 
 /obj/item/clothing/suit/hooded/wintercoat/fluffy_coat/dropped(mob/living/user)
 	. = ..()
