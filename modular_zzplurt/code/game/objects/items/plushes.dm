@@ -118,3 +118,11 @@
 	attack_verb_simple = list("beast")
 	attack_verb_continuous = list("beasts")
 	squeak_override = list('modular_zzplurt/sound/voice/gachi/woop.ogg' = 1)
+
+/obj/item/toy/plush/toaste_plushy
+	name = "Marketable Toaste Plushie"
+	desc = "Oh God. A particularly marketable and mischievous-looking plushie of a... Fox? Dog? ...Cat? You can't really tell..."
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "toaste_plush"
+	gender = MALE
+	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/bark2.ogg' = 1)
