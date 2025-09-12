@@ -126,3 +126,48 @@
 	icon_state = "toaste_plush"
 	gender = MALE
 	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/bark2.ogg' = 1)
+
+/obj/item/toy/plush/glitchy_protogen
+	name = "Glitchy Protogen Plush"
+	desc = "A plushie of a glitchy protogen, It's lights appear to flicker once in awhile."
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "glitchy_protogen"
+	worn_icon_state = "glitchy_protogen"
+
+/obj/item/toy/plush/glitchy_protogen/Initialize(mapload)
+	. = ..()
+	register_context()
+
+/obj/item/toy/plush/glitchy_protogen/add_context(atom/source, list/context, obj/item/held_item, mob/user)
+	. = ..()
+	context[SCREENTIP_CONTEXT_ALT_LMB] = "Transform into a dildo"
+	return CONTEXTUAL_SCREENTIP_SET
+
+/obj/item/toy/plush/glitchy_protogen/click_alt(mob/user)
+	user.put_in_hands(new /obj/item/clothing/sextoy/dildo/glitchy_protogen(loc))
+	qdel(src)
+	return CLICK_ACTION_SUCCESS
+
+/obj/item/clothing/sextoy/dildo/glitchy_protogen
+	name = "Glitchy Protogen Dildo"
+	desc = "A dildo of a glitchy protogen, It's lights appear to flicker once in awhile."
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "glitchy_protogen"
+	base_icon_state = "glitchy_protogen"
+	inhand_icon_state = null
+	worn_icon_state = "glitchy_protogen"
+	change_sprite = FALSE
+
+/obj/item/clothing/sextoy/dildo/glitchy_protogen/Initialize(mapload)
+	. = ..()
+	register_context()
+
+/obj/item/clothing/sextoy/dildo/glitchy_protogen/add_context(atom/source, list/context, obj/item/held_item, mob/user)
+	. = ..()
+	context[SCREENTIP_CONTEXT_ALT_LMB] = "Transform into a plushie"
+	return CONTEXTUAL_SCREENTIP_SET
+
+/obj/item/clothing/sextoy/dildo/glitchy_protogen/click_alt(mob/user)
+	user.put_in_hands(new /obj/item/toy/plush/glitchy_protogen(loc))
+	qdel(src)
+	return CLICK_ACTION_SUCCESS
