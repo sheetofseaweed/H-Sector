@@ -80,3 +80,6 @@
 
 /obj/item/clothing/underwear/socks/usa_thigh
 	desc = "McDonald's or something."
+
+/obj/item/clothing/underwear/socks/black_belt_fishnet_stockings
+	desc = "A pair of fishnet stockings featuring a stunning net and lace design, held up by a belt with elegant suspenders and the top is decorated with patterns like traditional stocking tops."
