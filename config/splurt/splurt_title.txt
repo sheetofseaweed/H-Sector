@@ -360,7 +360,20 @@
 
 			function initializeMenu() {
 				const navContainer = document.querySelector('.container_nav');
-				const logoContainer = document.querySelector('.container_logo');
+				let logoContainer = document.querySelector('.container_logo');
+
+				// Create logo container if it doesn't exist and we have a nav container
+				if (navContainer && !logoContainer) {
+					logoContainer = document.createElement('div');
+					logoContainer.className = 'container_logo';
+					const logoImg = document.createElement('img');
+					logoImg.className = 'logo_image';
+					logoImg.src = 'https://i.ibb.co/FLcjXLfL/splurtlogo.png';
+					logoImg.alt = 'SPLURT Title Logo';
+					logoContainer.appendChild(logoImg);
+					document.body.appendChild(logoContainer);
+				}
+
 				if (navContainer && !navContainer.dataset.initialized) {
 					navContainer.dataset.initialized = 'true';
 
