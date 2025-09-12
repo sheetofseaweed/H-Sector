@@ -23,3 +23,9 @@
 
 /obj/item/clothing/underwear/briefs/female_usastripe
 	desc = "Not nearly as free as not wearing any."
+
+/obj/item/clothing/underwear/briefs/black_eyelash_lace_thong
+	desc = "This black delicate thong foundation crafted from eyelash lace. The intricate detailing brings a subtle texture and refined edge to a classic silhouette. Consider it a discreet underpinning for your next lovers adventures."
+
+/obj/item/clothing/underwear/briefs/vneck_sports_bikini
+	desc = "This classic black colour high waisted bikini sets for women features sexy mesh V-neck bikini top and sexy thong. The swimsuit top has adjustable halter straps and a removable padded bra, making you look slim, sexy, unique and more flattering features. Will a material that contours perfectly to your body shape and adjustable straps, this bikini top will fit perfectly."
