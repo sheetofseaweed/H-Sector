@@ -34,6 +34,9 @@
 /datum/status_effect/temporary_pressure_resistance
 	id = "temp_pressure_resist"
 	duration = 2 MINUTES
+	show_duration = TRUE
+
+	tick_interval = STATUS_EFFECT_NO_TICK
 	alert_type = /atom/movable/screen/alert/status_effect/temporary_pressure_resistance
 
 /datum/status_effect/temporary_pressure_resistance/on_apply()
