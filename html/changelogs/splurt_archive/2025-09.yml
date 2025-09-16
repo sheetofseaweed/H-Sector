@@ -18,3 +18,8 @@
 2025-09-11:
   Vanilla1040:
   - rscadd: adds a Marketable Toaste Plushy
+2025-09-16:
+  Vanilla1040:
+  - balance: removes the razor sharp claw implant from loadout
+  - balance: Nerfs restorative metabolism to heal 0.1 instead of 0.5.
+  - balance: Reduces the threshold from 50 to 40 Brute/Burn
