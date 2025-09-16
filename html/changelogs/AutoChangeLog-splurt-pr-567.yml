@@ -1,0 +1,5 @@
+author: "Vanilla1040"
+delete-after: True
+changes:
+  - balance: "Nerfs restorative metabolism to heal 0.1 instead of 0.5."
+  - balance: "Reduces the threshold from 50 to 40 Brute/Burn"
