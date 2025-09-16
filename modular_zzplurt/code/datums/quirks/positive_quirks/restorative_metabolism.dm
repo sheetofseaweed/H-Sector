@@ -3,7 +3,7 @@
 #define RESTMETA_BURN_THRESHOLD 40
 #define RESTMETA_BURN_AMOUNT -0.1
 #define RESTMETA_TOX_THRESHOLD 20
-#define RESTMETA_TOX_AMOUNT -0.10
+#define RESTMETA_TOX_AMOUNT -0.08
 
 /datum/quirk/restorative_metabolism
 	name = "Restorative Metabolism"
