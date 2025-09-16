@@ -12,7 +12,7 @@
 	quirk_flags = QUIRK_PROCESSES
 	gain_text = span_notice("You feel a surge of reconstructive vitality coursing through your body...")
 	lose_text = span_notice("You sense your enhanced reconstructive ability fading away...")
-	medical_record_text = "Patient possesses a Smemi self-reconstructive condition. Medical care is required way less frequently"
+	medical_record_text = "Patient possesses a Semi self-reconstructive condition. Medical care is required way less frequently"
 	mob_trait = TRAIT_RESTORATIVE_METABOLISM
 	hardcore_value = -10
 	icon = FA_ICON_BRIEFCASE_MEDICAL
