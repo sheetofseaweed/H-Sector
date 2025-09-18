@@ -13,6 +13,7 @@
 	gain_text = span_notice("You feel a surge of reconstructive vitality coursing through your body...")
 	lose_text = span_notice("You sense your enhanced reconstructive ability fading away...")
 	medical_record_text = "Patient possesses a Semi self-reconstructive condition. Medical care is required way less frequently"
+	species_blacklist = list(SPECIES_SYNTH, SPECIES_PODPERSON_WEAK,)
 	mob_trait = TRAIT_RESTORATIVE_METABOLISM
 	hardcore_value = -10
 	icon = FA_ICON_BRIEFCASE_MEDICAL
