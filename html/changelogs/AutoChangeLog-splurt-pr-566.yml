@@ -1,0 +1,4 @@
+author: "Majkl-J"
+delete-after: True
+changes:
+  - balance: "Vacuum resistance is only a 2 minute temporary pressure resistance that resets upon repressurizing."
