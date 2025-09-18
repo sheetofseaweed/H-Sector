@@ -23,3 +23,9 @@
   - balance: removes the razor sharp claw implant from loadout
   - balance: Nerfs restorative metabolism to heal 0.1 instead of 0.5.
   - balance: Reduces the threshold from 50 to 40 Brute/Burn
+2025-09-18:
+  Majkl-J:
+  - balance: Vacuum resistance is only a 2 minute temporary pressure resistance that
+      resets upon repressurizing.
+  Vanilla1040:
+  - bugfix: fixed blacklist for restorative metabolism
