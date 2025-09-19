@@ -29,3 +29,11 @@
       resets upon repressurizing.
   Vanilla1040:
   - bugfix: fixed blacklist for restorative metabolism
+2025-09-19:
+  MosleyTheMalO:
+  - bugfix: fixes roundend pings so they actually ping now
+  - bugfix: fixes splashscreen toggle delay
+  - qol: Adds support for autowiki in our wiki
+  - qol: adds our logo to our splashscreen menu (credits to moldb)
+  Vanilla1040:
+  - balance: Reverts us back from 100 HP to 120 HP
