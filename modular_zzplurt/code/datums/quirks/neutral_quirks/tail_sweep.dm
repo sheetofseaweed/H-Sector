@@ -51,13 +51,15 @@
 	for(var/obj/item/I in pos_to_check.contents)
 		if(I.anchored)
 			continue
-		items_to_move += o
+		items_to_move += I
 
 	// Nothing to move? No problem. Shouldn't bother.
 	if(!length(items_to_move))
 		return
 
 	for(var/i in 1 to TAILSWEEP_MAX_OBJECTS)
+		if(!items_to_move.len)
+			break
 		var/obj/o = pick_n_take(items_to_move)
 		o.throw_at(get_ranged_target_turf(o, pick(GLOB.cardinals-new_dir), range = 1), range = 1, speed = 1)
 
