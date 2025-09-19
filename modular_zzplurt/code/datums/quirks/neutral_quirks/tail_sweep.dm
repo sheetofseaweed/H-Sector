@@ -8,8 +8,8 @@
 #define TAILSWEEP_CHANCE 25
 
 /datum/quirk/tail_sweep
-	name = "Tail Sweep"
-	desc = "You have a habit of knocking things off tables with your tail."
+	name = "Clumsy Tail"
+	desc = "For as long as you can remember, you've had a habit of knocking things off tables with your tail when turning. It's a bit embarrassing, but you can't seem to help it."
 	value = 0
 	gain_text = span_notice("You feel an urge to sweep things off tables with your tail.")
 	lose_text = span_notice("You feel less inclined to sweep things off tables with your tail.")
@@ -28,35 +28,42 @@
 /datum/quirk/tail_sweep/proc/on_dir_change(mob/living/carbon/affected_mob, old_dir, new_dir)
 
 	SIGNAL_HANDLER
-
 	// Don't trigger if we're dead.
 	// Or if we're resting.
 	// Or if we're on cooldown.
 	// Or if we didn't actually change direction.
 	// Or if we fail the probability check.
+	// Or if there's a windoor.
 	// Or if we don't have a tail.
-	if(isdead(affected_mob))
-		return FALSE
-	else if(affected_mob.resting)
-		return FALSE
-	else if(!COOLDOWN_FINISHED(src, spam_cooldown))
-		return FALSE
-	else if(old_dir == new_dir)
-		return FALSE
-	else if(!prob(TAILSWEEP_CHANCE))
-		return FALSE
+	// Or if there's no table behind us.
+	//	* ^ Not in the exact order shown, but you get the idea
+	if(affected_mob.stat == DEAD)
+		return
+	if(old_dir == new_dir)
+		return
+	if(affected_mob.resting)
+		return
+	if(!prob(TAILSWEEP_CHANCE))
+		return
+	if(!COOLDOWN_FINISHED(src, spam_cooldown))
+		return
+
+	var/turf/pos_to_check = get_step(affected_mob, REVERSE_DIR(affected_mob.dir))
 
 	// You need a tail to knock stuff off of the tables..
 	var/obj/item/organ/tail/tail = affected_mob.get_organ_slot(ORGAN_SLOT_EXTERNAL_TAIL)
 	if(isnull(tail))
-		return FALSE
-
-	var/turf/pos_to_check = get_turf(get_step(affected_mob,turn(affected_mob.dir, 180)))
+		return
 
 	// It was requested that this quirk sweeps items off of /tables/
 	var/obj/structure/table/tabled = locate(/obj/structure/table, pos_to_check)
-	if(!tabled)
-		return FALSE
+	if(isnull(tabled))
+		return
+
+
+	// And one final check, to stop it from triggering through windoors and railings.
+	if(!affected_mob.Adjacent(pos_to_check))
+		return
 
 	var/list/items_to_move = list()
 
