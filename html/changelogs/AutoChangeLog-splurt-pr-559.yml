@@ -1,0 +1,4 @@
+author: "Vanilla1040"
+delete-after: True
+changes:
+  - balance: "Reverts us back from 100 HP to 120 HP"
