@@ -1,0 +1,7 @@
+author: "MosleyTheMalO"
+delete-after: True
+changes:
+  - bugfix: "fixes roundend pings so they actually ping now"
+  - bugfix: "fixes splashscreen toggle delay"
+  - qol: "Adds support for autowiki in our wiki"
+  - qol: "adds our logo to our splashscreen menu (credits to moldb)"

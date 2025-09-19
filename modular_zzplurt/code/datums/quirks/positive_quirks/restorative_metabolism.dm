@@ -1,9 +1,9 @@
-#define RESTMETA_BRUTE_THRESHOLD 50
-#define RESTMETA_BRUTE_AMOUNT -0.5
-#define RESTMETA_BURN_THRESHOLD 50
-#define RESTMETA_BURN_AMOUNT -0.25
-#define RESTMETA_TOX_THRESHOLD 50
-#define RESTMETA_TOX_AMOUNT -0.3
+#define RESTMETA_BRUTE_THRESHOLD 40
+#define RESTMETA_BRUTE_AMOUNT -0.12
+#define RESTMETA_BURN_THRESHOLD 40
+#define RESTMETA_BURN_AMOUNT -0.1
+#define RESTMETA_TOX_THRESHOLD 20
+#define RESTMETA_TOX_AMOUNT -0.08
 
 /datum/quirk/restorative_metabolism
 	name = "Restorative Metabolism"
@@ -12,7 +12,8 @@
 	quirk_flags = QUIRK_PROCESSES
 	gain_text = span_notice("You feel a surge of reconstructive vitality coursing through your body...")
 	lose_text = span_notice("You sense your enhanced reconstructive ability fading away...")
-	medical_record_text = "Patient possesses a self-reconstructive condition. Medical care is only required under extreme circumstances."
+	medical_record_text = "Patient possesses a Semi self-reconstructive condition. Medical care is required way less frequently"
+	species_blacklist = list(SPECIES_SYNTH, SPECIES_PODPERSON_WEAK,)
 	mob_trait = TRAIT_RESTORATIVE_METABOLISM
 	hardcore_value = -10
 	icon = FA_ICON_BRIEFCASE_MEDICAL
