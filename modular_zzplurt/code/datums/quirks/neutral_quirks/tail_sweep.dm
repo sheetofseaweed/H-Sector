@@ -81,7 +81,7 @@
 		table_contents.throw_at(get_ranged_target_turf(table_contents, pick(GLOB.cardinals-new_dir), range = 1), range = 1, speed = 1)
 
 	playsound(pos_to_check, SFX_RUSTLE, 50, TRUE, -5)
-	affected_mob.visible_message(span_danger("turns, sweeping their tail across \the [tabled]!"), span_notice("You turn, sweeping your tail across \the [tabled]."))
+	affected_mob.visible_message(span_danger("[affected_mob] turns, sweeping their tail across \the [tabled]!"), span_notice("You turn, sweeping your tail across \the [tabled]."))
 
 	COOLDOWN_START(src, spam_cooldown, TAILSWEEP_DELAY SECONDS)
 
