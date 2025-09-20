@@ -2,7 +2,7 @@
 	name = "Vacuum Adaptation"
 	desc = "Your body is specially adapted to temporarily withstand cold zero-pressure environments.\
 	You still need a source of breathable air, however."
-	value = 8
+	value = 7
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
 	gain_text = span_notice("Your physique attunes to the silence of space.")
 	lose_text = span_notice("Your physiology reverts as your space faring gifts lay dormant once more.")
@@ -33,7 +33,7 @@
 
 /datum/status_effect/temporary_pressure_resistance
 	id = "temp_pressure_resist"
-	duration = 2 MINUTES
+	duration = 3 MINUTES
 	show_duration = TRUE
 
 	tick_interval = STATUS_EFFECT_NO_TICK
