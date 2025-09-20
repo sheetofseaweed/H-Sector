@@ -33,7 +33,7 @@
 
 /datum/status_effect/temporary_pressure_resistance
 	id = "temp_pressure_resist"
-	duration = 3 MINUTES
+	duration = 2 MINUTES
 	show_duration = TRUE
 
 	tick_interval = STATUS_EFFECT_NO_TICK
