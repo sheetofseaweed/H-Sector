@@ -37,3 +37,9 @@
   - qol: adds our logo to our splashscreen menu (credits to moldb)
   Vanilla1040:
   - balance: Reverts us back from 100 HP to 120 HP
+2025-09-21:
+  Bobbanz1:
+  - bugfix: Fixes an oversight made by a previous coder who created the punch card
+      PDA system.
+  SpaceCatSS13:
+  - bugfix: Multi-Cell chargers can't be withdrawn from range anymore.
