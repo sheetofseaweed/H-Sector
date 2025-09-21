@@ -48,10 +48,10 @@
 		return
 
 	var/list/items_to_move = list()
-	for(var/obj/item/I in pos_to_check.contents)
-		if(I.anchored)
+	for(var/obj/item/possible_move in pos_to_check.contents)
+		if(possible_move.anchored)
 			continue
-		items_to_move += I
+		items_to_move += possible_move
 
 	// Nothing to move? No problem. Shouldn't bother.
 	if(!length(items_to_move))
@@ -60,8 +60,8 @@
 	for(var/i in 1 to TAILSWEEP_MAX_OBJECTS)
 		if(!items_to_move.len)
 			break
-		var/obj/o = pick_n_take(items_to_move)
-		o.throw_at(get_ranged_target_turf(o, pick(GLOB.cardinals-new_dir), range = 1), range = 1, speed = 1)
+		var/obj/sweeped = pick_n_take(items_to_move)
+		sweeped.throw_at(get_ranged_target_turf(sweeped, pick(GLOB.cardinals-new_dir), range = 1), range = 1, speed = 1)
 
 	playsound(pos_to_check, SFX_RUSTLE, 50, TRUE, -5)
 	affected_mob.visible_message(span_danger("[affected_mob] turns, sweeping their tail across \the [tabled]!"), span_notice("You turn, sweeping your tail across \the [tabled]."))
