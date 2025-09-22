@@ -36,7 +36,7 @@
 	var/mob/living/carbon/human/affected_mob = owner
 
 	owner.reagents.add_reagent(/datum/reagent/drug/aphrodisiac/dopamine, 0.3)
-	// SPLURT EDIT - Removed stamina loss on climax by self stimulation.
+	// owner.adjustStaminaLoss(STAMINA_REMOVAL_AMOUNT_SELF) // SPLURT EDIT - Removed stamina loss on climax by self stimulation.
 	affected_mob.adjust_arousal(AROUSAL_REMOVAL_AMOUNT)
 	affected_mob.adjust_pleasure(AROUSAL_REMOVAL_AMOUNT)
 
