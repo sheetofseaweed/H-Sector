@@ -138,6 +138,7 @@
 
 	var/datum/id_trim/job/paramedic/paramedic_trim = SSid_access.trim_singletons_by_path[/datum/id_trim/job/paramedic]
 
+/* SPLURT EDIT REMOVAL - Yeah nah we're keeping the access thanks
 	// Test that paramedic no longer has broad access
 	TEST_ASSERT(!(ACCESS_CARGO in paramedic_trim.minimal_access), "Paramedic should not have cargo access")
 	TEST_ASSERT(!(ACCESS_SCIENCE in paramedic_trim.minimal_access), "Paramedic should not have science access")
@@ -150,3 +151,4 @@
 	TEST_ASSERT(ACCESS_MAINT_TUNNELS in paramedic_trim.minimal_access, "Paramedic should have maintenance access")
 	TEST_ASSERT(ACCESS_MORGUE in paramedic_trim.minimal_access, "Paramedic should have morgue access")
 	TEST_ASSERT(ACCESS_MECH_MEDICAL in paramedic_trim.minimal_access, "Paramedic should have medical mech access")
+*/
