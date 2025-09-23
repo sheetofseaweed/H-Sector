@@ -1,3 +1,4 @@
+// Reverts tgs paramedic access
 /datum/id_trim/job/paramedic
 	minimal_access = list(
 		ACCESS_BIT_DEN,
