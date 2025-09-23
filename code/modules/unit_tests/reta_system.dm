@@ -130,6 +130,8 @@
 	test_card.clear_reta_access()
 	TEST_ASSERT(ACCESS_ENGINEERING in test_card.access, "ID card should still have permanent access after clearing temp access")
 
+
+/* SPLURT EDIT REMOVAL - Yeah nah we're keeping the access thanks
 /datum/unit_test/reta_paramedic_access
 
 /datum/unit_test/reta_paramedic_access/Run()
@@ -138,7 +140,6 @@
 
 	var/datum/id_trim/job/paramedic/paramedic_trim = SSid_access.trim_singletons_by_path[/datum/id_trim/job/paramedic]
 
-/* SPLURT EDIT REMOVAL - Yeah nah we're keeping the access thanks
 	// Test that paramedic no longer has broad access
 	TEST_ASSERT(!(ACCESS_CARGO in paramedic_trim.minimal_access), "Paramedic should not have cargo access")
 	TEST_ASSERT(!(ACCESS_SCIENCE in paramedic_trim.minimal_access), "Paramedic should not have science access")
