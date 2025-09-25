@@ -1,0 +1,4 @@
+author: "Mindstormsman"
+delete-after: True
+changes:
+  - qol: "Made size 0 Belly and Butt organs selectable in Character Preferences"
