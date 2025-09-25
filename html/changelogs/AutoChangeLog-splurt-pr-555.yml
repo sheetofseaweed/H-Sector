@@ -1,0 +1,6 @@
+author: "Bobbanz1"
+delete-after: True
+changes:
+  - rscadd: "Added the Borg Resizer, this new borg module will allow your robotic crew to be the size they truly want to be (Within reason)"
+  - balance: "Balanced the lower size out so the limit is 70% rather than 50%"
+  - code_imp: "Allowed borg players to now pick their own character size for the borg once the Resize module is installed"
