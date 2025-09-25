@@ -1,0 +1,5 @@
+author: "Vanilla1040"
+delete-after: True
+changes:
+  - balance: "Restorative metabolism heals 0.4 instead of 0.12 (Old 0.5) a bit more then a stable purple"
+  - balance: "Restorative metabolism quirk cost 10 > 8"
