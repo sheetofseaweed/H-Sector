@@ -3,6 +3,7 @@
 	"map_name": "Crescent Ship",
 	"map_path": "map_files/Crescent",
 	"map_file": "crescent.dmm",
+	"planetary": 1,
 	"shuttles": {
 		"cargo": "cargo_delta_skyrat",
 		"ferry": "ferry_skyrat",
@@ -11,31 +12,65 @@
 	"traits": [
 		{
 			"Up": true,
-			"Baseturf": "/turf/open/space/basic",
-			"Linkage": "Self"
+			"Mining": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/rockyground",
+			"No Parallax": true
+
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Self"
+			"Mining": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/rockyground",
+			"No Parallax": true
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Self"
+			"Station": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Self"
+			"Station": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
+		},
+				{
+			"Up": true,
+			"Down": true,
+			"Station": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
+		},
+				{
+			"Up": true,
+			"Down": true,
+			"Station": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
 		},
 		{
 			"Down": true,
-			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Self"
+			"Station": true,
+			"Linkage": "Self",
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/jungle",
+			"No Parallax": true
 		}
 	],
 	"minetype": "none",
