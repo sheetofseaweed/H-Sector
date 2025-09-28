@@ -57,6 +57,12 @@
 	name = "Loose Jersey"
 	item_path = /obj/item/clothing/suit/large_jersey
 
+/datum/loadout_item/suit/oversized_hoodie
+	name = "Oversized Hoodie"
+	item_path = /obj/item/clothing/suit/hooded/oversized_hoodie
+
+
+
 // GWTB
 /datum/loadout_item/suit/blastwave_suit
 	name = "trencher coat"
