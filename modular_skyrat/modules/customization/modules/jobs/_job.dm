@@ -37,7 +37,7 @@
 		return TRUE
 	else if(!(my_id in get_selectable_species()))
 		return TRUE
-	if(LAZYLEN(species_blacklist) && (my_id in species_blacklist))
+	if(LAZYLEN(species_blacklist) && (my_id in species_blacklist)) //SPLURT EDIT - this didnt work lmao
 		return TRUE
 	return FALSE
 
