@@ -124,9 +124,9 @@
 	desc = "A cropped jacket with a comfortable fur trim on the collar of it."
 	icon = 'modular_zzplurt/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
-	icon_state = "urban_jacket"
-	post_init_icon_state = "urban_jacket"
-	icon_state_preview = "urban_jacket"
+	icon_state = "cropped_jacket"
+	post_init_icon_state = "cropped_jacket"
+	icon_state_preview = "cropped_jacket"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|ARMS
 	greyscale_colors = "#35373e#b89e8d"
