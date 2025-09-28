@@ -766,6 +766,10 @@
 	pixel_x = 2;
 	color = "#222222"
 	},
+/obj/item/toy/tennis/purple{
+	pixel_x = -7;
+	pixel_y = 3
+	},
 /turf/open/floor/circuit/red/off,
 /area/misc/hilbertshotel)
 "eK" = (
@@ -3945,11 +3949,6 @@
 	color = "#b88d97";
 	pixel_x = 0;
 	pixel_y = 19
-	},
-/obj/item/toy/tennis/purple{
-	pixel_x = 7;
-	pixel_y = 9;
-	layer = 3.01
 	},
 /obj/item/condom_pack{
 	pixel_x = -11;

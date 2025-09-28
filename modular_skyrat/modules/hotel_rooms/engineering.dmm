@@ -19,6 +19,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
+/obj/machinery/room_controller/directional/west,
 /turf/open/floor/iron/smooth_half{
 	dir = 1
 	},

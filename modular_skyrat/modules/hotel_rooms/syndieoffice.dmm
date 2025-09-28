@@ -53,6 +53,7 @@
 /obj/item/kirbyplants/organic/plant22,
 /obj/structure/sign/warning/yes_smoking/circle/directional/north,
 /obj/effect/turf_decal/trimline/dark_red/filled,
+/obj/machinery/room_controller/directional/west,
 /turf/open/indestructible/dark/textured,
 /area/misc/hilbertshotel)
 "hg" = (
@@ -192,9 +193,9 @@
 	pixel_y = 5;
 	pixel_x = 4
 	},
-/obj/item/lighter/skull{
-	pixel_x = -8;
-	pixel_y = 1
+/obj/item/lighter{
+	pixel_y = -2;
+	pixel_x = -8
 	},
 /turf/open/indestructible/dark/textured,
 /area/misc/hilbertshotel)
@@ -224,7 +225,7 @@
 	},
 /obj/item/lighter{
 	pixel_y = -2;
-	pixel_x = -5
+	pixel_x = 5
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/misc/hilbertshotel)
@@ -302,8 +303,8 @@
 /obj/effect/turf_decal/skyrat_decals/syndicate/top/right,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/reagent_containers/cup/glass/coffee/colonial{
-	pixel_x = -14;
-	pixel_y = 11
+	pixel_x = -12;
+	pixel_y = 1
 	},
 /obj/item/paper_bin{
 	pixel_y = 4
