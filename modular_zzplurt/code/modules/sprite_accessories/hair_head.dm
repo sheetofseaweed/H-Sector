@@ -51,7 +51,7 @@ Hairs
 
 /datum/sprite_accessory/hair/splurt/fluffycurls
 	name = "Fluffy Curls"
-	icon_state = "fluffycurls"
+	icon_state = "hair_fluffycurls"
 
 // Podpeople hair - Making it accesible for all species
 /datum/sprite_accessory/hair/podmale
