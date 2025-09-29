@@ -759,7 +759,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/uniform.dmi'
 	icon_state = "striped_sweater"
 	post_init_icon_state = "striped_sweater"
-	icon_state_preview = "striped_sweater"
 	greyscale_colors = "#381b1e#ffffff#2d2d33"
 	greyscale_config = /datum/greyscale_config/striped_sweater
 	greyscale_config_worn = /datum/greyscale_config/striped_sweater/worn
@@ -773,7 +772,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/uniform.dmi'
 	icon_state = "striped_sweater_skirt"
 	post_init_icon_state = "striped_sweater_skirt"
-	icon_state_preview = "striped_sweater_skirt"
 	greyscale_colors = "#381b1e#ffffff#2d2d33"
 	greyscale_config = /datum/greyscale_config/striped_sweater_skirt
 	greyscale_config_worn = /datum/greyscale_config/striped_sweater_skirt/worn
@@ -788,7 +786,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/uniform.dmi'
 	icon_state = "casual"
 	post_init_icon_state = "casual"
-	icon_state_preview = "casual"
 	can_adjust = FALSE
 	greyscale_colors = "#ffffff#2d2d33"
 	greyscale_config = /datum/greyscale_config/casual
@@ -803,7 +800,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/uniform.dmi'
 	icon_state = "jeans_torn"
 	post_init_icon_state = "jeans_torn"
-	icon_state_preview = "jeans_torn"
 	can_adjust = FALSE
 	body_parts_covered = LEGS
 	greyscale_colors = "#2d2d33#121217#f8d860"
@@ -819,7 +815,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/uniform.dmi'
 	icon_state = "jeans_high"
 	post_init_icon_state = "jeans_high"
-	icon_state_preview = "jeans_high"
 	can_adjust = FALSE
 	body_parts_covered = LEGS
 	greyscale_colors = "#2d2d33#121217#f8d860"

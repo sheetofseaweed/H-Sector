@@ -28,7 +28,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "loose_sweater"
 	post_init_icon_state = "loose_sweater"
-	icon_state_preview = "loose_sweater"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|GROIN|ARMS
 	greyscale_colors = "#FFFFFF"
@@ -52,7 +51,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "loose_jersey"
 	post_init_icon_state = "loose_jersey"
-	icon_state_preview = "loose_jersey"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|GROIN
 	greyscale_colors = "#FFFFFF"
@@ -96,7 +94,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "shoulder_sweater"
 	post_init_icon_state = "shoulder_sweater"
-	icon_state_preview = "shoulder_sweater"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|ARMS
 	greyscale_colors = "#FFFFFF"
@@ -111,7 +108,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "off_shoulder"
 	post_init_icon_state = "off_shoulder"
-	icon_state_preview = "off_shoulder"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|ARMS
 	greyscale_colors = "#35373e"
@@ -126,7 +122,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "cropped_jacket"
 	post_init_icon_state = "cropped_jacket"
-	icon_state_preview = "cropped_jacket"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|ARMS
 	greyscale_colors = "#35373e#b89e8d"
@@ -141,7 +136,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/suit.dmi'
 	icon_state = "puffer_vest"
 	post_init_icon_state = "puffer_vest"
-	icon_state_preview = "shoulder_sweater"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|GROIN
 	greyscale_colors = "#a52f29"

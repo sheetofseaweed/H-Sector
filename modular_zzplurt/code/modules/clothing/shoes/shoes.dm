@@ -80,7 +80,6 @@
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/shoes.dmi'
 	icon_state = "hightops"
 	post_init_icon_state = "hightops"
-	icon_state_preview = "hightops"
 	greyscale_config = /datum/greyscale_config/hightops
 	greyscale_config_worn = /datum/greyscale_config/hightops/worn
 	greyscale_config_worn_digi = /datum/greyscale_config/hightops/worn/digi
