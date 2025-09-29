@@ -44,7 +44,7 @@
 
 	if(liquid_container)
 		message += " Trying to catch the escaping fluids in [liquid_container]"
-		interaction_modifier_flags |= INTERACTION_OVERRIDE_FLUID_TRANSFER
+		fluid_transfer_objects = list(liquid_container)
 	if(usage == INTERACTION_SELF)
 		user_arousal = target_arousal
 		user_pleasure = target_pleasure
@@ -52,8 +52,6 @@
 
 	message = list(message)
 	..() // Execute parent interaction logic and send formatted message
-	if(liquid_container)
-		interaction_modifier_flags &= ~INTERACTION_OVERRIDE_FLUID_TRANSFER
 
 // Standard lewd interactions targeting other players' body parts
 // Includes penetration, rubbing, and stimulation actions
