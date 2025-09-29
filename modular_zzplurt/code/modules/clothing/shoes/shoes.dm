@@ -98,3 +98,11 @@
 /datum/greyscale_config/hightops/worn/digi
 	name = "Hightops (Worn, digi)"
 	icon_file = 'modular_zzplurt/icons/mob/clothing/shoes_digi.dmi'
+
+/obj/item/clothing/shoes/jackboots/faux_combat
+	name = "faux combat boots"
+	desc = "Average speed, Average drag combat boots. For those with a sense of fashion."
+	icon = 'modular_skyrat/master_files/icons/obj/clothing/shoes.dmi'
+	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/feet.dmi'
+	worn_icon_digi = 'modular_skyrat/master_files/icons/mob/clothing/feet_digi.dmi'
+	icon_state = "combat"
