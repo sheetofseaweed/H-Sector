@@ -1,0 +1,4 @@
+author: "SapphoQueer"
+delete-after: True
+changes:
+  - balance: "Reduced the cost of Isotropic Stability from 6 > 3"
