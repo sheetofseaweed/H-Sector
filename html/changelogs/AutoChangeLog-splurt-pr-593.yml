@@ -1,4 +1,0 @@
-author: "Mindstormsman"
-delete-after: True
-changes:
-  - bugfix: "Borgs can no longer pack their modules into containers with packing peanuts"

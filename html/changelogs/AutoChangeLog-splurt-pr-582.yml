@@ -1,8 +1,0 @@
-author: "miguelop1"
-delete-after: True
-changes:
-  - balance: "reduced funclaw health"
-  - balance: "reduced funclaw armor penetration and damage"
-  - balance: "reduced werewolf damage from 56 to 30"
-  - balance: "reduced werewolf alpha armour penetration from 80 to 50"
-  - balance: "boosted werewolf alpha maxhealth from 1200 to 1400"
