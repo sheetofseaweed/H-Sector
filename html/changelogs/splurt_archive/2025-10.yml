@@ -16,3 +16,8 @@
   - balance: reduced werewolf damage from 56 to 30
   - balance: reduced werewolf alpha armour penetration from 80 to 50
   - balance: boosted werewolf alpha maxhealth from 1200 to 1400
+2025-10-05:
+  SapphoQueer:
+  - balance: Civhud implants now only cost 1 point instead of 4.
+  - bugfix: Veteran Sec Advisor, Big Brother, and Bridge Assistant can no longer roll
+      antag. This was an oversight.
