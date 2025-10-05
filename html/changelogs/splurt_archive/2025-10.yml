@@ -1,0 +1,18 @@
+2025-10-01:
+  AbsorbentHeart5:
+  - rscadd: Added Armadyne HUD glasses to the Armadyne Sec Vendor
+  Maggotbait:
+  - image: A shipment of urban clothing have been shipped to the station, live out
+      your greatest streetwear fantasies.
+  - image: a brand new hairstyle, fluffy curls.
+  Mindstormsman:
+  - bugfix: Borgs can no longer pack their modules into containers with packing peanuts
+  Nuk5513:
+  - balance: infdorm delootification - now syndicate doesn't supply terrorists through
+      sex dungeons
+  miguelop1:
+  - balance: reduced funclaw health
+  - balance: reduced funclaw armor penetration and damage
+  - balance: reduced werewolf damage from 56 to 30
+  - balance: reduced werewolf alpha armour penetration from 80 to 50
+  - balance: boosted werewolf alpha maxhealth from 1200 to 1400

@@ -1,0 +1,4 @@
+author: "SapphoQueer"
+delete-after: True
+changes:
+  - bugfix: "Veteran Sec Advisor, Big Brother, and Bridge Assistant can no longer roll antag. This was an oversight."
