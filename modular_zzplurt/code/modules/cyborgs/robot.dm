@@ -17,6 +17,6 @@
 	var/sleeper_occupant
 	var/sleeper_enviroment
 
-	simulated_genitals = list(
-		ORGAN_SLOT_TAIL = TRUE
-	)
+/mob/living/silicon/robot/Initialize(mapload)
+	. = ..()
+	simulated_genitals[ORGAN_SLOT_TAIL] = TRUE
