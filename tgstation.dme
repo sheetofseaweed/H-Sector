@@ -10480,6 +10480,7 @@
 #include "modular_zzplurt\code\modules\vending\multisec.dm"
 #include "modular_zzplurt\code\modules\vending\security.dm"
 #include "modular_zzplurt\code\modules\vending\vending.dm"
+#include "modular_zzplurt\code\modules\vetted\vetted.dm"
 #include "modular_zzplurt\code\modules\wiremod\core\integrated_circuit.dm"
 #include "modular_zzplurt\maps\offstation\seedvault.dm"
 // END_INCLUDE
