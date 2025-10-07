@@ -1,0 +1,5 @@
+author: "quantumtechkat"
+delete-after: True
+changes:
+  - rscadd: "Added the Quantum Server and Bitrunning rewards vendor to the Bitrunning tech node and machine designs list for the circuit imprinter."
+  - code_imp: "Fixes typo for title of Port Tarkon Research Crew Member in spawner.dm\n:cl:"
