@@ -1,7 +1,0 @@
-author: "MosleyTheMalO"
-delete-after: True
-changes:
-  - code_imp: "makes some edits for enabling the agevet check system"
-  - bugfix: "fixes infinidorms not allowing you to select the correct numbe"
-  - qol: "adds a carped under the infinidorms sphere"
-  - code_imp: "fixes the taiil interaction unndecessary override."
