@@ -1,0 +1,44 @@
+{
+	"version": 1,
+	"map_name": "Cafe Bar",
+	"map_path": "map_files/Cafebar",
+	"map_file": "cafe_bar.dmm",
+	"planetary": 1,
+	"height_autosetup": 0,
+	"shuttles": {
+		"emergency": "emergency_kilo",
+		"ferry": "ferry_kilo",
+		"cargo": "cargo_skyrat",
+		"whiteship": "whiteship_kilo"
+	},
+	"traits": [
+		{
+			"Up": true,
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/rockyground",
+			"Linkage": null,
+			"No Parallax": true
+
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Gravity": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": null,
+			"No Parallax": true
+		},
+		{
+			"Down": true,
+			"Gravity": true,
+			"Baseturf": "/turf/open/openspace",
+			"Linkage": null,
+			"No Parallax": true
+		}
+	],
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/service/bar/atrium"]
+		}
+	}
+}
