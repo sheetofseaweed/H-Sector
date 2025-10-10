@@ -6853,6 +6853,7 @@
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "modular_hsector\_defines\pool.dm"
+#include "modular_hsector\code\game\area\areas\maps\bar.dm"
 #include "modular_hsector\code\game\area\areas\maps\planetarea.dm"
 #include "modular_hsector\code\game\objects\items.dm"
 #include "modular_hsector\code\game\objects\effects\lights.dm"
