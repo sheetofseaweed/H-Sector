@@ -1,0 +1,4 @@
+author: "SapphoQueer"
+delete-after: True
+changes:
+  - rscadd: "Curator now has a \"Author\" job title."
