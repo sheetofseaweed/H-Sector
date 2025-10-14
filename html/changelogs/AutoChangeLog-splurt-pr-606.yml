@@ -1,0 +1,5 @@
+author: "Phoenix4O4"
+delete-after: True
+changes:
+  - qol: "tail_thump emote now available for cyborgs"
+  - rscadd: "Added tail support for cyborg interactions"
