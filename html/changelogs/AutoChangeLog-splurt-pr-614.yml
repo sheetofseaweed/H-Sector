@@ -1,4 +1,0 @@
-author: "MosleyTheMalO"
-delete-after: True
-changes:
-  - bugfix: "fixes everyone appearing as vetted due to an oversight"

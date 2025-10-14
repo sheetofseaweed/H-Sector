@@ -1,4 +1,0 @@
-author: "Mindstormsman"
-delete-after: True
-changes:
-  - bugfix: "Items dropped by borg modules are no longer invisible"

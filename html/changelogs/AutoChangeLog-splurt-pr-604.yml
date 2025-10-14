@@ -1,8 +1,0 @@
-author: "ItzLollipop"
-delete-after: True
-changes:
-  - rscadd: "Added additional genitals for vagina types & sleeves based on species"
-  - rscdel: "Removed Avian reference and replaced it with something reasonable."
-  - bugfix: "Fixed Unathi's not being included for lizard sleeve overlays"
-  - image: "Added and Modified pussies and sleeves in Fleshlight.DMI"
-  - code_imp: "Changed Avian dna.species reference to something more feasible."
