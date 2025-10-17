@@ -28,6 +28,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
+"an" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood,
+/area/ruin/powered/seedvault)
 "au" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -64,6 +70,25 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
+"bb" = (
+/obj/machinery/plumbing/reaction_chamber/chem,
+/obj/machinery/door/window/left/directional,
+/obj/machinery/door/window/left/directional/north,
+/obj/structure/window/spawner/directional/east,
+/obj/structure/window/spawner/directional/west,
+/turf/open/floor/stone,
+/area/ruin/powered/seedvault)
+"bi" = (
+/obj/structure/reagent_crafting_bench,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/item/forging/billow,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/ruin/powered/seedvault)
 "br" = (
 /obj/structure/window/spawner/directional/west,
 /obj/structure/window/spawner/directional/south,
@@ -87,10 +112,14 @@
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
-"bz" = (
-/obj/effect/turf_decal/shuttle/exploration/echidna,
-/turf/open/misc/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
+"cb" = (
+/obj/structure/sign/poster/contraband/kudzu/directional/north,
+/obj/machinery/duct,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/ruin/powered/seedvault)
 "cq" = (
 /obj/effect/turf_decal/tile/neutral/half{
 	alpha = 255;
@@ -260,6 +289,13 @@
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
+"eq" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/sign/departments/chemistry/alt/directional/west,
+/turf/open/floor/wood/large,
+/area/ruin/powered/seedvault)
 "eC" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
@@ -285,12 +321,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/powered/seedvault)
-"eJ" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/turf/open/floor/wood,
 /area/ruin/powered/seedvault)
 "eX" = (
 /obj/effect/turf_decal/siding/wood/end{
@@ -397,9 +427,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/machinery/light/directional/west{
-	pixel_y = -15
-	},
 /obj/machinery/mining_weather_monitor/directional/west,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
@@ -441,6 +468,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe,
+/obj/machinery/light/dim/directional/west{
+	pixel_y = 16
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "iV" = (
@@ -475,27 +505,6 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/warning,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
-"jR" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 1
-	},
-/obj/structure/safe/abovetilefloor{
-	name = "old floor safe";
-	desc = "A large, floor embedded safe. Looks old and worn."
-	},
-/obj/item/seeds/kudzu,
-/obj/item/lighter/royal,
-/obj/item/food/grown/poppy/geranium,
-/obj/item/clothing/suit/cloak/shawl,
-/obj/item/clothing/suit/cloak/shawl,
-/obj/item/clothing/suit/cloak/shawl,
-/obj/item/clothing/suit/cloak/shawl,
-/obj/item/clothing/neck/cowboylea,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
 "jW" = (
 /obj/machinery/door/poddoor{
 	id = "bunkerinterior"
@@ -504,10 +513,11 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
 "kk" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/trimline/dark_green/filled/line,
-/turf/open/floor/iron/dark,
+/obj/machinery/duct,
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "kB" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -540,6 +550,21 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /turf/closed/wall/r_wall,
 /area/ruin/powered/seedvault)
+"la" = (
+/obj/structure/reagent_anvil,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 5
+	},
+/obj/item/forging/hammer,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/ruin/powered/seedvault)
+"lg" = (
+/obj/effect/turf_decal/shuttle/exploration/echidna,
+/turf/open/misc/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "lh" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
@@ -551,6 +576,16 @@
 	},
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/hot_spring,
+/area/ruin/powered/seedvault)
+"lM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "lN" = (
 /obj/structure/flora/tree/jungle/small/style_4,
@@ -580,10 +615,6 @@
 /obj/structure/spacevine,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
-"my" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/large,
-/area/ruin/powered/seedvault)
 "mA" = (
 /obj/structure/flora/bush/sunny,
 /turf/open/floor/grass,
@@ -602,16 +633,20 @@
 "mY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/siding/wideplating_new/dark,
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "ni" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/machinery/light/directional/east,
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "nq" = (
@@ -641,6 +676,18 @@
 /obj/machinery/duct,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
+"nM" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	name = "Server Vent"
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 9
+	},
+/turf/open/floor/iron/dark,
+/area/ruin/powered/seedvault)
 "nS" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -664,6 +711,16 @@
 /obj/effect/mob_spawn/ghost_role/human/seed_vault,
 /turf/open/floor/plating/kudzu,
 /area/ruin/powered/seedvault)
+"oI" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/turf/open/floor/iron/dark,
+/area/ruin/powered/seedvault)
 "oZ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -675,6 +732,21 @@
 "pi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/catwalk_floor/wood_smooth,
+/area/ruin/powered/seedvault)
+"pr" = (
+/obj/structure/closet/crate/hydroponics,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/effect/spawner/random/food_or_drink/seed_vault,
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
 "pv" = (
 /obj/structure/flora/bush/generic/style_random,
@@ -770,18 +842,6 @@
 "qG" = (
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
-"qH" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 9
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "Server Vent"
-	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 9
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
 "qN" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood{
@@ -819,6 +879,15 @@
 "rf" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/hot_spring,
+/area/ruin/powered/seedvault)
+"rh" = (
+/obj/structure/spacevine,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/stone,
 /area/ruin/powered/seedvault)
 "rm" = (
 /obj/effect/mob_spawn/ghost_role/human/seed_vault,
@@ -883,13 +952,6 @@
 /area/ruin/powered/seedvault)
 "sx" = (
 /obj/structure/flora/bush/fullgrass/style_3,
-/turf/open/floor/grass,
-/area/ruin/powered/seedvault)
-"sD" = (
-/obj/structure/spacevine,
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "sF" = (
@@ -1096,15 +1158,10 @@
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "xq" = (
-/obj/structure/reagent_crafting_bench,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 4
-	},
-/obj/item/forging/billow,
 /obj/effect/turf_decal/siding/wood{
-	dir = 8
+	dir = 10
 	},
-/turf/open/floor/stone,
+/turf/open/floor/wood,
 /area/ruin/powered/seedvault)
 "xB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -1128,40 +1185,50 @@
 "ym" = (
 /turf/open/water/hot_spring,
 /area/ruin/powered/seedvault)
+"yy" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 10
+	},
+/turf/open/floor/iron/dark,
+/area/ruin/powered/seedvault)
+"yz" = (
+/obj/structure/closet/crate/hydroponics,
+/obj/item/gun/energy/floragun,
+/obj/item/gun/energy/floragun,
+/obj/item/gun/energy/floragun,
+/obj/item/gun/energy/floragun,
+/obj/item/geneshears,
+/obj/item/geneshears,
+/obj/item/geneshears,
+/obj/item/geneshears,
+/obj/item/clothing/neck/stethoscope,
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/powered/seedvault)
 "yN" = (
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "zb" = (
-/obj/structure/closet/crate/hydroponics,
-/obj/item/flatpacked_machine,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/mineral/silver{
-	amount = 25
-	},
-/obj/item/stack/sheet/mineral/titanium{
-	amount = 25
-	},
-/obj/item/stack/sheet/mineral/uranium/half{
-	amount = 20
-	},
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/obj/item/stack/sheet/mineral/gold{
-	amount = 15
-	},
-/obj/item/stack/sheet/mineral/diamond{
-	amount = 25
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
-"zj" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
+"zr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/spacevine,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
 	},
-/turf/open/floor/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "zw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -1181,18 +1248,17 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/powered/seedvault)
+"zK" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/powered/seedvault)
 "zT" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	name = "Server Vent"
 	},
 /obj/structure/flora/bush/lavendergrass,
-/turf/open/floor/grass,
-/area/ruin/powered/seedvault)
-"AA" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/siding/wideplating_new/dark,
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/duct,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "AB" = (
@@ -1210,44 +1276,18 @@
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
-"AL" = (
-/obj/machinery/light/dim/directional/west,
-/obj/effect/turf_decal/shuttle/exploration/typhon,
-/turf/open/floor/wood/large,
-/area/ruin/powered/seedvault)
-"AO" = (
+"AP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/duct,
 /turf/open/floor/grass,
-/area/ruin/powered/seedvault)
-"AV" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "Bd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/ruin/powered/seedvault)
-"Bg" = (
-/obj/structure/reagent_anvil,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 5
-	},
-/obj/item/forging/hammer,
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/turf/open/floor/stone,
 /area/ruin/powered/seedvault)
 "Bm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -1322,6 +1362,12 @@
 	pixel_y = 8
 	},
 /turf/open/floor/catwalk_floor/wood_smooth,
+/area/ruin/powered/seedvault)
+"Cy" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "CJ" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
@@ -1414,14 +1460,18 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
+"Eg" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/obj/structure/decorative/shelf,
+/turf/open/floor/stone,
+/area/ruin/powered/seedvault)
 "EU" = (
 /turf/open/floor/catwalk_floor/wood_smooth,
-/area/ruin/powered/seedvault)
-"Fk" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/siding/wideplating_new/dark,
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Fm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1432,18 +1482,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/turf/open/floor/grass,
-/area/ruin/powered/seedvault)
-"FA" = (
-/obj/machinery/duct,
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/wood/large,
-/area/ruin/powered/seedvault)
-"FI" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/machinery/duct,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "FP" = (
@@ -1478,16 +1516,6 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
-"Ha" = (
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 6
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 1
-	},
-/obj/structure/decorative/shelf,
-/turf/open/floor/stone,
-/area/ruin/powered/seedvault)
 "Hh" = (
 /obj/structure/chair/pew/right{
 	dir = 1
@@ -1508,6 +1536,13 @@
 	dir = 6
 	},
 /turf/open/floor/wood/tile,
+/area/ruin/powered/seedvault)
+"Hx" = (
+/obj/structure/spacevine,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "HB" = (
 /obj/structure/disposalpipe/segment{
@@ -1612,14 +1647,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
-"JD" = (
-/obj/structure/sign/poster/contraband/kudzu/directional/north,
-/obj/machinery/duct,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood/large,
-/area/ruin/powered/seedvault)
 "JE" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -1704,14 +1731,6 @@
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
-"KN" = (
-/obj/machinery/plumbing/reaction_chamber/chem,
-/obj/machinery/door/window/left/directional,
-/obj/machinery/door/window/left/directional/north,
-/obj/structure/window/spawner/directional/east,
-/obj/structure/window/spawner/directional/west,
-/turf/open/floor/stone,
-/area/ruin/powered/seedvault)
 "KQ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -1740,16 +1759,6 @@
 /obj/structure/spacevine,
 /obj/structure/fake_stairs/wood/directional/west,
 /turf/open/floor/wood,
-/area/ruin/powered/seedvault)
-"Lr" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "LI" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -1780,12 +1789,6 @@
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
-"LY" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/turf/open/floor/wood,
-/area/ruin/powered/seedvault)
 "MZ" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bunkershutter"
@@ -1809,19 +1812,12 @@
 /area/ruin/powered/seedvault)
 "Nr" = (
 /obj/structure/table/wood,
-/obj/machinery/light/directional/east,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
-"Nw" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/sign/departments/chemistry/alt/directional/west,
-/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "NH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -1835,30 +1831,44 @@
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Oa" = (
-/obj/structure/closet/crate/hydroponics,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/machinery/light/directional/north,
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "Oh" = (
-/obj/structure/flora/tree/jungle/small/style_6,
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/turf/open/floor/grass,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/trimline/dark_green/filled/line,
+/turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "Op" = (
 /obj/machinery/smartfridge,
 /turf/open/floor/grass,
+/area/ruin/powered/seedvault)
+"OA" = (
+/obj/structure/closet/crate/hydroponics,
+/obj/item/flatpacked_machine,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/mineral/silver{
+	amount = 25
+	},
+/obj/item/stack/sheet/mineral/titanium{
+	amount = 25
+	},
+/obj/item/stack/sheet/mineral/uranium/half{
+	amount = 20
+	},
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/gold{
+	amount = 15
+	},
+/obj/item/stack/sheet/mineral/diamond{
+	amount = 25
+	},
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
 "OF" = (
 /obj/structure/flora/bush/grassy/style_random,
@@ -1888,6 +1898,18 @@
 "OZ" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
+/area/ruin/powered/seedvault)
+"Pd" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/flora/bush/fullgrass/style_3,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Pg" = (
 /obj/structure/closet/crate/hydroponics,
@@ -1934,6 +1956,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
+"PJ" = (
+/obj/structure/flora/tree/jungle/small/style_6,
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/floor/grass,
+/area/ruin/powered/seedvault)
 "PR" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
@@ -1951,6 +1980,10 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/tile,
+/area/ruin/powered/seedvault)
+"Qe" = (
+/obj/machinery/duct,
+/turf/open/floor/stone,
 /area/ruin/powered/seedvault)
 "Qg" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2013,6 +2046,27 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
+"RK" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 1
+	},
+/obj/structure/safe/abovetilefloor{
+	name = "old floor safe";
+	desc = "A large, floor embedded safe. Looks old and worn."
+	},
+/obj/item/seeds/kudzu,
+/obj/item/lighter/royal,
+/obj/item/food/grown/poppy/geranium,
+/obj/item/clothing/suit/cloak/shawl,
+/obj/item/clothing/suit/cloak/shawl,
+/obj/item/clothing/suit/cloak/shawl,
+/obj/item/clothing/suit/cloak/shawl,
+/obj/item/clothing/neck/cowboylea,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/ruin/powered/seedvault)
 "RP" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -2034,19 +2088,20 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
-"Si" = (
-/obj/machinery/duct,
-/turf/open/floor/stone,
+"Sj" = (
+/obj/machinery/light/dim/directional/west,
+/obj/effect/turf_decal/shuttle/exploration/typhon,
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "Sk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/flora/bush/fullgrass/style_3,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
+	dir = 4
 	},
 /obj/effect/turf_decal/siding/wood{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
@@ -2058,42 +2113,10 @@
 /obj/structure/flora/biolumi/mine/weaklight,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
-"SI" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 5
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 5
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
-"SN" = (
-/obj/machinery/light/dim/directional/east,
-/obj/effect/turf_decal/shuttle/exploration/typhon,
-/turf/open/floor/wood/large,
-/area/ruin/powered/seedvault)
-"SV" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 10
-	},
+"SS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 10
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
-"SX" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/structure/spacevine,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/grass,
+/obj/machinery/duct,
+/turf/open/floor/catwalk_floor/wood_smooth,
 /area/ruin/powered/seedvault)
 "Tb" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2104,6 +2127,7 @@
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Tq" = (
+/obj/machinery/light/dim/directional/east,
 /obj/effect/turf_decal/shuttle/exploration/typhon,
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
@@ -2184,16 +2208,9 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
-"UQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/flora/bush/fullgrass/style_3,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
+"Vl" = (
+/obj/structure/flora/bush/grassy/style_random,
+/obj/machinery/duct,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Vn" = (
@@ -2219,11 +2236,6 @@
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
-"VB" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/duct,
-/turf/open/floor/catwalk_floor/wood_smooth,
-/area/ruin/powered/seedvault)
 "VR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -2232,18 +2244,8 @@
 /turf/closed/wall/r_wall,
 /area/ruin/powered/seedvault)
 "VS" = (
-/obj/structure/closet/crate/hydroponics,
-/obj/item/gun/energy/floragun,
-/obj/item/gun/energy/floragun,
-/obj/item/gun/energy/floragun,
-/obj/item/gun/energy/floragun,
-/obj/item/geneshears,
-/obj/item/geneshears,
-/obj/item/geneshears,
-/obj/item/geneshears,
-/obj/item/clothing/neck/stethoscope,
-/obj/machinery/light/directional/west,
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/effect/turf_decal/shuttle/exploration/typhon,
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "WL" = (
 /obj/structure/flora/bush/lavendergrass/style_3,
@@ -2284,16 +2286,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/powered/seedvault)
-"XQ" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/line{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 6
-	},
-/turf/open/floor/iron/dark,
-/area/ruin/powered/seedvault)
 "XT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/flora/bush/fullgrass/style_3,
@@ -2308,13 +2300,14 @@
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Ya" = (
-/obj/structure/spacevine,
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 5
 	},
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/dim/directional/north,
-/turf/open/floor/stone,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 5
+	},
+/turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "Yf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2349,6 +2342,13 @@
 	dir = 4
 	},
 /turf/open/floor/stone,
+/area/ruin/powered/seedvault)
+"Zm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "Zq" = (
 /obj/structure/flora/bush/fullgrass/style_random,
@@ -2497,7 +2497,7 @@ vI
 DM
 cs
 in
-sD
+Hx
 rb
 Sa
 HR
@@ -2521,7 +2521,7 @@ HR
 HR
 HR
 Sa
-Oh
+PJ
 oa
 cs
 cs
@@ -2559,7 +2559,7 @@ Sa
 Sa
 Sa
 jw
-kk
+Oh
 jW
 Vn
 im
@@ -2587,7 +2587,7 @@ LI
 Xg
 Sa
 Jr
-kk
+Oh
 jO
 qw
 RG
@@ -2601,7 +2601,7 @@ HR
 HR
 "}
 (9,1,1) = {"
-bz
+lg
 HR
 HR
 Sa
@@ -2640,8 +2640,8 @@ sF
 dc
 Pq
 Rl
-AO
-SX
+mY
+zr
 Bm
 cV
 Sa
@@ -2666,12 +2666,12 @@ BB
 ve
 wg
 Yf
-my
+Oa
 NH
 Ic
 lX
 XY
-mY
+Zm
 dT
 aE
 LV
@@ -2727,7 +2727,7 @@ ZI
 CJ
 xR
 mv
-Fk
+zb
 Sa
 Sa
 dv
@@ -2745,11 +2745,11 @@ HR
 Sa
 dv
 Pg
-VS
+yz
 dv
-Tq
-AL
-Tq
+VS
+Sj
+VS
 Sa
 Jq
 wT
@@ -2772,14 +2772,14 @@ HR
 HR
 Sa
 Nh
-qH
-SV
+nM
+yy
 Sa
-FA
+kk
 eZ
 KQ
-Nw
-Sk
+eq
+Pd
 mA
 Zq
 Up
@@ -2799,23 +2799,23 @@ HR
 (16,1,1) = {"
 HR
 Sa
-Oa
-jR
+pr
+RK
 tU
 eI
 TD
 TD
-Si
-KN
+Qe
+bb
 pR
 sT
-FI
+Vl
 RX
-AA
+AP
 fe
 zw
-VB
-VB
+SS
+SS
 sU
 Op
 fW
@@ -2828,13 +2828,13 @@ HR
 HR
 Sa
 HQ
-SI
-XQ
+Ya
+oI
 Sa
-JD
+cb
 Zc
 lO
-AV
+Cy
 NH
 TV
 CP
@@ -2857,16 +2857,16 @@ HR
 Sa
 Sa
 KX
-zb
+OA
 dv
+VS
 Tq
-SN
-Tq
+VS
 Sa
 uX
-Lr
+lM
 Fm
-UQ
+Sk
 GB
 Sa
 uD
@@ -2941,13 +2941,13 @@ qX
 qX
 HR
 Sa
-Ya
+rh
 TD
 qN
 EU
-zj
+an
 Bd
-eJ
+xq
 pi
 dv
 dp
@@ -2969,9 +2969,9 @@ qX
 HR
 HR
 LM
-Bg
-xq
-Ha
+la
+bi
+Eg
 EU
 zJ
 hc
@@ -3029,7 +3029,7 @@ HR
 HR
 Sa
 Qr
-LY
+zK
 QS
 rI
 pi
