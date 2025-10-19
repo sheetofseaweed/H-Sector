@@ -62,6 +62,13 @@
 /obj/machinery/light/dim/directional/east{
 	pixel_y = 15
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/ruin/powered/seedvault)
 "aE" = (
@@ -117,6 +124,24 @@
 /obj/machinery/duct,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/ruin/powered/seedvault)
+"co" = (
+/obj/effect/turf_decal/shuttle/exploration/typhon,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
 	},
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
@@ -235,7 +260,6 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 9
 	},
-/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "dT" = (
@@ -286,6 +310,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
@@ -350,6 +381,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/catwalk_floor/wood_smooth,
 /area/ruin/powered/seedvault)
 "fC" = (
@@ -400,6 +437,12 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "hc" = (
@@ -415,6 +458,13 @@
 	all_products_free = 1
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -433,6 +483,9 @@
 	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
 	dir = 1
+	},
+/obj/machinery/light/directional/west{
+	pixel_y = -16
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
@@ -468,9 +521,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe,
-/obj/machinery/light/dim/directional/west{
-	pixel_y = 16
-	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "iV" = (
@@ -480,6 +530,13 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "jw" = (
@@ -589,6 +646,20 @@
 /area/ruin/powered/seedvault)
 "lN" = (
 /obj/structure/flora/tree/jungle/small/style_4,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "lO" = (
@@ -638,6 +709,20 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
+	},
+/turf/open/floor/grass,
+/area/ruin/powered/seedvault)
+"nd" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/spacevine,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
@@ -708,8 +793,15 @@
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "ou" = (
-/obj/effect/mob_spawn/ghost_role/human/seed_vault,
-/turf/open/floor/plating/kudzu,
+/obj/effect/turf_decal/shuttle/exploration/typhon,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
+/turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "oI" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -727,6 +819,12 @@
 	},
 /obj/structure/flora/bush/flowers_pp,
 /obj/structure/flora/bush/fullgrass/style_3,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "pi" = (
@@ -745,7 +843,7 @@
 /obj/effect/spawner/random/food_or_drink/seed_vault,
 /obj/effect/spawner/random/food_or_drink/seed_vault,
 /obj/effect/spawner/random/food_or_drink/seed_vault,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/directional/north,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/powered/seedvault)
 "pv" = (
@@ -789,6 +887,12 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "qn" = (
@@ -891,7 +995,12 @@
 /area/ruin/powered/seedvault)
 "rm" = (
 /obj/effect/mob_spawn/ghost_role/human/seed_vault,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/plating/kudzu,
 /area/ruin/powered/seedvault)
 "rn" = (
@@ -947,6 +1056,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
@@ -1005,6 +1121,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "ur" = (
@@ -1059,6 +1181,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/vault,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "uX" = (
@@ -1073,10 +1201,22 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "ve" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "vI" = (
@@ -1084,6 +1224,12 @@
 /obj/structure/flora/bush/flowers_yw/style_2,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
 	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
@@ -1155,6 +1301,13 @@
 "xo" = (
 /obj/structure/beebox,
 /obj/effect/turf_decal/siding/wood/end,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "xq" = (
@@ -1217,6 +1370,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "zr" = (
@@ -1274,6 +1434,20 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "AP" = (
@@ -1308,6 +1482,13 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "BB" = (
@@ -1315,6 +1496,17 @@
 /obj/structure/spacevine,
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
+/area/ruin/powered/seedvault)
+"BC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
+/turf/open/floor/catwalk_floor/wood_smooth,
 /area/ruin/powered/seedvault)
 "BR" = (
 /obj/structure/spacevine,
@@ -1362,6 +1554,12 @@
 	pixel_y = 8
 	},
 /turf/open/floor/catwalk_floor/wood_smooth,
+/area/ruin/powered/seedvault)
+"Cp" = (
+/obj/structure/spacevine{
+	base_icon_state = "holo_firelock"
+	},
+/turf/closed/wall/r_wall,
 /area/ruin/powered/seedvault)
 "Cy" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1449,6 +1647,13 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
 	},
 /turf/open/floor/wood,
 /area/ruin/powered/seedvault)
@@ -1585,6 +1790,32 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
+"Ip" = (
+/obj/effect/turf_decal/tile/neutral/half{
+	alpha = 255;
+	color = "#5d341f";
+	dir = 2;
+	use_holiday_colors = 0
+	},
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 1
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/ruin/powered/seedvault)
 "IL" = (
 /obj/structure/flora/bush/ferny/style_3,
 /obj/structure/flora/biolumi/lamp/weaklight,
@@ -1645,6 +1876,12 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 1
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "JE" = (
@@ -1660,6 +1897,13 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
@@ -1686,6 +1930,13 @@
 	dir = 4
 	},
 /obj/machinery/hydroponics/constructable{
+	dir = 4
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -1727,6 +1978,13 @@
 	dir = 8
 	},
 /obj/machinery/hydroponics/constructable{
+	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -1771,6 +2029,12 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/watertank/high,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "LM" = (
@@ -1816,7 +2080,7 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "NH" = (
@@ -1832,6 +2096,12 @@
 /area/ruin/powered/seedvault)
 "Oa" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "Oh" = (
@@ -1882,6 +2152,13 @@
 	all_products_free = 1
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1936,6 +2213,12 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/access/all/away/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
 "PB" = (
@@ -2043,6 +2326,13 @@
 	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
 	dir = 1
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
@@ -2201,6 +2491,12 @@
 /obj/machinery/door/airlock/multi_tile/public/glass,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine"
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "UI" = (
@@ -2234,6 +2530,13 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
 /turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
 "VR" = (
@@ -2247,9 +2550,26 @@
 /obj/effect/turf_decal/shuttle/exploration/typhon,
 /turf/open/floor/wood/large,
 /area/ruin/powered/seedvault)
+"Wk" = (
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/wood_smooth,
+/area/ruin/powered/seedvault)
 "WL" = (
 /obj/structure/flora/bush/lavendergrass/style_3,
 /obj/structure/flora/biolumi/flower/weaklight,
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
+	},
 /turf/open/floor/grass,
 /area/ruin/powered/seedvault)
 "WM" = (
@@ -2261,6 +2581,20 @@
 	},
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 10
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 4
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
@@ -2374,6 +2708,33 @@
 	dir = 4
 	},
 /turf/open/floor/grass,
+/area/ruin/powered/seedvault)
+"ZW" = (
+/obj/effect/turf_decal/tile/neutral/half{
+	alpha = 255;
+	color = "#5d341f";
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/hydroponics/constructable{
+	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'modular_zubbers/icons/maps/biodome/holo_leaves.dmi';
+	icon_state = "holo_leaves";
+	desc = "A hanging vine.";
+	name = "hanging vine";
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
 /area/ruin/powered/seedvault)
 
 (1,1,1) = {"
@@ -2605,7 +2966,7 @@ lg
 HR
 HR
 Sa
-ou
+rm
 Up
 Sa
 IY
@@ -2633,7 +2994,7 @@ HR
 HR
 HR
 Sa
-ou
+rm
 zT
 UE
 sF
@@ -2661,7 +3022,7 @@ HR
 HR
 HR
 Sa
-ou
+rm
 BB
 ve
 wg
@@ -2703,7 +3064,7 @@ qn
 Sa
 Nr
 eg
-dv
+Cp
 Sa
 Sa
 Sa
@@ -2747,7 +3108,7 @@ dv
 Pg
 yz
 dv
-VS
+ou
 Sj
 VS
 Sa
@@ -2755,7 +3116,7 @@ Jq
 wT
 ia
 xE
-qn
+nd
 Sa
 ai
 Vp
@@ -2792,7 +3153,7 @@ Dv
 kR
 xR
 rn
-cr
+Ip
 Sa
 HR
 "}
@@ -2861,7 +3222,7 @@ OA
 dv
 VS
 Tq
-VS
+co
 Sa
 uX
 lM
@@ -2900,9 +3261,9 @@ dv
 Sa
 dv
 VR
+ZW
 Da
-Da
-Da
+ZW
 KD
 dv
 Sa
@@ -2916,7 +3277,7 @@ Sa
 YI
 rL
 Kt
-EU
+Wk
 EU
 EU
 xB
@@ -2976,7 +3337,7 @@ EU
 zJ
 hc
 OZ
-pi
+BC
 Sa
 Sd
 lP
@@ -3004,7 +3365,7 @@ BV
 zJ
 eX
 OZ
-pi
+BC
 dv
 ud
 yN
