@@ -376,6 +376,7 @@
 	id = "shuttles";
 	dir = 2
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/shuttle/supply)
 "Jm" = (
@@ -513,6 +514,7 @@
 	name = "Shuttle Shutters";
 	pixel_x = 32
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/shuttle/supply)
 "PZ" = (
