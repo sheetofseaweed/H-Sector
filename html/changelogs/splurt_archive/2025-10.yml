@@ -68,3 +68,10 @@
       toggle, Delete/Restore).
   k-testbase:
   - qol: unwhitelists specific donor items from bubber
+2025-10-24:
+  Fabian272:
+  - code_imp: Isotropic Stability is now incompatible with Rad Fiend
+  - code_imp: Rad Fiend's glow has been removed, but the quirk is now compatible with
+      illuminated.
+  SapphoQueer:
+  - rscadd: Adds the Incuboi Plushie.
