@@ -693,10 +693,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/pool_maintenance)
-"bk" = (
-/obj/item/decoration/garland/halloween/long,
-/turf/open/openspace,
-/area/station/commons/dorms)
 "bm" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /obj/effect/turf_decal/siding/dark_green,
@@ -14269,10 +14265,6 @@
 	},
 /turf/open/indestructible/dark,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
-"xY" = (
-/obj/item/decoration/garland/halloween/short,
-/turf/open/openspace,
-/area/station/commons/dorms)
 "xZ" = (
 /obj/machinery/light/directional/west,
 /obj/structure/decorative{
@@ -18004,10 +17996,6 @@
 	baseturfs = /turf/open/indestructible/rockyground
 	},
 /area/HS/bar/street)
-"Em" = (
-/obj/item/decoration/garland/halloween,
-/turf/open/openspace,
-/area/station/commons/dorms)
 "En" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -30741,10 +30729,6 @@
 	baseturfs = /turf/open/indestructible/rockyground
 	},
 /area/HS/bar/street)
-"Za" = (
-/obj/item/decoration/garland/halloween/medium,
-/turf/open/openspace,
-/area/station/commons/dorms)
 "Zb" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -54886,7 +54870,7 @@ qK
 qK
 AO
 Fa
-xY
+MR
 MR
 MR
 iF
@@ -54983,7 +54967,7 @@ kx
 qK
 ZJ
 Fa
-Em
+MR
 MR
 MR
 SM
@@ -55080,7 +55064,7 @@ Yx
 qK
 Uq
 Fa
-bk
+MR
 MR
 MR
 YW
@@ -55177,7 +55161,7 @@ qK
 qK
 pW
 hz
-xY
+MR
 MR
 MR
 lt
@@ -55274,7 +55258,7 @@ Gy
 qK
 Ea
 hz
-bk
+MR
 MR
 MR
 iF
@@ -55371,7 +55355,7 @@ AB
 qK
 aw
 Fa
-Za
+MR
 MR
 MR
 yy
@@ -55468,7 +55452,7 @@ Df
 qK
 pW
 Fa
-Za
+MR
 MR
 MR
 YW
@@ -55565,7 +55549,7 @@ Zz
 qK
 pW
 Fa
-Em
+MR
 MR
 MR
 QY
@@ -55662,7 +55646,7 @@ Fc
 qK
 xC
 Fa
-Za
+MR
 MR
 MR
 iF
@@ -55759,7 +55743,7 @@ qK
 qK
 MN
 Fa
-Em
+MR
 MR
 MR
 SM
