@@ -156,3 +156,63 @@
 	name = "\improper Apartment Corridor"
 	icon = 'icons/area/areas_away_missions.dmi'
 	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/corridor
+	name = "\improper Corridor"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment1
+	name = "\improper Apartment #217"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment2
+	name = "\improper Apartment #218"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment3
+	name = "\improper Apartment #219"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment4
+	name = "\improper Apartment #220"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment5
+	name = "\improper Apartment #221"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment6
+	name = "\improper Apartment #222"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment7
+	name = "\improper Apartment #223"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment8
+	name = "\improper Apartment #224"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment9
+	name = "\improper Apartment #225"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment10
+	name = "\improper Apartment #226"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"
+
+/area/HS/bar/indoors/skyscraper/apartments/apartment11
+	name = "\improper Apartment #227"
+	icon = 'icons/area/areas_away_missions.dmi'
+	icon_state = "away8"

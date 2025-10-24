@@ -2,6 +2,7 @@
 	name = "Mountains Air"
 	icon = 'icons/area/areas_away_missions.dmi'
 	icon_state = "away"
+	default_gravity = STANDARD_GRAVITY
 	requires_power = TRUE
 	always_unpowered = TRUE
 	static_lighting = TRUE
