@@ -75,3 +75,9 @@
       illuminated.
   SapphoQueer:
   - rscadd: Adds the Incuboi Plushie.
+2025-10-25:
+  Mindstormsman:
+  - bugfix: Intents now display in the Interaction menu (so-and-so is acting...)
+  - bugfix: Pens no longer body write while in harm intent
+  k-testbase:
+  - qol: refreshed seedvault
