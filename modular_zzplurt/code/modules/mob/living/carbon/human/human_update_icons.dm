@@ -25,7 +25,7 @@
 	update_worn_mouth()
 	update_worn_crotch()
 
-/mob/living/carbon/human/update_worn_underwear(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_underwear()
 	remove_overlay(UNDERWEAR_LAYER)
 
 	if(client && hud_used)
@@ -36,10 +36,6 @@
 		var/obj/item/clothing/underwear/briefs/undies = w_underwear
 
 		update_hud_underwear(undies)
-
-
-		if(update_obscured)
-			update_obscured_slots(undies.flags_inv)
 
 		if(underwear_hidden())
 			return
@@ -96,7 +92,7 @@
 
 	update_body_parts()
 
-/mob/living/carbon/human/update_worn_shirt(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_shirt()
 	remove_overlay(SHIRT_LAYER)
 
 	if(client && hud_used)
@@ -106,9 +102,6 @@
 	if(istype(w_shirt, /obj/item/clothing/underwear/shirt))
 		var/obj/item/clothing/underwear/shirt/undershirt = w_shirt
 		update_hud_shirt(undershirt)
-
-		if(update_obscured)
-			update_obscured_slots(undershirt.flags_inv)
 
 		if(undershirt_hidden())
 			return
@@ -164,7 +157,7 @@
 
 	update_body_parts()
 
-/mob/living/carbon/human/update_worn_bra(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_bra()
 	remove_overlay(BRA_LAYER)
 
 	if(client && hud_used)
@@ -174,9 +167,6 @@
 	if(istype(w_bra, /obj/item/clothing/underwear/shirt/bra))
 		var/obj/item/clothing/underwear/shirt/bra/bra = w_bra
 		update_hud_bra(bra)
-
-		if(update_obscured)
-			update_obscured_slots(bra.flags_inv)
 
 		if(bra_hidden())
 			return
@@ -233,7 +223,7 @@
 
 	update_body_parts()
 
-/mob/living/carbon/human/update_worn_wrists(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_wrists()
 	remove_overlay(WRISTS_LAYER)
 
 	if(client && hud_used)
@@ -243,9 +233,6 @@
 	if(wrists)
 		var/obj/item/worn_item = wrists
 		update_hud_wrists(worn_item)
-
-		if(update_obscured)
-			update_obscured_slots(worn_item.flags_inv)
 
 		if(wrists_hidden())
 			return
@@ -266,7 +253,7 @@
 		overlays_standing[WRISTS_LAYER] = wrists_overlay
 	apply_overlay(WRISTS_LAYER)
 
-/mob/living/carbon/human/update_worn_ears_extra(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_ears_extra()
 	remove_overlay(EARS_EXTRA_LAYER)
 
 	var/obj/item/bodypart/head/my_head = get_bodypart(BODY_ZONE_HEAD)
@@ -281,11 +268,7 @@
 		var/obj/item/worn_item = ears_extra
 		update_hud_ears_extra(worn_item)
 
-		if(update_obscured)
-			update_obscured_slots(worn_item.flags_inv)
-
-		var/obscured_slots = check_obscured_slots()
-		if(obscured_slots & ITEM_SLOT_EARS_RIGHT)
+		if(obscured_slots & HIDEEARS)
 			return
 
 		var/icon_file = 'icons/mob/clothing/ears.dmi'
@@ -308,7 +291,7 @@
 		overlays_standing[EARS_EXTRA_LAYER] = ears_overlay
 	apply_overlay(EARS_EXTRA_LAYER)
 
-/mob/living/carbon/human/update_worn_socks(update_obscured = TRUE)
+/mob/living/carbon/human/update_worn_socks()
 	remove_overlay(SOCKS_LAYER)
 
 	if(num_legs < 2)
@@ -321,9 +304,6 @@
 	if(istype(w_socks, /obj/item/clothing/underwear/socks))
 		var/obj/item/clothing/underwear/socks/worn_item = w_socks
 		update_hud_socks(worn_item)
-
-		if(update_obscured)
-			update_obscured_slots(worn_item.flags_inv)
 
 		if(socks_hidden())
 			return

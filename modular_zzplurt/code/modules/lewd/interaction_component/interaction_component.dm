@@ -246,7 +246,7 @@
 		attributes += "are sexually exhausted for the time being"
 
 	// Intent
-	switch(resolve_intent_name(target.combat_mode))
+	switch(target.combat_mode)
 		if(INTENT_HELP)
 			attributes += "are acting gentle"
 		if(INTENT_DISARM)
@@ -291,6 +291,11 @@
 				attributes += "have a pair of feet"
 			if(1)
 				attributes += "have a single foot"
+
+	// Tail
+	var/mob/living/carbon/human/human_target = target
+	if(ishuman(human_target) && human_target.has_tail(REQUIRE_GENITAL_ANY))
+		attributes += "have a tail"
 
 	return attributes
 

@@ -17,8 +17,7 @@
 		var/obj/item/willy = penis
 		update_hud_penis(willy)
 
-		if(update_obscured)
-			update_obscured_slots(willy.flags_inv)
+		update_worn_penis(update_obscured = FALSE)
 
 		if(penis_hidden())
 			return
@@ -64,8 +63,7 @@
 		var/obj/item/clothing/underwear/briefs/cooter = vagina
 		update_hud_vagina(cooter)
 
-		if(update_obscured)
-			update_obscured_slots(cooter.flags_inv)
+		update_worn_vagina(update_obscured = FALSE)
 
 		if(vagina_hidden())
 			return
@@ -111,8 +109,7 @@
 		var/obj/item/bum = anus
 		update_hud_anus(bum)
 
-		if(update_obscured)
-			update_obscured_slots(bum.flags_inv)
+		update_worn_anus(update_obscured = FALSE)
 
 		if(anus_hidden())
 			return
@@ -154,8 +151,7 @@
 		var/obj/item/clothing/underwear/shirt/bra/nips = nipples
 		update_hud_nipples(nips)
 
-		if(update_obscured)
-			update_obscured_slots(nips.flags_inv)
+		update_worn_nipples(update_obscured = FALSE)
 
 		if(nipples_hidden())
 			return
@@ -201,10 +197,8 @@
 		var/obj/item/worn_item = mouth
 		update_hud_mouth(worn_item)
 
-		if(update_obscured)
-			update_obscured_slots(worn_item.flags_inv)
+		update_worn_mouth(update_obscured = FALSE)
 
-		var/obscured_slots = check_obscured_slots()
 		if(obscured_slots & ITEM_SLOT_EARS_RIGHT)
 			return
 
@@ -239,8 +233,7 @@
 		var/obj/item/pubic = crotch
 		update_hud_crotch(pubic)
 
-		if(update_obscured)
-			update_obscured_slots(pubic.flags_inv)
+		update_worn_nipples(update_obscured = FALSE)
 
 		if(underwear_hidden())
 			return

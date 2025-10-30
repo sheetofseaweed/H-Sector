@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(resort_jobs, list(
 /datum/bank_account
 	var/is_resort_account = FALSE
 
-/datum/bank_account/payday(amount_of_paychecks, free = FALSE, starting_money_amount = 800, starting_cash = FALSE) //It's all hacky as hell, but whatever, we ball.
+/datum/bank_account/payday(amount_of_paychecks, free = FALSE, skippable = FALSE, event = "Payday", starting_money_amount = 800, starting_cash = FALSE) //It's all hacky as hell, but whatever, we ball.
 
 	if(starting_cash)
 		if(!account_job)
