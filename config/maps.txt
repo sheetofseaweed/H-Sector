@@ -100,6 +100,11 @@ map runtimestation
 endmap
 ##HSECTOR MAPS##
 
+map cafebar
+	default
+	votable
+endmap
+
 map inari
 	#default
 	votable
@@ -110,18 +115,10 @@ map shrine
 endmap
 
 map crescent
-	default
+	#default
 	votable
 endmap
 
-map valley
-	votable
-endmap
-
-map hoteltower
-	votable
-endmap
-
-map birdshot
+map hstation
 	votable
 endmap
