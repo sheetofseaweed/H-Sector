@@ -24,6 +24,8 @@
 	var/explodes_on_death = FALSE
 	/// Whether its MMI is a posibrain or regular MMI, used when being [obj/structure/ai_core][deconstructed]
 	var/posibrain_inside = TRUE
+	/// Whether other AIs get a "new host" announcement text. Syndicate AIs get to be sneaky and won't send the message.
+	var/announce_init_to_others = TRUE
 
 
 	/* STATE */
@@ -45,7 +47,7 @@
 	/* ROBOTS */
 	/// List of robots currently synced to the AI
 	VAR_FINAL/list/mob/living/silicon/robot/connected_robots = list()
-
+	var/list/connected_ipcs = list() // Splurt Edit
 
 	/* POWER */
 	/// Reserve emergency power, consumed when the AI has no [var/power_requirement][power source]

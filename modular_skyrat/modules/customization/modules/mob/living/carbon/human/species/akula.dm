@@ -16,7 +16,7 @@
 		OFFSET_HEAD = list(0, 2),
 		OFFSET_HAIR = list(0, 1),
 	)
-	eyes_icon = 'modular_skyrat/modules/organs/icons/akula_eyes.dmi'
+	//eyes_icon = 'modular_skyrat/modules/organs/icons/akula_eyes.dmi' //SPLURT EDIT - https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/453
 	mutanteyes = /obj/item/organ/eyes/akula
 	mutanttongue = /obj/item/organ/tongue/akula
 	inherent_traits = list(
@@ -160,7 +160,7 @@
 /// This proc is called after a mob with the TRAIT_SLIPPERY has its related timer run out
 /datum/species/akula/proc/dried(mob/living/carbon/akula)
 	// A moodlet which will not go away until the user gets wet
-	akula.add_mood_event("dry_skin", /datum/mood_event/dry_skin)
+	akula?.add_mood_event("dry_skin", /datum/mood_event/dry_skin)
 
 /// A simple overwrite which calls parent to listen to wet_stacks
 /datum/status_effect/fire_handler/wet_stacks/tick(delta_time)
