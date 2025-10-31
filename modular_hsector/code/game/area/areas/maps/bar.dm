@@ -216,3 +216,19 @@
 	name = "\improper Apartment #227"
 	icon = 'icons/area/areas_away_missions.dmi'
 	icon_state = "away8"
+
+/// VDOM
+
+/area/HS/bar/virtual_domain
+	name = "Virtual Domain"
+	icon_state = "bit_ruin"
+	icon = 'icons/area/areas_station.dmi'
+	area_flags = UNIQUE_AREA | LOCAL_TELEPORT | EVENT_PROTECTED | HIDDEN_AREA | UNLIMITED_FISHING
+	default_gravity = STANDARD_GRAVITY
+	requires_power = FALSE
+
+/area/HS/bar/virtual_domain/indoor
+	name = "Virtual Domain Indoor"
+	icon_state = "bit_ruin"
+	ambient_buzz_vol = 0
+	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
