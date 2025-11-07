@@ -49,6 +49,23 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"acc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "acX" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -132,6 +149,12 @@
 	dir = 4
 	},
 /area/HS/bar/street/bystreet)
+"agQ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "ahd" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -509,6 +532,31 @@
 	},
 /turf/open/floor/mineral/gold,
 /area/HS/bar/indoors/rooms/room5)
+"aqI" = (
+/obj/effect/mist,
+/obj/effect/mist{
+	icon = 'icons/effects/atmospherics.dmi';
+	icon_state = "water_vapor"
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/catwalk_floor/colony_fabricator{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street/bystreet)
 "asb" = (
 /obj/machinery/light/directional/east,
 /obj/structure/decorative{
@@ -740,6 +788,15 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"azd" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "azA" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/trimline/white/filled/line,
@@ -907,6 +964,16 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/HS/bar/indoors/skyscraper/apartments/apartment3)
+"aFR" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "aFS" = (
 /obj/structure/decorative{
 	icon = 'modular_skyrat/modules/aesthetics/airlock/icons/airlocks/station/command.dmi';
@@ -1088,6 +1155,21 @@
 	},
 /turf/open/indestructible/kitchen,
 /area/station/service/kitchen)
+"aNX" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/rubble,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "aPR" = (
 /obj/machinery/door/airlock/survival_pod{
 	dir = 4;
@@ -1100,6 +1182,22 @@
 /obj/effect/decal/cleanable/fuel_pool,
 /turf/open/floor/iron/smooth,
 /area/station/cargo/warehouse)
+"aRB" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "aRE" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -1532,6 +1630,32 @@
 	},
 /turf/open/indestructible/dark,
 /area/HS/bar/street/bystreet)
+"biR" = (
+/obj/effect/turf_decal/trimline/white/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/filled/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/trimline/yellow/filled/mid_joiner,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "bjf" = (
 /obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 8
@@ -1600,6 +1724,63 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"bkm" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
+"bkI" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"bly" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "blP" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
@@ -1636,10 +1817,41 @@
 	icon_state = "11,22"
 	},
 /area/HS/bar/street)
+"bmH" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "bnc" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment9)
+"bne" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bnI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/dark{
@@ -1690,6 +1902,31 @@
 	},
 /turf/open/floor/pod/light,
 /area/HS/bar/indoors/rooms/room1)
+"bpE" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bpX" = (
 /obj/effect/invisible_wall,
 /turf/open/indestructible/stone{
@@ -1759,6 +1996,22 @@
 	},
 /turf/open/indestructible/dark,
 /area/station/maintenance/pool_maintenance)
+"brI" = (
+/obj/effect/turf_decal/trimline/white/line,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "bsG" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 4;
@@ -2004,6 +2257,17 @@
 /obj/structure/flora/grass/brown/style_random,
 /turf/open/misc/asteroid/snow/indestructible,
 /area/HS/bar/indoors/rooms/room3)
+"byE" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "byN" = (
 /obj/machinery/washing_machine{
 	pixel_y = 5
@@ -2117,6 +2381,24 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/diagonal,
 /area/HS/bar/laundry)
+"bBH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "bBL" = (
 /obj/structure/decorative{
 	icon_state = "trimline_shrink_cw";
@@ -2172,6 +2454,32 @@
 /obj/structure/flora/ocean/longseaweed,
 /turf/open/floor/grass/fairy,
 /area/HS/bar/indoors/rooms/room1)
+"bCV" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bDA" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -2280,6 +2588,24 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"bHX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bIa" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -2293,6 +2619,27 @@
 	},
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"bIA" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bIH" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -2381,6 +2728,31 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/indestructible/kitchen,
 /area/station/service/kitchen)
+"bMk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "bNl" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A";
@@ -2412,6 +2784,23 @@
 	},
 /turf/open/indestructible/white,
 /area/station/service/kitchen)
+"bPp" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "bPX" = (
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/turf_decal/siding/dark{
@@ -2552,6 +2941,21 @@
 /obj/item/kirbyplants/synthetic/plant28,
 /turf/open/indestructible/dark/textured,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"bWM" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "bWT" = (
 /obj/structure/bed/double{
 	icon_state = "doublebed3";
@@ -2606,6 +3010,21 @@
 	},
 /turf/open/indestructible/dark,
 /area/station/maintenance/pool_maintenance)
+"cay" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "cbv" = (
 /obj/machinery/duct,
 /turf/closed/indestructible/steel,
@@ -3119,6 +3538,31 @@
 	},
 /turf/open/floor/eighties/red,
 /area/station/commons/dorms)
+"csa" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "csn" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
@@ -3465,6 +3909,32 @@
 	icon_state = "13,23"
 	},
 /area/HS/bar/street)
+"cCx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
+"cCF" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "cCV" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -3490,6 +3960,18 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"cDa" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "cDA" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/decorative{
@@ -3538,6 +4020,31 @@
 	},
 /turf/open/indestructible/white,
 /area/station/service/kitchen)
+"cFh" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "cFo" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -3592,10 +4099,53 @@
 	},
 /turf/open/indestructible/white/smooth_large,
 /area/HS/bar/laundry)
+"cGt" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "cGv" = (
 /obj/item/stack/sheet/iron/five,
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment4)
+"cGw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "cHj" = (
 /turf/closed/indestructible/steel,
 /area/HS/bar/indoors/skyscraper/apartments/apartment11)
@@ -3790,6 +4340,20 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"cPl" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "rand";
+	dir = 1;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "cPR" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/siding/dark{
@@ -4291,6 +4855,26 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/textured,
 /area/station/commons/dorms)
+"dgS" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	plane = -4;
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "dib" = (
 /obj/effect/turf_decal/tile/dark_blue/diagonal_edge,
 /obj/effect/turf_decal/siding/white/end{
@@ -4307,6 +4891,30 @@
 "djn" = (
 /turf/open/floor/iron/showroomfloor,
 /area/HS/bar/indoors/skyscraper/apartments/apartment8)
+"djC" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "dkC" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
@@ -4382,6 +4990,34 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street/bystreet)
+"dnR" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\streetpoles.dmi';
+	icon_state = "two";
+	dir = 4;
+	pixel_x = -32;
+	name = "postlamp";
+	layer = 6;
+	density = 1;
+	anchored = 1
+	},
+/obj/effect/light_emitter/fake_outdoors,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "doO" = (
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/news)
@@ -4467,6 +5103,25 @@
 /obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"dsx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "dsE" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /obj/effect/turf_decal/siding{
@@ -4589,6 +5244,7 @@
 /obj/structure/fake_stairs/stone{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -4833,6 +5489,25 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"dFG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "dFJ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/decorative{
@@ -4910,6 +5585,21 @@
 /obj/structure/cable,
 /turf/open/floor/pod/dark,
 /area/station/engineering/hallway)
+"dHP" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "dIi" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -4978,6 +5668,24 @@
 	},
 /turf/open/indestructible/dark/textured,
 /area/station/commons/dorms)
+"dKe" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "dKz" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -5446,6 +6154,29 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "3,27"
+	},
+/area/HS/bar/street)
+"eeF" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\streetpoles.dmi';
+	icon_state = "two";
+	dir = 4;
+	pixel_x = -32;
+	name = "postlamp";
+	layer = 6;
+	density = 1;
+	anchored = 1
+	},
+/obj/effect/light_emitter/fake_outdoors,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
 	},
 /area/HS/bar/street)
 "efq" = (
@@ -6045,6 +6776,25 @@
 	},
 /turf/open/indestructible/plating,
 /area/HS/bar/sewage)
+"ezU" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "eAn" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -6175,6 +6925,7 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark{
 	icon_state = "asphalt";
 	name = "asphalt";
@@ -6222,6 +6973,28 @@
 	icon_state = "20,23"
 	},
 /area/HS/bar/street)
+"eHC" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "eHD" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -6238,6 +7011,24 @@
 /obj/effect/turf_decal/tile/dark/diagonal_edge,
 /turf/open/indestructible/white,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"eJm" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "eJu" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\streetpoles.dmi';
@@ -6608,6 +7399,32 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/station/commons/dorms)
+"eTk" = (
+/obj/effect/light_emitter/interlink,
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
+"eUP" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "eVD" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\fence.dmi';
@@ -6859,6 +7676,28 @@
 	},
 /turf/open/floor/pod,
 /area/station/engineering/hallway)
+"ffT" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "fgw" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/asteroid/snow/indestructible,
@@ -6876,6 +7715,23 @@
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/light,
 /area/station)
+"fiA" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "fiK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/vomit/old,
@@ -6936,6 +7792,25 @@
 /obj/structure/mirror/directional/east,
 /turf/open/floor/iron/dark/diagonal,
 /area/HS/bar/laundry)
+"fkD" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "rand";
+	dir = 2;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "flh" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#ffe7cf";
@@ -6981,6 +7856,52 @@
 /obj/item/storage/bag/tray/cafeteria,
 /turf/open/indestructible/kitchen,
 /area/station/service/kitchen)
+"fmB" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"fmN" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "fmR" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/plating,
@@ -7062,6 +7983,26 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/HS/bar/indoors/skyscraper/apartments/apartment10)
+"foJ" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\barriers.dmi';
+	icon_state = "road_barrier";
+	dir = 4;
+	name = "road barrier";
+	anchored = 1;
+	density = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "fpp" = (
 /obj/structure/fake_stairs/stone{
 	dir = 2
@@ -7097,6 +8038,27 @@
 	name = "rain"
 	},
 /turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
+"fqB" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
 /area/HS/bar/street)
 "fqJ" = (
 /obj/structure/chair/comfy{
@@ -7520,6 +8482,13 @@
 	color = "#55585A";
 	dir = 1
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -7752,6 +8721,16 @@
 	icon_state = "27,12"
 	},
 /area/HS/bar/street)
+"fPn" = (
+/obj/effect/light_emitter/interlink,
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "fPr" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
@@ -7874,6 +8853,13 @@
 	pixel_x = 8;
 	pixel_y = 5
 	},
+/obj/item/storage/box/coffeepack/robusta{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/storage/box/coffeepack{
+	pixel_x = -5
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
 "fTT" = (
@@ -7963,6 +8949,22 @@
 "fXL" = (
 /turf/open/floor/carpet/black,
 /area/station)
+"fXT" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "fYh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -8117,6 +9119,7 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark{
 	icon_state = "asphalt";
 	name = "asphalt"
@@ -8168,6 +9171,31 @@
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /turf/open/floor/mineral/gold,
 /area/HS/bar/indoors/rooms/room5)
+"gfQ" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "ggi" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -8583,6 +9611,25 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/misc/grass/jungle,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"grU" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "gse" = (
 /obj/effect/decal/cleanable/fuel_pool/hivis,
 /obj/effect/turf_decal/stripes/line{
@@ -8693,6 +9740,23 @@
 	},
 /turf/open/indestructible/dark,
 /area/HS/bar/indoors/nearwindow)
+"gxo" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "gxL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -8810,6 +9874,26 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"gCd" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "cardboard";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "gCn" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -9144,6 +10228,13 @@
 	color = "#55585A";
 	dir = 10
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -9304,6 +10395,30 @@
 	icon_state = "4,22"
 	},
 /area/HS/bar/street)
+"gQQ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "gQT" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/bitrunning/den)
@@ -9327,6 +10442,22 @@
 /area/HS/bar/indoors/skyscraper/apartments/apartment10)
 "gRD" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
+"gRK" = (
+/obj/structure/flora/rock/pile/jungle/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\64x64.dmi';
+	icon_state = "graffiti1";
+	dir = 2;
+	name = "graffiti";
+	anchored = 1;
+	pixel_y = -25;
+	pixel_x = -33;
+	layer = 6
+	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/indestructible/rockyground
 	},
@@ -9390,6 +10521,51 @@
 	},
 /turf/open/indestructible/carpet,
 /area/HS/bar/laundry)
+"gTu" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
+"gTG" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	plane = -4;
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "gTN" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -9448,6 +10624,28 @@
 "gVB" = (
 /turf/closed/indestructible/steel,
 /area/station/commons/vacant_room/office)
+"gWg" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "gWw" = (
 /obj/structure/tentacle_lair/weeds/node,
 /turf/open/misc/dirt/planet{
@@ -9768,6 +10966,38 @@
 	},
 /turf/open/indestructible/dark,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"hgg" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "hgF" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -9789,6 +11019,20 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street)
+"hhy" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "hhA" = (
 /obj/structure/curtain/bounty/start_closed,
 /turf/open/floor/wood/large,
@@ -9996,6 +11240,24 @@
 	},
 /turf/open/floor/circuit/red/off,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"htf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "htq" = (
 /obj/structure/table/wood,
 /obj/structure/sign/clock/directional/west,
@@ -10080,6 +11342,27 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "8,22"
+	},
+/area/HS/bar/street)
+"hwY" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "hzb" = (
@@ -10192,6 +11475,21 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street/bystreet)
+"hCd" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "hCh" = (
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plating,
@@ -10209,6 +11507,25 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"hCT" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trashbags_2";
+	dir = 1;
+	name = "garbage bags";
+	pixel_y = -16;
+	pixel_x = -7;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "hEM" = (
 /obj/structure/cargo_shelf,
 /obj/effect/turf_decal/siding/yellow,
@@ -10479,6 +11796,31 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"hPs" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "hPB" = (
 /obj/effect/turf_decal/tile/dark/diagonal_centre,
 /obj/effect/turf_decal/siding/dark{
@@ -10530,6 +11872,24 @@
 	},
 /turf/open/indestructible/white,
 /area/station/commons/toilet/restrooms)
+"hQQ" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "hQZ" = (
 /obj/machinery/door/airlock/bathroom{
 	id_tag = "T2";
@@ -10641,6 +12001,22 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"hUI" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "hUK" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 6
@@ -10859,6 +12235,28 @@
 	dir = 8
 	},
 /area/HS/bar/street/bystreet)
+"ibe" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "ibV" = (
 /obj/effect/turf_decal/tile/dark/diagonal_centre,
 /obj/effect/turf_decal/siding/dark,
@@ -11048,6 +12446,10 @@
 /obj/structure/mirror/directional/west,
 /obj/structure/marker_beacon/violet{
 	pixel_y = 16
+	},
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = 10;
+	pixel_y = 1
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
@@ -11329,6 +12731,55 @@
 	icon_state = "wood_large"
 	},
 /area/HS/bar/indoors/rooms/room2)
+"itK" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"itS" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "itX" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -11384,6 +12835,16 @@
 	},
 /turf/open/indestructible/white/smooth_large,
 /area/HS/bar/indoors/rooms/room2)
+"iwi" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/rubble,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "iwp" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/pod/light,
@@ -11909,6 +13370,30 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/vacant_room/office)
+"iNJ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "iNT" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -12354,6 +13839,16 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"jdf" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "jdR" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/structure/spacevine{
@@ -12431,6 +13926,7 @@
 	dir = 2
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -12579,6 +14075,30 @@
 	},
 /turf/open/floor/pod/dark,
 /area/HS/bar/indoors/rooms/room1)
+"jnx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "jnW" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -12679,6 +14199,24 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"jpX" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "jqu" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -12710,6 +14248,23 @@
 	},
 /turf/open/floor/pod/light,
 /area/station/engineering/engine_smes)
+"jrI" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "jrO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable,
@@ -12789,6 +14344,31 @@
 /obj/machinery/shower/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/HS/bar/indoors/skyscraper/apartments/apartment4)
+"jvG" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "jvK" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -12893,6 +14473,27 @@
 	},
 /turf/open/floor/iron/pool/cobble/corner,
 /area/HS/bar/indoors/rooms/room1)
+"jzA" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "jzC" = (
 /obj/effect/mist{
 	icon = 'icons/effects/weather_effects.dmi';
@@ -12967,6 +14568,15 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"jCu" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "jCv" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -13187,6 +14797,19 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"jHW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "jIm" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/battery_pack/large/precharged,
@@ -13303,6 +14926,24 @@
 	},
 /turf/open/floor/wood/large,
 /area/station/common/pool/sauna)
+"jLs" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "jLP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname/directional/north{
@@ -13432,6 +15073,7 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark{
 	icon_state = "asphalt";
 	name = "asphalt"
@@ -13657,6 +15299,24 @@
 /area/station/commons/locker{
 	name = "Staff Room"
 	})
+"kaC" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "trash30";
+	dir = 1;
+	name = "boxes";
+	anchored = 1;
+	pixel_x = 4
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "kaD" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -13739,6 +15399,32 @@
 	},
 /turf/open/indestructible/dark,
 /area/HS/bar/street/bystreet)
+"kca" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\barriers.dmi';
+	icon_state = "road_barrier";
+	dir = 4;
+	name = "road barrier";
+	anchored = 1;
+	density = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "kcd" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -13749,6 +15435,23 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "23,25"
+	},
+/area/HS/bar/street)
+"kcv" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
 	},
 /area/HS/bar/street)
 "kcT" = (
@@ -13831,6 +15534,21 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street/bystreet)
+"kfx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "kfG" = (
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/effect/turf_decal/stripes/line,
@@ -13943,6 +15661,26 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/station)
+"khW" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\barriers.dmi';
+	icon_state = "road_barrier";
+	dir = 8;
+	name = "road barrier";
+	anchored = 1;
+	density = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "kir" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -14051,6 +15789,13 @@
 /obj/effect/invisible_wall,
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
@@ -14200,6 +15945,27 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "5,16"
+	},
+/area/HS/bar/street)
+"kqi" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "kqZ" = (
@@ -14389,6 +16155,17 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/HS/bar/indoors/rooms/apartments/apartment1)
+"kyO" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "kza" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\fence.dmi';
@@ -14414,6 +16191,32 @@
 "kzh" = (
 /turf/open/indestructible/stone,
 /area/HS/bar/indoors/bar/enter)
+"kzw" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
+"kzN" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trashbags_4";
+	dir = 1;
+	name = "garbage bags"
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "kAi" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -14434,6 +16237,16 @@
 /obj/effect/turf_decal/trimline/yellow/filled/warning/corner,
 /turf/open/floor/pod/dark,
 /area/station/engineering/hallway)
+"kBf" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "kBJ" = (
 /obj/effect/turf_decal/trimline/white/filled/corner{
 	dir = 1
@@ -14985,6 +16798,27 @@
 /obj/effect/invisible_wall,
 /turf/open/floor/grass,
 /area/HS/bar/street)
+"lbC" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "cardboard";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "lcH" = (
 /obj/structure/table/wood/cabinet,
 /obj/structure/closet/cabinet/undertable,
@@ -15394,6 +17228,13 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -15487,6 +17328,34 @@
 	baseturfs = /turf/open/indestructible/rockyground
 	},
 /area/HS/bar/street/bystreet)
+"lsO" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
+"luH" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "lvh" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/indestructible/dark/smooth_large,
@@ -15524,6 +17393,39 @@
 	icon_state = "wood_parquet"
 	},
 /area/HS/bar/indoors/bar)
+"lxa" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"lxb" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "lxr" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -15831,6 +17733,22 @@
 	dir = 2
 	},
 /area/HS/bar/indoors/rooms/apartments/apartment1)
+"lEL" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "lFu" = (
 /obj/structure/window/reinforced/spawner/directional/east{
 	name = "balcony window"
@@ -15923,6 +17841,25 @@
 	icon_state = "29,26"
 	},
 /area/HS/bar/street)
+"lLL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "lLZ" = (
 /obj/machinery/door/airlock/survival_pod{
 	dir = 4;
@@ -16095,6 +18032,26 @@
 	},
 /turf/closed/indestructible/steel,
 /area/HS/bar/indoors/bar/enter)
+"lSc" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "lSk" = (
 /turf/open/indestructible/dark,
 /area/station/maintenance/pool_maintenance)
@@ -16192,6 +18149,25 @@
 	icon_state = "27,7"
 	},
 /area/HS/bar/street)
+"lWd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "lXj" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A";
@@ -16228,6 +18204,31 @@
 /obj/structure/marker_beacon/green,
 /turf/open/floor/grass,
 /area/HS/bar/indoors/bar)
+"lXL" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "lXX" = (
 /obj/effect/mist{
 	icon = 'icons/effects/weather_effects.dmi';
@@ -16440,6 +18441,22 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"mhV" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "miq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mist{
@@ -16521,6 +18538,18 @@
 	},
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"mnM" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "moj" = (
 /obj/structure/curtain/bounty/start_closed,
 /turf/open/floor/pod/dark,
@@ -16659,6 +18688,9 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/dark,
+/obj/item/storage/fancy/coffee_condi_display{
+	pixel_x = 16
+	},
 /turf/open/floor/iron/dark/herringbone,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
 "muT" = (
@@ -16690,6 +18722,37 @@
 	},
 /turf/open/misc/sandy_dirt/planet,
 /area/HS/bar/street)
+"mxQ" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "box";
+	dir = 1;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
+"myI" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "mzE" = (
 /obj/structure/closet/generic/wall{
 	pixel_x = 32
@@ -16815,6 +18878,17 @@
 /obj/structure/curtain/cloth,
 /turf/open/indestructible/hoteltile,
 /area/station/common/pool/sauna)
+"mEJ" = (
+/obj/effect/turf_decal/trimline/white/line,
+/obj/item/clothing/head/cone,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "mFb" = (
 /obj/machinery/light/cold/directional/north,
 /obj/structure/railing/wooden_fencing{
@@ -16850,6 +18924,12 @@
 	icon_state = "20,20"
 	},
 /area/HS/bar/street)
+"mGl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "mGm" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A"
@@ -17134,6 +19214,27 @@
 "mOV" = (
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment2)
+"mOZ" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "mPb" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -17151,6 +19252,17 @@
 	},
 /turf/closed/indestructible/steel,
 /area/HS/bar/indoors/rooms/apartments/apartment1)
+"mQz" = (
+/obj/effect/light_emitter/interlink,
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "mQC" = (
 /obj/structure/table/wood/fancy,
 /obj/structure/decorative{
@@ -17191,6 +19303,24 @@
 /area/station/commons/locker{
 	name = "Staff Room"
 	})
+"mRY" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "mUh" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -17324,6 +19454,27 @@
 "mWL" = (
 /turf/closed/wall/mineral/wood,
 /area/station/common/pool/sauna)
+"mXM" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "mZd" = (
 /obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/plating,
@@ -17392,6 +19543,24 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark/smooth_large,
 /area/station/commons/dorms)
+"nbo" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "nbu" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -17465,6 +19634,15 @@
 	},
 /turf/closed/indestructible/steel,
 /area/station)
+"ndN" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "ndX" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -17510,6 +19688,26 @@
 	},
 /turf/open/floor/pod/light,
 /area/station/engineering/engine_smes)
+"nfd" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "brown";
+	dir = 1;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "nfZ" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/warning{
 	dir = 8
@@ -18119,6 +20317,23 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"nzg" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "nzz" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -18142,6 +20357,23 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"nBX" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "nCf" = (
 /obj/structure/stone_tile/slab/burnt,
 /obj/item/pillow{
@@ -18324,6 +20556,24 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/pool_maintenance)
+"nFH" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "nHC" = (
 /obj/effect/mist{
 	icon = 'icons/effects/weather_effects.dmi';
@@ -18570,6 +20820,24 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"nOR" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "nOT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -18626,6 +20894,31 @@
 	},
 /turf/open/floor/pod/light,
 /area/station/engineering/engine_smes)
+"nQU" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "nQV" = (
 /obj/structure/cable,
 /turf/open/floor/pod/dark,
@@ -18938,6 +21231,29 @@
 	},
 /turf/open/floor/grass,
 /area/HS/bar/street)
+"nZt" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "nZH" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\props.dmi';
@@ -18973,6 +21289,31 @@
 	},
 /turf/open/floor/material,
 /area/station)
+"obn" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "obp" = (
 /obj/structure/rack/shelf,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -19011,6 +21352,26 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"ocw" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\barriers.dmi';
+	icon_state = "road_barrier";
+	dir = 2;
+	name = "road barrier";
+	anchored = 1;
+	density = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "ocz" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -19083,6 +21444,25 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/textured,
 /area/station/commons/dorms)
+"odA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "oer" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/north{
 	pixel_y = 96
@@ -19264,6 +21644,7 @@
 /obj/structure/fake_stairs/stone{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -19374,6 +21755,31 @@
 	baseturfs = /turf/open/indestructible/rockyground
 	},
 /area/HS/bar/street)
+"oos" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "oov" = (
 /turf/open/indestructible/white,
 /area/station/commons/toilet/restrooms)
@@ -19386,6 +21792,8 @@
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	color = "#55585A"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -19444,6 +21852,44 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/plating,
 /area/HS/bar/sewage)
+"oqK" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"oqP" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\ladders.dmi';
+	icon_state = "manhole_closed";
+	dir = 1;
+	name = "manhole";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "orN" = (
 /obj/structure/curtain/bounty/start_closed,
 /turf/open/floor/iron/dark,
@@ -19493,6 +21939,7 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/street)
 "ouO" = (
@@ -19505,6 +21952,7 @@
 	color = "#55585A";
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -19652,6 +22100,26 @@
 /obj/item/broadcast_camera/film_studio,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/news)
+"oCi" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "oCL" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A";
@@ -19855,6 +22323,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/stone,
 /area/station/cargo/warehouse/upper)
+"oGl" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'modular_hsector\icons\obj\structures\props.dmi';
+	icon_state = "fog"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "oGt" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -19886,6 +22368,23 @@
 	icon_state = "13,21"
 	},
 /area/HS/bar/street)
+"oHB" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "oJH" = (
 /obj/machinery/washing_machine{
 	pixel_y = 5
@@ -19932,6 +22431,25 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "24,26"
+	},
+/area/HS/bar/street)
+"oLg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
 	},
 /area/HS/bar/street)
 "oLJ" = (
@@ -20352,6 +22870,14 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "inwall";
+	dir = 2;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/indestructible/rockyground
 	},
@@ -20553,6 +23079,16 @@
 	},
 /turf/open/floor/wood/tile,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"phf" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "phg" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -20560,6 +23096,14 @@
 	icon = 'icons/effects/weather_effects.dmi';
 	icon_state = "rain_med";
 	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "rand";
+	dir = 2;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
 	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/indestructible/rockyground
@@ -20638,6 +23182,54 @@
 /obj/machinery/vending/hotdog,
 /turf/open/indestructible/dark,
 /area/station)
+"pkm" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
+"pko" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "pky" = (
 /obj/structure/railing{
 	dir = 8
@@ -20710,6 +23302,8 @@
 "plX" = (
 /obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/turf_decal/bot,
+/obj/structure/table/glass,
+/obj/item/reagent_containers/cup/glass/shaker,
 /turf/open/floor/iron/white/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
 "pmb" = (
@@ -20782,6 +23376,13 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -20794,6 +23395,21 @@
 	},
 /turf/open/floor/wood/large,
 /area/station/common/pool/sauna)
+"ppE" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "pqo" = (
 /obj/effect/invisible_wall,
 /turf/open/floor/iron/stairs/medium{
@@ -21082,6 +23698,10 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
+/obj/item/reagent_containers/cup/glass/shaker{
+	pixel_x = -14;
+	pixel_y = 12
+	},
 /turf/open/floor/iron/dark/herringbone,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
 "pAQ" = (
@@ -21134,6 +23754,48 @@
 	name = "rain"
 	},
 /turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
+"pDi" = (
+/obj/effect/turf_decal/trimline/white/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/filled/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/trimline/yellow/filled/mid_joiner,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
+"pDV" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trashbin-3";
+	dir = 1;
+	name = "garbage";
+	anchored = 1;
+	pixel_y = 7
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
 /area/HS/bar/street/bystreet)
 "pEV" = (
 /obj/machinery/vending/imported,
@@ -21217,6 +23879,18 @@
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"pHq" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
 	},
 /area/HS/bar/street)
 "pHv" = (
@@ -21496,6 +24170,10 @@
 /obj/structure/ladder/unbreakable,
 /turf/open/floor/iron/smooth,
 /area/station/cargo/warehouse)
+"pRP" = (
+/obj/effect/decal/hammerandsickle,
+/turf/closed/indestructible/steel,
+/area/station)
 "pRS" = (
 /obj/structure/railing/wooden_fencing{
 	alpha = 100;
@@ -21517,6 +24195,24 @@
 	},
 /turf/open/floor/wood/large,
 /area/HS/bar/indoors/rooms/apartments/apartment3)
+"pSp" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "pSV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -21574,6 +24270,21 @@
 	},
 /turf/open/indestructible/hoteltile,
 /area/HS/bar/indoors/rooms/room4)
+"pVH" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "pWb" = (
 /obj/machinery/hydroponics/constructable/fullupgrade,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -21643,6 +24354,24 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "4,21"
+	},
+/area/HS/bar/street)
+"pYF" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "pZA" = (
@@ -21868,6 +24597,15 @@
 /obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/dark/textured,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"qmV" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "qnf" = (
 /obj/effect/mist{
 	icon = 'modular_hsector\icons\obj\structures\props.dmi';
@@ -22075,6 +24813,15 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"qvx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "qvI" = (
 /turf/open/floor/iron/kitchen/diagonal,
 /area/HS/bar/indoors/rooms/apartments/apartment1)
@@ -22178,6 +24925,7 @@
 /obj/structure/fake_stairs/stone{
 	dir = 2
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -22448,6 +25196,25 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"qHN" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "qHW" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/arrow_ccw{
 	dir = 1
@@ -22558,6 +25325,13 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -22574,6 +25348,24 @@
 	icon_state = "wood_large"
 	},
 /area/HS/bar/indoors/bar)
+"qMr" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "qMF" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -22818,6 +25610,22 @@
 /obj/structure/curtain/bounty/start_closed,
 /turf/open/floor/wood/large,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"qWL" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "qYV" = (
 /obj/effect/mist,
 /obj/effect/mist{
@@ -23335,6 +26143,17 @@
 	name = "long way down"
 	},
 /area/HS/bar/street)
+"rtk" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "rtn" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
@@ -23366,6 +26185,8 @@
 	color = "#55585A";
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -23393,6 +26214,23 @@
 /obj/effect/turf_decal/tile/blue/diagonal_edge,
 /turf/open/indestructible/hoteltile,
 /area/station/common/pool/sauna)
+"rxp" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "rxw" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
@@ -23708,6 +26546,25 @@
 	},
 /turf/open/floor/wood/tile,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"rIR" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "rIW" = (
 /obj/structure/sign/clock/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -24004,6 +26861,27 @@
 	},
 /turf/open/floor/pod,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"rYI" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "rZk" = (
 /obj/structure/sign/poster/random/directional/west,
 /obj/effect/decal/cleanable/dirt,
@@ -24016,6 +26894,22 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/HS/bar/indoors/skyscraper/apartments/apartment10)
+"rZV" = (
+/obj/structure/marker_beacon/burgundy{
+	light_power = 4;
+	light_range = 3;
+	remove_speed = 999;
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "sac" = (
 /obj/structure/chair/sofa/right{
 	dir = 1
@@ -24489,6 +27383,27 @@
 	},
 /turf/open/indestructible/plating,
 /area/HS/bar/sewage)
+"snO" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "snP" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -24678,6 +27593,22 @@
 "svL" = (
 /turf/open/floor/eighties/red,
 /area/station/commons/dorms)
+"svN" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "swR" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/misc/grass/planet{
@@ -24695,6 +27626,15 @@
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"syP" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "syY" = (
 /obj/structure/railing/wooden_fencing{
 	alpha = 100;
@@ -24811,6 +27751,24 @@
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/iron/smooth,
 /area/station/cargo/warehouse)
+"sAN" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "sAR" = (
 /obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/terracotta/diagonal,
@@ -24824,6 +27782,27 @@
 	},
 /turf/open/floor/iron/herringbone{
 	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
+"sCw" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "sCQ" = (
@@ -25039,6 +28018,28 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"sJy" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "sJE" = (
 /obj/machinery/vending/autodrobe,
 /obj/machinery/light/directional/east,
@@ -25133,6 +28134,16 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"sNi" = (
+/obj/effect/turf_decal/trimline/white/line,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "sNw" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A"
@@ -25140,6 +28151,13 @@
 /obj/effect/mist{
 	icon = 'modular_hsector\icons\obj\structures\props.dmi';
 	icon_state = "fog"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
@@ -25215,6 +28233,24 @@
 	dir = 8
 	},
 /area/HS/bar/indoors/rooms/apartments/apartment1)
+"sQS" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "sRo" = (
 /obj/structure/chair/sofa/left/maroon{
 	dir = 4
@@ -25253,6 +28289,33 @@
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment2)
+"sTK" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
+"sUt" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "inwall";
+	dir = 1;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "sUw" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -25439,6 +28502,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/light/directional/north,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/iron/shuttle/exploration/uside,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
 "sZN" = (
@@ -25573,6 +28637,32 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"tfw" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	plane = -4;
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "tfG" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
@@ -25671,6 +28761,21 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/warning,
 /turf/open/indestructible/white,
 /area/station/service/kitchen)
+"thP" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "thW" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -25773,6 +28878,23 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/station/engineering/hallway)
+"tjE" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "tkp" = (
 /obj/structure/sink/directional/east,
 /obj/structure/mirror/directional/west,
@@ -25781,6 +28903,18 @@
 	},
 /turf/open/indestructible/white,
 /area/station/commons/toilet/restrooms)
+"tks" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "tlq" = (
 /obj/machinery/door/airlock/service{
 	dir = 4;
@@ -26075,6 +29209,38 @@
 	},
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment1)
+"ttx" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"ttT" = (
+/obj/effect/light_emitter/interlink,
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "ttW" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile{
@@ -26373,6 +29539,22 @@
 	},
 /turf/open/indestructible/kitchen,
 /area/station/service/kitchen)
+"tDe" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "tDl" = (
 /turf/open/indestructible/kitchen,
 /area/station/service/kitchen)
@@ -26465,6 +29647,21 @@
 	icon_state = "wood_large"
 	},
 /area/HS/bar/indoors/nearwindow)
+"tGc" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "tGv" = (
 /obj/structure/cable,
 /obj/structure/grille/indestructible,
@@ -26496,6 +29693,24 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"tHA" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "tHD" = (
 /obj/item/mop{
 	pixel_y = 2;
@@ -26549,6 +29764,31 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "3,5"
+	},
+/area/HS/bar/street)
+"tIW" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "tJb" = (
@@ -26682,6 +29922,23 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/station)
+"tMZ" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "tNn" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -27150,6 +30407,27 @@
 	name = "asphalt"
 	},
 /area/HS/bar/street)
+"ucV" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "udh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -27208,6 +30486,22 @@
 	},
 /turf/open/floor/pod,
 /area/HS/bar/indoors/skyscraper/apartments/apartment2)
+"uen" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "ufc" = (
 /obj/structure/stone_tile{
 	dir = 4
@@ -27281,6 +30575,28 @@
 	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/HS/bar/indoors/rooms/apartments/apartment1)
+"uiC" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 8
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "uiG" = (
 /obj/effect/decal/cleanable/fuel_pool/hivis,
 /turf/open/indestructible/dark,
@@ -27288,6 +30604,13 @@
 "ujc" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	color = "#55585A"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
@@ -27428,6 +30751,17 @@
 /obj/effect/spawner/liquids_spawner/ankles,
 /turf/open/floor/iron/pool/cobble,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"uqX" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "utg" = (
 /obj/effect/turf_decal/siding/dark/corner,
 /obj/effect/turf_decal/trimline/white/filled/corner,
@@ -27460,6 +30794,31 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/bamboo/tatami/black,
 /area/HS/bar/indoors/rooms/room4)
+"uuA" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "uuC" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -27475,6 +30834,30 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"uuJ" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "uuR" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/pod/dark,
@@ -27508,6 +30891,21 @@
 	icon_state = "wood_large"
 	},
 /area/HS/bar/indoors/bar)
+"uvM" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "rand";
+	dir = 1;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "uwD" = (
 /obj/effect/decal/cleanable/ants,
 /obj/effect/mist{
@@ -27571,6 +30969,37 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/hotelwood,
 /area/HS/bar/indoors/bar)
+"uzi" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "uAF" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -27748,6 +31177,24 @@
 	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street)
+"uFO" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
 	},
 /area/HS/bar/street)
 "uGi" = (
@@ -27988,6 +31435,27 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "5,26"
+	},
+/area/HS/bar/street)
+"uPQ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
 	},
 /area/HS/bar/street)
 "uQc" = (
@@ -28436,6 +31904,20 @@
 	},
 /turf/open/floor/circuit/green/anim,
 /area/station)
+"veh" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "rand";
+	dir = 2;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "vej" = (
 /obj/effect/turf_decal/siding{
 	dir = 8
@@ -28685,6 +32167,22 @@
 	},
 /turf/open/misc/sandy_dirt/planet,
 /area/HS/bar/street)
+"vnD" = (
+/obj/effect/turf_decal/trimline/white/line,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "vnO" = (
 /turf/open/indestructible/hotelwood{
 	icon_state = "wood_large"
@@ -28770,6 +32268,25 @@
 	icon_state = "28,5"
 	},
 /area/HS/bar/street)
+"vrf" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "vsu" = (
 /obj/machinery/smartfridge/wooden/ration_shelf{
 	layer = 2.7;
@@ -28814,6 +32331,24 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/large,
 /area/HS/bar/indoors/rooms/room3)
+"vte" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "vuO" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -28871,6 +32406,30 @@
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"vvV" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/chair/sofa/bench/right{
+	pixel_y = 15
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "vwa" = (
 /obj/structure/marker_beacon/yellow,
 /obj/effect/mist{
@@ -28897,6 +32456,18 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
+"vwm" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "vwy" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -28947,6 +32518,17 @@
 	icon_state = "30,19"
 	},
 /area/HS/bar/street)
+"vxP" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "vxS" = (
 /obj/structure/railing/wooden_fencing{
 	alpha = 100;
@@ -29039,6 +32621,23 @@
 	},
 /turf/open/indestructible/plating,
 /area/HS/bar/street)
+"vAm" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "vBo" = (
 /obj/effect/mist{
 	icon = 'modular_hsector\icons\obj\structures\props.dmi';
@@ -29071,6 +32670,18 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"vCw" = (
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "vCI" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/arrow_cw,
 /obj/machinery/light/floor,
@@ -29110,6 +32721,18 @@
 /obj/machinery/power/rtg/abductor,
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"vDL" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "vDY" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -29237,6 +32860,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark/smooth_large,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"vJb" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/glass/plastitanium/screws,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "vKr" = (
 /obj/structure/curtain/bounty,
 /turf/closed/indestructible/riveted/boss,
@@ -29383,11 +33016,12 @@
 /turf/open/floor/fakebasalt,
 /area/HS/bar/indoors/rooms/room5)
 "vOx" = (
-/obj/structure/table/reinforced/titaniumglass,
+/obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/window/reinforced/spawner/directional/west{
 	name = "balcony window"
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/griddle/frontier_tabletop,
 /turf/open/floor/plating,
 /area/HS/bar/indoors/skyscraper/apartments/apartment7)
 "vOE" = (
@@ -29571,6 +33205,32 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/dark,
 /area/HS/bar/indoors/skyscraper/apartments/corridor)
+"vVv" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "vVS" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -29620,6 +33280,27 @@
 	},
 /turf/closed/indestructible/steel,
 /area/HS/bar/indoors/rooms/apartments/apartment3)
+"vWt" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "vWv" = (
 /obj/structure/railing/wooden_fencing{
 	alpha = 100;
@@ -29677,6 +33358,13 @@
 /obj/structure/railing/unbreakable{
 	color = "#55585A";
 	dir = 2
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
 	},
 /turf/open/floor/iron/herringbone{
 	baseturfs = /turf/open/indestructible/plating
@@ -29876,6 +33564,20 @@
 	},
 /turf/closed/indestructible/steel,
 /area/HS/bar/indoors/rooms/room1)
+"weL" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "weM" = (
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 8
@@ -29909,6 +33611,30 @@
 /obj/effect/turf_decal/tile/blue/diagonal_edge,
 /turf/open/indestructible/hoteltile,
 /area/station/common/pool/sauna)
+"whG" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 2
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_1";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "wic" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/siding/wideplating_new/light{
@@ -29926,6 +33652,18 @@
 /obj/effect/turf_decal/tile/dark/diagonal_centre,
 /turf/open/indestructible/dark,
 /area/HS/bar/indoors/bar)
+"wjo" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/rubble,
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
+	},
+/area/HS/bar/street)
 "wjT" = (
 /obj/machinery/light/directional/east,
 /obj/structure/sign/poster/random/directional/east,
@@ -29977,6 +33715,42 @@
 	icon_state = "6,17"
 	},
 /area/HS/bar/street)
+"wlz" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/plasma,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"wlC" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "wlT" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 2
@@ -30057,6 +33831,13 @@
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	color = "#55585A";
 	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
@@ -30209,6 +33990,19 @@
 	icon_state = "wood_large"
 	},
 /area/HS/bar/indoors/rooms/room4)
+"wrq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "wrT" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/warning{
 	dir = 1
@@ -30525,6 +34319,22 @@
 	},
 /turf/open/indestructible/plating,
 /area/HS/bar/sewage)
+"wHn" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\64x64.dmi';
+	icon_state = "graffiti4";
+	dir = 2;
+	name = "graffiti";
+	anchored = 1;
+	pixel_y = 33;
+	pixel_x = -33;
+	layer = 6
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "wHB" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -30859,6 +34669,32 @@
 	icon_state = "9,8"
 	},
 /area/HS/bar/street)
+"wQj" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/structure/railing/unbreakable{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/invisible_wall,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "wQM" = (
 /obj/structure/cargo_shelf,
 /obj/effect/decal/cleanable/dirt,
@@ -31001,6 +34837,24 @@
 /obj/structure/table,
 /turf/open/indestructible/vault,
 /area/HS/bar/laundry)
+"wWR" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "wXg" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -31142,6 +34996,17 @@
 	slowdown = 0.4
 	},
 /area/HS/bar/street)
+"xaX" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass/plastitanium,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "xcm" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -31595,6 +35460,17 @@
 	},
 /turf/open/misc/sandy_dirt/planet,
 /area/HS/bar/street/bystreet)
+"xoG" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/rubble,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "xoW" = (
 /obj/effect/mist{
 	icon = 'icons/effects/weather_effects.dmi';
@@ -31659,6 +35535,19 @@
 "xqj" = (
 /turf/closed/wall/mineral/stone,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"xqR" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\pipes.dmi';
+	icon_state = "cont_single";
+	dir = 4;
+	name = "pipeline";
+	anchored = 1;
+	pixel_y = 29
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/indestructible/rockyground
+	},
+/area/HS/bar/street/bystreet)
 "xrb" = (
 /obj/structure/decorative{
 	icon = 'modular_hsector\icons\obj\structures\64x64.dmi';
@@ -31759,6 +35648,22 @@
 	icon_state = "30,12"
 	},
 /area/HS/bar/street)
+"xus" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/station)
 "xvk" = (
 /obj/structure/sign/poster/greenscreen/directional/north,
 /obj/structure/chair/sofa/left{
@@ -31935,6 +35840,17 @@
 	},
 /turf/open/floor/carpet/green,
 /area/HS/bar/indoors/rooms/room3)
+"xAO" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/rubble,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street/bystreet)
 "xBd" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 4
@@ -31974,6 +35890,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -31999,6 +35916,32 @@
 	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
+	},
+/area/HS/bar/street)
+"xCs" = (
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\barriers.dmi';
+	icon_state = "road_barrier";
+	dir = 8;
+	name = "road barrier";
+	anchored = 1;
+	density = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/dark{
+	icon_state = "asphalt";
+	name = "asphalt"
 	},
 /area/HS/bar/street)
 "xCx" = (
@@ -32072,6 +36015,25 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"xGA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone,
+/area/HS/bar/street/bystreet)
 "xHR" = (
 /obj/effect/turf_decal/siding/end{
 	dir = 8
@@ -32100,6 +36062,30 @@
 	},
 /turf/open/floor/grass/fairy,
 /area/HS/bar/indoors/rooms/room1)
+"xHU" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "xHW" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/dark{
@@ -32135,10 +36121,24 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
 /turf/open/floor/iron/herringbone{
 	baseturfs = /turf/open/indestructible/plating
 	},
 /area/HS/bar/street)
+"xIR" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/window/reinforced/spawner/directional/west{
+	name = "balcony window"
+	},
+/turf/open/floor/plating,
+/area/HS/bar/indoors/skyscraper/apartments/apartment7)
 "xIW" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -32199,6 +36199,13 @@
 	icon_state = "rain_med";
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "papers_2";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
 /turf/open/indestructible/stone{
 	slowdown = 0.4
 	},
@@ -32256,6 +36263,23 @@
 	},
 /turf/open/indestructible/vault,
 /area/HS/bar/laundry)
+"xNg" = (
+/obj/effect/turf_decal/trimline/white/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/filled/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/trimline/yellow/filled/mid_joiner,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/dark/smooth_large,
+/area/HS/bar/street)
 "xNu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/invisible_wall,
@@ -32266,6 +36290,31 @@
 	},
 /turf/open/indestructible/stone,
 /area/HS/bar/street/bystreet)
+"xOb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "trash";
+	dir = 1;
+	name = "garbage";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "xOi" = (
 /obj/structure/decorative{
 	icon_state = "projector";
@@ -32366,6 +36415,18 @@
 	},
 /turf/open/floor/carpet/black,
 /area/HS/bar/indoors/skyscraper/apartments/apartment5)
+"xRP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "xRZ" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -32794,6 +36855,23 @@
 	},
 /turf/open/water/hot_spring,
 /area/HS/bar/indoors/rooms/room5)
+"ydo" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/turf/open/floor/iron/herringbone{
+	baseturfs = /turf/open/indestructible/plating
+	},
+/area/HS/bar/street)
 "ydu" = (
 /obj/item/stack/sheet/iron/five,
 /turf/open/floor/plating,
@@ -32887,6 +36965,28 @@
 	icon_state = "wood_large"
 	},
 /area/station/commons/dorms)
+"ygB" = (
+/obj/effect/mist{
+	icon = 'icons/effects/weather_effects.dmi';
+	icon_state = "rain_med";
+	name = "rain"
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	color = "#55585A";
+	dir = 4
+	},
+/obj/structure/decorative{
+	icon = 'modular_hsector\icons\obj\structures\miscellaneous.dmi';
+	icon_state = "leaves";
+	dir = 1;
+	name = "leaves";
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/stone{
+	slowdown = 0.4
+	},
+/area/HS/bar/street)
 "ygL" = (
 /obj/structure/chair/sofa/corner{
 	dir = 4
@@ -34123,7 +38223,7 @@ lQF
 akK
 cUL
 vOx
-uZZ
+xIR
 rXA
 uZZ
 tgh
@@ -42549,7 +46649,7 @@ frK
 hYL
 xLz
 nex
-nex
+uuA
 pPd
 pPd
 pPd
@@ -42566,7 +46666,7 @@ pxX
 pxX
 pxX
 tcc
-fCI
+tfw
 uvv
 dWA
 sVh
@@ -42653,17 +46753,17 @@ xZt
 jYy
 fPr
 dWA
-idu
-pxX
+sQS
+qMr
 pxX
 pxX
 dsT
 sWY
 kLg
-kLg
+xCs
 kLg
 tcc
-jYy
+bkI
 bxI
 dWA
 sVh
@@ -42747,10 +46847,10 @@ sVh
 xZK
 daU
 xZt
-gVr
+hgg
 ryV
 ihT
-idu
+sQS
 pxX
 pxX
 pxX
@@ -42846,7 +46946,7 @@ kDb
 lZc
 gVr
 rEP
-ihT
+fmN
 idu
 pxX
 pxX
@@ -42855,8 +46955,8 @@ tcc
 idu
 pxX
 pxX
-pxX
-tcc
+vte
+vnD
 jYy
 rEP
 ihT
@@ -42935,27 +47035,27 @@ dRo
 dRo
 wDr
 xfU
-ihT
+lXL
 bYG
 sVh
 dYI
 vGf
 lZc
-jYy
+cFh
 rEP
 dWA
-idu
-pxX
-pxX
-pxX
-tcc
-idu
-pxX
+mRY
+jpX
 pxX
 pxX
 tcc
+vCw
+pxX
+qMr
+pxX
+vnD
 jYy
-rEP
+bBH
 dWA
 sVh
 nYa
@@ -43031,7 +47131,7 @@ dRo
 dRo
 dRo
 frK
-xfU
+sJy
 pHj
 lZc
 onl
@@ -43042,17 +47142,17 @@ jYy
 jKO
 dWA
 idu
-pxX
+qMr
 pxX
 pxX
 dsT
-sWY
+qvx
 pxX
 pxX
-pxX
+jpX
 tcc
 jYy
-rEP
+bBH
 dWA
 bEb
 iDF
@@ -43067,7 +47167,7 @@ dRo
 dRo
 dRo
 hlB
-tVS
+eTk
 acY
 sZN
 ndC
@@ -43128,7 +47228,7 @@ dRo
 dRo
 dRo
 frK
-wOU
+vvV
 pHj
 eWi
 mIE
@@ -43136,20 +47236,20 @@ fYx
 bsP
 sVh
 gVr
-kEH
-dWA
+tMZ
+iNJ
 idu
 pxX
 pxX
 pxX
-sWY
-sWY
+mhV
+qvx
+mnM
 pxX
-pxX
-pxX
+jpX
 tcc
-jYy
-kEH
+tIW
+tjE
 dWA
 vQP
 fbf
@@ -43238,15 +47338,15 @@ dWA
 idu
 pxX
 pxX
-pxX
-tcc
+mnM
+sNi
 idu
+mnM
 pxX
-pxX
-pxX
+jpX
 tcc
 jYy
-bxI
+ydo
 dWA
 xZt
 kQS
@@ -43256,14 +47356,14 @@ dRo
 dRo
 dRo
 dRo
-dRo
+pRP
 dRo
 dRo
 dRo
 dRo
 vZg
-acY
-nWc
+vwm
+pVH
 dRo
 dRo
 dRo
@@ -43296,10 +47396,10 @@ sSI
 pDh
 mJj
 beG
-pDh
+uen
 pDh
 aLv
-mJj
+ppE
 pDh
 ybl
 qva
@@ -43331,14 +47431,14 @@ lZc
 obO
 fCI
 uvv
-dWA
-idu
+gQQ
+sQS
 pxX
 pxX
 pxX
 tcc
 idu
-pxX
+dsx
 pxX
 pxX
 tcc
@@ -43358,8 +47458,8 @@ dRo
 dRo
 dRo
 hlB
-tVS
-acY
+ttT
+wrq
 sZN
 ndC
 dRo
@@ -43441,7 +47541,7 @@ pxX
 tcc
 jYy
 bxI
-dWA
+djC
 iDF
 uOU
 xZt
@@ -43456,8 +47556,8 @@ dRo
 dRo
 dRo
 vZg
-acY
-nWc
+mGl
+eUP
 dRo
 dRo
 dRo
@@ -43498,7 +47598,7 @@ kza
 dRo
 dRo
 dRo
-pDh
+uen
 bdk
 dRo
 dRo
@@ -43530,15 +47630,15 @@ idu
 pxX
 pxX
 pxX
-sWY
-sWY
+qvx
+qvx
 pxX
 pxX
-pxX
+jpX
 tcc
-jYy
-jbU
-dWA
+tIW
+bHX
+djC
 sVh
 uOU
 nNY
@@ -43620,21 +47720,21 @@ lZc
 lrc
 uct
 lZc
-jYy
+cFh
 rEP
 dWA
 idu
+jpX
 pxX
 pxX
-pxX
-tcc
-idu
-pxX
+sNi
+vCw
+mnM
 pxX
 pxX
 tcc
 jYy
-rEP
+bBH
 dWA
 sVh
 iBa
@@ -43718,7 +47818,7 @@ wEK
 vQP
 xZt
 qxi
-bxI
+nzg
 dWA
 idu
 pxX
@@ -43726,13 +47826,13 @@ pxX
 pxX
 tcc
 idu
+mnM
 pxX
 pxX
-pxX
-tcc
+vnD
 qxi
 bxI
-dWA
+gQQ
 sVh
 xZt
 uOU
@@ -43746,9 +47846,9 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
-nWc
+jdf
+vwm
+pVH
 dRo
 dRo
 dRo
@@ -43822,7 +47922,7 @@ pxX
 pxX
 pxX
 dsT
-sWY
+qvx
 pxX
 pxX
 pxX
@@ -43843,8 +47943,8 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
+jdf
+agQ
 nWc
 dRo
 dRo
@@ -43904,7 +48004,7 @@ inl
 eZk
 qyF
 cdj
-xfU
+gWg
 dWA
 vgN
 sVh
@@ -43912,13 +48012,13 @@ nYa
 xZt
 sKZ
 fsB
-jbU
+htf
 dWA
-idu
+mRY
 pxX
 pxX
 pxX
-sWY
+qvx
 sWY
 pxX
 pxX
@@ -43941,8 +48041,8 @@ dRo
 dRo
 hlB
 tVS
-acY
-sZN
+agQ
+fPn
 ndC
 dRo
 dRo
@@ -44017,9 +48117,9 @@ pxX
 pxX
 tcc
 idu
+mnM
 pxX
-pxX
-pxX
+jpX
 tcc
 jYy
 rEP
@@ -44037,9 +48137,9 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
-nWc
+tDe
+agQ
+ndN
 dRo
 dRo
 dRo
@@ -44098,7 +48198,7 @@ iJj
 iJj
 utq
 ctm
-rbG
+bne
 ihT
 sVh
 vQP
@@ -44109,12 +48209,12 @@ tio
 uvv
 dWA
 idu
+jpX
 pxX
-pxX
-pxX
-tcc
-idu
-pxX
+mnM
+sNi
+vCw
+mnM
 pxX
 pxX
 tcc
@@ -44135,8 +48235,8 @@ dRo
 dRo
 dRo
 vZg
-acY
-nWc
+agQ
+xus
 dRo
 dRo
 dRo
@@ -44195,29 +48295,29 @@ qPa
 qPa
 gAC
 qJx
-rbG
-ihT
+bne
+bpE
 qRT
 uYd
 uOU
 lZc
 sVh
 gVr
-bxI
+kcv
 dWA
 idu
+qMr
 pxX
-pxX
-pxX
-dsT
+mnM
+rZV
 sWY
-pxX
+mnM
 pxX
 pxX
 tcc
-jYy
-bxI
-dWA
+nQU
+ydo
+djC
 xPj
 sVh
 xZt
@@ -44232,8 +48332,8 @@ dRo
 dRo
 hlB
 tVS
-acY
-sZN
+jHW
+fPn
 ndC
 dRo
 dRo
@@ -44274,7 +48374,7 @@ rJF
 rJF
 rJF
 fXr
-pDh
+uen
 pyr
 dRo
 dRo
@@ -44292,7 +48392,7 @@ inl
 otq
 xNb
 vTz
-rbG
+uPQ
 qaE
 xZt
 xZt
@@ -44300,12 +48400,12 @@ oVT
 dYI
 uYr
 jYy
-kEH
-dWA
+bPp
+iNJ
 idu
 pxX
 pxX
-pxX
+mnM
 sWY
 sWY
 pxX
@@ -44313,7 +48413,7 @@ pxX
 pxX
 tcc
 jYy
-kEH
+tjE
 dWA
 vQP
 rmf
@@ -44328,9 +48428,9 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
-nWc
+jdf
+agQ
+ndN
 dRo
 dRo
 dRo
@@ -44396,7 +48496,7 @@ nNY
 xZK
 dYI
 lZc
-jYy
+nQU
 rEP
 ihT
 idu
@@ -44407,10 +48507,10 @@ tcc
 idu
 pxX
 pxX
-pxX
+qMr
 tcc
-jYy
-rEP
+bkI
+bMk
 dWA
 sVh
 vng
@@ -44425,9 +48525,9 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
-nWc
+nBX
+jHW
+ndN
 dRo
 dRo
 dRo
@@ -44496,14 +48596,14 @@ wkm
 jYy
 vYx
 dWA
-idu
+mRY
 pxX
 pxX
 pxX
 tcc
 idu
 pxX
-pxX
+mnM
 pxX
 tcc
 jYy
@@ -44522,8 +48622,8 @@ dRo
 dRo
 dRo
 hlB
-tVS
-acY
+mQz
+agQ
 sZN
 ndC
 dRo
@@ -44590,10 +48690,10 @@ xZt
 sVh
 vQP
 bYG
-jYy
+nQU
 rEP
 dWA
-idu
+mRY
 pxX
 pxX
 pxX
@@ -44602,7 +48702,7 @@ sWY
 pxX
 pxX
 pxX
-tcc
+brI
 jYy
 rEP
 dWA
@@ -44619,8 +48719,8 @@ dRo
 dRo
 dRo
 dRo
-vZg
-acY
+bmH
+agQ
 nWc
 dRo
 dRo
@@ -44663,7 +48763,7 @@ rJF
 rJF
 fXr
 mJj
-oPm
+acc
 dRo
 dRo
 dRo
@@ -44697,7 +48797,7 @@ pxX
 sWY
 sWY
 pxX
-pxX
+mnM
 pxX
 tcc
 qxi
@@ -44716,7 +48816,7 @@ dRo
 dRo
 dRo
 dRo
-vZg
+oHB
 cDV
 nWc
 dRo
@@ -44797,8 +48897,8 @@ pxX
 pxX
 pxX
 tcc
-jYy
-bxI
+bkI
+ydo
 dWA
 sVh
 uOU
@@ -44881,20 +48981,20 @@ vQP
 nNY
 vgN
 obO
-fCI
+gTG
 uvv
 dWA
 idu
-pxX
+jpX
 pxX
 pxX
 tcc
 idu
-pxX
+mnM
 pxX
 pxX
 tcc
-fCI
+tfw
 uvv
 dWA
 xZt
@@ -44911,7 +49011,7 @@ dRo
 dRo
 dRo
 vZg
-acY
+cDa
 nWc
 dRo
 dRo
@@ -44990,10 +49090,10 @@ sWY
 pxX
 pxX
 pxX
-tcc
+vnD
 jYy
 rEP
-dWA
+djC
 nNY
 vgN
 uDz
@@ -45008,7 +49108,7 @@ msY
 oiC
 auw
 eDN
-kEH
+tMZ
 xoW
 bYG
 qQn
@@ -45075,7 +49175,7 @@ sVh
 xZt
 uOU
 iDF
-jYy
+tIW
 jbU
 ihT
 idu
@@ -45084,7 +49184,7 @@ pxX
 pxX
 sWY
 sWY
-pxX
+mnM
 pxX
 pxX
 tcc
@@ -45150,7 +49250,7 @@ osC
 pDh
 aAP
 osC
-osC
+eJm
 vbp
 oDy
 dqh
@@ -45160,9 +49260,9 @@ moX
 hBI
 pNf
 jQv
+odA
 dqh
-dqh
-dqh
+rIR
 uMS
 pNf
 iDT
@@ -45173,36 +49273,36 @@ fYx
 sGK
 obO
 gVr
-rEP
+cGw
 ihT
-idu
+sQS
 pxX
 pxX
 pxX
 tcc
-idu
+vCw
 pxX
 pxX
 pxX
 tcc
-jYy
-rEP
-nmN
+nQU
+jLs
+sCw
 xax
 xax
 xax
+ucV
+xax
+snO
 xax
 xax
-xax
-xax
-xax
-xax
+ucV
 xax
 xax
 vVd
 vVd
 fEP
-kEH
+tjE
 xLV
 oiC
 uFD
@@ -45251,18 +49351,18 @@ xZp
 nKG
 lAf
 fez
+xGA
 vZT
 vZT
-vZT
-ccI
+sAN
 auR
+lLL
 xZp
-xZp
-hMK
+aqI
 vZT
-vZT
+dFG
 xZp
-xfU
+sJy
 dWA
 sVh
 wEK
@@ -45270,7 +49370,7 @@ uOU
 nNY
 vQP
 fsB
-rEP
+cGw
 dWA
 idu
 pxX
@@ -45283,22 +49383,22 @@ pxX
 pxX
 tcc
 qxi
-rEP
+jLs
+kEH
+xiF
+tMZ
+tjE
+tjE
+kEH
+bPp
+tjE
+tjE
+tjE
+kEH
 kEH
 xiF
 kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-xiF
-kEH
-kEH
+tjE
 kEH
 xLV
 auw
@@ -45360,7 +49460,7 @@ dRo
 dRo
 dRo
 xfU
-dWA
+whG
 bYG
 wEK
 wEK
@@ -45370,7 +49470,7 @@ qxi
 bxI
 dWA
 idu
-pxX
+jpX
 pxX
 pxX
 dsT
@@ -45378,21 +49478,21 @@ sWY
 pxX
 pxX
 pxX
-tcc
+vnD
 qxi
 rEP
 bnU
 vpO
+oqK
 vpO
 vpO
+mOZ
 vpO
-vpO
-vpO
-wnR
+kqi
 bnU
 vpO
 vpO
-vpO
+ttx
 vpO
 vpO
 vpO
@@ -45457,7 +49557,7 @@ dRo
 dRo
 dRo
 jyI
-dWA
+whG
 vQP
 xZt
 wEK
@@ -45466,19 +49566,19 @@ cZi
 gVr
 npT
 ihT
-idu
-pxX
+mRY
+jpX
 pxX
 pxX
 sWY
 sWY
 pxX
-pxX
+mnM
 pxX
 tcc
 jYy
 kEH
-dWA
+djC
 wEK
 sVh
 dcz
@@ -45562,27 +49662,27 @@ aax
 xZt
 gVr
 bxI
-dWA
+iNJ
 idu
 pxX
 pxX
 pxX
 tcc
 idu
-pxX
-pxX
+mnM
+mnM
 pxX
 tcc
 jYy
-bxI
-dWA
+nzg
+djC
 sVh
 xZt
 xZt
 bYG
 obO
 hKX
-eDN
+lxa
 xoW
 xZt
 xZt
@@ -45661,15 +49761,15 @@ fCI
 uvv
 dWA
 idu
-pxX
-pxX
-pxX
-tcc
-idu
-pxX
+jpX
 pxX
 pxX
 tcc
+vCw
+pxX
+pxX
+pxX
+vnD
 fCI
 uvv
 dWA
@@ -45679,8 +49779,8 @@ xZt
 wDr
 dRo
 dfa
-rvg
-ujc
+svN
+qmV
 gRD
 dRo
 dRo
@@ -45758,12 +49858,12 @@ jYy
 bxI
 dWA
 idu
+jpX
 pxX
 pxX
-pxX
-dsT
-sWY
-pxX
+rZV
+qvx
+mnM
 pxX
 pxX
 tcc
@@ -45776,8 +49876,8 @@ xZt
 frK
 hlB
 lsB
-rvg
-ujc
+xAO
+hCT
 ePn
 dRo
 mBG
@@ -45851,15 +49951,15 @@ lZc
 nNY
 gEy
 lZc
-jYy
+nQU
 kEH
 ihT
 idu
 pxX
 pxX
 pxX
-sWY
-sWY
+qvx
+qvx
 pxX
 pxX
 pxX
@@ -45873,8 +49973,8 @@ lZc
 frK
 dRo
 swR
-rvg
-ujc
+qWL
+hUI
 ePn
 dRo
 mBG
@@ -45951,11 +50051,11 @@ cZi
 jcF
 rEP
 ihT
-idu
+mRY
 pxX
 pxX
 pxX
-tcc
+sNi
 idu
 pxX
 pxX
@@ -45970,7 +50070,7 @@ mti
 tfQ
 dRo
 swR
-rvg
+fiA
 ujc
 pIb
 dRo
@@ -46046,12 +50146,12 @@ xZt
 sVh
 lZc
 jYy
-rEP
-dWA
+jLs
+whG
 idu
+jpX
 pxX
-pxX
-pxX
+mnM
 tcc
 kon
 pxX
@@ -46066,9 +50166,9 @@ nmz
 vgN
 wDr
 dRo
-swR
-rvg
-ujc
+wHn
+kaC
+jrI
 pIb
 dRo
 mBG
@@ -46148,24 +50248,24 @@ dWA
 idu
 pxX
 pxX
-pxX
+mnM
 dsT
 sWY
 pxX
-pxX
+mnM
 pxX
 tcc
 qxi
 bxI
-dWA
+djC
 lZc
 xZt
 vQP
 frK
 dRo
 gRD
-rvg
-ujc
+wlC
+xaX
 gRD
 dRo
 mBG
@@ -46232,7 +50332,7 @@ mnn
 tXY
 vwO
 kMs
-xfU
+sJy
 nyU
 sVh
 iBa
@@ -46242,27 +50342,27 @@ lZc
 gVr
 jbU
 dWA
-idu
+mRY
 pxX
 pxX
-pxX
-sWY
-sWY
-pxX
-pxX
+mnM
+qvx
+qvx
+mnM
+mnM
 pxX
 tcc
 qxi
-jbU
-dWA
+bHX
+djC
 vQP
 nNY
 uYd
 frK
 hlB
 pTU
-rvg
-ujc
+vJb
+qmV
 gRD
 dRo
 mBG
@@ -46329,7 +50429,7 @@ nwK
 gMG
 vwO
 uUv
-xfU
+sJy
 dWA
 sVh
 uct
@@ -46338,12 +50438,12 @@ cZi
 lZc
 gVr
 bxI
-dWA
+gQQ
 idu
 pxX
 pxX
 pxX
-tcc
+sNi
 idu
 pxX
 pxX
@@ -46359,7 +50459,7 @@ tfQ
 dRo
 szh
 fqZ
-ujc
+cay
 swR
 dRo
 mBG
@@ -46440,9 +50540,9 @@ idu
 pxX
 pxX
 pxX
-tcc
+sNi
 idu
-pxX
+mnM
 pxX
 pxX
 tcc
@@ -46454,7 +50554,7 @@ sVh
 sVh
 wDr
 dRo
-swR
+sUt
 fqZ
 ujc
 swR
@@ -46533,15 +50633,15 @@ xZt
 jYy
 bxI
 dWA
-idu
+pkm
+wjo
 pxX
+mnM
+rZV
+qvx
+mnM
 pxX
-pxX
-dsT
-sWY
-pxX
-pxX
-pxX
+jpX
 tcc
 jYy
 bxI
@@ -46551,9 +50651,9 @@ vgN
 oVT
 frK
 dRo
-swR
-rvg
-ujc
+mxQ
+aRB
+qmV
 gRD
 dRo
 mBG
@@ -46627,30 +50727,30 @@ nNY
 vgN
 xZt
 kjO
-qxi
+vVv
 kEH
 dWA
-idu
+nFH
 pxX
 pxX
-pxX
+mnM
+qvx
 sWY
-sWY
-pxX
+lsO
 pxX
 pxX
 tcc
 jYy
-kEH
+tjE
 dWA
 sVh
 wEK
 uOU
 frK
 dRo
-swR
-rvg
-ujc
+veh
+xoG
+cay
 gRD
 dRo
 dRo
@@ -46727,19 +50827,19 @@ lZc
 jYy
 rEP
 dWA
-idu
-pxX
+nFH
+jpX
 pxX
 pxX
 tcc
 idu
-pxX
-pxX
+lsO
+lsO
 pxX
 tcc
 nWk
-rEP
-dWA
+bBH
+djC
 sVh
 wEK
 xZt
@@ -46747,7 +50847,7 @@ tfQ
 hlB
 vgB
 eWZ
-jIX
+lSc
 gib
 gib
 gib
@@ -46821,35 +50921,35 @@ nNY
 xZt
 uct
 xZt
-jYy
-rEP
+tIW
+uFO
 dWA
-idu
+nFH
 pxX
 pxX
 pxX
 tcc
 idu
 pxX
-pxX
+lsO
 pxX
 tcc
 jYy
-rEP
+uFO
 dWA
 sVh
 xZt
 mqf
 wDr
 dRo
-jeu
+fkD
 eWZ
 noy
 pjd
+lbC
 pjd
-pjd
-pjd
-pjd
+bly
+rYI
 pjd
 pjd
 ptH
@@ -46912,7 +51012,7 @@ dRo
 dRo
 frK
 lXj
-pHj
+uzi
 nNY
 bYG
 nNu
@@ -46922,14 +51022,14 @@ jYy
 bsK
 ihT
 idu
+vte
 pxX
-pxX
-pxX
+wjo
 dsT
 sWY
 pxX
-pxX
-pxX
+lsO
+lsO
 tcc
 jYy
 rEP
@@ -46939,17 +51039,17 @@ xZt
 nNY
 frK
 dRo
-phg
-eWZ
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-jIX
+nfd
+vWt
+vDL
+vxP
+vxP
+nbo
+vDL
+vDL
+vxP
+vxP
+weL
 gib
 dRo
 dRo
@@ -47017,19 +51117,19 @@ wEK
 xZt
 gVr
 kEH
-ihT
+fmN
 idu
-pxX
-pxX
+vte
+lsO
 pxX
 sWY
 rUK
 pxX
-pxX
+wjo
 pxX
 tcc
 qxi
-jbU
+bHX
 dWA
 bYG
 xZt
@@ -47038,14 +51138,14 @@ frK
 dRo
 phg
 eWZ
+vDL
 tpO
-tpO
-tpO
-tpO
+tHA
+uqX
 gIK
-tpO
-tpO
-tpO
+rtk
+qHN
+hPs
 jIX
 gib
 dRo
@@ -47113,37 +51213,37 @@ oVT
 lZc
 iDF
 gVr
-bxI
+kcv
 dWA
 idu
-pxX
-pxX
+lsO
+lsO
 pxX
 tcc
 idu
 pxX
 pxX
 pxX
-tcc
-jYy
+vnD
+bkI
 bxI
-dWA
+djC
 sVh
 wEK
 xZt
 tfQ
 dRo
 oZE
-eWZ
+bWM
+gxo
+nbo
+csa
+vxP
 tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-jIX
+vxP
+vxP
+bkm
+lSc
 jhc
 iwp
 vwO
@@ -47212,8 +51312,8 @@ obO
 fCI
 fjO
 thl
-idu
-pxX
+mRY
+gTu
 pxX
 pxX
 sWY
@@ -47223,8 +51323,8 @@ pxX
 pxX
 tcc
 woH
-uvv
-dWA
+dnR
+djC
 oVT
 lZc
 iDF
@@ -47233,14 +51333,14 @@ hlB
 vgB
 eWZ
 tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-jIX
+rtk
+oqP
+tHA
+vxP
+vxP
+rtk
+rtk
+lSc
 qxr
 kje
 aXt
@@ -47320,7 +51420,7 @@ lgK
 lgK
 kep
 rpa
-rEP
+bBH
 dWA
 uOU
 nNY
@@ -47330,14 +51430,14 @@ dRo
 gib
 eWZ
 tpO
+rtk
 tpO
+hQQ
+vxP
+uqX
+rtk
 tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-jIX
+hhy
 fpp
 bvE
 vwO
@@ -47403,11 +51503,11 @@ xZt
 mqf
 xZt
 xZt
-jYy
+nQU
 npT
 veH
-fqo
-lgK
+xNg
+pDi
 lgK
 lgK
 fqo
@@ -47426,15 +51526,15 @@ frK
 dRo
 gib
 eWZ
+uqX
 tpO
-tpO
-tpO
+sTK
 tpO
 gIK
 tpO
 tpO
-tpO
-jIX
+hPs
+hhy
 gib
 dRo
 dRo
@@ -47503,7 +51603,7 @@ lZc
 gVr
 rEP
 veH
-fqo
+xNg
 lgK
 lgK
 lgK
@@ -47515,7 +51615,7 @@ lgK
 kep
 rpa
 rEP
-ihT
+lXL
 mqf
 xZt
 xZt
@@ -47523,15 +51623,15 @@ tfQ
 dRo
 jeu
 eWZ
+rtk
+qHN
+nbo
 tpO
+gxo
 tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-tpO
-jIX
+vxP
+vDL
+gCd
 gib
 dRo
 dRo
@@ -47598,10 +51698,10 @@ xZt
 rIe
 xZt
 qxi
-jKO
+xOb
 veH
 fqo
-lgK
+biR
 lgK
 lgK
 fqo
@@ -47621,12 +51721,12 @@ dRo
 jeu
 eWZ
 ooV
+pko
 oZm
+pDV
 oZm
-oZm
-oZm
-oZm
-oZm
+cCx
+luH
 oZm
 ctb
 gib
@@ -47697,8 +51797,8 @@ vQP
 qxi
 bxI
 nvg
-idu
-pxX
+sQS
+vte
 pxX
 pxX
 sWY
@@ -47709,14 +51809,14 @@ pxX
 tcc
 pxO
 rEP
-dWA
+djC
 xZt
 wEK
 xZt
 frK
 hlB
 vgB
-eWZ
+aNX
 jIX
 gib
 gib
@@ -47794,7 +51894,7 @@ sVh
 gVr
 ajb
 dWA
-idu
+nFH
 pxX
 pxX
 pxX
@@ -47805,16 +51905,16 @@ pxX
 pxX
 tcc
 oXf
-kEH
-dWA
+tjE
+djC
 xZt
 cZi
 vQP
 frK
 dRo
 cBY
-rvg
-ujc
+qWL
+cay
 swR
 dRo
 dRo
@@ -47890,10 +51990,10 @@ iDF
 sVh
 gVr
 bxI
-dWA
-idu
+iNJ
+nFH
 kLg
-kLg
+khW
 kLg
 tcc
 idu
@@ -47902,7 +52002,7 @@ pxX
 pxX
 tcc
 jYy
-bxI
+ydo
 dWA
 vQP
 oyA
@@ -47910,8 +52010,8 @@ sVh
 tfQ
 dRo
 swR
-rvg
-ujc
+nZt
+fXT
 swR
 dRo
 dRo
@@ -47989,12 +52089,12 @@ hbb
 uvv
 dWA
 idu
-pxX
-pxX
-pxX
+jpX
+pHq
+pHq
 tcc
 idu
-pxX
+pHq
 kLg
 kLg
 tcc
@@ -48006,9 +52106,9 @@ iDF
 sVh
 wDr
 dRo
-cBY
-rvg
-ujc
+xqR
+qWL
+jCu
 jJM
 dRo
 dRo
@@ -48085,13 +52185,13 @@ weO
 kgx
 bxI
 dWA
-idu
+sQS
 pxX
 pxX
 pxX
 dsT
-sWY
-pxX
+azd
+pHq
 pxX
 oyJ
 oiQ
@@ -48104,8 +52204,8 @@ lZc
 frK
 dRo
 swR
-rvg
-ujc
+kzN
+kyO
 sFZ
 dRo
 dRo
@@ -48186,14 +52286,14 @@ qxV
 pxX
 wmc
 pxX
-sWY
-sWY
+azd
+azd
 pxX
 wmc
 oyJ
 tcc
 jYy
-jbU
+lWd
 dWA
 nNY
 xZK
@@ -48201,8 +52301,8 @@ dYI
 frK
 hlB
 lsB
-rvg
-ujc
+phf
+myI
 sxo
 dRo
 dRo
@@ -48276,8 +52376,8 @@ rbG
 hgU
 kEH
 vTu
-lgv
-rEP
+nOR
+xRP
 cyp
 qxV
 wXm
@@ -48290,7 +52390,7 @@ wmc
 owN
 oiQ
 nWk
-rEP
+tks
 dWA
 nNY
 sVh
@@ -48298,8 +52398,8 @@ gKe
 tfQ
 dRo
 szh
-fqZ
-ujc
+oGl
+iwi
 nmr
 dRo
 dRo
@@ -48370,11 +52470,11 @@ qob
 gIs
 lRh
 rbG
-kEH
+vAm
 xiF
 mGm
 lgv
-rEP
+xRP
 dWA
 idu
 oyJ
@@ -48387,17 +52487,17 @@ wmc
 pxX
 oiQ
 qxi
-bxI
-dWA
+pSp
+djC
 xZt
 sVh
 vQP
 wDr
 dRo
 sFZ
-rvg
-ujc
-nmr
+svN
+aFR
+gRK
 dRo
 dRo
 dRo
@@ -48470,8 +52570,8 @@ rbG
 cCh
 jbU
 vTu
-lgv
-rEP
+xHU
+xRP
 dWA
 idu
 oyJ
@@ -48481,19 +52581,19 @@ wmc
 wmc
 wmc
 wmc
-pxX
+jpX
 tcc
 qxi
-bxI
-dWA
+ydo
+djC
 vLW
 mvO
 nNY
 frK
 dRo
-ePn
-rvg
-ujc
+uvM
+qWL
+kBf
 gRD
 dRo
 dRo
@@ -48588,9 +52688,9 @@ sVh
 sVh
 frK
 dRo
-swR
-rvg
-ujc
+cPl
+wlC
+lEL
 dfa
 dRo
 dRo
@@ -48686,7 +52786,7 @@ vgN
 tfQ
 hlB
 lsB
-rvg
+dKe
 ujc
 cKP
 dRo
@@ -48771,7 +52871,7 @@ pxX
 tcc
 idu
 pxX
-xyf
+foJ
 pxX
 tcc
 fCI
@@ -48784,7 +52884,7 @@ tfQ
 dRo
 swR
 rvg
-ujc
+thP
 cBY
 dRo
 dRo
@@ -48849,9 +52949,9 @@ nOT
 bdL
 nOT
 bdL
-hUq
+itS
 xCq
-jbU
+wWR
 jbU
 jbU
 wIs
@@ -48859,7 +52959,7 @@ jbU
 kEH
 vTu
 lgv
-bxI
+rxp
 dWA
 idu
 pxX
@@ -48867,20 +52967,20 @@ xyf
 xyf
 dsT
 sWY
-pxX
-pxX
+pHq
+pHq
 pxX
 tcc
 jYy
 bxI
-dWA
+djC
 sVh
 xZt
 uOU
 bYG
 obO
 uYd
-eDN
+itK
 xoW
 bYG
 bYG
@@ -48956,11 +53056,11 @@ eLu
 eLu
 ppj
 qMl
-kEH
+vAm
 dWA
-idu
+mRY
 fux
-pxX
+wjo
 pxX
 sWY
 sWY
@@ -48968,8 +53068,8 @@ pxX
 fux
 pxX
 tcc
-jYy
-kEH
+grU
+tjE
 dWA
 vQP
 fYx
@@ -49042,47 +53142,47 @@ xaL
 cPa
 xiF
 jbU
-cWJ
+eHC
 pxX
 pxX
 pxX
 pxX
 pxX
 pxX
-pxX
-pxX
-pxX
+qMr
+mnM
+mnM
 jYy
-bxI
+rxp
 dWA
 idu
 pxX
 pxX
 pxX
-iAy
-idu
+mEJ
+vCw
 pxX
 pxX
 pxX
-tcc
-jYy
-rEP
+brI
+grU
+bBH
 kEH
 xax
-xax
-xax
-xax
-xax
+uiC
+ffT
+ffT
+fmB
 xax
 fEP
 nmN
+hCd
+fmB
 xax
-xax
-xax
 vVd
 vVd
 vVd
-vVd
+obn
 gMv
 nNY
 bYG
@@ -49150,29 +53250,29 @@ cqu
 mJG
 pxX
 jYy
-bxI
+kzw
 dWA
 idu
 pxX
-pxX
-pxX
-tcc
+mnM
+mnM
+sNi
 idu
 pxX
-pxX
+vte
 pxX
 tcc
-jYy
-rEP
-kEH
+wlz
+oLg
+jnx
 xiF
 kEH
-kEH
-kEH
-kEH
-kEH
-kEH
-kEH
+bPp
+cGt
+lxb
+tjE
+bPp
+byE
 kEH
 xiF
 kEH
@@ -49241,42 +53341,42 @@ pxX
 pxX
 pxX
 pxX
-pxX
+mnM
 pxX
 cqu
 cqu
 pxX
-jYy
-bxI
+bCV
+kzw
 vln
 idu
+qMr
 pxX
-pxX
-pxX
-dsT
+mnM
+rZV
 sWY
 pxX
 pxX
 pxX
 tcc
-jYy
+wlz
 rEP
-kEH
+byE
+vpO
+vpO
+oqK
+oqK
+mOZ
+tGc
+vpO
+ygB
 vpO
 vpO
 vpO
-vpO
-vpO
-vpO
-vpO
-vpO
-vpO
-vpO
-vpO
-vpO
-vpO
+oqK
+oqK
 wnR
-kEH
+bPp
 qfO
 jAO
 fBu
@@ -49337,25 +53437,25 @@ sNg
 pxX
 pxX
 pxX
-pxX
-pxX
+mnM
+mnM
+dHP
 uIe
 uIe
 uIe
-uIe
-jYy
-kEH
+vrf
+cCF
 dWA
 idu
-pxX
-pxX
-pxX
+wjo
+mnM
+mnM
 sWY
-sWY
+qvx
+dsx
+mnM
 pxX
-pxX
-pxX
-tcc
+vnD
 qxi
 jbU
 dWA
@@ -49432,16 +53532,16 @@ pxX
 pxX
 pxX
 pxX
-pxX
+mnM
 eGz
-pxX
-pxX
+mnM
+mnM
 pxX
 pxX
 pxX
 pxX
 jYy
-bxI
+kzw
 dWA
 idu
 pxX
@@ -49450,7 +53550,7 @@ pxX
 tcc
 idu
 pxX
-pxX
+mnM
 pxX
 tcc
 jYy
@@ -49469,9 +53569,9 @@ hKX
 xZt
 oMa
 dZx
-eDN
+hwY
 kEH
-wMY
+mXM
 xZt
 vQP
 dRo
@@ -49528,26 +53628,26 @@ pxX
 pxX
 pxX
 pxX
+mnM
+mnM
+pxX
+mnM
+pxX
+mnM
+mnM
 pxX
 pxX
-pxX
-pxX
-pxX
-pxX
-pxX
-pxX
-pxX
-fCI
-gaK
+dgS
+eeF
 dWA
-idu
+mRY
 pxX
 pxX
 pxX
 tcc
 idu
-pxX
-pxX
+mnM
+mnM
 pxX
 tcc
 fCI
@@ -49566,7 +53666,7 @@ dRo
 dRo
 icQ
 bYG
-eDN
+itK
 kEH
 wMY
 iDF
@@ -49627,25 +53727,25 @@ pxX
 pxX
 pxX
 pxX
+mnM
+mnM
+mnM
+mnM
 pxX
 pxX
 pxX
-pxX
-pxX
-pxX
-pxX
-jYy
-bxI
+oCi
+kzw
 dWA
 idu
 pxX
 pxX
 pxX
 dsT
-sWY
-pxX
-pxX
-pxX
+qvx
+mnM
+vte
+jpX
 tcc
 jYy
 rEP
@@ -49723,20 +53823,20 @@ uIe
 uIe
 uIe
 pxX
+qMr
 pxX
 pxX
-pxX
-pxX
+mnM
 uIe
 uIe
 uIe
 uIe
-jYy
+oCi
 kEH
 nVw
-idu
+sQS
 pxX
-pxX
+vte
 pxX
 sWY
 sWY
@@ -49745,7 +53845,7 @@ pxX
 pxX
 tcc
 jYy
-kEH
+bPp
 dWA
 xZt
 xZt
@@ -49762,7 +53862,7 @@ vQP
 xZt
 eDN
 kEH
-wMY
+jzA
 nNY
 nNY
 dRo
@@ -49822,28 +53922,28 @@ pxX
 pxX
 pxX
 pxX
+mnM
 pxX
 pxX
 pxX
 pxX
 pxX
-pxX
-jYy
+bCV
 bxI
 dWA
 idu
-pxX
+jpX
 pxX
 pxX
 tcc
 idu
-pxX
-pxX
+mnM
+mnM
 pxX
 tcc
 jYy
-rEP
-dWA
+bBH
+djC
 aax
 nNY
 uYr
@@ -49859,7 +53959,7 @@ vQP
 enK
 eDN
 xiF
-wMY
+jzA
 vQP
 vQP
 dRo
@@ -49918,7 +54018,7 @@ rUd
 pxX
 pxX
 pxX
-pxX
+mnM
 pxX
 pxX
 pxX
@@ -49933,13 +54033,13 @@ pxX
 pxX
 pxX
 tcc
-idu
+vCw
 pxX
-pxX
+vte
 pxX
 tcc
 jYy
-rEP
+oos
 dWA
 xZt
 vQP
@@ -49954,7 +54054,7 @@ dRo
 dRo
 rBv
 enK
-eDN
+hwY
 kEH
 wMY
 vQP
@@ -50014,6 +54114,7 @@ cqu
 cqu
 pxX
 pxX
+ezU
 pxX
 pxX
 pxX
@@ -50021,20 +54122,19 @@ pxX
 pxX
 pxX
 pxX
-pxX
-pxX
-pxX
+mnM
+dsx
 nMr
 sWY
 pxX
 pxX
 pxX
-dsT
+rZV
 sWY
 pxX
 pxX
 pxX
-tcc
+vnD
 jYy
 rEP
 dWA
@@ -50110,22 +54210,22 @@ uIe
 uIe
 uIe
 uIe
-pxX
+mnM
 pxX
 pxX
 pxX
 plG
 pxX
 pxX
-pxX
+vte
 pxX
 pxX
 pxX
 nMr
-sWY
+syP
+lsO
 pxX
-pxX
-pxX
+dsx
 sWY
 sWY
 pxX
@@ -50149,8 +54249,8 @@ dRo
 iDF
 vQP
 eDN
-kEH
-wMY
+uuJ
+mXM
 hKX
 vQP
 dRo
@@ -50206,8 +54306,8 @@ stJ
 pxX
 pxX
 pxX
-pxX
-pxX
+mnM
+mnM
 pxX
 pxX
 pxX
@@ -50220,17 +54320,17 @@ pxX
 pxX
 nMr
 sWY
-pxX
-pxX
+lsO
+mnM
 pxX
 tcc
-idu
+vCw
 pxX
 pxX
 pxX
 tcc
 jYy
-bxI
+ydo
 dWA
 sVh
 vQP
@@ -50245,9 +54345,9 @@ dRo
 dRo
 uFD
 oiC
-dTo
+gfQ
 nHC
-qfO
+jvG
 oMa
 oiC
 dRo
@@ -50303,8 +54403,8 @@ stJ
 pxX
 pxX
 pxX
-pxX
-pxX
+mnM
+mnM
 pxX
 pxX
 pxX
@@ -50312,23 +54412,23 @@ wQf
 pxX
 pxX
 pxX
-pxX
+mnM
 pxX
 pxX
 pxX
 sWY
-pxX
-pxX
-pxX
-tcc
-idu
+lsO
+mnM
+mnM
+sNi
+vCw
 pxX
 pxX
 pxX
 tcc
 fCI
 uvv
-dWA
+djC
 qRT
 xZt
 uOU
@@ -50342,9 +54442,9 @@ dRo
 dRo
 dYx
 dYx
-dTo
+gfQ
 nHC
-qfO
+jvG
 oiC
 dYx
 dRo
@@ -50400,22 +54500,22 @@ stJ
 fok
 pxX
 pxX
+mnM
 pxX
 pxX
 pxX
 pxX
 pxX
+qMr
 pxX
-pxX
-pxX
-pxX
+mnM
 pxX
 gic
 pxX
-pxX
+vte
 sWY
-pxX
-pxX
+lsO
+mnM
 ucG
 dsT
 sWY
@@ -50439,8 +54539,8 @@ dRo
 dRo
 dYx
 blP
-dTo
-nHC
+gfQ
+bIA
 qfO
 dyB
 dYx
@@ -50496,33 +54596,33 @@ dRo
 stJ
 uIe
 uIe
-uIe
-uIe
-pxX
-pxX
-pxX
+dHP
+ibe
+mnM
+mnM
+mnM
 pxX
 plG
+mnM
 pxX
-pxX
-pxX
+qMr
 pxX
 gic
 pxX
 pxX
 sWY
-pxX
-pxX
+lsO
+vte
 pxX
 otW
 sWY
 eNB
-pxX
+vte
 pxX
 tcc
-jYy
-kEH
-dWA
+tIW
+tjE
+djC
 xZt
 nNY
 xZK
@@ -50536,7 +54636,7 @@ dRo
 dRo
 blP
 dZx
-dTo
+gfQ
 nHC
 qfO
 dYx
@@ -50599,7 +54699,7 @@ pxX
 pxX
 pxX
 pxX
-pxX
+mnM
 pxX
 pxX
 pxX
@@ -50610,15 +54710,15 @@ pxX
 sWY
 pxX
 pxX
-pxX
+mnM
 tcc
-idu
-eNB
+vCw
+ocw
 pxX
-pxX
-tcc
+vte
+brI
 jYy
-rEP
+bBH
 dWA
 bYG
 nNY
@@ -50634,7 +54734,7 @@ dRo
 blP
 oiC
 dTo
-nHC
+fqB
 qfO
 dZx
 blP
@@ -50692,24 +54792,24 @@ pxX
 pxX
 pxX
 pxX
+mnM
 pxX
 pxX
 pxX
+mnM
 pxX
-pxX
-pxX
-pxX
-pxX
-pxX
+mnM
+mnM
+mnM
 xBd
 jnX
 gJS
 sWY
 pxX
 pxX
-pxX
-tcc
-idu
+dsx
+sNi
+vCw
 pxX
 pxX
 pxX
@@ -50788,6 +54888,7 @@ stJ
 fok
 pxX
 pxX
+mnM
 pxX
 pxX
 pxX
@@ -50795,25 +54896,24 @@ pxX
 pxX
 pxX
 pxX
-pxX
-pxX
+mnM
 pxX
 jYy
-bxI
+nzg
 dWA
 idu
 pxX
 pxX
-pxX
+mnM
 dsT
-sWY
+kfx
 pxX
 pxX
 pxX
 tcc
 jYy
-rEP
-dWA
+bBH
+djC
 aax
 xZt
 iDF
@@ -50885,31 +54985,31 @@ stJ
 uIe
 uIe
 uIe
-uIe
+dHP
 pxX
 pxX
 pxX
-pxX
-pxX
+qMr
+mnM
+dHP
 uIe
 uIe
 uIe
-uIe
-jYy
+grU
 npT
 dWA
-idu
-pxX
+mRY
+qMr
 pxX
 pxX
 sWY
 sWY
 xyf
 xyf
-xyf
+kca
 tcc
 qxi
-jbU
+bHX
 dWA
 xZt
 nNY
@@ -50982,10 +55082,10 @@ stJ
 pxX
 pxX
 pxX
-pxX
-pxX
-pxX
-pxX
+mnM
+mnM
+mnM
+mnM
 pxX
 pxX
 pxX
@@ -51007,7 +55107,7 @@ pxX
 tcc
 jYy
 bxI
-dWA
+djC
 xZt
 vQP
 nNY
@@ -51079,7 +55179,7 @@ dRo
 pxX
 pxX
 pxX
-pxX
+mnM
 pxX
 pxX
 pxX
@@ -51091,7 +55191,7 @@ pxX
 pxX
 fCI
 gaK
-dWA
+pYF
 aGV
 pxX
 pxX
@@ -51103,7 +55203,7 @@ pxX
 pxX
 tcc
 fCI
-uvv
+dnR
 dWA
 xZt
 mAi
@@ -51199,7 +55299,7 @@ cqu
 cqu
 cqu
 mos
-mJa
+wQj
 xIJ
 tcM
 cZi
